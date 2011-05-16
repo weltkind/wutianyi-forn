@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN"
+  "http://ibatis.apache.org/dtd/abator-config_1_0.dtd">
+
+<abatorConfiguration>
+  <abatorContext>    <!-- TODO: Add Database Connection Information -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://localhost:3306/work"
+        userId="root"
+        password="860728">
+      <classPathEntry location="C:\Documents and Settings\hanjie.wuhj\.m2\repository\mysql\mysql-connector-java\5.1.13\mysql-connector-java-5.1.13.jar" />
+    </jdbcConnection>
+
+    <javaModelGenerator targetPackage="com.wutianyi.logger.dataobject" targetProject="wutianyi86728_6" />
+    <sqlMapGenerator targetPackage="com.wutianyi.logger.dao.impl.ibatis.sqlmap" targetProject="wutianyi86728_6" />
+    <daoGenerator type="IBATIS" targetPackage="com.wutianyi.logger.dao" targetProject="wutianyi86728_6" />
+
+    <table schema="logger" tableName="logger">
+    </table>
+
+  </abatorContext>
+</abatorConfiguration>
