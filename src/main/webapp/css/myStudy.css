@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+h1 {
+	color: red;
+	font-size: small;
+	text-align: left;
+	font-family: Georgia, Palatino;
+	position: relative;
+	position: absolute;
+	position: fixed;
+	vertical-align: text-top;<!-- 表示元素相对于文本的一个位置 -->
+	z-index: -1;<!-- 表示元素的优先级 -->
+}
+p{
+	border-style: solid;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>My Network</display-name>
+	<servlet>
+		<servlet-name>ShowImage</servlet-name>
+		<servlet-class>com.wutianyi.modules.control.ShowImage</servlet-class>
+		<init-param>
+			<param-name>imagePath</param-name>
+			<param-value>G:\work\wutianyi86728_6\src\main\webapp\image</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowImage</servlet-name>
+		<url-pattern>/ShowImage</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MyServlet</servlet-name>
+		<servlet-class>MyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/MyServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
