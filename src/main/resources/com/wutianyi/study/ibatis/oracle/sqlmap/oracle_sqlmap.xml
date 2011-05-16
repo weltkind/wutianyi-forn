@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="oracle">
+	
+	<select id="listAllCommodity" resultClass="java.util.HashMap">
+		<![CDATA[
+			select id, name, cn_name, description, group_id from tl_commodity
+		]]>
+	</select>
+	
+	<select id="listAllAttrDict" resultClass="java.util.HashMap">
+		<![CDATA[
+			select id, cn_name, description, name from tl_attr_dict
+		]]>
+	</select>
+	
+	<select id="listAllCommodityAttrValueRel" resultClass="java.util.HashMap">
+		<![CDATA[
+			select id, commodity_id, attribute_id, value_ids, value_ids_1, value_ids_2, value_ids_3 from tl_commodity_attr_value_rel
+		]]>
+	</select>
+	
+	<select id="listAllValueDict" resultClass="java.util.HashMap">
+		<![CDATA[
+			select id, cn_name, description, name from tl_value_dict
+		]]>
+	</select>
+</sqlMap>

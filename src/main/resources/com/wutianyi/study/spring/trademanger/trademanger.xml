@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+	<bean id="fooService"
+		class="com.wutianyi.study.spring.trademanager.DefaultFooService">
+		<property name="dao" ref="dao"></property>
+	</bean>
+
+	<!-- 当transaction-manager没有定义的时候，默认使用platformTransactionManager -->
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="getFoo" read-only="true" />
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/test"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="860728"></property>
+	</bean>
+	
+	
+	<bean id="dao" class="com.wutianyi.study.ibatis.dao.Test1DAOImpl">
+	</bean>
+	
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation" value="ibatis/sql-map-config.xml"></property>
+	</bean>
+	
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<aop:config>
+		<aop:pointcut
+			expression="execution(* com.wutianyi.study.spring.trademanager.FooService.*(..))"
+			id="fooServiceOperation" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="fooServiceOperation" />
+	</aop:config>
+</beans>
