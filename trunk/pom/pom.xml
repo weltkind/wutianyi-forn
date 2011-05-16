@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.alibaba.india.shared</groupId>
+		<artifactId>india.base</artifactId>
+		<version>1.0.22</version>
+	</parent>
+
+	<groupId>com.alibaba.india.app</groupId>
+	<artifactId>india.standalone.viewcache</artifactId>
+	<packaging>jar</packaging>
+	<name>india.standalone.viewcache</name>
+	<version>1.0.0-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<!-- jar self under lib folder -->
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<outputDirectory>${project.build.directory}/lib</outputDirectory>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<includeTypes>jar</includeTypes>
+					<overWriteSnapshots>true</overWriteSnapshots>
+					<type>jar</type>
+					<outputDirectory>${project.build.directory}/lib</outputDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4.3</version>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<encoding>utf-8</encoding>
+							<outputDirectory>${project.build.outputDirectory}</outputDirectory>
+							<overWrite>ture</overWrite>
+							<resources>
+								<resource>
+									<directory>src/conf</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- create package with script/conf/template resources -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>assembly-deploy-package</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<mkdir dir="${release_directory}" />
+								<jar destfile="${release_directory}/${uberjar_final_name}">
+									<zipfileset dir="${project.build.directory}/lib"
+										prefix="lib" />
+									<!--
+										this will ignore the conf prefix so that we can use antxconfig
+										to configure the whole file
+									-->
+									<zipfileset dir="${project.basedir}/src/conf" />
+								</jar>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>release</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>release</value>
+				</property>
+			</activation>
+			<properties>
+				<release_directory>${project.parent.build.directory}</release_directory>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>!release</value>
+				</property>
+			</activation>
+			<properties>
+				<release_directory>${project.build.directory}</release_directory>
+				<uberjar_final_name>india.standalone.viewcache.jar</uberjar_final_name>
+				<standalone_output_path>deploy/target/${artifactId}</standalone_output_path>
+			</properties>
+			<build>
+				<plugins>
+					<!-- do auto config for integration test -->
+					<plugin>
+						<groupId>com.alibaba.maven.plugins</groupId>
+						<artifactId>maven-autoconf-plugin</artifactId>
+						<version>0.3-alpha-7</version>
+						<executions>
+							<execution>
+								<id>config-package</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>config</goal>
+								</goals>
+								<configuration>
+									<destFiles>
+										<destFile>${project.build.directory}/india.standalone.viewcache.jar</destFile>
+									</destFiles>
+									<includeDescriptorPatterns>
+										<includeDescriptorPattern>**/META-INF/autoconf/auto-config.xml</includeDescriptorPattern>
+									</includeDescriptorPatterns>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<!-- extract the task package for integration-test -->
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>unpack-package</id>
+								<phase>install</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<unzip dest="${standalone_output_path}"
+											src="${project.build.directory}/india.standalone.viewcache.jar" />
+										<unjar src="${standalone_output_path}/lib/${name}-${version}.jar"
+											dest="${project.build.directory}/temp" />
+										<copydir src="${project.build.directory}/temp/conf" dest="deploy/conf"></copydir>
+										<copydir src="${project.build.directory}/temp/biz" dest="deploy/conf/biz"></copydir>
+										<delete dir="${project.build.directory}/temp"></delete>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	<dependencies>
+		<dependency>
+			<groupId>com.alibaba.external</groupId>
+			<artifactId>jakarta.commons.lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.external</groupId>
+			<artifactId>jakarta.commons.configuration</artifactId>
+			<version>1.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba.external</groupId>
+			<artifactId>jakarta.commons.io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.shared</groupId>
+			<artifactId>toolkit.common.lang</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.commons.viewcache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.member</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.photobank</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.buyoffer.impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.product.impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.component.resource</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.crossservice</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba.india.shared</groupId>
+			<artifactId>india.biz.aisnsearch</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
