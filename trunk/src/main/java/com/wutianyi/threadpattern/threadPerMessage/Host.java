@@ -1,0 +1,16 @@
+package com.wutianyi.threadpattern.threadPerMessage;
+
+public class Host {
+	
+	protected final Helper helper = new Helper();
+	
+	public void request(final int count, final char c) {
+		System.out.println("    request(" + count + ", " + c + ") BEGIN");
+		new Thread(new Runnable() {
+			public void run() {
+				helper.handler(count, c);
+			}
+		}).start();
+		System.out.println("    request(" + count + ", " + c + ") END");
+	}
+}
