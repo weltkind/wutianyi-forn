@@ -24,6 +24,16 @@
 		<servlet-name>MyServlet</servlet-name>
 		<url-pattern>/MyServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ajaxServlet</servlet-name>
+		<servlet-class>com.wutianyi.study.ajax.AjaxServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ajaxServlet</servlet-name>
+		<url-pattern>/ajaxServlet</url-pattern>
+	</servlet-mapping>
+	
 	<!-- struts 例子配置文件 -->
 	<filter>
 		<filter-name>struts2</filter-name>

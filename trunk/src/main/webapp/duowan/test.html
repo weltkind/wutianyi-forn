@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+	function checkUniqueUser() {
+		alert("test");
+		jQuery.ajax( {
+			type : "GET",
+			url : "http://localhost:8080/wutianyi86728_6/ajaxServlet",
+			contentType : 'html',
+			cache : false,
+			success : function(response) {
+				if(response == '1') {
+					$('div:last').hide();
+				} else {
+					$('div:last').show();
+				}
+			}
+		});
+	}
+
+	function confirmpassword() {
+		if($('#password').attr('value') != $('#confirmpassword').attr('value')) {
+			$('div:first').show();
+		} else {	
+			$('div:first').hide();
+		}
+	}
+</script>
+</head>
+<body>
+	<input id="username" name="username" type="text" onblur="checkUniqueUser();">
+	<input id="password" name="password" type="password" onblur="confirmpassword();"/>
+	<input id="confirmpassword" name="confirmpassword" type="password" onblur="confirmpassword();">
+	
+	<div>
+		<span>两次输入的密码不一致</span>
+	</div>
+	<div>
+		<span>输入的用户名已经存在</span>
+	</div>
+</body>
+</html>
