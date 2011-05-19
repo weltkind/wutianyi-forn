@@ -48,7 +48,6 @@ public class LoggerDAOTest extends
 		for (LoggerDO logger : loggers) {
 			loggerDAO.recordLogger(logger);
 		}
-
 	}
 	
 	@AfterTransaction
