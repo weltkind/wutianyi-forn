@@ -24,4 +24,22 @@
 		<servlet-name>MyServlet</servlet-name>
 		<url-pattern>/MyServlet</url-pattern>
 	</servlet-mapping>
+	<!-- struts 例子配置文件 -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/example/*</url-pattern>
+	</filter-mapping>
+	<!-- spring struts2结合 -->
+	<!-- 定义加载xml文件的位置 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:com/wutianyi/study/struts2/applicationContext*.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 </web-app>
