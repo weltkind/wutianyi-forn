@@ -1,0 +1,18 @@
+修改cmd下的doc编码
+chcp 命令，
+chcp 65001  就是换成UTF-8代码页
+
+chcp 936 可以换回默认的GBK
+chcp 437 是美国英语
+
+
+eclipse中定义mvn的运行
+1.  选择菜单Run->External Tools->External Tools Configurations
+2. 设置location为mvn的启动脚本
+3. 增加参数
+
+google密码
+tq9Dy8QF6wh9
+
+maven 创建web工程
+mvn archetype:create -DgroupId=com.mycompany.app -DartifactId=my-webapp -DarchetypeArtifactId=maven-archetype-webapp
