@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] [%t] - %m%n " />
+		</layout>
+	</appender>
+
+	<appender name="INFO" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/data/yxtq.yy.com/logs/product/yyguild_info.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="500000KB" />
+		<param name="MaxBackupIndex" value="20" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] [%t] - %m%n " />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="INFO" />
+			<param name="LevelMax" value="INFO" />
+		</filter>
+	</appender>
+
+	<appender name="DEBUG" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/data/yxtq.yy.com/logs/product/yyguild_debug.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="500000KB" />
+		<param name="MaxBackupIndex" value="20" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] [%t] - %m%n " />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="DEBUG" />
+			<param name="LevelMax" value="DEBUG" />
+		</filter>
+	</appender>
+
+	<appender name="ERROR_WARN" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/data/yxtq.yy.com/logs/product/yyguild_error_warn.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="300000KB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] [%t] - %m%n " />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="WARN" />
+			<param name="LevelMax" value="ERROR" />
+		</filter>
+	</appender>
+	
+	<appender name="PART3_ERROR_WARN" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/data/yxtq.yy.com/logs/product/part3_error_warn.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="300000KB" />
+		<param name="MaxBackupIndex" value="2" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] [%t] - %m%n " />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="WARN" />
+			<param name="LevelMax" value="ERROR" />
+		</filter>
+	</appender>
+	
+	<appender name="BIND_PRIV_RECORD" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/data/yxtq.yy.com/logs/product/bind_priv_record.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="300000KB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] [%t] - %m%n " />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="FATAL" />
+			<param name="LevelMax" value="FATAL" />
+		</filter>
+	</appender>
+
+	<logger name="com.duowan.yy" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="STDOUT"/>
+		${log4j-console}
+	</logger>
+		
+	<root>
+		<level value="WARN" />
+		<appender-ref ref="STDOUT"/>
+		${log4j-console}
+	</root>
+</log4j:configuration>
