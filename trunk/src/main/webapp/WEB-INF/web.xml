@@ -24,7 +24,7 @@
 		<servlet-name>MyServlet</servlet-name>
 		<url-pattern>/MyServlet</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>ajaxServlet</servlet-name>
 		<servlet-class>com.wutianyi.study.ajax.AjaxServlet</servlet-class>
@@ -33,7 +33,7 @@
 		<servlet-name>ajaxServlet</servlet-name>
 		<url-pattern>/ajaxServlet</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- struts 例子配置文件 -->
 	<filter>
 		<filter-name>struts2</filter-name>
@@ -52,4 +52,19 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+
+	<!-- tucker -->
+	<!-- urlWriter -->
+	<filter>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+		<init-param>
+			<param-name>logLevel</param-name>
+			<param-value>ERROR</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
