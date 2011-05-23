@@ -62,4 +62,9 @@ public class NobleDaoImpl implements NobleDao{
 		}
 	}
 
+	public boolean checkUserExist(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
