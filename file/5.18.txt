@@ -1,18 +1,23 @@
-ĞŞ¸ÄcmdÏÂµÄdoc±àÂë
-chcp ÃüÁî£¬
-chcp 65001  ¾ÍÊÇ»»³ÉUTF-8´úÂëÒ³
+ï¿½Ş¸ï¿½cmdï¿½Âµï¿½docï¿½ï¿½ï¿½ï¿½
+chcp ï¿½ï¿½ï¿½î£¬
+chcp 65001  ï¿½ï¿½ï¿½Ç»ï¿½ï¿½ï¿½UTF-8ï¿½ï¿½ï¿½ï¿½Ò³
 
-chcp 936 ¿ÉÒÔ»»»ØÄ¬ÈÏµÄGBK
-chcp 437 ÊÇÃÀ¹úÓ¢Óï
+chcp 936 ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½Ä¬ï¿½Ïµï¿½GBK
+chcp 437 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½
 
 
-eclipseÖĞ¶¨ÒåmvnµÄÔËĞĞ
-1.  Ñ¡Ôñ²Ëµ¥Run->External Tools->External Tools Configurations
-2. ÉèÖÃlocationÎªmvnµÄÆô¶¯½Å±¾
-3. Ôö¼Ó²ÎÊı
+eclipseï¿½Ğ¶ï¿½ï¿½ï¿½mvnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+1.  Ñ¡ï¿½ï¿½Ëµï¿½Run->External Tools->External Tools Configurations
+2. ï¿½ï¿½ï¿½ï¿½locationÎªmvnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½
+3. ï¿½ï¿½ï¿½Ó²ï¿½ï¿½ï¿½
 
-googleÃÜÂë
+googleï¿½ï¿½ï¿½ï¿½
 tq9Dy8QF6wh9
 
-maven ´´½¨web¹¤³Ì
+maven ï¿½ï¿½ï¿½ï¿½webï¿½ï¿½ï¿½ï¿½
 mvn archetype:create -DgroupId=com.mycompany.app -DartifactId=my-webapp -DarchetypeArtifactId=maven-archetype-webapp
+å¯åŠ¨tomcat debug
+export JPDA_ADDRESS=8000
+export JPDA_TRANSPORT=dt_socket
+bin/catalina.sh jpda start
+
