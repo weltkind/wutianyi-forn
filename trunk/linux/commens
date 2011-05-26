@@ -1,0 +1,5 @@
+rz -bye 上传命令
+sz 下载
+unzip -d（解压到指定的文件）
+ps -ef |
+netstat -anv
