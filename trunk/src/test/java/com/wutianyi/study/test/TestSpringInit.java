@@ -21,5 +21,7 @@ public class TestSpringInit {
 	
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("biz/spring/wutianyi.xml");
+		TestSpringInit testSpringInit = (TestSpringInit) context.getBean("testSpringInit");
+		System.out.println(testSpringInit.getName());
 	}
 }

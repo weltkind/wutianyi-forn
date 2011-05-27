@@ -1,0 +1,7 @@
+select max(act_type) act_type from gamecenter_recommend;
+select count(*) from gamecenter_recommend;
+select * from gamecenter_recommend;
+select game_id, max(icon_type) from gamecenter_recommend;
+select game_id,max(publish_time) publish_time,sum(used_count) used_count from gamecenter_privilege where status=1 group by game_id order by publish_time desc limit 0, 20;
+select * from gamecenter_privilege;
+select * from gamecenter_update_status;
