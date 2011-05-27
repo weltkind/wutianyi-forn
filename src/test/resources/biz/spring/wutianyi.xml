@@ -4,6 +4,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="testSpringInit" class="com.wutianyi.study.test.TestSpringInit" init-method="init">
-		<property name="name" value="wutianyi"></property>
+		<property name="name" value="wutianyi&amp;wtuianyi=1"></property>
 	</bean>
 </beans>
