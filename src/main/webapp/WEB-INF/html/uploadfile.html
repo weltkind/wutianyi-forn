@@ -16,14 +16,13 @@
 		});
 		$('#prefix-1').uploadify({
 			'uploader' : 'uploadify/uploadify.swf',
-			'script' : 'uploadServlet?imageindex=2',
+			'script' : 'uploadServlet?imageindex=1',
 			'cancelImg' : 'uploadify/cancel.png',
-			'folder' : 'uploads',
-			'auto' : true,
+			'folder' : '/uploads',
+			'auto' : false,
+			'buttonText' : '选择上传的文件',
 			'onComplete'  : function(event, ID, fileObj, response, data) {
-				alert('test');
-				$('#image').attr('src', '');
-				$('#image').attr('src', 'uploads/prefix-2.jpg?' + new Date);
+			      $('#prefix-1').attr('src', 'uploads/prefix-1.jpg');
 			 }
 		});
 		$('#button-2').bind('click', function(){
@@ -33,20 +32,23 @@
 			'uploader' : 'uploadify/uploadify.swf',
 			'script' : 'uploadServlet?imageindex=2',
 			'cancelImg' : 'uploadify/cancel.png',
-			'folder' : 'uploads',
-			'auto' : true
+			'folder' : '/uploads',
+			'auto' : false,
+			'buttonText' : '选择上传的文件',
+			'onComplete'  : function(event, ID, fileObj, response, data) {
+			      $('#prefix-2').attr('src', 'uploads/prefix-2.jpg');
+			 }
 		});
 	});
 </script>
 </head>
 <body>
-<img id="image" alt="" src="uploads/prefix-2.jpg">
+<img alt="prefiex-1" src="uploads/prefix-1.jpg">
 <input id="prefix-1" name="prefix-1" type="file" />
 <input id="button-1" type="button" value="上传" />
 <br />
+<img alt="prefiex-2" src="uploads/prefix-2.jpg">
 <input id="prefix-2" name="prefix-2" type="file" />
 <input id="button-2" type="button" value="上传" />
-
-
 </body>
 </html>
