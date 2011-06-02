@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="privilege">
+	<resultMap class="com.wutianyi.duowan.dataobject.FloatLayerDTO"
+		id="FloatLayerResult">
+		<result property="gameId" column="id" jdbcType="INTEGER"/>
+		<result property="gameName" column="gameName" jdbcType="VARCHAR"/>
+		<result property="countByStatus" column="used_count" jdbcType="INTERER"/>
+		<result property="introduction" column="introduce" jdbcType="VARCHAR"/>
+		<result property="statusType" column="status_type" jdbcType="INTEGER"/>
+	</resultMap>
+	
+	<resultMap class="java.util.HashMap" id="GameNameResult">
+		<result property="gameId" column="game_id" jdbcType="INTEGER"/>
+		<result property="usedCount" column="usedCount" jdbcType="INTEGER" javaType="java.lang.Integer"/>
+	</resultMap>
+
+	<select id="getPriGameNAIByGameId" parameterClass="java.lang.Integer" resultMap="FloatLayerResult">
+		<![CDATA[
+			SELECT id, gameName, introduce, (SELECT SUM(used_count) FROM gamecenter_privilege WHERE game_id=#gameId:INTEGER#) AS used_count, 1 as status_type FROM gamecenter_privilege_game WHERE id=#gameId:INTEGER#
+		]]>
+	</select>
+	
+	<select id="listPriGameNAIByGameIds" parameterClass="java.util.List" resultMap="FloatLayerResult">
+		<![CDATA[
+			SELECT id, gameName, introduce, 1 as status_type,0 as used_count FROM gamecenter_privilege_game WHERE id
+		]]>
+		<iterate prepend="in" open="(" close=")" conjunction=",">
+			#[]#
+		</iterate>
+	</select>
+	
+	<select id="listPrivilegeGameName" parameterClass="java.util.List" resultMap="GameNameResult">
+		<![CDATA[
+			SELECT game_id, SUM(used_count) as usedCount FROM gamecenter_privilege WHERE game_id
+		]]>
+		<iterate prepend="in" open="(" close=") group by game_id" conjunction=",">
+			#[]#
+		</iterate>
+	</select>
+</sqlMap>

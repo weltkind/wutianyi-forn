@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="bookIssue">
+	<resultMap class="com.wutianyi.duowan.dataobject.CodeActivityDO" id="CodeActivityResult">
+		<result property="gameId" column="game_id" jdbcType="INTEGER"/>
+		<result property="actState" column="actState" jdbcType="INTEGER"/>
+		<result property="oneSentence" column="oneSentence" jdbcType="VARCHAR"/>
+		<result property="gotCount" column="gotCount" jdbcType="INTEGER"/>
+		<result property="hadBook" column="hadbook" jdbcType="INTEGER"/>
+		<result property="taoCount" column="taocount" jdbcType="INTEGER"/>
+	</resultMap>
+	<select id="fetchCodeActivity" resultMap="CodeActivityResult" parameterClass="java.lang.Integer">
+		<![CDATA[
+			select game_id, actState, oneSentence, gotCount, hadbook, taocount from code_activity where id=#id:INTEGER#
+		]]>
+	</select>
+	<select id="getGameName" resultClass="java.lang.String" parameterClass="java.lang.Integer">
+		<![CDATA[
+			select gameName from code_game where id = #id:INTEGER#
+		]]>
+	</select>
+</sqlMap>
