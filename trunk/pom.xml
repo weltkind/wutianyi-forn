@@ -221,6 +221,13 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-catalina-ant</artifactId>
+			<version>7.0.14</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 
 
@@ -326,9 +333,36 @@
 						<artifactId>maven-jetty-plugin</artifactId>
 						<version>6.1.10</version>
 						<configuration>
-                        	<stopPort>9966</stopPort>
-                       		<stopKey>foo</stopKey>
-              			</configuration>
+							<stopPort>9966</stopPort>
+							<stopKey>foo</stopKey>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<!-- 403错误，身份验证失败 manager和admin账号的权限是不同的 -->
+			<id>deploy-tomcat</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>tomcat-maven-plugin</artifactId>
+						<configuration>
+							<url>http://localhost:8080/manager</url>
+							<username>wuhanjie</username>
+							<password>1234</password>
+							<warFile>${basedir}/target\wutianyi86728_8.war</warFile>
+						</configuration>
+						<executions>
+							<execution>
+								<id>tomcat-deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>
