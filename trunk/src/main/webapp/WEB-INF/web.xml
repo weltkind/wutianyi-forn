@@ -77,4 +77,14 @@
 		<servlet-name>uploadServlet</servlet-name>
 		<url-pattern>/uploadServlet</url-pattern>
 	</servlet-mapping>
+	
+	<!-- 定义springmvc 的使用 -->
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
 </web-app>
