@@ -4,6 +4,14 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 
 public class Test {
+	enum t {
+		One{
+			public void test() {
+				System.out.println("out");
+			}
+		};
+	}
+	
 	private static void deleteFile(File f) {
 		File[] files = f.listFiles();
 
@@ -22,7 +30,5 @@ public class Test {
 	}
 
 	public static void main(String[] args) {
-		File file = new File("G:\\workspace\\noble-yxtq");
-		deleteFile(file);
 	}
 }
