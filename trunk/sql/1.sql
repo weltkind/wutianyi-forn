@@ -34,5 +34,7 @@ select * from gamecenter_recommend_game limit 10;
 select * from code_activity limit 10;
 select * from gamecenter_recommend_hist limit 10;
 select * from gamecenter_subscribe_prvg_msg limit 10;
-select name ,introduction, (select sum(use_count) from gamecenter_privilege where )
-
+select name ,introduction, (select sum(use_count) from gamecenter_privilege where );
+show create table a;
+alter table a auto_increment=10;
+select * from a;
