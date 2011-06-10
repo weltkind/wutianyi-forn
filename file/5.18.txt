@@ -21,3 +21,6 @@ export JPDA_ADDRESS=8000
 export JPDA_TRANSPORT=dt_socket
 bin/catalina.sh jpda start
 
+ grep -c TTransportException /data/yxtq.yy.com/logs/product/yyguild_error_warn.log
+jdk对jar war文件的操作
+jar xvf Struts2Example15.war
