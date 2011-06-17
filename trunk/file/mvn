@@ -24,4 +24,5 @@ install	安装	将该归档添加到本地Maven目录。这一步让其他可能
 deploy	部署	将该归档添加到远程Maven目录。这一步让这个工件能为更多的人所用。
 
 jetty调试
+在environment中增加MAVEN_OPTS环境变量
  -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=8080,server=y,suspend=y
