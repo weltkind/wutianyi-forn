@@ -1,6 +1,9 @@
 mvn下载源码
 mvn dependency:sources
 
+mvn archetype:create -DgroupId=com.taobao.maven -DartifactId=maven-hello-plugin -DarchetypeArtifactId=maven-archetype-mojo
+
+maven 生命周期
 validate	验证	确保当前配置和POM的内容是有效的。这包含对pom文件树的验证。
 initialize	初始化	在执行构建生命周期的主任务之前可以进行初始化。
 generate-sources	生成源码	代码生成器可以开始生成在以后阶段中处理或编译的源代码。
