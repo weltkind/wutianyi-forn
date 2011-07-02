@@ -250,7 +250,26 @@
 				</configuration>
 				<version>2.3.1</version>
 			</plugin>
+			<plugin>
+				<groupId>com.wutianyi.maven</groupId>
+				<artifactId>maven-autoconfig-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>autoconfig</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>
+								autoconfig_compile
+							</goal>
+						</goals>
+						<configuration>
+							<mode>develop</mode>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
+
 		<!-- 可以将pom.xml中定义的properties值build进去resources的文件中 -->
 		<resources>
 			<resource>
