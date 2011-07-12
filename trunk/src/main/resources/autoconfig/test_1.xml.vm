@@ -1,0 +1,7 @@
+#if($mode == "develop")
+	这是开发环境
+#else
+	这是正式环境
+#end
+$test_1
+$test_2

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<properties>
+		<property name="test_1" default-value="wutianyi_1" description="这是吴天翼"></property>
+		<proeprty name="test_2" default-value=""></proeprty>
+	</properties>
+	<generators>
+		<generator source="test_1.xml.vm" dest="test_1.xml"></generator>
+		<generator source="test_2.xml.vm" dest="com/wutianyi/test_2.xml"></generator>
+	</generators>
+</config>
