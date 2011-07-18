@@ -3,6 +3,11 @@ mvn dependency:sources
 
 mvn archetype:create -DgroupId=com.taobao.maven -DartifactId=maven-hello-plugin -DarchetypeArtifactId=maven-archetype-mojo
 
+本地安装：mvn install:install-file -Dfile={file} -DgroupId={groupId} -DartifactId={artifactId}
+部署：deploy:deploy-file
+pluginManagement的作用类似于denpendencyManagement,pluginManagement是用于管理plugin的依赖
+对子项目进行统一的管理
+
 maven 生命周期
 validate	验证	确保当前配置和POM的内容是有效的。这包含对pom文件树的验证。
 initialize	初始化	在执行构建生命周期的主任务之前可以进行初始化。
