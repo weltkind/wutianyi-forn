@@ -5,7 +5,7 @@
 
 	<aop:config>
 		<aop:aspect ref="schemaAspect">
-			<aop:pointcut expression="execution(* com.wutianyi.study.spring.aop.example.schema.SchemaInterface.*(..))" id="poincut"/>
+			<aop:pointcut expression="execution(* com.wutianyi.study.spring.aop.example.schema.SchemaInterface.schema*d(..))" id="poincut"/>
 			<aop:before method="beforeMethodProcess" pointcut-ref="poincut"/>
 		</aop:aspect>
 	</aop:config>
