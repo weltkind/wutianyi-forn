@@ -1,5 +1,7 @@
 package com.wutianyi.study.spring.aop.example;
 
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.DeclareParents;
@@ -39,7 +41,23 @@ public class AspectExample implements Ordered {
 	public void beforeAopTest() {
 		System.out.println("Before the target method process!");
 	}
-
+	
+	@Around("interceptorPublicMethod()")
+	public void aroundAopTest(ProceedingJoinPoint pjp) {
+		long start = System.currentTimeMillis();
+		System.out.println(pjp.getArgs());
+		try {
+			pjp.proceed(pjp.getArgs());
+			Thread.sleep(100);
+		}catch(Throwable e) {
+			e.printStackTrace();
+		}
+		
+		long end = System.currentTimeMillis();
+		pjp.getSignature().getDeclaringTypeName();
+		System.out.println(pjp.getSignature().getDeclaringTypeName() + pjp.getSignature().getName() + " : " + (end - start));
+	}
+	
 	public int getOrder() {
 		return order;
 	}

@@ -17,12 +17,12 @@ public class AopExampleTest extends AbstractJUnit4SpringContextTests {
 	private ImportInterface importInterface;
 	@Test
 	public void testBefore() {
-		serviceExample.testAop();
+		serviceExample.testAop("test");
 	}
 	
 	@Test
 	public void testImportInterface() {
-		importInterface = (ImportInterface) applicationContext.getBean("serviceExample");
-		importInterface.importMethod();
+//		importInterface = (ImportInterface) applicationContext.getBean("serviceExample");
+//		importInterface.importMethod();
 	}
 }
