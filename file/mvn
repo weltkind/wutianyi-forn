@@ -1,4 +1,7 @@
-mvn下载源码
+﻿mvn下载源码
+mvn eclipse:configure-workspace -Declipse.workspace=F:\develop\workspace
+在eclipse中增加m2_repro的设置
+
 mvn dependency:sources
 
 mvn archetype:create -DgroupId=com.taobao.maven -DartifactId=maven-hello-plugin -DarchetypeArtifactId=maven-archetype-mojo
