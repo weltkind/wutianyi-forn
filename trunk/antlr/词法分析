@@ -1,0 +1,5 @@
+词法分析器的总体结构
+class MyLexer extends Lexer;
+options{some options}
+{lexre class members}
+lexical rules

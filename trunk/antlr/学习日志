@@ -1,0 +1,100 @@
+字符集
+	单引号的字符在语法分析器中是不被支持的
+文件结束标志（EOF）
+	-1当作一个字符而不是整数
+字符串
+	常量是一个由双引号括起来的字符序列
+	antlr不允许unicode字符出现在常量中
+记号引用
+	以大写字符开头的标识符成为记号引用，
+规则引用
+	词法规则不能引用语法规则
+动作
+	在花括号中的字符序列是语义动作
+动作的参数：
+	在方括号中的字符序列是动作的参数
+	codeBlock
+	[int scope, String name]
+	returns [int x]
+符号：
+	（）子规则
+	（）*闭包子规则
+	（）+正闭包子规则
+	()?可选
+	{}语义动作
+	[]规则参数
+	{}?语义谓词
+	()=>语法谓词
+	|可选符
+	..范围
+	~非
+	.通配符
+	=赋值
+	:标号符，规则的开始
+	;规则结束
+	<>元素选项
+	class语法类
+	extends 指定语法基类
+	returns 指定规则返回类型
+	options options段
+	tokens tokens段
+	header header段
+	tokens token定义
+Header段
+	一个header段包含了任何由antlr生成的代码在被输出到语法分析器前需要被替换的源码
+语法分析类的定义
+	{optional class code preamble}
+	class YourParserClass extends Parser;
+	options
+	tokens
+	{optional action for instance vars/methods}
+	parser rules...
+词法分析类定义（描述了如何将字符输入流分解成记号流）
+	{optional class code preamble}
+	class YourLexerClass extends Lexer;
+	options
+	tokens
+	{optional action for instance var/method}
+	lexer rules
+	词法分析类和词法分析类可以以任意的顺序出现在语法文件中
+树分析类定义
+	{optional class code preamble}
+	class YourTreeParserClass extends TreeParser
+	options
+	tokens
+	{optional action for instance vars/methods}
+	tree parser rules
+记号段
+	没有对应实际输入的符号与其关联
+	tokens{KEYWORD_VOID="void"
+		;
+		EXPR;
+		DECL;
+	}
+规则的定义
+	使用术语atom代表输入流中的一个元素
+	rulename：alternative_1|alternative_2|...
+	rulename[formal parameters]:...;
+	rulename return[type id]:...;
+	a throws MyException:a;
+	rule{init-action}:...(初始化动作总是会执行)
+	
+	词法分析规则，以大写字符开头
+	语法分析规则以小写字符开头
+树分析规则：
+	rule: A B C;(依次匹配ABC)
+	rule:#(A　B C)匹配一个类型A的节点，然后下降他的子节点列表
+语法分析中.代表一个记号
+
+简单的产生式元素
+	set{Vector ids=null;}:"(" ids=idList")";
+	idList returns[Vector strs]{str = new Vector();}:id:ID
+	{strs.appendElement(id.getText())}("," id2:ID {strs.appendElement(id2.getText());})*
+	
+	class L extends Lexer;
+	options{charVocabulary = '\3'..'\377'}
+	DIGIT:'0'..'9';
+	SL_COMMENT:"//"(~'\n') '\n'
+	
+抽象语法树根结点操作符
+^为后缀的记号引用将此结点强制生成并添加为当前树的根结点
