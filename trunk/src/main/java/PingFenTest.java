@@ -18,7 +18,7 @@ import org.apache.commons.httpclient.methods.PostMethod;
 
 import sun.tools.tree.NewArrayExpression;
 
-import com.wutianyi.pool.concurrent.CountTime;
+//import com.wutianyi.pool.concurrent.CountTime;
 
 /**
  * 
@@ -52,28 +52,28 @@ public class PingFenTest {
 		conn.close();
 		final int maxPrivilegeId = privilegeIds.size();
 
-		CountTime countTime = new CountTime(new Runnable() {
-
-			Random	random	= new Random();
-
-			public void run() {
-				for(int i = 0; i < 100; i ++) {
-					
-					int privilegeId = privilegeIds.get(random.nextInt(maxPrivilegeId));
-					int star = random.nextInt(5) + 1;
-					String url = messageFormat.format(new Object[]{privilegeId, star});
-					HttpMethod method = new PostMethod(url);
-					try {
-						httpClient.executeMethod(method);
-					}catch(HttpException e) {
-						e.printStackTrace();
-					}catch(IOException e) {
-						e.printStackTrace();
-					}
-				}
-
-			}
-		}, 100);
+//		CountTime countTime = new CountTime(new Runnable() {
+//
+//			Random	random	= new Random();
+//
+//			public void run() {
+//				for(int i = 0; i < 100; i ++) {
+//					
+//					int privilegeId = privilegeIds.get(random.nextInt(maxPrivilegeId));
+//					int star = random.nextInt(5) + 1;
+//					String url = messageFormat.format(new Object[]{privilegeId, star});
+//					HttpMethod method = new PostMethod(url);
+//					try {
+//						httpClient.executeMethod(method);
+//					}catch(HttpException e) {
+//						e.printStackTrace();
+//					}catch(IOException e) {
+//						e.printStackTrace();
+//					}
+//				}
+//
+//			}
+//		}, 100);
 
 		System.out.println(privilegeIds);
 

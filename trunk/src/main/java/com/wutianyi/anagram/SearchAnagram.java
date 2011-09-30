@@ -4,6 +4,8 @@ import java.util.concurrent.ExecutionException;
 
 import org.apache.log4j.Logger;
 
+import com.wutianyi.utils.CountTime;
+
 /**
  * @author hanjiewu
  *搜索相应的变位词
@@ -13,7 +15,7 @@ public class SearchAnagram
     private static Logger logger = Logger.getLogger(SearchAnagram.class);
     public static void main(String[] args) throws InterruptedException, ExecutionException
     {
-        String[] anagramWords = new String[] {"pots", "opt", "snap", "stop",
+        final String[] anagramWords = new String[] {"pots", "opt", "snap", "stop",
                 "tops", "pans"};
         Anagram anagram = new Anagram();
         for(String word : anagramWords) {
@@ -22,20 +24,34 @@ public class SearchAnagram
         anagram.saveContent();
         anagram.saveIndex();
         boolean result = false;
-        Handler searchHandler = new HandlerImpl(anagram.getContent_file(), anagram.getIndex_file());
-        for(String word : anagramWords) {
-            result = searchHandler.search(word);
-            if(result) {
-                logger.debug("True");
+        final Handler searchHandler = new HandlerImpl(anagram.getContent_file(), anagram.getIndex_file());
+        
+        CountTime countTime = new CountTime(new Runnable()
+        {
+            
+            @Override
+            public void run()
+            {
+                boolean result = false;
+                
+                while(true) {
+                    for(String word : anagramWords) {
+                        result = searchHandler.search(word);
+                        if(!result) {
+                            logger.debug("false");
+                        }
+                    }
+                    try
+                    {
+                        Thread.sleep(10);
+                    }
+                    catch (InterruptedException e)
+                    {
+                        logger.error(e.getMessage());
+                    }
+                }
             }
-            assert(result);
-        }
-        result = searchHandler.search("test");
-        if(result) {
-            logger.debug("True");
-        } else {
-            logger.debug("false");
-        }
-        assert(result);
+        }, 10);
+        
     }
 }

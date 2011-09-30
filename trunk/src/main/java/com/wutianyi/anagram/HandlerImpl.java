@@ -26,7 +26,7 @@ public class HandlerImpl implements Handler{
 
 	private static ThreadLocal<FileChannel> fileChannelLocal = new ThreadLocal<FileChannel>();
 	private static Logger logger = Logger.getLogger(HandlerImpl.class);
-
+	
 	private ExecutorService executor;
 
 	/**
@@ -77,12 +77,10 @@ public class HandlerImpl implements Handler{
         }
         catch (FileNotFoundException e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         catch (IOException e)
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
             if(null != reader) {
@@ -183,17 +181,24 @@ public class HandlerImpl implements Handler{
 
 		}
 
+		/* (non-Javadoc)
+		 * @see java.lang.Thread#run()
+		 */
 		@Override
 		public void run() {
-			try {
-				input = new FileInputStream(content_file);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			fc = input.getChannel();
+		    fc = fileChannelLocal.get();
+		    if(null == fc) {
+		        try {
+	                input = new FileInputStream(content_file);
+	            } catch (FileNotFoundException e) {
+	                // TODO Auto-generated catch block
+	                e.printStackTrace();
+	            }
+	            fc = input.getChannel();
 
-			fileChannelLocal.set(fc);
+	            fileChannelLocal.set(fc);
+		    }
+			
 			super.run();
 
 		}
