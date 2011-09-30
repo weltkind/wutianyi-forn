@@ -1,5 +1,5 @@
 class DataLexer extends Lexer;
-options{charVocabulary = '\u0000'..'\u00FF'};
+options{charVocabulary = '\u0000'..'\u00FF';}
 SHORT:	'\0' high:. lo:.
 {
 	int v = (((int)high)<<8) + lo;
