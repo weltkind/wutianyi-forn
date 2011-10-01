@@ -1,5 +1,11 @@
 package com.wutianyi.study.mysqlslap.pool;
 
-public interface BeanFactory<T> {
-	T createBean();
+/**
+ * @author hanjiewu
+ *工厂类
+ * @param <T>
+ */
+public interface BeanFactory<T>
+{
+    T createBean();
 }
