@@ -1,0 +1,11 @@
+insert into $table (#foreach($column in $columns)
+	$column
+	#if($velocityCount != $columns.size())
+		, 
+	#end
+#end) values(#foreach($value in $values)
+	$value
+	#if($velocityCount != $values.size())
+		, 
+	#end
+#end)

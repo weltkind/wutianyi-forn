@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wutianyi.ibatis.mapper.NodeMgrMapper">
+	<resultMap type="com.wutianyi.ibatis.mapper.NodeMgrDO" id="NodeMgrDOResult">
+		<result property="id" column="id" />
+		<result property="type" column="type" />
+		<result property="host" column="host" />
+		<result property="port" column="port" />
+		<result property="domain" column="domain" />
+		<result property="weight" column="weight" />
+	</resultMap>
+	
+	<select id="listAllNodeMgr" resultMap="NodeMgrDOResult">
+		select id, type, host, port, domain, weight from nodemgr
+	</select>
+</mapper>

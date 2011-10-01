@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 生成表数据的配置文件信息 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean name="logger" class="com.wutianyi.study.mysqlslap.configuration.TableConfiguration">
+		<property name="databaseName" value="study" />
+		<property name="tableName" value="logger" />
+		<property name="sqlNums" value="10" />
+		<property name="columnsConfig">
+			<list>
+				<bean class="com.wutianyi.study.mysqlslap.configuration.ColumnConfiguration">
+					<constructor-arg value="id" />
+					<constructor-arg value="10" />
+					<constructor-arg value="unique" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+</beans>

@@ -41,6 +41,12 @@ public class FetchMetaDataUtils {
 		return tables;
 	}
 
+	/**
+	 * @param dataBase
+	 * @param table
+	 * @return
+	 * 根据数据和表名称获取表的原始信息
+	 */
 	@SuppressWarnings("unchecked")
 	public static TableMetaData fetchTableMetaData(String dataBase, String table) {
 
@@ -52,12 +58,14 @@ public class FetchMetaDataUtils {
 		}
 		try {
 			tableMetaData = new TableMetaData();
+			//数据库的原始信息
 			DatabaseMetaData metaData = connection.getPoolObject()
 					.getMetaData();
+			//获取主键的信息
 			ResultSet rs = metaData.getPrimaryKeys(dataBase, dataBase, table);
 
 			fillPrimaryInfo(tableMetaData, rs);
-
+			//获取表的全部的列的元数据信息
 			rs = metaData.getColumns(dataBase, dataBase, table, "%");
 			fillColumnInfo(tableMetaData, rs);
 
@@ -68,6 +76,12 @@ public class FetchMetaDataUtils {
 		return tableMetaData;
 	}
 
+	/**
+	 * @param tableMetaData
+	 * @param rs
+	 * @throws SQLException
+	 * 填充列的元信息
+	 */
 	private static void fillColumnInfo(TableMetaData tableMetaData, ResultSet rs)
 			throws SQLException {
 		while (rs.next()) {
@@ -80,6 +94,12 @@ public class FetchMetaDataUtils {
 		}
 	}
 
+	/**
+	 * @param tableMetaData
+	 * @param rs
+	 * @throws SQLException
+	 * 填充主键的信息
+	 */
 	private static void fillPrimaryInfo(TableMetaData tableMetaData,
 			ResultSet rs) throws SQLException {
 		while (rs.next()) {
