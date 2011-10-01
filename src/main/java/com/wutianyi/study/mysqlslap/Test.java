@@ -3,6 +3,10 @@ package com.wutianyi.study.mysqlslap;
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
 
+/**
+ * @author hanjiewu
+ *获取当前的线程信息
+ */
 public class Test {
 	public static void main(String[] args) throws InterruptedException {
 

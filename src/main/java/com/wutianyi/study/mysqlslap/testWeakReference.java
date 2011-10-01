@@ -5,13 +5,17 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 import java.util.WeakHashMap;
 
+/**
+ * @author hanjiewu
+ *弱引用实例的测试用例
+ */
 public class testWeakReference {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws InterruptedException {
 		ReferenceQueue<myWeakObject> queues = new ReferenceQueue<myWeakObject>();
 		System.out
-				.println("=======================�����ö��������ռ����================");
+				.println("=======================开始弱引用测试================");
 
 		myWeakObject mwo = new myWeakObject("myweakobject1");
 		A a = new A("test");
@@ -23,7 +27,7 @@ public class testWeakReference {
 
 		((myWeakObject) wr.get()).show();
 
-		System.out.println("��һ�������ռ�������");
+		System.out.println("开始垃圾回收");
 		
 		Thread thread = new Thread(new myRunnable(queues));
 		thread.start();
@@ -42,13 +46,13 @@ public class testWeakReference {
 		}
 
 		System.out
-				.println("==========================������MAP=========================");
+				.println("==========================开始WeakHashMap测试=========================");
 		WeakHashMap whm = new WeakHashMap();
 		myWeakObject mwo2 = new myWeakObject("myweakobject2");
 		whm.put(mwo2, "XXXXX");
 		mwo2 = null;
 		((myWeakObject) whm.keySet().iterator().next()).show();
-		System.out.println("�ڶ���������գ�����");
+        System.out.println("进行垃圾回收");
 		System.gc();
 		try {
 			Thread.sleep(1000);
@@ -73,11 +77,11 @@ class myWeakObject {
 	}
 
 	public void finalize() {
-		System.out.println(mwname + "�������������ռ����������ռ�������");
+		System.out.println(mwname + " 进行垃圾回收");
 	}
 
 	public void show() {
-		System.out.println(mwname + "���󻹿��Ա����ã�����");
+		System.out.println(mwname + " 进行实例调用");
 	}
 
 	public void setA(A a) {
@@ -102,7 +106,7 @@ class A {
 
 	@Override
 	protected void finalize() throws Throwable {
-		System.out.println("a Ҳ����������ˣ�");
+		System.out.println("a 进行垃圾回收");
 	}
 
 }
