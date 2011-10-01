@@ -1,0 +1,1 @@
+insert into $table (#foreach($column in $columns)$column #if($velocityCount != $columns.size()), #end #end) values(#foreach($column in $columns) #set($num=$velocityCount - 1){$num} #if($velocityCount != $columns.size()), #end #end);
