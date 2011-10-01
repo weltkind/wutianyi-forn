@@ -21,3 +21,16 @@ maxRows 设置查询时返回的行数，0表示全部 0
 useUnicode 是否使用unicode输出，true/false false
 
 characterEncoding 如果useUnicode,该参数制定encoding类型，建议使用8859_1 无
+
+
+CREATE TABLE `statics` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `gmt_create` DATETIME DEFAULT NULL,
+  `gmt_modified` DATETIME DEFAULT NULL,
+  `q_id` INT(5) NOT NULL,
+  `platform` VARCHAR(32) NOT NULL,
+  `sub_platform` VARCHAR(32) NOT NULL,
+  `num` INT(11) DEFAULT NULL,
+  `other` VARCHAR(256) DEFAULT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8

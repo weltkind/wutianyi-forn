@@ -1,8 +1,49 @@
 1.HTTP_Version
+"HTTP" "/" 1*DIGIT "." 1*DIGIT
+
 2.HTTP_URL
+"http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]
+
 3.HTTP_date
+Sun, 06 Nov 1994 08:49:37 GMT ; RFC 822, updated by RFC 1123
+Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036
+Sun Nov 6 08:49:37 1994 ; ANSI C's asctime() format
+
 4.charset=token
-5.content-coding
-6.transfer-coding
+
+
+5.content-coding = token
+token: gzip, compress, deflate, identity(default)
+
+6.transfer-coding = "chunked"(在messageBody中使用的时候，chunked必须)
+
+7.Media Type
+	Multipart type
+8.Product Token
+	User-Agent: CERN-LineMode/2.15 libwww/2.17b3
+	Server: Apache/0.8.4
+9.Quality Values
+
+10.Language Tag
+	en, en-US, en-cockney, i-cherokee, x-pig-latin
+11.Entity Tab
+12.Range Units
+
+第四章
+1.信息类型有request、response两种
+	format:
+		start-line
+		*(message-header CRLF)
+		CRLF
+		[message-body]
+		request-line | status-line
+2.Message Headers
+	分类：general-header
+		request-header
+		response-header
+		entity-header
+3.Message body
+	message-body = entity-body(encoded as per Transfer-Encoding)
+
 
 
