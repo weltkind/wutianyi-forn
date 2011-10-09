@@ -1,5 +1,5 @@
 create table logger(
-	id bigint primary key,
+	id bigint primary key auto_increment,
 	gmt_create datetime,
 	gmt_modified datetime,
 	old_value varchar(3998),
@@ -7,6 +7,9 @@ create table logger(
 	operation_type varchar(128),
 	operator varchar(64)
 );
+
+
+
 create index gmt_create_index on logger(gmt_create);
 alter table logger modify;
 
