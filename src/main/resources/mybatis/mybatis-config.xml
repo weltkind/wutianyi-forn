@@ -2,18 +2,55 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+	<!-- properties设置外部化的属性 ,也可以在build的时候增加properties参数-->
+	<properties resource="mybatis/config.properties">
+		<property name="username" value="root"></property>
+		<property name="password" value="860728"></property>
+	</properties>
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<!-- 是否允许多个结果集从当一语句返回 -->
+		<setting name="multipleResultSetEnabled" value="true"/>
+		<setting name="useColumnLable" value="true"/>
+		<setting name="useGeneratedKeys" value="false"/>
+		<!-- 列到字段的映射，PARTIAL只会映射简单的，FULL会自动映射嵌套的 -->
+		<setting name="autoMappingBehavior" value="PARTIAL"/>
+		<!-- 默认的执行器,SIMPLE,REUSE,BATCH -->
+		<setting name="defaultExecutorType" value="SIMPLE"/>
+		<setting name="defaultStatementTimeout" value="2500"/>
+	</settings>
+	<typeAliases>
+		<typeAlias alias="" type=""></typeAlias>
+	</typeAliases>
+	<typeHandlers>
+		<typeHandler javaType="String" jdbcType="VARCHAR" handler="com.wutianyi.study.ibatis.mapper.deep.LoggerTypeHandler" />
+	</typeHandlers>
+	<objectFactory type="com.wutianyi.study.ibatis.mapper.deep.LoggerFactory">
+		<property name="someProperties" value="test_1"/>
+	</objectFactory>
+	<plugins>
+		<plugin interceptor="com.wutianyi.study.ibatis.mapper.deep.LoggerFacotry">
+			<property name="someProperty" value="100"/>
+		</plugin>
+	</plugins>
 	<environments default="development">
 		<environment id="development">
-			<transactionManager type="JDBC"/>
+			<!-- 两种事物处理方式，JDBC：依赖从数据源获取的链接来管理事物，MANAGED几乎不做什么，依赖容器来进行相应的事物管理，但是本身默认会关闭链接 -->
+			<transactionManager type="JDBC">
+				<property name="closeConnetion" value="false"/>
+			</transactionManager>
 			<dataSource type="POOLED">
 				<property name="driver" value="${driver}"/>
 				<property name="url" value="${url}"/>
-				<property name="username" value="${username"/>
-				<property name="password" value="#{password}"/>
+				<property name="username" value="${username}"/>
+				<property name="password" value="${password}"/>
 			</dataSource>
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resources=""/>
+		<mapper resource="mybatis/mapper/logger-mapper.xml"/>
+		<!-- url引用的完全限定名（file:///） -->
+		<mapper url="file:///"/>
 	</mappers>
 </configuration>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "F:\workspace\wutianyi\src\main\resources\mybatis\mybatis.dtd">
+<mapper namespace="com.wutianyi.study.ibatis.mapper.deep.NodeMgrMapperAn">
+	<!-- eviction={LRU,FIFO,SOFT,WEAK} -->
+	<cache eviction="LRU" flushInterval="5000" size="512" readOnly="true"/>
+	<resultMap type="com.wutianyi.study.ibatis.mapper.deep.LoggerDO"
+		id="LoggerDOResult">
+		<result property="id" column="id" />
+		<result property="gmtCreate" column="gmt_create" />
+		<result property="gmtModified" column="gmt_modified" />
+		<result property="oldValue" column="old_value"  typeHandler=""/>
+		<result property="newValue" column="new_value" />
+		<result property="operationType" column="operation_type" />
+		<result property="operator" column="operator" />
+	</resultMap>
+	<resultMap type="com.wutianyi.study.ibatis.mapper.deep.LoggerDO" id="_Result">
+		<id property="" column=""//>
+		
+		<result/>
+		<constructor>
+			<idArg column="id" javaType="int"/>
+			<arg column="new_value" javaType="String"/>
+		</constructor>
+		<association property="" select="" column="{prop1=col1,prop2=col2}" resultMap=""></association>
+		<discriminator javaType="int" column="">
+			<case value="1" resultMap=""></case>
+		</discriminator>
+		<collection property="" ofType="" select="" column="" javaType="ArrayList"></collection>
+	</resultMap>
+	<select id="listAllLogger" flushCache="true" useCache="true" statementType="PREPARED" resultMap="LoggerDOResult" parameterType="int" resultType="hashmap">
+		select id, gmt_create, gmt_Modified, old_value, new_value, operation_type, operator from logger where id=#{id}
+	</select>
+	
+	<insert id="insertLogger" useGeneratedKeys="true" keyProperty="id" parameterType="com.wutianyi.study.ibatis.mapper.deep.LoggerDO">
+		<selectKey keyProperty="id" resultType="int" order="BEFORE">
+			select last_insert_id();
+		</selectKey>
+		insert into logger(gmt_create,gmt_modified,old_value,new_value,operation_type,operator)
+		values(#{gmtCreate},#{gmt_modified},#{oldValue},#{newValue,javaType=string, jdbcType=VARCHAR, },#{operationType},#{operator})
+	</insert>
+	<update id="updateLogger" parameterType="com.wutianyi.study.ibatis.mapper.deep.LoggerDO">
+		update logger set new_value=#{newValue} where id=#{id}
+	</update>
+	
+	<delete id="deleteLogger" parameterType="int">
+		delete from logger where id=#{id}
+		<set>
+			<if test=""></if>
+		</set>
+	</delete>
+	
+	<sql id="loggerColumn">
+		id,gmt_create,gmt_modified,old_value,new_value,operation_type,operator
+	</sql>
+	
+	<select id="fetchLogger" parameterType="int" resultMap="LoggerDOResult">
+		select <include refid="loggerColumn"/>
+		from logger
+		<!-- 如果元素返回任何内容就插入where，如果返回的是以and或or开头的则跳过 -->
+		<where>
+		<if test="id != null">
+			and id = #{id}
+		</if>
+		</where>
+		<!-- 以上面where一样的结果 -->
+		<trim prefix="where" prefixOverrides="and|or"></trim>
+		<choose>
+			<when test=""></when>
+			<otherwise></otherwise>
+		</choose>
+		<foreach collection="list" index="index" item="item" open="(" separator="," close=")"></foreach>
+	</select>
+</mapper>

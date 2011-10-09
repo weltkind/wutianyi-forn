@@ -11,6 +11,11 @@
 			<list>
 				<bean class="com.wutianyi.study.mysqlslap.configuration.ColumnConfiguration">
 					<constructor-arg value="id" />
+					<constructor-arg value="1" />
+					<constructor-arg value="unique" />
+				</bean>
+				<bean class="com.wutianyi.study.mysqlslap.configuration.ColumnConfiguration">
+					<constructor-arg value="old_value" />
 					<constructor-arg value="10" />
 					<constructor-arg value="unique" />
 				</bean>
