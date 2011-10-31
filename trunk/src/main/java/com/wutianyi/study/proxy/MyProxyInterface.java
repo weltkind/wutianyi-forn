@@ -1,6 +1,6 @@
 package com.wutianyi.study.proxy;
 
-public interface ProxyInterface
+public interface MyProxyInterface
 {
     public String echo();
 }

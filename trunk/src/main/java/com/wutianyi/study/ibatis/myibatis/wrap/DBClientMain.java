@@ -1,14 +1,13 @@
-package com.wutianyi.study.ibatis.myibatis;
+package com.wutianyi.study.ibatis.myibatis.wrap;
 
 import java.util.List;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.ibatis.session.Configuration;
 
-import com.wutianyi.study.ibatis.myibatis.wrap.LoggerDO;
+import com.wutianyi.study.ibatis.myibatis.LoggerMapper;
 
-
-public class MybatisMain
+public class DBClientMain
 {
     public static void main(String[] args)
     {
@@ -19,9 +18,11 @@ public class MybatisMain
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setPassword("860728");
         configuration.addMapper(LoggerMapper.class);
-        MySqlSession sqlSession = new MySqlSession(dataSource, configuration);
+        DBClientSqlSession sqlSession = new DBClientSqlSession(dataSource, configuration);
         LoggerMapper mapper = sqlSession.getMapper(LoggerMapper.class);
-        List<LoggerDO> loggers = mapper.listAllLogger(1000000000);
+        List<LoggerDO> loggers = mapper.listAllLogger(2);
+        LoggerDO logger = mapper.fetchLogger(new Object[]{9, "mC4jHuz9dQ"});
         System.out.println(loggers.size());
+        System.out.println(logger.getNew_value());
     }
 }
