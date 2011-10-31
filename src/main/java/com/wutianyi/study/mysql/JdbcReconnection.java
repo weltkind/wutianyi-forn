@@ -12,12 +12,12 @@ public class JdbcReconnection {
 		try {
 			Connection conn = DriverManager
 					.getConnection(
-							"jdbc:mysql://localhost:3306/work?autoReconnect=true&initialTimeout=5",
+							"jdbc:mysql://localhost:3306/study?autoReconnect=true&initialTimeout=5",
 							"root", "860728");
 			while (true) {
 				try {
 					Statement sm = conn.createStatement();
-					ResultSet rs = sm.executeQuery("select * from noble");
+					ResultSet rs = sm.executeQuery("select * from logger");
 					while (rs.next()) {
 						System.out.println(rs.getString(1));
 					}
