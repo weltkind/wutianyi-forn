@@ -86,8 +86,8 @@ public class MyTest
     {
         System.out.println(System.currentTimeMillis());
         Calendar c2 = Calendar.getInstance();
-        Calendar calendar = new GregorianCalendar(2011, 8, 1, 0, 0, 0);
-        Calendar c1 = new GregorianCalendar(2011, 8, 14, 0, 0, 0);
+        Calendar calendar = new GregorianCalendar(2011, 10, 1, 0, 0, 0);
+        Calendar c1 = new GregorianCalendar(2011, 10, 15, 0, 0, 0);
         System.out.println(c1.get(Calendar.HOUR_OF_DAY));
 
         System.out.println(c2.getTimeInMillis());
