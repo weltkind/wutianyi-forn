@@ -7,7 +7,10 @@ import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.text.DateFormat;
 import java.text.MessageFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -18,7 +21,9 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.math.RandomUtils;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -87,14 +92,14 @@ public class MyTest
         System.out.println(System.currentTimeMillis());
         Calendar c2 = Calendar.getInstance();
         Calendar calendar = new GregorianCalendar(2011, 10, 1, 0, 0, 0);
-        Calendar c1 = new GregorianCalendar(2011, 10, 15, 0, 0, 0);
+        Calendar c1 = new GregorianCalendar(2011, 10, 16, 0, 0, 0);
         System.out.println(c1.get(Calendar.HOUR_OF_DAY));
 
         System.out.println(c2.getTimeInMillis());
         System.out.println(calendar.getTimeInMillis());
         System.out.println(c1.getTimeInMillis());
 
-        Date date = new Date(1315843200000L);
+        Date date = new Date(1321372800000L);
         System.out.println(date);
     }
 
@@ -127,6 +132,10 @@ public class MyTest
         }
         // System.out.println(builder.toString());
         reader.close();
+        
+        String str = "\"{sadfasf\\\"}\"";
+        System.out.println(str);
+        System.out.println(str.replaceAll("\\\\", "").replaceAll("\\\"\\{", "{").replaceFirst("\\}\\\"", "}"));
     }
 
     @Test
@@ -168,5 +177,36 @@ public class MyTest
         {
             System.out.println(matcher.group(1));
         }
+    }
+
+    @Test
+    public void randomStrs()
+    {
+        for (int j = 0; j < 10; j ++)
+        {
+            String q = "";
+            int[] i =
+            { 0, 1, 2, 3, 4, 5, 6 };
+            int l = 6;
+            int r = (int) (Math.random() * l);
+            q += i[r] + ",";
+            swap(i, r, l);
+            l = 5;
+            r = (int) (Math.random() * l);
+            q += i[r] + ",";
+            swap(i, r, l);
+            l = 4;
+            r = (int) (Math.random() * l);
+            q += i[r];
+            System.out.println(q);
+        }
+
+    }
+
+    void swap(int[] i, int s, int e)
+    {
+        int t = i[s];
+        i[s] = i[e];
+        i[e] = t;
     }
 }
