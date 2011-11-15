@@ -29,7 +29,12 @@ public class MysqlTest
     {
         Connection conn = dataSource.getConnection();
         Statement sm = conn.createStatement();
-        ResultSet rs = sm.executeQuery("select id,old_value as oldValue,new_value as newValue from logger");
+        ResultSet rs = sm.executeQuery("select date,sum(sum) sum, sum(count) count from t_cesu group by date");
+//        while(rs.next())
+//        {
+//            System.out.println(rs.getString(1));
+//            System.out.println(rs.getString(2));
+//        }
         ResultSetMetaData rsmd = rs.getMetaData();
         
         int count = rsmd.getColumnCount();

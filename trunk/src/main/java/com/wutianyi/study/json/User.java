@@ -2,7 +2,9 @@ package com.wutianyi.study.json;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.codehaus.jackson.JsonNode;
@@ -103,39 +105,82 @@ public class User
         user_1.setVerified(true);
         user_1.setUserImage("wutianyi".getBytes());
         mapper.writeValue(new File("user.json"), user_1);
-        Map<Integer, User>map = new HashMap<Integer, User>();
+        Map<Integer, User> map = new HashMap<Integer, User>();
         map.put(1, user_1);
         mapper.writeValue(new File("user-map.json"), map);
-        
+
         User user = mapper.readValue(new File("user.json"), User.class);
         System.out.println(user.getName().getFirst());
-        //对于容器类型的处理
+        // 对于容器类型的处理
         Map<Integer, User> result = mapper.readValue(new File("user-map.json"), new TypeReference<Map<Integer, User>>()
         {
         });
         System.out.println(result.get(1).getName().getFirst());
-        //树的处理
-        
+        // 树的处理
+
         JsonNode rootNode = mapper.readValue(new File("user.json"), JsonNode.class);
         JsonNode nameNode = rootNode.path("name");
         String lastName = nameNode.path("last").getTextValue();
         System.out.println(lastName);
-        ((ObjectNode)nameNode).put("last", "jsoner");
+        ((ObjectNode) nameNode).put("last", "jsoner");
         mapper.writeValue(new File("user.json"), rootNode);
-//        Map<String, User> result = mapper.readValue(new File("user.json"), new TypeReference<Map<String, User>>()
-//        {
-//        });
-        
+        // Map<String, User> result = mapper.readValue(new File("user.json"),
+        // new TypeReference<Map<String, User>>()
+        // {
+        // });
+
         TreeMapper treeMapper = new TreeMapper();
         ObjectNode userOb = treeMapper.objectNode();
         ObjectNode nameOb = userOb.putObject("name");
-        nameOb.put("first","joe");
+        nameOb.put("first", "joe");
         nameOb.put("last", "Sixpack");
         userOb.put("gender", Gender.MALE.toString());
         userOb.put("verified", false);
         byte[] imageData = "wutianyi".getBytes();
         userOb.put("userImage", imageData);
-        
-       
+
+        Map<String, List<a>> map1 = new HashMap<String, List<a>>();
+        List<a> list = new ArrayList<a>();
+        list.add(user_1.new a("test_1", "test_1"));
+        list.add(user_1.new a("test_2", "test_2"));
+        map1.put("1", list);
+        map1.put("2", list);
+//        mapper.writeValue(System.out, map1);
+        List<String> l_1 = new ArrayList<String>();
+        l_1.add("{\"电信\":{\"first\":1,\"second\":88},\"联通\":{\"first\":3,\"second\":338}} ");
+        mapper.writeValue(System.out, l_1);
+    }
+
+    public class a
+    {
+        String A;
+        String B;
+
+        public a(String _A, String _B)
+        {
+            this.A = _A;
+            this.B = _B;
+        }
+
+        public String getA()
+        {
+            return A;
+        }
+
+        public void setA(String a)
+        {
+            A = a;
+        }
+
+        public String getB()
+        {
+            return B;
+        }
+
+        public void setB(String b)
+        {
+            B = b;
+        }
+
     }
 }
