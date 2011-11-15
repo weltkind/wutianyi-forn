@@ -1,21 +1,32 @@
 package com.wutianyi.study.weight;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main
 {
 
-    private AtomicInteger degree;
+    private int degree = 0;
+
+    private int hashCode = 0;
 
     private Map<Position, Object> objs;
+
+    private Map<Integer, Integer> hashCodeMap = new HashMap<Integer, Integer>();
+
+    // 轮询
+    private List<Object> listObjects;
+    private AtomicInteger index;
 
     public Main(WeightObject... _objs)
     {
         objs = new HashMap<Position, Object>();
-        degree = new AtomicInteger();
+        listObjects = new ArrayList<Object>();
+        index = new AtomicInteger();
         if (null != _objs)
         {
             for (WeightObject obj : _objs)
@@ -36,35 +47,59 @@ public class Main
 
     public void addObjs(Object obj, int weight)
     {
-        if (null == obj)
+        synchronized (this)
         {
-            return;
+            if (null == obj)
+            {
+                return;
+            }
+            weight = weight >= 0 ? weight : 0;
+            int begin = degree;
+            for (int i = 0; i < weight; i++)
+            {
+                hashCodeMap.put(degree, hashCode);
+                degree++;
+            }
+            Position p = new Position(begin, degree, hashCode);
+            hashCode++;
+            objs.put(p, obj);
+            listObjects.add(obj);
         }
-        weight = weight >= 0 ? weight : 0;
-
-        Position p = new Position(degree.get(), degree.addAndGet(weight));
-        objs.put(p, obj);
     }
 
     public Object getObj()
     {
-        int position = (int) (Math.random() * degree.get());
-        return objs.get(new Position(position));
+        int position = (int) (Math.random() * degree);
+        int hashCode = hashCodeMap.get(position);
+        return objs.get(new Position(position, hashCode));
+    }
+
+    public Object getObjRoll()
+    {
+        int _index = index.getAndIncrement();
+        _index = _index % hashCode;
+        if (index.get() > 100000)
+        {
+            index.set(0);
+        }
+        return listObjects.get(_index);
     }
 
     public static void main(String[] args)
     {
         Main m = new Main(new WeightObject("wutianyi", 4));
+        m.addObjs(1, 2);
+        m.addObjs(2, 0);
+        m.addObjs(3, 3);
         for (int i = 0; i < 10; i++)
         {
             System.out.println(m.getObj());
         }
-        
-        for(int i = 0 ; i < 10 ; i ++)
+        System.out.println("-------");
+        for(int i = 0; i < 10; i ++)
         {
-            System.out.println(new Integer(i).hashCode());
+            System.out.println(m.getObjRoll());
         }
-    
     }
 }
 
@@ -90,24 +125,27 @@ class Position implements Serializable
     int begin;
     int end;
     int position;
+    int hashCode;
 
-    Position(int _begin, int _end)
+    Position(int _begin, int _end, int _hashCode)
     {
         this.begin = _begin;
         this.end = _end;
+        this.hashCode = _hashCode;
     }
 
-    Position(int _position)
+    Position(int _position, int _hashCode)
     {
         this.position = _position;
+        this.hashCode = _hashCode;
     }
 
     public int hashCode()
     {
-        
-        return 0;
+
+        return hashCode;
     }
-    
+
     public boolean equals(Object obj)
     {
         if (obj instanceof Position)
@@ -121,7 +159,12 @@ class Position implements Serializable
             {
                 return true;
             }
+            if (position >= _position.begin && position < _position.end)
+            {
+                return true;
+            }
         }
+
         return false;
     }
 
