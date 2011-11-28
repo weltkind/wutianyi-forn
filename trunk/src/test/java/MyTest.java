@@ -89,18 +89,16 @@ public class MyTest
     @Test
     public void time()
     {
-        System.out.println(System.currentTimeMillis());
         Calendar c2 = Calendar.getInstance();
         Calendar calendar = new GregorianCalendar(2011, 10, 1, 0, 0, 0);
-        Calendar c1 = new GregorianCalendar(2011, 10, 16, 0, 0, 0);
-        System.out.println(c1.get(Calendar.HOUR_OF_DAY));
+        Calendar c1 = new GregorianCalendar(2011, 10, 26, 0, 0, 0);
 
         System.out.println(c2.getTimeInMillis());
         System.out.println(calendar.getTimeInMillis());
         System.out.println(c1.getTimeInMillis());
-
-        Date date = new Date(1321372800000L);
+        Date date = new Date(1322236800000L);
         System.out.println(date);
+
     }
 
     @Test

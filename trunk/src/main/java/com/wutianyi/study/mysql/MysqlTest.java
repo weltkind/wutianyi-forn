@@ -29,7 +29,7 @@ public class MysqlTest
     {
         Connection conn = dataSource.getConnection();
         Statement sm = conn.createStatement();
-        ResultSet rs = sm.executeQuery("select date,sum(sum) sum, sum(count) count from t_cesu group by date");
+        ResultSet rs = sm.executeQuery("SELECT b1.id as f_id, b1.b_name as f_name, b2.id as s_id, b2.b_name as s_name FROM t_business b1 RIGHT JOIN t_business b2 ON b1.id = b2.b_id WHERE b1.id IS NOT NULL");
 //        while(rs.next())
 //        {
 //            System.out.println(rs.getString(1));
