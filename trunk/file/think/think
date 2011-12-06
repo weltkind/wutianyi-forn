@@ -7,3 +7,14 @@
 
 	函数merge，多个lis，进行merge
 	建立map来保存结果
+	
+获取size
+nextIndex = 3
+	nextIndex = (nextIndex + 1) % size;
+	
+updateLogBean
+	softid
+	name
+	date
+	function
+	 
