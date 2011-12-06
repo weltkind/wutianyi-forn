@@ -239,6 +239,11 @@
 			<artifactId>mybatis</artifactId>
 			<version>3.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.wltea</groupId>
+			<artifactId>IKAnalyzer</artifactId>
+			<version>3.2.8</version>
+		</dependency>
 	</dependencies>
 
 
@@ -256,14 +261,14 @@
 				<version>2.3.1</version>
 			</plugin>
 			<plugin>
-        		<groupId>org.apache.maven.plugins</groupId>
-       	 		<artifactId>maven-eclipse-plugin</artifactId>
-        		<version>2.8</version>
-        		<configuration>
-         			<downloadSources>true</downloadSources>
-          			<downloadJavadocs>true</downloadJavadocs>
-       			 </configuration>
-      		</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>com.wutianyi.maven</groupId>
 				<artifactId>maven-autoconfig-plugin</artifactId>
