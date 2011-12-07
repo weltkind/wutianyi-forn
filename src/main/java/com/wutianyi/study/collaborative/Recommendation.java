@@ -230,6 +230,11 @@ public class Recommendation
             System.out.println("(" + r.getFirst() + " : " + r.getSecond() + ")");
 
         }
+        System.out.println("---------------------------------------------");
         List<Pair<Float, String>> r1 = getRecommendations("Toby");
+        for(Pair<Float, String> r : r1)
+        {
+            System.out.println("(" + r.getFirst() + " : " + r.getSecond() + ")");
+        }
     }
 }
