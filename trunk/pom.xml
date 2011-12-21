@@ -239,11 +239,6 @@
 			<artifactId>mybatis</artifactId>
 			<version>3.0.1</version>
 		</dependency>
-		<dependency>
-			<groupId>org.wltea</groupId>
-			<artifactId>IKAnalyzer</artifactId>
-			<version>3.2.8</version>
-		</dependency>
 	</dependencies>
 
 
@@ -268,24 +263,6 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.wutianyi.maven</groupId>
-				<artifactId>maven-autoconfig-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>autoconfig</id>
-						<phase>initialize</phase>
-						<goals>
-							<goal>
-								autoconfig_compile
-							</goal>
-						</goals>
-						<configuration>
-							<mode>develop</mode>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 
