@@ -1,6 +1,7 @@
 package com.wutianyi.study.discoverygroup;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
@@ -22,12 +23,14 @@ import org.wltea.analyzer.IKSegmentation;
 import org.wltea.analyzer.Lexeme;
 import org.xml.sax.SAXException;
 
+import com.wutianyi.utils.OperatorTimes;
 import com.wutianyi.utils.Pair;
 
 public class SinaParser implements Parser
 {
 
     private DocumentBuilder documentBuilder;
+    private OperatorTimes times = new OperatorTimes();
 
     public SinaParser() throws ParserConfigurationException
     {
@@ -41,8 +44,15 @@ public class SinaParser implements Parser
         if (null != file && file.isFile())
         {
             Document document = documentBuilder.parse(file);
+            System.out.println(file.getName());
+            System.out.print("Get Title Time");
+            times.start();
             String title = getTitle(document);
+            times.end();
+            System.out.print("Get Word Time");
+            times.start();
             Map<String, Integer> words = getWords(document);
+            times.end();
             if (StringUtils.isNotBlank(title))
             {
                 results = new Pair<String, Pair<String, Integer>[]>();
@@ -54,6 +64,7 @@ public class SinaParser implements Parser
                     wordRs[size] = new Pair<String, Integer>(entry.getKey(), entry.getValue());
                     ++size;
                 }
+                results.setSecond(wordRs);
             }
 
         }
@@ -61,7 +72,7 @@ public class SinaParser implements Parser
     }
 
     /**
-     * 获取全部的单词
+     * 鑾峰彇鍏ㄩ儴鐨勫崟璇�
      * 
      * @param document
      * @return
@@ -94,7 +105,7 @@ public class SinaParser implements Parser
 
     private void analyse(Map<String, Integer> words, String content)
     {
-        IKSegmentation seg = new IKSegmentation(new StringReader(content));
+        IKSegmentation seg = new IKSegmentation(new StringReader(content), true);
         try
         {
             Lexeme lexeme = seg.next();
@@ -106,7 +117,8 @@ public class SinaParser implements Parser
                 {
                     count = new Integer(0);
                 }
-                words.put(text, ++count);
+                ++count;
+                words.put(text, count);
                 lexeme = seg.next();
             }
         }
@@ -117,7 +129,7 @@ public class SinaParser implements Parser
     }
 
     /**
-     * 获取博客的title
+     * 鑾峰彇鍗氬鐨則itle
      * 
      * @param document
      * @return
@@ -135,38 +147,62 @@ public class SinaParser implements Parser
         return title;
     }
 
-    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException
+    /**
+     * 构造基本结构
+     * 
+     * @param file
+     * @param weibos
+     * @param words
+     * @throws SAXException
+     * @throws IOException
+     */
+    private void initStruct(File file, Map<String, Pair<String, Integer>[]> weibos, Map<String, Integer> words)
+            throws SAXException, IOException
     {
-        File file = new File("file/rss");
-        File[] files = file.listFiles();
-        Parser parser = new SinaParser();
-        Map<String, Pair<String, Integer>[]> weibos = new HashMap<String, Pair<String, Integer>[]>();
-        Map<String, Integer> maps = new HashMap<String, Integer>();
-        for (File f : files)
+        Pair<String, Pair<String, Integer>[]> r = parser(file);
+        if (null == r)
         {
-            Pair<String, Pair<String, Integer>[]> r = parser.parser(f);
-            weibos.put(r.getFirst(), r.getSecond());
-            for (Pair<String, Integer> p : r.getSecond())
-            {
-                Integer count = maps.get(p.getFirst());
-                if (null == count)
-                {
-                    count = new Integer(0);
-                }
-                maps.put(p.getFirst(), ++count);
-            }
+            return;
         }
+        weibos.put(r.getFirst(), r.getSecond());
+        for (Pair<String, Integer> p : r.getSecond())
+        {
+            Integer count = words.get(p.getFirst());
+            if (null == count)
+            {
+                count = new Integer(0);
+            }
+            ++count;
+            words.put(p.getFirst(), count);
+        }
+    }
+
+    /**
+     * 根据基数对短语进行过滤
+     * 
+     * @param maps
+     * @return
+     */
+    private Map<String, Integer> filterWords(Map<String, Integer> maps)
+    {
+        Map<String, Integer> words = new HashMap<String, Integer>();
         for (Entry<String, Integer> entry : maps.entrySet())
         {
-            float factor = entry.getValue() / 5;
-            if (factor < 0.1 || factor > 0.5)
+            float factor = (float) (entry.getValue() / 5.0);
+            if (factor > 0.2 && factor < 0.5)
             {
-                maps.remove(entry.getKey());
+                words.put(entry.getKey(), entry.getValue());
             }
         }
-        PrintWriter pw = new PrintWriter(new File("result.txt"));
+        return words;
+    }
+
+    private void outputResult(Map<String, Pair<String, Integer>[]> weibos, Map<String, Integer> words, String output)
+            throws FileNotFoundException
+    {
+        PrintWriter pw = new PrintWriter(new File(output));
         pw.print("Blog");
-        for (Entry<String, Integer> entry : maps.entrySet())
+        for (Entry<String, Integer> entry : words.entrySet())
         {
             pw.print("\t" + entry.getKey());
         }
@@ -180,7 +216,7 @@ public class SinaParser implements Parser
             {
                 set.add(p.getFirst());
             }
-            for (Entry<String, Integer> word : maps.entrySet())
+            for (Entry<String, Integer> word : words.entrySet())
             {
                 if (set.contains(word.getKey()))
                 {
@@ -196,5 +232,26 @@ public class SinaParser implements Parser
         }
         pw.flush();
         pw.close();
+    }
+
+    public void parserFiles(File[] files, String outputFile) throws SAXException, IOException
+    {
+        Map<String, Pair<String, Integer>[]> weibos = new HashMap<String, Pair<String, Integer>[]>();
+        Map<String, Integer> maps = new HashMap<String, Integer>();
+        for (File f : files)
+        {
+            initStruct(f, weibos, maps);
+        }
+        Map<String, Integer> words = filterWords(maps);
+        outputResult(weibos, words, outputFile);
+
+    }
+
+    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException
+    {
+        File file = new File("file/rss");
+        File[] files = file.listFiles();
+        Parser parser = new SinaParser();
+        parser.parserFiles(files, "result.txt");
     }
 }
