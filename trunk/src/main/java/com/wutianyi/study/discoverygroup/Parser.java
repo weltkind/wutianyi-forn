@@ -9,5 +9,6 @@ import com.wutianyi.utils.Pair;
 
 public interface Parser
 {
-    public Pair<String, Pair<String, Integer>[]> parser(File file) throws SAXException, IOException;
+    
+    public void parserFiles(File[] files, String outputFile) throws SAXException, IOException;
 }
