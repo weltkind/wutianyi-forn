@@ -29,7 +29,7 @@ public class Strength
         score += (checkRepetition(2, password).length() - password.length()) * 1;
         score += (checkRepetition(3, password).length() - password.length()) * 1;
         score += (checkRepetition(4, password).length() - password.length()) * 1;
-        
+
         int len = password.length();
         int numCount = 0;
         int symbolCount = 0;
@@ -161,18 +161,25 @@ public class Strength
 
     public static void main(String[] args) throws IOException
     {
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("E:\\download\\cracklib-words-20080507\\cracklib-words")));
-        String line = br.readLine();
-        while(StringUtils.isNotBlank(line))
-        {
-            int score = testStrength(line, "");
-            if(score >= 85)
-            {
-                System.out.println(line);
-                
-            }
-            line = br.readLine();
-        }
-//        System.out.println(testStrength("1234567890", ""));
+//        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(
+//                "E:\\download\\cracklib-words-20080507\\cracklib-words")));
+//        String line = br.readLine();
+//        StringBuilder builder = new StringBuilder();
+//        int i = 0;
+//        while (StringUtils.isNotBlank(line))
+//        {
+//            int score = testStrength(line, "");
+//            if (score >= 60)
+//            {
+//                ++i;
+//                // System.out.println(line);
+//                builder.append(line + ",@");
+//            }
+//            line = br.readLine();
+//        }
+//        System.out.println(i);
+//        System.out.println(builder.toString());
+        // System.out.println(testStrength("1234567890", ""));
+        System.out.println(testStrength("123dDfghij", ""));
     }
 }

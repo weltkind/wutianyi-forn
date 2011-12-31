@@ -1,5 +1,7 @@
 package com.wutianyi.study.net.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Select;
@@ -23,4 +25,16 @@ public interface NetMapper
     
     @Insert("insert into hiddenurl(fromid, toid, strength) values(#{fromId},#{toId},#{strength})")
     public int insertHiddenUrl(HiddenUrl url);
+    
+    @Select("select toid from wordhidden where fromid in (${key})")
+    public List<Integer> getHiddenIdsByWord(String key);
+    
+    @Select("select fromid from hiddenurl where toid in (${key})")
+    public List<Integer> getHiddenIdsByUrl(String key);
+    
+    @Select("select strenght from wordhidden where fromid=#{wordId} and toid=#{hiddenId}")
+    public Float getStrenghtByWordId(int wordId, int hiddenId);
+    
+    @Select("select strenght from hiddenurl where fromid=#{hiddenId} and toid=#{urlId}")
+    public Float getStrenghtByUrlId(int urlId, int hiddenId);
 }
