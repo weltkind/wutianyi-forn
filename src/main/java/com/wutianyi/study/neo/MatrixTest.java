@@ -15,9 +15,12 @@ import org.neo4j.graphdb.ReturnableEvaluator;
 import org.neo4j.graphdb.StopEvaluator;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.TraversalPosition;
-import org.neo4j.graphdb.Traverser;
 import org.neo4j.graphdb.Traverser.Order;
+import org.neo4j.graphdb.traversal.Evaluators;
+import org.neo4j.graphdb.traversal.TraversalDescription;
+import org.neo4j.graphdb.traversal.Traverser;
 import org.neo4j.kernel.EmbeddedGraphDatabase;
+import org.neo4j.kernel.Traversal;
 
 public class MatrixTest
 {
@@ -87,7 +90,18 @@ public class MatrixTest
         }
     }
 
-    private static Traverser getFriends(final Node person)
+    private static Traverser getFriendsN(final Node person)
+    {
+        TraversalDescription td = Traversal.description().breadthFirst()
+                .relationships(RelTypes.KNOWS, Direction.OUTGOING).evaluator(Evaluators.excludeStartPosition());
+
+        Traversal.description().breadthFirst().relationships(RelTypes.KNOWS, Direction.OUTGOING)
+                .relationships(RelTypes.CODED_BY, Direction.OUTGOING)
+                .evaluator(Evaluators.returnWhereLastRelationshipTypeIs(RelTypes.CODED_BY));
+        return td.traverse(person);
+    }
+
+    private static org.neo4j.graphdb.Traverser getFriends(final Node person)
     {
         return person.traverse(Order.BREADTH_FIRST, StopEvaluator.END_OF_GRAPH, ReturnableEvaluator.ALL_BUT_START_NODE,
                 RelTypes.KNOWS, Direction.OUTGOING);
@@ -99,7 +113,7 @@ public class MatrixTest
         Node neoNode = getNeoNode();
         System.out.println(neoNode.getProperty("name") + "'s friends:");
         // START SNIPPET: friends-usage
-        Traverser friendsTraverser = getFriends(neoNode);
+        org.neo4j.graphdb.Traverser friendsTraverser = getFriends(neoNode);
         int numberOfFriends = 0;
         for (Node friendNode : friendsTraverser)
         {
@@ -114,7 +128,7 @@ public class MatrixTest
     }
 
     // START SNIPPET: find-hackers
-    private static Traverser findHackers(final Node startNode)
+    private static org.neo4j.graphdb.Traverser findHackers(final Node startNode)
     {
         return startNode.traverse(Order.BREADTH_FIRST, StopEvaluator.END_OF_GRAPH, new ReturnableEvaluator()
         {
@@ -131,7 +145,7 @@ public class MatrixTest
     {
         System.out.println("Hackers:");
         // START SNIPPET: find--hackers-usage
-        Traverser traverser = findHackers(getNeoNode());
+        org.neo4j.graphdb.Traverser traverser = findHackers(getNeoNode());
         int numberOfHackers = 0;
         for (Node hackerNode : traverser)
         {
