@@ -69,7 +69,7 @@ public class Principal
         Node groupNode = group.getUnderlyingNode();
         for (Relationship relationShip : underlyingNode.getRelationships())
         {
-            if (relationShip.getOtherNode(groupNode).equals(groupNode))
+            if (relationShip.getOtherNode(underlyingNode).equals(groupNode))
             {
                 return relationShip;
             }

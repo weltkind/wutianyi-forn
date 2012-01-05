@@ -15,6 +15,16 @@ public class CalcMain
 //
 //        System.out.println(t.toStringList());
 //        CalcTreeWalker walker = new CalcTreeWalker();
+
+//        int r = walker.expr(t);
+//        System.out.println("value is " + r);
+//        CalcLexer lexer = new CalcLexer(new DataInputStream(System.in));
+//        CalcParser parser = new CalcParser(lexer);
+//        parser.expr();
+//        CommonAST t = (CommonAST) parser.getAST();
+//
+//        System.out.println(t.toStringList());
+//        CalcTreeWalker walker = new CalcTreeWalker();
 //
 //        int r = walker.expr(t);
 //        System.out.println("value is " + r);
