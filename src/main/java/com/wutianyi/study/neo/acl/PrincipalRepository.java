@@ -12,6 +12,8 @@ import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.index.Index;
 import org.neo4j.graphdb.index.IndexHits;
+import org.neo4j.graphdb.traversal.Evaluator;
+import org.neo4j.graphdb.traversal.Evaluators;
 import org.neo4j.graphdb.traversal.TraversalDescription;
 import org.neo4j.graphdb.traversal.Traverser;
 import org.neo4j.helpers.collection.IterableWrapper;
@@ -28,8 +30,8 @@ public class PrincipalRepository
     {
         this.graphDb = graphDb;
         this.index = index;
-        principals = getRootNode(graphDb, RelTypes.PRINCIPALS);
-        folders = getRootNode(graphDb, RelTypes.CONTENT_ROOTS);
+        principals = getRootNode(graphDb, RelTypes.PRINCIPALS, Principal.NAME, "principals");
+        folders = getRootNode(graphDb, RelTypes.CONTENT_ROOTS, "folders", "folders");
     }
 
     public Principal createRootPrincipal(String name) throws Exception
@@ -39,7 +41,7 @@ public class PrincipalRepository
         try
         {
             rootPrincipal.getUnderlyingNode().setProperty("type", "root");
-            index.add(rootPrincipal.getUnderlyingNode(), Principal.NAME, "root");
+            index.add(rootPrincipal.getUnderlyingNode(), Principal.NAME, "root_group");
             tx.success();
             return rootPrincipal;
         }
@@ -52,7 +54,7 @@ public class PrincipalRepository
     public Iterable<Principal> getNumberGroups(Principal principal)
     {
         TraversalDescription td = Traversal.description().depthFirst()
-                .relationships(RelTypes.IS_MEMBER_OF_GROUP, Direction.OUTGOING);
+                .relationships(RelTypes.IS_MEMBER_OF_GROUP, Direction.OUTGOING).evaluator(Evaluators.excludeStartPosition());
         Traverser t = td.traverse(principal.getUnderlyingNode());
         return new IterableWrapper<Principal, Path>(t)
         {
@@ -122,7 +124,7 @@ public class PrincipalRepository
         }
     }
 
-    private Node getRootNode(GraphDatabaseService graphDb, RelTypes relType)
+    private Node getRootNode(GraphDatabaseService graphDb, RelTypes relType, String name, String value)
     {
         Relationship relationShip = graphDb.getReferenceNode().getSingleRelationship(relType, Direction.OUTGOING);
         if (null != relationShip)
@@ -135,7 +137,7 @@ public class PrincipalRepository
             try
             {
                 Node principals = graphDb.createNode();
-                principals.setProperty(Principal.NAME, "principals");
+                principals.setProperty(name, value);
 
                 graphDb.getReferenceNode().createRelationshipTo(principals, relType);
                 return principals;

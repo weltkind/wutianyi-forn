@@ -15,7 +15,7 @@
             #galleria{height:320px;}
             
         </style>
-        
+        <% %>
         <!-- load jQuery -->
         <script src="js/jquery-1.4.2.min.js"></script>
         
@@ -27,7 +27,6 @@
     <div class="content">
         <h1>可愛的傻豬：</h1>
         <p>我愿化身石桥，受五百年风吹 五百年日晒 五百年雨打，只求能夠化解對你心中的傷害！</p>
-        
         <div id="galleria">
         	<c:forEach items="${imagePath}" var="image">
         		<c:out value="${image}"></c:out>
