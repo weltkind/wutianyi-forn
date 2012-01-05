@@ -32,7 +32,7 @@ public class PrincipalRepository
         folders = getRootNode(graphDb, RelTypes.CONTENT_ROOTS);
     }
 
-    public void createRootPrincipal(String name) throws Exception
+    public Principal createRootPrincipal(String name) throws Exception
     {
         Principal rootPrincipal = createPrincipal(name);
         Transaction tx = graphDb.beginTx();
@@ -41,6 +41,7 @@ public class PrincipalRepository
             rootPrincipal.getUnderlyingNode().setProperty("type", "root");
             index.add(rootPrincipal.getUnderlyingNode(), Principal.NAME, "root");
             tx.success();
+            return rootPrincipal;
         }
         finally
         {

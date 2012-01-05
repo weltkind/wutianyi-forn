@@ -17,7 +17,7 @@ public class MainTest
     private PrincipalRepository repository;
 
     @BeforeClass
-    public void setUp() throws IOException
+    public void setUp() throws Exception
     {
         File file = new File("acl");
         if (file.exists() && file.isDirectory())
@@ -30,7 +30,7 @@ public class MainTest
         init();
     }
 
-    private void init()
+    private void init() throws Exception
     {
         Principal allPrincipal = repository.createRootPrincipal("All principals");
     }
