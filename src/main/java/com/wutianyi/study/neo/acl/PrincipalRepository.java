@@ -1,5 +1,7 @@
 package com.wutianyi.study.neo.acl;
 
+import static com.wutianyi.study.neo.acl.RelTypes.*;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -12,7 +14,6 @@ import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.index.Index;
 import org.neo4j.graphdb.index.IndexHits;
-import org.neo4j.graphdb.traversal.Evaluator;
 import org.neo4j.graphdb.traversal.Evaluators;
 import org.neo4j.graphdb.traversal.TraversalDescription;
 import org.neo4j.graphdb.traversal.Traverser;
@@ -31,7 +32,69 @@ public class PrincipalRepository
         this.graphDb = graphDb;
         this.index = index;
         principals = getRootNode(graphDb, RelTypes.PRINCIPALS, Principal.NAME, "principals");
-        folders = getRootNode(graphDb, RelTypes.CONTENT_ROOTS, "folders", "folders");
+        folders = getRootNode(graphDb, RelTypes.CONTENT_ROOTS, FileContent.FILE_CONTENT, "folders");
+    }
+
+    public void addSecurity(Principal principal, FileContent fileContent, byte flag)
+    {
+        Transaction tx = graphDb.beginTx();
+        try
+        {
+            Relationship rs = getSecurityRelationShip(principal, fileContent);
+            if (rs == null)
+            {
+                rs = principal.getUnderlyingNode().createRelationshipTo(fileContent.getUnderlyingNode(), SECURITY);
+            }
+            rs.setProperty("flags", flag);
+            tx.success();
+        }
+        finally
+        {
+            tx.finish();
+        }
+    }
+
+    public byte getSecurityFlags(Principal principal, FileContent fileContent)
+    {
+
+        Iterable<Principal> principals = getNumberGroups(principal);
+        Iterable<FileContent> parents = fileContent.getParents();
+        byte flag = 0;
+
+        for (Principal p : principals)
+        {
+            for (FileContent f : parents)
+            {
+                Iterable<Relationship> rss = p.getUnderlyingNode().getRelationships(SECURITY, Direction.OUTGOING);
+                for (Relationship rs : rss)
+                {
+                    if (rs.getOtherNode(p.getUnderlyingNode()).equals(f.getUnderlyingNode()))
+                    {
+                        flag = (byte) ((Byte) rs.getProperty("flags") | flag);
+                    }
+                }
+            }
+        }
+
+        return flag;
+    }
+
+    private Relationship getSecurityRelationShip(Principal principal, FileContent fileContent)
+    {
+        Node principalNode = principal.getUnderlyingNode();
+        Node fileContentNode = fileContent.getUnderlyingNode();
+
+        for (Relationship rs : principalNode.getRelationships())
+        {
+            if (rs.getType().equals(SECURITY))
+            {
+                if (rs.getOtherNode(principalNode).equals(fileContentNode))
+                {
+                    return rs;
+                }
+            }
+        }
+        return null;
     }
 
     public Principal createRootPrincipal(String name) throws Exception
@@ -54,7 +117,7 @@ public class PrincipalRepository
     public Iterable<Principal> getNumberGroups(Principal principal)
     {
         TraversalDescription td = Traversal.description().depthFirst()
-                .relationships(RelTypes.IS_MEMBER_OF_GROUP, Direction.OUTGOING).evaluator(Evaluators.excludeStartPosition());
+                .relationships(RelTypes.IS_MEMBER_OF_GROUP, Direction.OUTGOING);
         Traverser t = td.traverse(principal.getUnderlyingNode());
         return new IterableWrapper<Principal, Path>(t)
         {
@@ -92,6 +155,16 @@ public class PrincipalRepository
         return new Principal(principalNode);
     }
 
+    public FileContent getFileContentByName(String name)
+    {
+        Node fileContentNode = index.get(FileContent.FILE_CONTENT, name).getSingle();
+        if (null == fileContentNode)
+        {
+            throw new IllegalArgumentException("FileContent[" + name + "] not found");
+        }
+        return new FileContent(fileContentNode);
+    }
+
     /**
      * 创建一个principal
      * 
@@ -124,6 +197,41 @@ public class PrincipalRepository
         }
     }
 
+    public FileContent createFileContent(String name, FileContent parent) throws Exception
+    {
+        return createFileContent(name, parent, HAS_CHILD_CONTENT);
+    }
+
+    public FileContent createFileContent(String name, FileContent parent, RelTypes relType) throws Exception
+    {
+        Transaction tx = graphDb.beginTx();
+        try
+        {
+            Node newFileContent = graphDb.createNode();
+            newFileContent.setProperty(FileContent.FILE_CONTENT, name);
+            parent.getUnderlyingNode().createRelationshipTo(newFileContent, relType);
+            Node existNode = index.get(FileContent.FILE_CONTENT, name).getSingle();
+            if (null != existNode)
+            {
+                tx.failure();
+                throw new Exception("The file content name already exist!");
+            }
+            newFileContent.setProperty(FileContent.FILE_CONTENT, name);
+            index.add(newFileContent, FileContent.FILE_CONTENT, name);
+            tx.success();
+            return new FileContent(newFileContent);
+        }
+        finally
+        {
+            tx.finish();
+        }
+    }
+
+    public FileContent createRootFileContent(String name) throws Exception
+    {
+        return createFileContent(name, new FileContent(folders), CONTENT_ROOT);
+    }
+
     private Node getRootNode(GraphDatabaseService graphDb, RelTypes relType, String name, String value)
     {
         Relationship relationShip = graphDb.getReferenceNode().getSingleRelationship(relType, Direction.OUTGOING);
@@ -151,9 +259,8 @@ public class PrincipalRepository
 
     public static void main(String[] args) throws IOException
     {
-        File dbFile = new File("acl");
-        FileUtils.deleteDirectory(dbFile);
-        
-        
+        byte a = 0;
+        byte b = 1;
+        System.out.println(a | b);
     }
 }

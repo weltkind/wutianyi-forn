@@ -40,7 +40,7 @@ public class Principal
     {
         return underlyingNode.getGraphDatabase();
     }
-
+    
     public void addNumberShip(Principal group)
     {
         Transaction tx = graphDb().beginTx();
