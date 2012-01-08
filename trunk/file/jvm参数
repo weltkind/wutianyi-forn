@@ -1,0 +1,10 @@
+-Xmx1024m
+-Xms1024m
+-Xmm500m(新生代大小)
+
+-XX:+PrintGCDetails
+-XX:+PrintGCTimesStamps
+-XX:+PrintGCApplicationStoppedTime
+-XX:+PrintGCApplicationConcurrentTime
+
+-XX:+UseConcMarkSweepGC（选择垃圾回收器）
