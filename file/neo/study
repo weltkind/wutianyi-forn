@@ -1,0 +1,21 @@
+操作的设计：减少对file、disk、IO层的操作
+事务文件
+性能问题：
+	磁盘的读写
+	1-2GB 数千万
+	3-4GB 数亿
+	
+	查看io的等待情况，确定是否需要调整heap 的大小
+	
+	事物的大小要适中（小了，过多的磁盘操作，大了可能会导致内存溢出）
+	
+对于事务的提交会更新日志文件，但是数据不会马上写入文件，等到数据库关闭或日志轮换
+
+会将storage file into a number of equally sized window
+
+Configuration
+use_memory_mapped_buffers 如果为false则使用neo自己的内存
+	true 则heap = total ram - mapped memory size
+Object cache 会根据heap 的大小进行相应的调整
+
+对于mapped memory的设置问题，如果遍历比较作用，那么node和relationship的cache比较多
