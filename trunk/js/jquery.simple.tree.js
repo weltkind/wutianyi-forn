@@ -106,7 +106,6 @@ jQuery.fn.simpleTree = function(opt) {
 
 					}
 				};
-
 				TREE.setTreeNodes = function(obj, useParent, curLevel) {
 					obj = useParent ? obj.parent() : obj;
 					var temp = curLevel ? '>ul>li>span' : 'li>span';
@@ -318,7 +317,7 @@ jQuery.fn.simpleTree = function(opt) {
 					TREE.setTreeNodes(obj, false);
 				};
 
-				// ¸ø¸ù½ÚµãÌí¼Óµã»÷ÊÂÇéÓÃÀ´´¥·¢ÓÒ±ßÒ³ÃæµÄË¢ÐÂ,Õâ±ßÊÇ¶Ô¸ù½Úµã×÷µ¥¶ÀµÄ´¦Àí
+				// ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½Ò³ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ç¶Ô¸ï¿½Úµï¿½ï¿½ï¿½5Ä´ï¿½ï¿½ï¿½
 				jQuery("span:first", ROOT)
 						.bind(
 								"click",
