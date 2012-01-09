@@ -23,7 +23,7 @@ public class KeyWordAnalyzer
     {
 
         File[] files = new File[]
-        { new File("E:\\shuju\\91"), new File("E:\\shuju\\92") };
+        { new File("E:\\shuju\\txl\\58"), new File("E:\\shuju\\txl\\59") };
         Map<String, Map<String, Node>> results = new HashMap<String, Map<String, Node>>();
         for (File f : files)
         {
@@ -71,6 +71,10 @@ public class KeyWordAnalyzer
                             n.setResult(Integer.parseInt(count));
                             n.setPlatform(platform);
                             ks.put(keyword, n);
+                        }
+                        if(n.getResult() == 0)
+                        {
+                            n.setResult(Integer.parseInt(count));
                         }
                         n.setCount(n.getCount() + 1);
 

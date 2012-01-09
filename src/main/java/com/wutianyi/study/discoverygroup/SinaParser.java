@@ -77,7 +77,7 @@ public class SinaParser implements Parser
      * @param document
      * @return
      */
-    private Map<String, Integer> getWords(Document document)
+    public Map<String, Integer> getWords(Document document)
     {
         Map<String, Integer> words = new HashMap<String, Integer>();
         NodeList items = document.getElementsByTagName("item");
@@ -129,7 +129,6 @@ public class SinaParser implements Parser
     }
 
     /**
-     * 鑾峰彇鍗氬鐨則itle
      * 
      * @param document
      * @return
