@@ -36,7 +36,6 @@ public class JCKAnalyseUtils
                     count = 0;
                 }
                 maps.put(text, ++count);
-
                 lexeme = seg.next();
             }
             if (maps.size() > 0)

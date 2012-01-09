@@ -5,8 +5,11 @@ import java.io.IOException;
 
 import org.xml.sax.SAXException;
 
-import com.wutianyi.utils.Pair;
-
+/**
+ * 解析文件的方式，并且将其输出
+ * @author hanjiewu
+ *
+ */
 public interface Parser
 {
     

@@ -17,4 +17,12 @@ public class MyStringUtils extends StringUtils
         return defaultValue;
     }
 
+    public static int convertInt(Object obj, int defaultValue)
+    {
+        if (null == obj || !(obj instanceof Integer))
+        {
+            return defaultValue;
+        }
+        return (Integer) obj;
+    }
 }
