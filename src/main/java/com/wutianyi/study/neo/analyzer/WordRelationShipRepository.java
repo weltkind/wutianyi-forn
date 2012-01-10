@@ -2,7 +2,9 @@ package com.wutianyi.study.neo.analyzer;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -21,7 +23,13 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 import com.wutianyi.study.discoverygroup.SinaParser;
+import com.wutianyi.utils.OperatorTimes;
 
+/**
+ * 需要定义好相关事务的大小问题
+ * @author hanjie.wuhj
+ *
+ */
 public class WordRelationShipRepository
 {
 
@@ -42,6 +50,8 @@ public class WordRelationShipRepository
 
     private Node root;
 
+    private OperatorTimes operatorTimes = new OperatorTimes();
+    
     public WordRelationShipRepository(GraphDatabaseService graphDb)
     {
         this.graphDb = graphDb;
@@ -79,6 +89,7 @@ public class WordRelationShipRepository
             }
             catch (Exception e)
             {
+            	e.printStackTrace();
             }
         }
     }
@@ -90,6 +101,7 @@ public class WordRelationShipRepository
      */
     public void addWords(Collection<String> c)
     {
+    	operatorTimes.start();
         if (null == c || c.size() == 0)
         {
             return;
@@ -109,17 +121,22 @@ public class WordRelationShipRepository
                 {
                     word = w;
                     nextWord = w;
+                     i ++;
                     continue;
                 }
                 else
                 {
                     word = nextWord;
                 }
-                i ++;
                 nextWord = w;
+                operatorTimes.start();
                 getWordRelationShips(word, nextWord);
+                System.out.print("GetWordRelationShips ");
+                operatorTimes.end();
             }
         }
+        System.out.print("AddWords Total ");
+        operatorTimes.end();
     }
 
     /**
@@ -136,14 +153,18 @@ public class WordRelationShipRepository
 
         Relationship relationShip = null;
         // 获取两个单词之家的联系
-        for (Relationship rs : wordNode.getRelationships())
+        if(wordNode.hasRelationship())
         {
-            if (rs.getOtherNode(wordNode).equals(nextWordNode))
+        	for (Relationship rs : wordNode.getRelationships())
             {
-                relationShip = rs;
-                break;
+                if (rs.getOtherNode(wordNode).equals(nextWordNode))
+                {
+                    relationShip = rs;
+                    break;
+                }
             }
         }
+        
         // 创建关系并且设置关系中的count属性的值
         relationShip = createRelationShip(wordNode, nextWordNode, relationShip);
         return relationShip;
@@ -195,9 +216,10 @@ public class WordRelationShipRepository
             }
             catch (Exception e)
             {
+            	e.printStackTrace();
             }
         }
-        return null;
+        return node;
     }
 
     /**
@@ -271,7 +293,12 @@ public class WordRelationShipRepository
             Document document = documentBuilder.parse(f);
             Map<String, Integer> words = parser.getWords(document);
             repository.addWords(words.keySet());
+            break;
         }
+//        List<String> test = new ArrayList<String>();
+//        test.add("TEst_1");
+//        test.add("test_2");
+//        repository.addWords(test);
     }
     
 }
