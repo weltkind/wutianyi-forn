@@ -35,11 +35,15 @@ public class NeoBaseTest {
 			FileUtils.deleteDirectory(file);
 		}
 		Map<String, String> config = new HashMap<String, String>();
-		config.put("neostore.nodestore.db.mapped_memory", "10M");
-		config.put("string_block_size", "60");
-		config.put("array_block_size", "300");
-		config.put("cache_type", "none");//soft, weak, strong
-		graphDb = new EmbeddedGraphDatabase(path);
+		config.put(Constants.USER_MEMORY_MAPPED_BUFFERS, "true");
+		config.put(Constants.NEOSTORE_NODESTORE_DB_MAPPED_MEMORY, "10M");
+		config.put(Constants.NEOSTORE_RELATIONSHIPSTORE_DB_MAPPED_MEMORY, "20M");
+		config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_MAPPED_MEMORY, "10M");
+		config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_INDEX_KEYS_MAPPED_MEMORY, "5M");
+		config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_INDEX_MAPPED_MEMORY, "5M");
+		config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_STRINGS_MAPPED_MEMORY, "30M");
+		config.put(Constants.DUMP_CONFIGURATION, "true");
+		graphDb = new EmbeddedGraphDatabase(path, config);
 	}
 	
 	//对日志文件大小的调整
