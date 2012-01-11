@@ -27,8 +27,9 @@ import com.wutianyi.utils.OperatorTimes;
 
 /**
  * 需要定义好相关事务的大小问题
+ * 
  * @author hanjie.wuhj
- *
+ * 
  */
 public class WordRelationShipRepository
 {
@@ -48,10 +49,12 @@ public class WordRelationShipRepository
 
     private Index<Node> index;
 
+    private Index<Relationship> relationIndex;
+
     private Node root;
 
     private OperatorTimes operatorTimes = new OperatorTimes();
-    
+
     public WordRelationShipRepository(GraphDatabaseService graphDb)
     {
         this.graphDb = graphDb;
@@ -66,6 +69,7 @@ public class WordRelationShipRepository
         // }
         // });
         index = graphDb.index().forNodes("words");
+        relationIndex = graphDb.index().forRelationships("relationship");
         // 拿到根节点
         root = index.get(NAME, ROOT_WORD).getSingle();
         if (null == root)
@@ -89,7 +93,7 @@ public class WordRelationShipRepository
             }
             catch (Exception e)
             {
-            	e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
@@ -101,7 +105,7 @@ public class WordRelationShipRepository
      */
     public void addWords(Collection<String> c)
     {
-    	operatorTimes.start();
+        operatorTimes.start();
         if (null == c || c.size() == 0)
         {
             return;
@@ -121,7 +125,7 @@ public class WordRelationShipRepository
                 {
                     word = w;
                     nextWord = w;
-                     i ++;
+                    i++;
                     continue;
                 }
                 else
@@ -153,9 +157,9 @@ public class WordRelationShipRepository
 
         Relationship relationShip = null;
         // 获取两个单词之家的联系
-        if(wordNode.hasRelationship())
+        if (wordNode.hasRelationship())
         {
-        	for (Relationship rs : wordNode.getRelationships())
+            for (Relationship rs : wordNode.getRelationships())
             {
                 if (rs.getOtherNode(wordNode).equals(nextWordNode))
                 {
@@ -164,7 +168,7 @@ public class WordRelationShipRepository
                 }
             }
         }
-        
+
         // 创建关系并且设置关系中的count属性的值
         relationShip = createRelationShip(wordNode, nextWordNode, relationShip);
         return relationShip;
@@ -186,6 +190,8 @@ public class WordRelationShipRepository
             if (null == relationShip)
             {
                 relationShip = word.createRelationshipTo(nextWord, RelTypes.NEXT_WORD);
+                relationShip.setProperty(NAME, word.getProperty(NAME) + "_" + nextWord.getProperty(NAME));
+                relationIndex.add(relationShip, NAME, word.getProperty(NAME) + "_" + nextWord.getProperty(NAME));
             }
 
             relationShip.setProperty(COUNT, (Integer) relationShip.getProperty(COUNT, 0) + 1);
@@ -216,7 +222,7 @@ public class WordRelationShipRepository
             }
             catch (Exception e)
             {
-            	e.printStackTrace();
+                e.printStackTrace();
             }
         }
         return node;
@@ -284,21 +290,23 @@ public class WordRelationShipRepository
         WordRelationShipRepository repository = new WordRelationShipRepository(graphDb);
         File file = new File("file/rss");
         File[] files = file.listFiles();
-        for(File f : files)
+        int sum = 0;
+        for (File f : files)
         {
-            if(f.isDirectory())
+            if (f.isDirectory())
             {
                 continue;
             }
             Document document = documentBuilder.parse(f);
             Map<String, Integer> words = parser.getWords(document);
             repository.addWords(words.keySet());
-            break;
+            sum += words.size();
         }
-//        List<String> test = new ArrayList<String>();
-//        test.add("TEst_1");
-//        test.add("test_2");
-//        repository.addWords(test);
+        System.out.println("total words: " + sum);
+        // List<String> test = new ArrayList<String>();
+        // test.add("TEst_1");
+        // test.add("test_2");
+        // repository.addWords(test);
     }
-    
+
 }
