@@ -39,7 +39,7 @@ public class WordRelationShipRepository
     /**
      * word节点中保存的名称
      */
-    static final String NAME = "word";
+    public static final String NAME = "word";
     /**
      * word 中next 关系中的次数
      */

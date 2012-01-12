@@ -16,6 +16,10 @@ import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.RelationshipType;
 import org.neo4j.graphdb.Transaction;
+import org.neo4j.graphdb.index.Index;
+import org.neo4j.graphdb.index.IndexManager;
+import org.neo4j.graphdb.index.ReadableIndex;
+import org.neo4j.kernel.Config;
 import org.neo4j.kernel.EmbeddedGraphDatabase;
 import org.neo4j.kernel.impl.transaction.TxModule;
 import org.neo4j.kernel.impl.transaction.XaDataSourceManager;
@@ -27,6 +31,8 @@ public class NeoBaseTest {
 
 	private Transaction tx;
 
+	private Index<Node> index;
+	
 	@BeforeClass
 	public static void setUp() throws IOException {
 		String path = "graphalgorithm";
@@ -35,7 +41,7 @@ public class NeoBaseTest {
 			FileUtils.deleteDirectory(file);
 		}
 		Map<String, String> config = new HashMap<String, String>();
-		config.put(Constants.USER_MEMORY_MAPPED_BUFFERS, "true");
+		config.put(Constants.USE_MEMORY_MAPPED_BUFFERS, "true");
 		config.put(Constants.NEOSTORE_NODESTORE_DB_MAPPED_MEMORY, "10M");
 		config.put(Constants.NEOSTORE_RELATIONSHIPSTORE_DB_MAPPED_MEMORY, "20M");
 		config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_MAPPED_MEMORY, "10M");
@@ -44,6 +50,16 @@ public class NeoBaseTest {
 		config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_STRINGS_MAPPED_MEMORY, "30M");
 		config.put(Constants.DUMP_CONFIGURATION, "true");
 		graphDb = new EmbeddedGraphDatabase(path, config);
+		
+		//配置index的参数
+		Map<String, String> indexConfig = new HashMap<String, String>();
+		indexConfig.put(IndexManager.PROVIDER, "lucene");
+		indexConfig.put("type", "fulltext");//exact or fulltext
+		indexConfig.put("to_lower_case", "true");//false or true
+		//indexConfig.put("analyzer","${className}");
+		indexConfig.put(Config.NODE_KEYS_INDEXABLE, "name,count");
+		indexConfig.put(Config.NODE_AUTO_INDEXING, "true");
+		ReadableIndex<Node> index = graphDb.index().getNodeAutoIndexer().getAutoIndex();
 	}
 	
 	//对日志文件大小的调整
