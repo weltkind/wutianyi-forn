@@ -1,12 +1,10 @@
 package com.wutianyi.study.neo.queryindex;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -34,7 +32,7 @@ public class QueryBase
         String path = "worddb";
         
         Map<String, String> config = new HashMap<String, String>();
-        config.put(Constants.USER_MEMORY_MAPPED_BUFFERS, "true");
+        config.put(Constants.USE_MEMORY_MAPPED_BUFFERS, "true");
         config.put(Constants.NEOSTORE_NODESTORE_DB_MAPPED_MEMORY, "10M");
         config.put(Constants.NEOSTORE_RELATIONSHIPSTORE_DB_MAPPED_MEMORY, "20M");
         config.put(Constants.NEOSTORE_PROPERTYSTORE_DB_MAPPED_MEMORY, "10M");
