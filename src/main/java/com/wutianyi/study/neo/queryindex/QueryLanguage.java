@@ -2,6 +2,7 @@ package com.wutianyi.study.neo.queryindex;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.junit.AfterClass;
@@ -68,9 +69,21 @@ public class QueryLanguage
         result = engine.execute("start a=node(3),x=node(9,5) match p1=shortestPath(a-[*..3]->x) return p1");
         System.out.println(result.toString());
 
-        result = engine.execute("start a=node(4),x=node(9,5) match p1=a-[r:NEXT_WORD]->x return a,x,length(p1),p1,r.count");
+        result = engine
+                .execute("start a=node(4),x=node(9,5) match p1=a-[r:NEXT_WORD]->x return a,x,length(p1),p1,r.count");
         System.out.println(result.toString());
 
+        params = new HashMap<String, Object>();
+        params.put("name", "要");
+        result = engine.execute(
+                "start a=node:words(word={name}) match a-[r:NEXT_WORD]->x return x.word, r.count order by r.count desc", params);
+        System.out.println(result.columns());
+        System.out.println(result.toString());
+        Iterator<String> i = result.columnAs("x.word");
+        while(i.hasNext())
+        {
+            System.out.println(i.next());
+        }
         // start n=node(3,1) where (n.age<30 and a.name="") or not(n.name="")
         // return n
         // start n=node(3,1) where n.name=~/Tob.*/ return n

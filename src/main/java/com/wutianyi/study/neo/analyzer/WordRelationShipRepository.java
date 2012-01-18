@@ -41,7 +41,7 @@ public class WordRelationShipRepository
      */
     public static final String NAME = "word";
     /**
-     * word 中next 关系中的次数
+     * word 中next 关系中的次数 
      */
     static final String COUNT = "count";
 
