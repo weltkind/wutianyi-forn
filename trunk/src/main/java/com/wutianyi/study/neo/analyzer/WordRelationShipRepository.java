@@ -2,9 +2,7 @@ package com.wutianyi.study.neo.analyzer;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -193,7 +191,6 @@ public class WordRelationShipRepository
                 relationShip.setProperty(NAME, word.getProperty(NAME) + "_" + nextWord.getProperty(NAME));
                 relationIndex.add(relationShip, NAME, word.getProperty(NAME) + "_" + nextWord.getProperty(NAME));
             }
-
             relationShip.setProperty(COUNT, (Integer) relationShip.getProperty(COUNT, 0) + 1);
             tx.success();
             return relationShip;
