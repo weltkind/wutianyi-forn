@@ -75,15 +75,19 @@ public class QueryLanguage
 
         params = new HashMap<String, Object>();
         params.put("name", "要");
-        result = engine.execute(
-                "start a=node:words(word={name}) match a-[r:NEXT_WORD]->x return x.word, r.count order by r.count desc", params);
+        result = engine
+                .execute(
+                        "start a=node:words(word={name}) match a-[r:NEXT_WORD]->x return x.word, r.count order by r.count desc",
+                        params);
         System.out.println(result.columns());
         System.out.println(result.toString());
         Iterator<String> i = result.columnAs("x.word");
-        while(i.hasNext())
+        while (i.hasNext())
         {
             System.out.println(i.next());
         }
+        result = engine.execute("start a=node(9) match p=a<-[r:NEXT_WORD]-x where ID(x)!=8 return p,count(x),ID(x) order by count(x) ");
+        System.out.println(result.toString());
         // start n=node(3,1) where (n.age<30 and a.name="") or not(n.name="")
         // return n
         // start n=node(3,1) where n.name=~/Tob.*/ return n
@@ -91,7 +95,7 @@ public class QueryLanguage
         // start n=node(3,1) where n.belt return n
         // start n=node(3,1) where n.belt? ='white' return n
         // start n=node(1),b=node(3,2) match a<-[r?]-b where r is null return b
-        // start n=node(1) return n.name
+        // start n=node(1) return n.nameXt
         // start a=node(1) match (a)-->(b) return distinct b
         // start n=node(2) match (n)-->(x) return n, count(*)
         // start n=node(1,2,3,4) return count(n.property?)

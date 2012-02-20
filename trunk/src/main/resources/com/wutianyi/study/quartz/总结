@@ -1,0 +1,25 @@
+
+具体的业务，实现Job接口。
+JobDetail，包含具体的业务类、以及配置信息（JobDataMap）
+Trigger,SimpleTrigger类似于Timer,CornTrigger可以用于定时，定点的执行业务
+
+Jobs and Trigger 需要指定名称和组
+
+有状态和没有状态的 jobs
+没有状态的jobs， jobdatamap中的信息，在jobs被加入到scheduler之后就不会改变
+有状态的jobs implements StatefulJob 但是不能够并发执行
+
+jobs的属性：
+持久化、易变、请求恢复、listener（TriggerListener, JobListener）
+
+Calendars，可以用于去掉在指定的一段时间中执行job
+
+TriggerUtils
+Cron Expressions
+Seconds Minute Hours Day-of-Month Month Day-of-Week
+
+TriggerListener JobListener 可以添加为全局的对所有的job和trigger都触发和对指定的trigger或job触发
+SchedulerListener
+
+JobStores 通过配置文件的方式告知scheduler使用哪个jobstore，不要在代码中直接使用
+RAMJobStore：org.quartz.jobStore.class = org.quartz.simpl.RAMJobStore

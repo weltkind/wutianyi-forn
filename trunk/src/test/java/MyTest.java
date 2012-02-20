@@ -21,6 +21,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.RandomUtils;
@@ -75,7 +76,6 @@ public class MyTest
         System.out.println(str.replace("/120", "/320"));
         String[] str1 = new String[]
         {};
-
     }
 
     @Test

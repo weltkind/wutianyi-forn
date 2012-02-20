@@ -24,8 +24,8 @@ public class ExampleJob extends QuartzJobBean{
 	@Override
 	protected void executeInternal(JobExecutionContext context)
 			throws JobExecutionException {
-		System.out.println(context.getJobDetail().getName());
-		System.out.println(context.getJobDetail().getGroup());
+//		System.out.println(context.getJobDetail().getName());
+//		System.out.println(context.getJobDetail().getGroup());
 		System.out.println(timeout);
 		
 		Trigger t = context.getTrigger();
@@ -42,11 +42,11 @@ public class ExampleJob extends QuartzJobBean{
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/wutianyi/study/quartz/quartz-context.xml");
 		Scheduler scheduler = (Scheduler) context.getBean("schedule");
 		
-		try {
-			scheduler.triggerJob("example2",Scheduler.DEFAULT_GROUP);
-		} catch (SchedulerException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			scheduler.triggerJob("example2",Scheduler.DEFAULT_GROUP);
+//		} catch (SchedulerException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 }
