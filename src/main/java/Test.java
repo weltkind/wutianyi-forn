@@ -42,18 +42,13 @@ public class Test {
 //	    System.out.println((l & 0xFFFFFF) >> 16 & 0xFF);
 //	    System.out.println((l & 0xFFFF) >> 8 & 0xFF);
 //	    System.out.println(l & 0xFF);
-	    String url = "http://qudao.ebinf.com/qshop_admin/upload/20110623/1308731405856.jpg";
+	    String str = "中国";
+	    String s = "aa\\;c;c[:]";
 	    
-	    String fileName = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
-	    System.out.println(fileName);
-	    long start = System.currentTimeMillis();
-	    for(int i = 0; i < 100; i ++) {
-	        UUID id = UUID.randomUUID();
-	        System.out.println(Long.toHexString(id.getMostSignificantBits() + id.getLeastSignificantBits()));
-	    }
-	    long end = System.currentTimeMillis();
-	    System.out.println(end - start);
-		System.out.println(10E-9);
+	    System.out.println(str.length());
+	    System.out.println(s.length());
+	    System.out.println(s.replaceAll("\\\\", "@"));
+	    System.out.println(s.replaceAll("\\\\;", "[:]").replaceAll(";", "").replaceAll("\\[:\\]", ";"));
 	}
 	
 }

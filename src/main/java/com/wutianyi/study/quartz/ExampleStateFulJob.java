@@ -11,8 +11,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ExampleStateFulJob implements StatefulJob{
 
 	public void execute(JobExecutionContext context) throws JobExecutionException {
-		System.out.println(context.getJobDetail().getName());
-		System.out.println(context.getJobDetail().getGroup());
+//		System.out.println(context.getJobDetail().getName());
+//		System.out.println(context.getJobDetail().getGroup());
 		
 		System.out.println("I am going to sleep!");
 		try {
