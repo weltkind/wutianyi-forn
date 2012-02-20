@@ -2,7 +2,7 @@ mysql -uyypriv -p -h 119.147.160.73
 
 2、jdbc url参数说明
 
-url格式：jdbc:mysql://[hostname][:port]/dbname[?param1=value1][¶m2=value2]...
+url格式：jdbc:mysql://[hostname][:port]/dbname[?param1=value1][&m2=value2]...
 
 参数名 取值 缺省
 
