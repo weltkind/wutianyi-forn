@@ -250,6 +250,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>org.htmlparser</groupId>
+			<artifactId>htmlparser</artifactId>
+			<version>2.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 
 
@@ -275,6 +282,7 @@
 					<downloadJavadocs>true</downloadJavadocs>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 
 		<!-- 可以将pom.xml中定义的properties值build进去resources的文件中 -->
