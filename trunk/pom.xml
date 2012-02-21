@@ -235,6 +235,13 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.6</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.0.1</version>
@@ -282,7 +289,7 @@
 					<downloadJavadocs>true</downloadJavadocs>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 
 		<!-- 可以将pom.xml中定义的properties值build进去resources的文件中 -->
