@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 
@@ -49,6 +50,9 @@ public class Test {
 	    System.out.println(s.length());
 	    System.out.println(s.replaceAll("\\\\", "@"));
 	    System.out.println(s.replaceAll("\\\\;", "[:]").replaceAll(";", "").replaceAll("\\[:\\]", ";"));
+	    
+	    System.out.println(DigestUtils.md5Hex("619561504".getBytes()));
+	    System.out.println("周碧华/独立观点 百姓传媒".replace("/", ""));
 	}
 	
 }
