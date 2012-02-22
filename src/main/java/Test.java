@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
 
 public class Test {
@@ -53,6 +54,11 @@ public class Test {
 	    
 	    System.out.println(DigestUtils.md5Hex("619561504".getBytes()));
 	    System.out.println("周碧华/独立观点 百姓传媒".replace("/", ""));
+	    
+	    for(int i = 0; i < 10; i ++)
+	    {
+	        System.out.println(RandomStringUtils.randomAlphanumeric(10));
+	    }
 	}
 	
 }

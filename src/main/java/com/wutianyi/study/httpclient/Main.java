@@ -24,7 +24,6 @@ import org.htmlparser.filters.HasParentFilter;
 import org.htmlparser.filters.TagNameFilter;
 import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
-import org.htmlparser.util.ParserException;
 
 public class Main {
 
