@@ -1,4 +1,4 @@
-package com.wutianyi.study.httpclient;
+package com.wutianyi.study.discoverygroup.reptile;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -19,7 +19,8 @@ public class MyHttpClient
     public MyHttpClient()
     {
         httpClient = new HttpClient(new MultiThreadedHttpConnectionManager());
-        httpClient.getHostConfiguration().setProxy("web-proxy.oa.com", 8080);
+        //设置代理
+//        httpClient.getHostConfiguration().setProxy("web-proxy.oa.com", 8080);
     }
 
     void getBodyToFile(String url, String dest) throws HttpException, IOException
