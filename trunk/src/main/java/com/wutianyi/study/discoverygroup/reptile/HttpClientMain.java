@@ -1,4 +1,4 @@
-package com.wutianyi.study.httpclient;
+package com.wutianyi.study.discoverygroup.reptile;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,10 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
-import org.apache.commons.httpclient.HttpMethod;
-import org.apache.commons.httpclient.methods.GetMethod;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.filters.HasParentFilter;
 import org.htmlparser.filters.TagNameFilter;

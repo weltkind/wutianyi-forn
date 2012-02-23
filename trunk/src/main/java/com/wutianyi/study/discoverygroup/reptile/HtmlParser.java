@@ -1,4 +1,4 @@
-package com.wutianyi.study.httpclient;
+package com.wutianyi.study.discoverygroup.reptile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,11 @@ import org.htmlparser.filters.AndFilter;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 
+
+/**
+ * @author hanjie.wuhj
+ *
+ */
 public class HtmlParser
 {
     Parser parser;
@@ -20,6 +25,13 @@ public class HtmlParser
         parser.setInputHTML(content);
     }
 
+    /**
+     * @param <T>
+     * @param handle 具体提取每个node的信息
+     * @param filters 过滤的条件
+     * @return
+     * @throws ParserException
+     */
     public <T> List<T> parser(InfoHandle<T> handle, NodeFilter... filters) throws ParserException
     {
         List<T> results = new ArrayList<T>();

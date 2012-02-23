@@ -4,8 +4,17 @@ import java.util.Arrays;
 
 import org.apache.commons.lang.StringUtils;
 
+/**
+ * @author hanjie.wuhj
+ *
+ */
 public class CharacterFilterUtils
 {
+    /**
+     * @param filter 具体的过滤逻辑
+     * @param content
+     * @return
+     */
     public static String filter(Filter filter, String content)
     {
         if (null == filter || StringUtils.isBlank(content))
