@@ -24,10 +24,10 @@ import org.xml.sax.SAXException;
 import com.wutianyi.study.discoverygroup.CharacterFilterUtils;
 import com.wutianyi.study.discoverygroup.Filter;
 import com.wutianyi.study.discoverygroup.NonCJKFilter;
+import com.wutianyi.study.discoverygroup.mapper.BloggerMapperService;
 import com.wutianyi.study.discoverygroup.parser.BloggerParser;
 import com.wutianyi.study.discoverygroup.parser.dataobject.Author;
 import com.wutianyi.study.discoverygroup.parser.dataobject.Blogger;
-import com.wutianyi.study.discoverygroup.parser.dataobject.RssDTO;
 
 public class RssBloggerParserImpl implements BloggerParser {
 
@@ -45,20 +45,18 @@ public class RssBloggerParserImpl implements BloggerParser {
 	}
 
 	@Override
-	public RssDTO parser(File file) {
+	public Author parser(File file) {
 
 		if (null == file || !file.exists() || !file.isFile()) {
 			return null;
 		}
 
 		try {
-			RssDTO rss = new RssDTO();
 			Document document = documentBuilder.parse(file);
 			Author author = getAuthor(document);
 			List<Blogger> bloggers = getBloggers(document);
-			rss.setAuthor(author);
-			rss.setBloggers(bloggers);
-			return rss;
+			author.setBloggers(bloggers);
+			return author;
 		} catch (SAXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -176,13 +174,12 @@ public class RssBloggerParserImpl implements BloggerParser {
 
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		BloggerParser parser = new RssBloggerParserImpl();
 		File file = new File("file/rss/自由主妇.xml");
-		RssDTO rss = parser.parser(file);
+		Author author= parser.parser(file);
 		
-		Author author = rss.getAuthor();
-		List<Blogger> bloggers = rss.getBloggers();
+		List<Blogger> bloggers = author.getBloggers();
 		System.out.println(author);
 		for(Blogger blogger : bloggers) {
 			System.out.println(blogger);
@@ -192,6 +189,8 @@ public class RssBloggerParserImpl implements BloggerParser {
 			}
 			System.out.println("-----------------------------------------------------------");
 		}
+		BloggerMapperService service = new BloggerMapperService();
+		service.insertAuthor(author);
 	}
 
 }

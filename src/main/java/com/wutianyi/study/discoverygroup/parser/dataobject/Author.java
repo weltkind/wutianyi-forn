@@ -1,48 +1,87 @@
 package com.wutianyi.study.discoverygroup.parser.dataobject;
 
-public class Author {
-	String name;
-	String url;
-	String description;
+import java.util.List;
 
-	public Author(String _name, String _url, String _description) {
-		this.name = _name;
-		this.url = _url;
-		this.description = _description;
-	}
+/**
+ * @author hanjiewu
+ * 
+ */
+public class Author
+{
 
-	public Author() {
+    int id;
+    String name;
+    String url;
+    String description;
 
-	}
+    List<Blogger> bloggers;
 
-	@Override
-	public String toString() {
-		return "Author name: " + name + "\turl: " + url + "\tdescription: "
-				+ description;
-	}
+    public Author(String _name, String _url, String _description)
+    {
+        this.name = _name;
+        this.url = _url;
+        this.description = _description;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public Author()
+    {
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    }
 
-	public String getUrl() {
-		return url;
-	}
+    public int getId()
+    {
+        return id;
+    }
 
-	public void setUrl(String url) {
-		this.url = url;
-	}
+    public void setId(int id)
+    {
+        this.id = id;
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    @Override
+    public String toString()
+    {
+        return "Author name: " + name + "\turl: " + url + "\tdescription: " + description;
+    }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public String getUrl()
+    {
+        return url;
+    }
+
+    public void setUrl(String url)
+    {
+        this.url = url;
+    }
+
+    public String getDescription()
+    {
+        return description;
+    }
+
+    public void setDescription(String description)
+    {
+        this.description = description;
+    }
+
+    public List<Blogger> getBloggers()
+    {
+        return bloggers;
+    }
+
+    public void setBloggers(List<Blogger> bloggers)
+    {
+        this.bloggers = bloggers;
+    }
 
 }

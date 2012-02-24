@@ -59,6 +59,7 @@ public class Test {
 	    {
 	        System.out.println(RandomStringUtils.randomAlphanumeric(10));
 	    }
+	    System.out.println(DigestUtils.md5Hex("619561504".getBytes()));
 	}
 	
 }

@@ -16,7 +16,7 @@ CREATE TABLE hiddenurl(
 	toid INT,
 	strength FLOAT
 );
-
+use work;
 CREATE TABLE blog_author(
   id BIGINT PRIMARY KEY AUTO_INCREMENT,
   NAME VARCHAR(56),
@@ -60,3 +60,4 @@ INSERT INTO aa(old_value) VALUES('你好我是中国人');
 
 SELECT * FROM blog_dict;
 INSERT INTO blog_dict(word, gmt_create,gmt_modified) VALUES('中国',NOW(),NOW()),('中国人',NOW(),NOW()) ON DUPLICATE KEY UPDATE gmt_modified = NOW() ;
+

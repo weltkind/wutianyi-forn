@@ -2,10 +2,10 @@ package com.wutianyi.study.discoverygroup.parser;
 
 import java.io.File;
 
-import com.wutianyi.study.discoverygroup.parser.dataobject.RssDTO;
+import com.wutianyi.study.discoverygroup.parser.dataobject.Author;
 
+public interface BloggerParser
+{
 
-public interface BloggerParser {
-	
-	public RssDTO parser(File file);
+    public Author parser(File file);
 }
