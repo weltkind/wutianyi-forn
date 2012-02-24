@@ -16,9 +16,14 @@
  */
 </head>
 <body>
-<div>
-<script type="text/javascript" src="http://imgcache.qq.com/bossweb/fan/js/kfinterface.js?cm=10&cl=help&lm=10&id=2488&cla=7&p=1" charset="utf-8"></script>
-	
+<div id="help">
+	<script type="text/javascript"></script>
 </div>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+	$("#help").html();
+	$('#help > script').attr("src","http://imgcache.qq.com/bossweb/fan/js/kfinterface.js?cm=10&cl=help&lm=10&id=2488&cla=7&p=1");
+</script>
 </body>
 </html>

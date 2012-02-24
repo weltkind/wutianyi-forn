@@ -2,68 +2,102 @@ package com.wutianyi.study.discoverygroup.parser.dataobject;
 
 import java.util.Map;
 
-public class Blogger {
+public class Blogger
+{
 
-	String title;
-	String url;
-	String category;
-	String description;
+    int id;
+    int authorId;
+    String title;
+    String url;
+    String category;
+    String description;
 
-	Map<String, Integer> words;
+    Map<String, Integer> words;
 
-	public Blogger(String _title, String _url, String _category,
-			String _description, Map<String, Integer> _words) {
-		this.title = _title;
-		this.url = _url;
-		this.category = _category;
-		this.description = _description;
-		this.words = _words;
-	}
+    public Blogger(String _title, String _url, String _category, String _description, Map<String, Integer> _words)
+    {
+        this.title = _title;
+        this.url = _url;
+        this.category = _category;
+        this.description = _description;
+        this.words = _words;
+    }
 
-	@Override
-	public String toString() {
-		return "Blogger title: " + title + "\turl: " + url + "\tdescription: "
-				+ description + "\tcategory: " + category;
-	}
+    public int getId()
+    {
+        return id;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public void setId(int id)
+    {
+        this.id = id;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    @Override
+    public String toString()
+    {
+        return "Blogger title: " + title + "\turl: " + url + "\tdescription: " + description + "\tcategory: "
+                + category;
+    }
 
-	public String getUrl() {
-		return url;
-	}
+    public String getTitle()
+    {
+        return title;
+    }
 
-	public void setUrl(String url) {
-		this.url = url;
-	}
+    public void setTitle(String title)
+    {
+        this.title = title;
+    }
 
-	public String getCategory() {
-		return category;
-	}
+    public String getUrl()
+    {
+        return url;
+    }
 
-	public void setCategory(String category) {
-		this.category = category;
-	}
+    public void setUrl(String url)
+    {
+        this.url = url;
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    public String getCategory()
+    {
+        return category;
+    }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    public void setCategory(String category)
+    {
+        this.category = category;
+    }
 
-	public Map<String, Integer> getWords() {
-		return words;
-	}
+    public String getDescription()
+    {
+        return description;
+    }
 
-	public void setWords(Map<String, Integer> words) {
-		this.words = words;
-	}
+    public void setDescription(String description)
+    {
+        this.description = description;
+    }
+
+    public Map<String, Integer> getWords()
+    {
+        return words;
+    }
+
+    public void setWords(Map<String, Integer> words)
+    {
+        this.words = words;
+    }
+
+    public int getAuthorId()
+    {
+        return authorId;
+    }
+
+    public void setAuthorId(int authorId)
+    {
+        this.authorId = authorId;
+    }
 
 }

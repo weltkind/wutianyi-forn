@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "F:\workspace\wutianyi\src\main\resources\mybatis\mybatis.dtd">
+<mapper namespace="com.wutianyi.study.discoverygroup.mapper.BloggerMapper">
+	<!-- eviction={LRU,FIFO,SOFT,WEAK} -->
+	<cache eviction="LRU" flushInterval="5000" size="512" readOnly="true"/>
+	<insert id="insertAuthor" parameterType="Author" keyProperty="id" useGeneratedKeys="true">
+		<![CDATA[
+			insert into blog_author(name, url,description,gmt_create,gmt_modified) values(#{name},#{url},#{description},now(),now())
+		]]>
+	</insert>
+	<insert id="insertBlogger" parameterType="Blogger" keyProperty="id" useGeneratedKeys="true">
+		<![CDATA[
+			insert into blog_blogger(author_id,title,url,description,category,gmt_create,gmt_modified)values(#{authorId},#{title},#{url},#{description},#{category},now(),now())
+		]]>
+	</insert>
+	
+	<insert id="insertDict" parameterType="Dict" keyProperty="id" useGeneratedKeys="true">
+		<![CDATA[
+			insert into blog_dict(word,gmt_create,gmt_modified) values(#{word},now(),now())
+		]]>
+	</insert>
+	
+	<insert id="insertBloggerDict" parameterType="BlogDict">
+		insert into blog_blogger_dict(bloger_id,dict_id,count,gmt_create,gmt_modified)values(#{blogerId},#{dictId},#{count},now(),now())
+	</insert>
+	
+	<select id="fecthDicts" resultType="java.util.HashMap">
+		select word, id from blog_dict
+		where word in
+		<foreach collection="words" item="word" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</select>
+</mapper>
