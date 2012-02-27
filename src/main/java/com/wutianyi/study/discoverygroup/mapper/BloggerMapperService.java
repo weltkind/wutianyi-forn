@@ -113,6 +113,21 @@ public class BloggerMapperService {
 		return rs;
 	}
 
+	public Author getAuthorById(int id) {
+		SqlSession session = sessionFactory.openSession();
+		Author author = null;
+		try {
+			author = (Author) session
+					.selectOne(
+							"com.wutianyi.study.discoverygroup.mapper.BloggerMapper.getAuthor",
+							id);
+		} finally {
+			session.commit();
+			session.close();
+		}
+		return author;
+	}
+
 	private List<Dict> getDictsByWord(SqlSession session, String[] dicts) {
 		List<Dict> rs = session
 				.selectList(
@@ -132,6 +147,14 @@ public class BloggerMapperService {
 		for (Dict r : rs) {
 			System.out.println(r);
 		}
-
+		
+		Author author = mapperService.getAuthorById(2689);
+		if(null != author){ 
+			System.out.println(author);
+			for(Blogger blogger : author.getBloggers()) {
+				System.out.println(blogger);
+			}
+		}
+			
 	}
 }

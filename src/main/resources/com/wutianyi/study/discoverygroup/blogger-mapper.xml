@@ -6,9 +6,31 @@
 	<!-- eviction={LRU,FIFO,SOFT,WEAK} -->
 	<cache eviction="LRU" flushInterval="5000" size="512" readOnly="true" />
 	<resultMap type="Dict" id="DictResult">
-		<result property="id" column="id"/>
-		<result property="word" column="word"/>
+		<result property="id" column="id" />
+		<result property="word" column="word" />
 	</resultMap>
+
+	<resultMap type="Author" id="AuthorResult">
+		<id property="id" column="author_id" />
+		<result property="name" column="name" />
+		<result property="url" column="author_url" />
+		<result property="description" column="author_description" />
+		<collection property="bloggers" ofType="Blogger">
+			<id property="id" column="blogger_id" />
+			<result property="authorId" column="author_id" />
+			<result property="title" column="title" />
+			<result property="category" column="category" />
+			<result property="url" column="blogger_url" />
+			<result property="description" column="blogger_description" />
+		</collection>
+	</resultMap>
+
+	<select id="getAuthor" resultMap="AuthorResult" parameterType="int">
+		<![CDATA[
+			SELECT a.id author_id ,NAME, a.url author_url,a.description author_description,b.id blogger_id,b.author_id,b.title,b.category,b.url blogger_url,b.description blogger_description FROM blog_author a LEFT JOIN blog_blogger b ON a.id=b.author_id  WHERE a.id=#{id};
+		]]>
+	</select>
+
 	<insert id="insertAuthor" parameterType="Author" keyProperty="id"
 		useGeneratedKeys="true">
 		<![CDATA[

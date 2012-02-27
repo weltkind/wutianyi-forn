@@ -14,6 +14,10 @@ public class Blogger
 
     Map<String, Integer> words;
 
+    public Blogger() {
+    	
+    }
+    
     public Blogger(String _title, String _url, String _category, String _description, Map<String, Integer> _words)
     {
         this.title = _title;
