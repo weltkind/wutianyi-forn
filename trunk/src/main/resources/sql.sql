@@ -68,15 +68,17 @@ SELECT * FROM blog_blogger;
 SELECT * FROM blog_dict;
 SELECT * FROM blog_blogger_dict;
 
-DELETE FROM blog_author;
-DELETE FROM blog_blogger;
-DELETE FROM blog_dict;
-DELETE FROM blog_blogger_dict;
+SELECT a.id author_id ,NAME, a.url author_url,a.description author_description,b.id blogger_id,b.author_id,b.title,b.category,b.url blogger_url,b.description blogger_description FROM blog_author a LEFT JOIN blog_blogger b ON a.id=b.author_id  WHERE a.id=2689;
+SELECT * FROM blog_blogger WHERE author_id=2669;
+DESC blog_author;
+CREATE INDEX blog_author_name ON blog_author(NAME);
 
-
-
+DESC blog_blogger;
+CREATE INDEX blog_blogger_author_id ON blog_blogger(author_id);
 SELECT COUNT(*) FROM blog_author;
 SELECT COUNT(*) FROM blog_dict;
 SELECT COUNT(*) FROM blog_blogger_dict;
 
 DESC blog_blogger;
+
+SHOW TABLE STATUS LIKE 'blog_author';
