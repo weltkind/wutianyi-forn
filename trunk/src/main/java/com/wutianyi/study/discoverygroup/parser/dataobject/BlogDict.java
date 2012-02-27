@@ -1,50 +1,51 @@
 package com.wutianyi.study.discoverygroup.parser.dataobject;
 
-public class BlogDict
-{
-    int id;
-    int blogerId;
-    int dictId;
-    int count;
+public class BlogDict {
+	int id;
+	int blogerId;
+	int dictId;
+	int count;
 
-    public int getId()
-    {
-        return id;
-    }
+	public BlogDict() {
 
-    public void setId(int id)
-    {
-        this.id = id;
-    }
+	}
 
-    public int getBlogerId()
-    {
-        return blogerId;
-    }
+	public BlogDict(int _bloggerId, int _dictId, int _count) {
+		this.blogerId = _bloggerId;
+		this.dictId = _dictId;
+		this.count = _count;
+	}
 
-    public void setBlogerId(int blogerId)
-    {
-        this.blogerId = blogerId;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public int getDictId()
-    {
-        return dictId;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setDictId(int dictId)
-    {
-        this.dictId = dictId;
-    }
+	public int getBlogerId() {
+		return blogerId;
+	}
 
-    public int getCount()
-    {
-        return count;
-    }
+	public void setBlogerId(int blogerId) {
+		this.blogerId = blogerId;
+	}
 
-    public void setCount(int count)
-    {
-        this.count = count;
-    }
+	public int getDictId() {
+		return dictId;
+	}
+
+	public void setDictId(int dictId) {
+		this.dictId = dictId;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
 
 }

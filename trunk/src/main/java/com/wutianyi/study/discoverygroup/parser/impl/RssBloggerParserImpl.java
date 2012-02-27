@@ -7,7 +7,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -58,8 +60,7 @@ public class RssBloggerParserImpl implements BloggerParser {
 			author.setBloggers(bloggers);
 			return author;
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(file.getName() + " parse error");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -104,8 +105,8 @@ public class RssBloggerParserImpl implements BloggerParser {
 					url = child.getTextContent();
 				}
 				if (child.getNodeType() == Node.ELEMENT_NODE
-						&& StringUtils
-								.equals("description", child.getNodeName())) {
+						&& StringUtils.equals("description", child
+								.getNodeName())) {
 					content = CharacterFilterUtils.filter(filter, child
 							.getTextContent());
 				}
@@ -174,23 +175,53 @@ public class RssBloggerParserImpl implements BloggerParser {
 
 	}
 
-	public static void main(String[] args) throws IOException {
-		BloggerParser parser = new RssBloggerParserImpl();
-		File file = new File("file/rss/自由主妇.xml");
-		Author author= parser.parser(file);
-		
-		List<Blogger> bloggers = author.getBloggers();
-		System.out.println(author);
-		for(Blogger blogger : bloggers) {
-			System.out.println(blogger);
-			Map<String, Integer> words = blogger.getWords();
-			for(Entry<String, Integer> word : words.entrySet()) {
-				System.out.println(word.getKey() + " : " + word.getValue());
-			}
-			System.out.println("-----------------------------------------------------------");
+	static class Task implements Runnable {
+
+		private BloggerMapperService service;
+		private File file;
+
+		public Task( BloggerMapperService _service,
+				File _file) {
+			this.service = _service;
+			this.file = _file;
 		}
+
+		@Override
+		public void run() {
+			BloggerParser parser = new RssBloggerParserImpl();
+			Author author = parser.parser(file);
+			service.insertAuthor(author);
+		}
+
+	}
+
+	public static void main(String[] args) throws IOException, InterruptedException {
 		BloggerMapperService service = new BloggerMapperService();
-		service.insertAuthor(author);
+		ExecutorService executorService = Executors.newFixedThreadPool(10);
+		File f = new File("file/rss");
+		File[] files = f.listFiles();
+		for(File file : files) {
+			executorService.submit(new Task( service, file));
+		}
+		
+		executorService.shutdown();
+		executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.HOURS);
+//		File file = new File("file/rss/自由主妇.xml");
+//		Author author = parser.parser(file);
+//
+//		List<Blogger> bloggers = author.getBloggers();
+//		System.out.println(author);
+//		for (Blogger blogger : bloggers) {
+//			System.out.println(blogger);
+//			Map<String, Integer> words = blogger.getWords();
+//			for (Entry<String, Integer> word : words.entrySet()) {
+//				System.out.println(word.getKey() + " : " + word.getValue());
+//			}
+//			System.out
+//					.println("-----------------------------------------------------------");
+//		}
+//
+//		service.insertAuthor(author);
 	}
 
 }
