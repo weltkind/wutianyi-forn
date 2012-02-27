@@ -19,11 +19,10 @@ public class LoggerMain
     public static void main(String[] args) throws IOException
     {
         BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/study");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/work");
         dataSource.setUsername("root");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setPassword("860728");
-
 //        String resource = "mybatis/mybatis-config.xml";
 //        Reader reader = Resources.getResourceAsReader(resource);
 //        SqlSessionFactory _sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);

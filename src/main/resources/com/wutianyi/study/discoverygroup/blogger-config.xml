@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<!-- properties设置外部化的属性 ,也可以在build的时候增加properties参数-->
 	<properties resource="com/wutianyi/study/discoverygroup/config.properties">
@@ -8,38 +9,44 @@
 		<property name="password" value="860728"></property>
 	</properties>
 	<settings>
-		<setting name="cacheEnabled" value="true"/>
-		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
 		<!-- 是否允许多个结果集从当一语句返回 -->
-		<setting name="useGeneratedKeys" value="false"/>
+		<setting name="useGeneratedKeys" value="false" />
 		<!-- 列到字段的映射，PARTIAL只会映射简单的，FULL会自动映射嵌套的 -->
-		<setting name="autoMappingBehavior" value="PARTIAL"/>
+		<setting name="autoMappingBehavior" value="PARTIAL" />
 		<!-- 默认的执行器,SIMPLE,REUSE,BATCH -->
-		<setting name="defaultExecutorType" value="SIMPLE"/>
-		<setting name="defaultStatementTimeout" value="2500"/>
+		<setting name="defaultExecutorType" value="SIMPLE" />
+		<setting name="defaultStatementTimeout" value="2500" />
 	</settings>
 	<typeAliases>
-		<typeAlias alias="Author" type="com.wutianyi.study.discoverygroup.parser.dataobject.Author"></typeAlias>
-		<typeAlias alias="Blogger" type="com.wutianyi.study.discoverygroup.parser.dataobject.Blogger"></typeAlias>
-		<typeAlias alias="BlogDict" type="com.wutianyi.study.discoverygroup.parser.dataobject.BlogDict"></typeAlias>
-		<typeAlias alias="Dict" type="com.wutianyi.study.discoverygroup.parser.dataobject.Dict"></typeAlias>
+		<typeAlias alias="Author"
+			type="com.wutianyi.study.discoverygroup.parser.dataobject.Author"></typeAlias>
+		<typeAlias alias="Blogger"
+			type="com.wutianyi.study.discoverygroup.parser.dataobject.Blogger"></typeAlias>
+		<typeAlias alias="BlogDict"
+			type="com.wutianyi.study.discoverygroup.parser.dataobject.BlogDict"></typeAlias>
+		<typeAlias alias="Dict"
+			type="com.wutianyi.study.discoverygroup.parser.dataobject.Dict"></typeAlias>
 	</typeAliases>
 	<environments default="development">
 		<environment id="development">
-			<!-- 两种事务处理方式，JDBC：依赖从数据源获取的链接来管理事物，MANAGED几乎不做什么，依赖容器来进行相应的事物管理，但是本身默认会关闭链接 -->
+			<!--
+				两种事务处理方式，JDBC：依赖从数据源获取的链接来管理事物，MANAGED几乎不做什么，依赖容器来进行相应的事物管理，但是本身默认会关闭链接
+			-->
 			<transactionManager type="JDBC">
-				<property name="closeConnetion" value="false"/>
+				<property name="closeConnetion" value="false" />
 			</transactionManager>
 			<dataSource type="POOLED">
-				<property name="driver" value="${driver}"/>
-				<property name="url" value="${url}"/>
-				<property name="username" value="${username}"/>
-				<property name="password" value="${password}"/>
+				<property name="driver" value="${driver}" />
+				<property name="url" value="jdbc:mysql://localhost:3306/work" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
 			</dataSource>
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="com/wutianyi/study/discoverygroup/blogger-mapper.xml"/>
+		<mapper resource="com/wutianyi/study/discoverygroup/blogger-mapper.xml" />
 		<!-- url引用的完全限定名（file:///） -->
 	</mappers>
 </configuration>

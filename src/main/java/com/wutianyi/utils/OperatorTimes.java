@@ -4,22 +4,24 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class OperatorTimes {
-	
+
 	private Deque<Long> deque;
-	
-	public OperatorTimes()
-	{
+
+	public OperatorTimes() {
 		deque = new ArrayDeque<Long>();
 	}
-	
-	public void start()
-	{
+
+	public void start() {
 		long start = System.currentTimeMillis();
 		deque.add(start);
 	}
-	
-	public void end()
-	{
+
+	public void end(String title) {
+		System.out.print(title + ": ");
+		end();
+	}
+
+	public void end() {
 		long end = System.currentTimeMillis();
 		long start = deque.pop();
 		System.out.println("Use time: " + (end - start));
