@@ -1,10 +1,14 @@
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 import java.util.UUID;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.LocaleUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
 
@@ -60,6 +64,18 @@ public class Test {
 	        System.out.println(RandomStringUtils.randomAlphanumeric(10));
 	    }
 	    System.out.println(DigestUtils.md5Hex("619561504".getBytes()));
+	    
+	    Calendar calendar = Calendar.getInstance();
+	    calendar.add(Calendar.DAY_OF_MONTH, 1);
+	    calendar.set(Calendar.HOUR_OF_DAY, 0);
+	    calendar.set(Calendar.MINUTE, 0);
+	    calendar.set(Calendar.SECOND, 0);
+	    System.out.println(calendar.getTime());
+	    System.out.println(new Date());
+	    System.out.println((calendar.getTimeInMillis() - System.currentTimeMillis())/ 1000 + 1);
+	    System.out.println(Locale.CHINA);
+	    System.out.println(Locale.TAIWAN);
+	    System.out.println(LocaleUtils.toLocale("zh_TW"));
 	}
 	
 }

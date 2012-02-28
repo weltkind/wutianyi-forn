@@ -39,7 +39,7 @@
 			</transactionManager>
 			<dataSource type="POOLED">
 				<property name="driver" value="${driver}" />
-				<property name="url" value="jdbc:mysql://localhost:3306/work" />
+				<property name="url" value="jdbc:mysql://localhost:3306/study?useUnicode=true&amp;characterEncoding=utf8" />
 				<property name="username" value="${username}" />
 				<property name="password" value="${password}" />
 			</dataSource>

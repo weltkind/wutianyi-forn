@@ -59,7 +59,7 @@ SELECT * FROM  aa;
 INSERT INTO aa(old_value) VALUES('你好我是中国人');
 
 SELECT * FROM blog_dict;
-INSERT INTO blog_dict(word, gmt_create,gmt_modified) VALUES('中国',NOW(),NOW()),('中国人',NOW(),NOW()) ON DUPLICATE KEY UPDATE a='1' ;
+INSERT INTO blog_dict(word, gmt_create,gmt_modified) VALUES('中国',NOW(),NOW()),('中国人',NOW(),NOW()) ON DUPLICATE KEY UPDATE gmt_modified=NOW() ;
 
 ALTER TABLE blog_bloger_dict RENAME blog_blogger_dict;
 
@@ -76,9 +76,22 @@ CREATE INDEX blog_author_name ON blog_author(NAME);
 DESC blog_blogger;
 CREATE INDEX blog_blogger_author_id ON blog_blogger(author_id);
 SELECT COUNT(*) FROM blog_author;
+SELECT COUNT(*) FROM blog_blogger;
 SELECT COUNT(*) FROM blog_dict;
 SELECT COUNT(*) FROM blog_blogger_dict;
 
 DESC blog_blogger;
 
 SHOW TABLE STATUS LIKE 'blog_author';
+
+SHOW CREATE TABLE blog_dict;
+CREATE TABLE `blog_dict` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `word` VARCHAR(28) NOT NULL,
+  `gmt_create` DATETIME DEFAULT NULL,
+  `gmt_modified` DATETIME DEFAULT NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `word` (`word`)
+) ENGINE=INNODB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+SET CHARSET utf8;
+SELECT * FROM blog_dict;

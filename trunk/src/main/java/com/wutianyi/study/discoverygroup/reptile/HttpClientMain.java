@@ -23,8 +23,11 @@ public class HttpClientMain
     {
         ExecutorService executorService = Executors.newFixedThreadPool(20);
         final MyHttpClient myHttpClient = new MyHttpClient();
+        
+        
         HtmlParser parser = new HtmlParser(myHttpClient.getBodyAsString(url, "text/html;charset=gbk", "gbk"));
         SinaInfoHandle handle = new SinaInfoHandle();
+        
         List<Pair<String, String>> results = parser.parser(handle, new NodeFilter[]
         { new TagNameFilter("a"), new HasParentFilter(new TagNameFilter("td")) });
 
