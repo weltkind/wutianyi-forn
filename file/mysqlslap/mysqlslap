@@ -1,0 +1,20 @@
+--delimiter=";" --create="create table a(b int); insert into a values(23)" --query="select * from a" --concurrency=2 --iterations=20
+--create可以指向文件
+--query可以指向文件
+--auto-generate-sql-add-autoincrement
+
+--engine
+--number-of-queries
+--number-int-cols="2" --number-char-cols="2" --auto-generate-sql-add-autoincrement --auto-generate-sql-execute-number=500 --auto-generate-sql-unique-query-number=500 --auto-generate-sql-write-number=500 --auto-generate-sql-load-type="read" --auto-generate-sql --only-print >> K:\workspace\test.txt
+
+mysqlslap --create-and-drop-schema=mytest -a --auto-generate-sql-write-number=500
+
+
+mysqlslap 指南：
+--create 或者--query 可以包含sql进行执行，或者包含sql的文件
+	文件中默认一行一条sql
+	--delimiter可以自己定义分隔符
+mysqlslap使用三步骤：
+1.创建table，初始化数据之类的，一个链接
+2.进行压力测试，通常需要模拟多个客户端
+3.清理，一个链接
