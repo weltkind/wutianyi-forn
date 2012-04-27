@@ -81,6 +81,12 @@ www.kingroot.net
 http://kingroot.gotoip1.com/
 
 
+$snoopy = new Snoopy();
+         $snoopy->read_timeout = 1;
+	$snoopy->timed_out=true;
+	$snoopy->submit("http://pmir.3g.qq.com",$_POST);
+	echo $snoopy->results;
+
 
 映浩 15:15:20 
 中端配置：（办公、中小型游戏通畅运行CS、DNF龙与地下城、魔兽争霸、江湖、传奇、QQ游戏、梦幻西游等）
