@@ -36,6 +36,11 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.4</version>
@@ -221,11 +226,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>opensymphony</groupId>
+			<groupId>org.quartz-scheduler</groupId>
 			<artifactId>quartz</artifactId>
-			<version>1.6.3</version>
-			<type>jar</type>
-			<scope>compile</scope>
+			<version>2.1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -272,14 +275,16 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse</groupId>
-			<artifactId>compare</artifactId>
-			<version>3.3.0-I20070606</version>
-			<type>jar</type>
-			<scope>compile</scope>
+			<groupId>org.springframework.social</groupId>
+			<artifactId>spring-social-core</artifactId>
+			<version>1.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jaitools</groupId>
+			<artifactId>jt-all</artifactId>
+			<version>1.2.0</version>
 		</dependency>
 	</dependencies>
-
 
 	<build>
 		<finalName>wutianyi86728_6</finalName>
