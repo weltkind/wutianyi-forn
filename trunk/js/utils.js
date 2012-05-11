@@ -5,3 +5,5 @@ function()
 	document.getElementById("1");
 	var s = "test";
 }
+
+encodeURI();
