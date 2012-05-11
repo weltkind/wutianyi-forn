@@ -5,8 +5,12 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -212,6 +216,32 @@ public class Test
         String t = dateFormat.format(lastMonth.getTime());
         System.out.println(t);
         System.out.println(DigestUtils.md5Hex("king_roottest|test|test"));
+        
+        List<String> dates = new ArrayList<String>();
+        dates.add("2012-04-12");
+        dates.add("2012-03-12");
+        Collections.sort(dates, new Comparator<String>()
+        {
+
+            @Override
+            public int compare(String first, String second)
+            {
+                SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
+                try
+                {
+                    return dateformat.parse(first).compareTo(dateformat.parse(second));
+                }
+                catch (ParseException e)
+                {
+                    e.printStackTrace();
+                }
+                return 0;
+            }
+        });
+        for(String d : dates)
+        {
+            System.out.println(d);
+        }
     }
 
 }
