@@ -1,0 +1,21 @@
+1.日志格式，修改为awstats可以识别的 log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for_pound"';
+2.切分日志脚本，根据每天对日志进行切分
+	#!/bin/sh
+
+logs_path="/data/nginx2log/logs/"
+date_dir=${logs_path}access$(date -d "yesterday" +"%Y")$(date -d "yesterday" +"%m")$(date -d "yesterday" +"%d").log
+mv ${logs_path}*access.log $date_dir
+/usr/local/app/nginx2/bin/kill.sh
+/usr/local/app/nginx2/bin/mqq_start.sh
+
+3.添加定时任务，分隔日志文件
+crontab -e 
+00 00 * * * /usr/local/nginx2/work/cut_log.sh 
+
+4.生成统计结果
+ /usr/local/nginx2/work/awstats/tools/awstats_buildstaticpages.pl -update -config=kingroot -lang=cn -dir=/usr/local/nginx2/work/html/ -awstatsprog=/usr/local/nginx2/work/awstats/wwwroot/cgi-bin/awstats.pl
+ 
+ 
+00 01 * * * /usr/local/nginx2/work/awstats.sh 
