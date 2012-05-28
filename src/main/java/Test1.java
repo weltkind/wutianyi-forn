@@ -1,3 +1,9 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+
 public class Test1
 {
 
@@ -15,10 +21,15 @@ public class Test1
         System.out.println(b.toString());
     }
     
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
-        Test1.setB(new B());
+        List<String> contents = FileUtils.readLines(new File("jquery.easing.1.3.js"), "utf-8");
+        for(String content : contents)
+        {
+            System.out.println(content);
+        }
     }
+    
 }
 
 class B

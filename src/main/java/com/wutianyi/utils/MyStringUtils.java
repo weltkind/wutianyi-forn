@@ -25,4 +25,18 @@ public class MyStringUtils extends StringUtils
         }
         return (Integer) obj;
     }
+
+    public static boolean convertBoolean(String obj, boolean defaultVAlue)
+    {
+        try
+        {
+            return Boolean.parseBoolean(obj);
+        }
+        catch (Exception e)
+        {
+
+        }
+        return defaultVAlue;
+
+    }
 }
