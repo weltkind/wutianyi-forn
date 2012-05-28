@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<report id="1" name="同步助手报表">
+		<header vcard="N" display_name="姓名" delimiter=";">
+			<value index="0" display_name="姓" />
+			<value index="1" display_name="名"/>
+			<value index="2" display_name="" escape="true" />
+			<value index="3" display_name="前缀"/>
+			<value index="4" display_name="后缀"/>
+		</header>
+		<header vcard="X-TC-dwQQ" display_name="QQ" multi="true" auto_increment="true" count="3" extend="true"/>
+		<header vcard="TEL" display_name="传真" parameter="FAX"/>
+		<header vcard="ADR" display_name="住宅地址" parameter="HOME">
+			<value index="6" display_name="住宅地址 国家/地区"/>
+			<value index="3" display_name="住宅地址 市/县"/>
+			<value index="4" display_name="住宅地址 省/市/自治区"/>
+			<value index="2" display_name="住宅地址 街道"/>
+			<value index="5" display_name="住宅地址 邮政编码"/>
+		</header>
+		<header vcard="TEL" display_name="住宅手机" parameter="CELL;HOME" multi="true" auto_increment="true" count="3"/>
+		<header vcard="TEL" display_name="住宅电话" parameter="HOME" multi="true" auto_increment="true" count="3"/>
+		<header vcard="ORG" display_name="单位/部门">
+			<value index="0" display="单位"/>
+		</header>
+		<header vcard="ADR" display_name="商务地址" paramter="WORD">
+			<value index="6" display_name="商务地址 国家/地区"/>
+			<value index="3" display_name="商务地址 市/县"/>
+			<value index="4" display_name="商务地址 省/市/自治区"/>
+			<value index="2" display_name="商务地址 街道"/>
+			<value index="5" display_name="商务地址 邮政编码"/>
+		</header>
+		<header vcard="TEL" display_name="商务手机" parameter="CELL;WORK" multi="true" auto_increment="true" count="3"/>
+		<header vcard="TEL" display_name="商务电话" parameter="WORK" multi="true" auto_increment="true" count="3"/>
+		<header vcard="ADR" display_name="地址">
+			<value index="6" display_name="地址 国家/地区"/>
+			<value index="3" display_name="地址 市/县"/>
+			<value index="4" display_name="地址 省/市/自治区"/>
+			<value index="2" display_name="地址 街道"/>
+			<value index="5" display_name="地址 邮政编码"/>
+		</header>
+		<header vcard="NOTE" display_name="备注" />
+		<header vcard="EMAIL" display_name="电子邮件" multi="true" auto_increment="true" count="3" />
+		<header vcard="TEL" display_name="电话" multi="true" auto_increment="true" count="3"/>
+		<header vcard="TEL" display_name="移动电话" parameter="CELL" multi="true" auto_increment="true" count="3"/>
+		<header vcard="URL" display_name="网址" multi="true" auto_increment="true" count="4"/>
+		<header vcard="TITLE" display_name="职务"/>
+		<header vcard="ORG" display_name="单位/部门">
+			<value index="1" display_name="部门"/>
+		</header>
+	</report>
+</configs>
