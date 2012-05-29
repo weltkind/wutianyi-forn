@@ -1,5 +1,7 @@
 package com.wutianyi.study.vcard;
 
+import info.ineighborhood.cardme.vcard.VCardImpl;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +19,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.wutianyi.study.vcard.Wrapper.VcardWrapper;
 import com.wutianyi.utils.MyStringUtils;
 
 public class ReportServices
@@ -109,7 +112,7 @@ public class ReportServices
         boolean extend = getPropertyBoolean(attrs, ReportConstants.header_extend);
         String parameterStr = getProperty(attrs, ReportConstants.header_parameter);
         int count = getPropertyInt(attrs, ReportConstants.header_count, 0);
-
+        int splitlength = getPropertyInt(attrs, ReportConstants.header_split_length, 0);
         if (StringUtils.isBlank(vKey) || StringUtils.isBlank(dKey))
         {
             return null;
@@ -131,7 +134,7 @@ public class ReportServices
         String[] parameters = StringUtils.isNotBlank(parameterStr) ? parameterStr.split(";") : null;
 
         return new Header(vKey, dKey, parameters, delimiter, multi, autoIncrement, count, values.toArray(new Value[]
-        {}), extend);
+        {}), extend, splitlength);
     }
 
     private static Value createValue(Node item)
@@ -192,9 +195,21 @@ public class ReportServices
         return reports.get(id);
     }
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
+        TestParser testParser = new TestParser();
+        List<VCardImpl> vcards = testParser.importVCards();
+
+        List<VcardWrapper> vs = new ArrayList<VcardWrapper>();
+        for (VCardImpl v : vcards)
+        {
+            vs.add(new VcardWrapper(v));
+        }
+
         ReportDO report = getReport(1);
-        System.out.println(report);
+        ReportDO newReport = Utils.createReportDO(vs, report);
+
+        System.out.println(newReport.getReportHeader());
+        System.out.println(report.getReportHeader());
     }
 }

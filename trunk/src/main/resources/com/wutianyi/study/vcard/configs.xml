@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="gbk"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	<report id="1" name="Í¬²½ÖúÊÖ±¨±í">
-		<header vcard="N" display_name="ÐÕÃû" delimiter=";">
-			<value index="0" display_name="ÐÕ" />
-			<value index="1" display_name="Ãû"/>
+	<report id="1" name="åŒæ­¥åŠ©æ‰‹æŠ¥è¡¨">
+		<header vcard="N" display_name="å§“å" delimiter=";" split_length="5">
+			<value index="0" display_name="å§“" />
+			<value index="1" display_name="å"/>
 			<value index="2" display_name="" escape="true" />
-			<value index="3" display_name="Ç°×º"/>
-			<value index="4" display_name="ºó×º"/>
+			<value index="3" display_name="å‰ç¼€"/>
+			<value index="4" display_name="åŽç¼€"/>
 		</header>
 		<header vcard="X-TC-dwQQ" display_name="QQ" multi="true" auto_increment="true" count="3" extend="true"/>
-		<header vcard="TEL" display_name="´«Õæ" parameter="FAX"/>
-		<header vcard="ADR" display_name="×¡Õ¬µØÖ·" parameter="HOME" multi="true" auto_increment="true" count="3" >
-			<value index="6" display_name="×¡Õ¬µØÖ· ¹ú¼Ò/µØÇø"/>
-			<value index="3" display_name="×¡Õ¬µØÖ· ÊÐ/ÏØ"/>
-			<value index="4" display_name="×¡Õ¬µØÖ· Ê¡/ÊÐ/×ÔÖÎÇø"/>
-			<value index="2" display_name="×¡Õ¬µØÖ· ½ÖµÀ"/>
-			<value index="5" display_name="×¡Õ¬µØÖ· ÓÊÕþ±àÂë"/>
+		<header vcard="TEL" display_name="ä¼ çœŸ" parameter="FAX"/>
+		<header vcard="ADR" display_name="ä½å®…åœ°å€" parameter="HOME" multi="true" auto_increment="true" count="3" split_length="7">
+			<value index="6" display_name="ä½å®…åœ°å€ å›½å®¶/åœ°åŒº"/>
+			<value index="3" display_name="ä½å®…åœ°å€ å¸‚/åŽ¿"/>
+			<value index="4" display_name="ä½å®…åœ°å€ çœ/å¸‚/è‡ªæ²»åŒº"/>
+			<value index="2" display_name="ä½å®…åœ°å€ è¡—é“"/>
+			<value index="5" display_name="ä½å®…åœ°å€ é‚®æ”¿ç¼–ç "/>
 		</header>
-		<header vcard="TEL" display_name="×¡Õ¬ÊÖ»ú" parameter="CELL;HOME" multi="true" auto_increment="true" count="3"/>
-		<header vcard="TEL" display_name="×¡Õ¬µç»°" parameter="HOME" multi="true" auto_increment="true" count="3"/>
-		<header vcard="ORG" display_name="µ¥Î»/²¿ÃÅ">
-			<value index="0" display_name="µ¥Î»"/>
+		<header vcard="TEL" display_name="ä½å®…æ‰‹æœº" parameter="CELL;HOME" multi="true" auto_increment="true" count="3"/>
+		<header vcard="TEL" display_name="ä½å®…ç”µè¯" parameter="HOME" multi="true" auto_increment="true" count="3"/>
+		<header vcard="ORG" display_name="å•ä½/éƒ¨é—¨" split_length="2">
+			<value index="0" display_name="å•ä½"/>
 		</header>
-		<header vcard="ADR" display_name="ÉÌÎñµØÖ·" paramter="WORD">
-			<value index="6" display_name="ÉÌÎñµØÖ· ¹ú¼Ò/µØÇø"/>
-			<value index="3" display_name="ÉÌÎñµØÖ· ÊÐ/ÏØ"/>
-			<value index="4" display_name="ÉÌÎñµØÖ· Ê¡/ÊÐ/×ÔÖÎÇø"/>
-			<value index="2" display_name="ÉÌÎñµØÖ· ½ÖµÀ"/>
-			<value index="5" display_name="ÉÌÎñµØÖ· ÓÊÕþ±àÂë"/>
+		<header vcard="ADR" display_name="å•†åŠ¡åœ°å€" parameter="WORK" split_length="7">
+			<value index="6" display_name="å•†åŠ¡åœ°å€ å›½å®¶/åœ°åŒº"/>
+			<value index="3" display_name="å•†åŠ¡åœ°å€ å¸‚/åŽ¿"/>
+			<value index="4" display_name="å•†åŠ¡åœ°å€ çœ/å¸‚/è‡ªæ²»åŒº"/>
+			<value index="2" display_name="å•†åŠ¡åœ°å€ è¡—é“"/>
+			<value index="5" display_name="å•†åŠ¡åœ°å€ é‚®æ”¿ç¼–ç "/>
 		</header>
-		<header vcard="TEL" display_name="ÉÌÎñÊÖ»ú" parameter="CELL;WORK" multi="true" auto_increment="true" count="3"/>
-		<header vcard="TEL" display_name="ÉÌÎñµç»°" parameter="WORK" multi="true" auto_increment="true" count="3"/>
-		<header vcard="ADR" display_name="µØÖ·">
-			<value index="6" display_name="µØÖ· ¹ú¼Ò/µØÇø"/>
-			<value index="3" display_name="µØÖ· ÊÐ/ÏØ"/>
-			<value index="4" display_name="µØÖ· Ê¡/ÊÐ/×ÔÖÎÇø"/>
-			<value index="2" display_name="µØÖ· ½ÖµÀ"/>
-			<value index="5" display_name="µØÖ· ÓÊÕþ±àÂë"/>
+		<header vcard="TEL" display_name="å•†åŠ¡æ‰‹æœº" parameter="CELL;WORK" multi="true" auto_increment="true" count="3"/>
+		<header vcard="TEL" display_name="å•†åŠ¡ç”µè¯" parameter="WORK" multi="true" auto_increment="true" count="3"/>
+		<header vcard="ADR" display_name="åœ°å€" split_length="7">
+			<value index="6" display_name="åœ°å€ å›½å®¶/åœ°åŒº"/>
+			<value index="3" display_name="åœ°å€ å¸‚/åŽ¿"/>
+			<value index="4" display_name="åœ°å€ çœ/å¸‚/è‡ªæ²»åŒº"/>
+			<value index="2" display_name="åœ°å€ è¡—é“"/>
+			<value index="5" display_name="åœ°å€ é‚®æ”¿ç¼–ç "/>
 		</header>
-		<header vcard="NOTE" display_name="±¸×¢" />
-		<header vcard="EMAIL" display_name="µç×ÓÓÊ¼þ" multi="true" auto_increment="true" count="3" />
-		<header vcard="TEL" display_name="µç»°" multi="true" auto_increment="true" count="3"/>
-		<header vcard="TEL" display_name="ÒÆ¶¯µç»°" parameter="CELL" multi="true" auto_increment="true" count="3"/>
-		<header vcard="URL" display_name="ÍøÖ·" multi="true" auto_increment="true" count="4"/>
-		<header vcard="TITLE" display_name="Ö°Îñ"/>
-		<header vcard="ORG" display_name="µ¥Î»/²¿ÃÅ">
-			<value index="1" display_name="²¿ÃÅ"/>
+		<header vcard="NOTE" display_name="å¤‡æ³¨" />
+		<header vcard="EMAIL" display_name="ç”µå­é‚®ä»¶" multi="true" auto_increment="true" count="3" />
+		<header vcard="TEL" display_name="ç”µè¯" multi="true" auto_increment="true" count="3"/>
+		<header vcard="TEL" display_name="ç§»åŠ¨ç”µè¯" parameter="CELL" multi="true" auto_increment="true" count="3"/>
+		<header vcard="URL" display_name="ç½‘å€" multi="true" auto_increment="true" count="4"/>
+		<header vcard="TITLE" display_name="èŒåŠ¡"/>
+		<header vcard="ORG" display_name="å•ä½/éƒ¨é—¨" split_length="2">
+			<value index="1" display_name="éƒ¨é—¨"/>
 		</header>
 	</report>
 </configs>

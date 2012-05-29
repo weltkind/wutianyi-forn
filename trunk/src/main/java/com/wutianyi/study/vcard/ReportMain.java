@@ -3,78 +3,50 @@ package com.wutianyi.study.vcard;
 import java.io.IOException;
 import java.util.List;
 
+import com.wutianyi.study.vcard.Wrapper.VcardWrapper;
+
 import info.ineighborhood.cardme.io.CompatibilityMode;
 import info.ineighborhood.cardme.vcard.VCardImpl;
 
-public class ReportMain {
-	public static void main(String[] args) throws IOException {
-		TestParser testParser = new TestParser();
-		testParser.setCompatibilityMode(CompatibilityMode.RFC2426);
-		List<VCardImpl> vcards = testParser.importVCards();
-		ReportDO report = ReportServices.getReport(1);
+public class ReportMain
+{
+    @SuppressWarnings("unchecked")
+    public static void main(String[] args) throws IOException
+    {
+        TestParser testParser = new TestParser();
+        testParser.setCompatibilityMode(CompatibilityMode.RFC2426);
+        List<VCardImpl> vcards = testParser.importVCards();
+        ReportDO report = ReportServices.getReport(1);
 
-		StringBuilder builder = new StringBuilder();
-		int i = 0;
-		int l = report.getHeaders().length - 1;
-		for (Header header : report.getHeaders()) {
-			Value[] values = header.getValues();
-			if (null == values || values.length == 0) {
-				builder.append('"');
-				builder.append(header.getdKey());
-				builder.append('"');
-				if (header.isMulti() && header.isAutoIncrement()) {
-					for (int j = 1; j < header.getCount(); j++) {
-						builder.append(',');
-						builder.append('"');
-						builder.append(header.getdKey());
-						builder.append(' ');
-						builder.append(j);
-						builder.append('"');
-					}
-				}
+        StringBuilder builder = new StringBuilder();
+        builder.append(report.getReportHeader());
+        builder.append('\n');
 
-			} else {
-				int index = 0;
-				int len = values.length - 1;
+        int j = 0;
+        int count = vcards.size();
+        for (VCardImpl vcard : vcards)
+        {
+            int i = 0;
+            int len = report.getHeaders().length - 1;
+            for (Header header : report.getHeaders())
+            {
+                if (header.isShow())
+                {
+                    Utils.buildValues(header, new VcardWrapper(vcard), builder);
+                }
+                if (i != len && header.isShow())
+                {
+                    builder.append(',');
+                }
+                i++;
+            }
+            if (j != count - 1)
+            {
+                builder.append('\n');
+            }
+            j++;
+        }
 
-				for (Value value : values) {
-					if (!value.escape) {
-						builder.append('"');
-						builder.append(value.getDisplayName());
-						builder.append('"');
-						if (index != len) {
-							builder.append(',');
-						}
-					}
-					++index;
-				}
-				if (header.isMulti() && header.isAutoIncrement()) {
-					for (int j = 1; j < header.getCount(); j++) {
-						builder.append(',');
-						index = 0;
-						for (Value value : values) {
-							if (!value.escape) {
-								builder.append('"');
-								builder.append(value.getDisplayName());
-								builder.append(' ');
-								builder.append(j);
-								builder.append('"');
-								if (index != len) {
-									builder.append(',');
-								}
-							}
-							++index;
-						}
-					}
-				}
-			}
-
-			if (i != l) {
-				builder.append(',');
-			}
-			i++;
-		}
-
-		System.out.println(builder.toString());
-	}
+        System.out.println(builder.toString());
+    }
 }

@@ -23,6 +23,7 @@ public interface ReportConstants
     String header_auto_increment = "auto_increment";
     String header_parameter = "parameter";
     String header_count = "count";
+    String header_split_length = "split_length";
 
     /**
      * 值相关

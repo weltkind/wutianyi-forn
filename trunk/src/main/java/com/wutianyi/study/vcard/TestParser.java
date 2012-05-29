@@ -9,6 +9,7 @@ import info.ineighborhood.cardme.vcard.VCard;
 import info.ineighborhood.cardme.vcard.VCardImpl;
 import info.ineighborhood.cardme.vcard.errors.VCardError;
 import info.ineighborhood.cardme.vcard.features.ExtendedFeature;
+import info.ineighborhood.cardme.vcard.features.KeyFeature;
 import info.ineighborhood.cardme.vcard.features.NameFeature;
 import info.ineighborhood.cardme.vcard.types.PhotoType;
 import info.ineighborhood.cardme.vcard.types.media.ImageMediaType;
@@ -97,7 +98,6 @@ public class TestParser {
 				ExtendedFeature feature = features.next();
 				System.out.println("feature: " + feature.getExtensionName());
 			}
-			
 		}
 		System.out.println("\n-- END --");
 	}
