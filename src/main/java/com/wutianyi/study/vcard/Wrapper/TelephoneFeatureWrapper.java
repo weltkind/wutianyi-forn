@@ -49,4 +49,9 @@ public class TelephoneFeatureWrapper implements WrapperInterface
         return false;
     }
 
+	@Override
+	public int getParameterSize() {
+		return telephoneFeature.getTelephoneParameterSize();
+	}
+
 }

@@ -51,4 +51,9 @@ public class EmailFeatureWrapper implements WrapperInterface
         return false;
     }
 
+	@Override
+	public int getParameterSize() {
+		return emailFeature.getEmailParameterSize();
+	}
+
 }

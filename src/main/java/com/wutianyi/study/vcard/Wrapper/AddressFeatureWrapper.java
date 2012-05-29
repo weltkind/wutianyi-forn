@@ -64,4 +64,9 @@ public class AddressFeatureWrapper implements WrapperInterface
         return false;
     }
 
+	@Override
+	public int getParameterSize() {
+		return addressFeature.getAddressParameterSize();
+	}
+
 }

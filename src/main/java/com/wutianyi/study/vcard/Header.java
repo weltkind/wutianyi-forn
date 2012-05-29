@@ -157,9 +157,9 @@ public class Header implements Cloneable
         try
         {
             Header header = (Header) super.clone();
-            header.setAutoIncrement(false);
+//            header.setAutoIncrement(false);
             header.setCount(0);
-            header.setMulti(false);
+//            header.setMulti(false);
             header.setShow(false);
             return header;
         }

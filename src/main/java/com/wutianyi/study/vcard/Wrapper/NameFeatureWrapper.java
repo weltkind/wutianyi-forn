@@ -51,4 +51,10 @@ public class NameFeatureWrapper implements WrapperInterface
         return false;
     }
 
+	@Override
+	public int getParameterSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
