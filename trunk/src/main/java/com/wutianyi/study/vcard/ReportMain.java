@@ -31,19 +31,20 @@ public class ReportMain {
 		int j = 0;
 		int count = vcards.size();
 		for (VCardImpl vcard : vcards) {
-			int i = 0;
-			int len = report.getHeaders().length;
 			for (Header header : report.getHeaders()) {
-				if (i != 0 && i != len && header.isShow()) {
-					builder.append(',');
-				}
+				
 				if (header.isShow()) {
 					Utils.buildValues(header, new VcardWrapper(vcard), builder);
 				}
-				i++;
+				if (header.isShow()) {
+					builder.append(',');
+				}
 			}
 			if (j != count - 1) {
 				builder.append('\n');
+			}
+			else {
+				builder.append('\r');
 			}
 			j++;
 		}

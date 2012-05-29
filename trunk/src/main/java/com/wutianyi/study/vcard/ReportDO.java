@@ -47,14 +47,8 @@ public class ReportDO implements Cloneable
     {
         StringBuilder builder = new StringBuilder();
         int i = 0;
-        int l = getHeaders().length;
         for (Header header : getHeaders())
         {
-        	if (i != 0 &&i != l && header.isShow())
-            {
-                builder.append(',');
-            }
-        	
             if (header.show)
             {
                 Value[] values = header.getValues();
@@ -122,7 +116,10 @@ public class ReportDO implements Cloneable
                     }
                 }
             }
-
+            if (header.isShow())
+            {
+                builder.append(',');
+            }
             i++;
         }
         reportHeader = builder.toString();
