@@ -7,4 +7,6 @@ public interface WrapperInterface
     String getType();
 
     boolean containParameter(String[] parameter);
+    
+    int getParameterSize();
 }

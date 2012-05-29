@@ -50,4 +50,9 @@ public class LabelFeatureWrapper implements WrapperInterface
         return false;
     }
 
+	@Override
+	public int getParameterSize() {
+		return labelFeature.getExtendedLabelParameterSize();
+	}
+
 }

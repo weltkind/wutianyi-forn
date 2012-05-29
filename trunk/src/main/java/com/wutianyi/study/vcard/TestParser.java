@@ -37,7 +37,7 @@ public class TestParser {
 	}
 
 	private File[] getFiles() {
-		File f = new File("file/vcard");
+		File f = new File("file/vcard/test1");
 
 		File[] fs = f.listFiles();
 		List<File> files = new ArrayList<File>();
