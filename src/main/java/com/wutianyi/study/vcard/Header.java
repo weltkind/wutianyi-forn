@@ -2,7 +2,7 @@ package com.wutianyi.study.vcard;
 
 import org.apache.commons.lang.StringUtils;
 
-public class Header
+public class Header implements Cloneable
 {
     /**
      * vcard property
@@ -33,8 +33,12 @@ public class Header
 
     boolean isExtend;
 
+    int splitlength;
+
+    boolean show = true;
+
     public Header(String vKey, String dKey, String[] parameters, String delimiter, boolean multi,
-            boolean autoIncrement, int count, Value[] values, boolean isExtend)
+            boolean autoIncrement, int count, Value[] values, boolean isExtend, int splitlength)
     {
         this.vKey = vKey;
         this.dKey = dKey;
@@ -45,6 +49,7 @@ public class Header
         this.count = count;
         this.values = values;
         this.isExtend = isExtend;
+        this.splitlength = splitlength;
     }
 
     public String getvKey()
@@ -137,11 +142,50 @@ public class Header
         this.isExtend = isExtend;
     }
 
+    public int getSplitlength()
+    {
+        return splitlength;
+    }
+
+    public void setSplitlength(int splitlength)
+    {
+        this.splitlength = splitlength;
+    }
+
+    public Header clone()
+    {
+        try
+        {
+            Header header = (Header) super.clone();
+            header.setAutoIncrement(false);
+            header.setCount(0);
+            header.setMulti(false);
+            header.setShow(false);
+            return header;
+        }
+        catch (CloneNotSupportedException e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public boolean isShow()
+    {
+        return show;
+    }
+
+    public void setShow(boolean show)
+    {
+        this.show = show;
+    }
+
     public String toString()
     {
         String v = "[\n\tvcard: " + vKey + "\n\tdisplay_name: " + dKey + "\n\tparameters: "
                 + StringUtils.join(parameters, ",") + "\n\tdelimiter: " + delimiter + "\n\tmulti: " + multi
-                + "\n\tauto_increment: " + autoIncrement + "\n\tcount: " + count;
+                + "\n\tauto_increment: " + autoIncrement + "\n\tcount: " + count + "\n\tsplitlength: " + splitlength;
 
         for (Value value : values)
         {
