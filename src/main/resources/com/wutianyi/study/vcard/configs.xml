@@ -49,4 +49,94 @@
 		</header>
 		<header vcard="X-MPS-PHOTO" display_name="同步助手 图片" />
 	</report>
+	
+	<report id="2" name="outlook csv 导出">
+		<header vcard="N" display_name="姓名" delimiter=";" split_length="5" show="true">
+			<value index="0" display_name="姓" />
+			<value index="1" display_name="名"/>
+		</header>
+		<header vcard="ORG" display_name="单位/部门" split_length="2">
+			<value index="0" display_name="单位"/>
+			<value index="1" display_name="部门"/>
+		</header>
+		<header vcard="TITLE" display_name="职务" />
+		<header vcard="ADR" display_name="商务地址" parameter="WORK" split_length="7">
+			<value index="6" display_name="商务地址 国家/地区"/>
+			<value index="3" display_name="商务地址 市/县"/>
+			<value index="4" display_name="商务地址 省/市/自治区"/>
+			<value index="2" display_name="商务地址 街道"/>
+			<value index="5" display_name="商务地址 邮政编码"/>
+		</header>
+		<header vcard="ADR" display_name="住宅地址" parameter="HOME" split_length="7">
+			<value index="6" display_name="住宅地址 国家/地区"/>
+			<value index="3" display_name="住宅地址 市/县"/>
+			<value index="4" display_name="住宅地址 省/市/自治区"/>
+			<value index="2" display_name="住宅地址 街道"/>
+			<value index="5" display_name="住宅地址 邮政编码"/>
+		</header>
+		<header vcard="ADR" display_name="其他地址" split_length="7">
+			<value index="6" display_name="其他地址 国家/地区"/>
+			<value index="3" display_name="其他地址 市/县"/>
+			<value index="4" display_name="其他地址 省/市/自治区"/>
+			<value index="2" display_name="其他地址 街道"/>
+			<value index="5" display_name="其他地址 邮政编码"/>
+		</header>
+		<header vcard="TEL" display_name="商务传真" parameter="WORK;FAX"/>
+		<header vcard="TEL" display_name="商务电话" parameter="WORK" multi="true" auto_increment="true" count="2"/>
+		<header vcard="TEL" display_name="住宅传真" parameter="HOME;FAX"/>
+		<header vcard="TEL" display_name="住宅电话" parameter="HOME" multi="true" auto_increment="true" count="2"/>
+		<header vcard="TEL" display_name="移动电话" parameter="CELL"/>
+		<header vcard="TEL" display_name="其他传真 " parameter="FAX"/>
+		<header vcard="TEL" display_name="其他电话 "/>
+		<header vcard="EMAIL" display_name="电子邮件" multi="true" auto_increment="true" count="3" escape_parameter="true" />
+		<header vcard="NOTE" display_name="附注 " />
+		<header vcard="BDAY" display_name="生日"/>
+		<header vcard="URL" display_name="网页"/>
+	</report>
+	
+	<report id="3" name="google 导出">
+		<header vcard="N" display_name="姓名" delimiter=";" split_length="5" show="true">
+			<value index="0" display_name="姓" />
+			<value index="1" display_name="名"/>
+		</header>
+		<header vcard="ORG" display_name="单位/部门" split_length="2">
+			<value index="0" display_name="单位"/>
+			<value index="1" display_name="部门"/>
+		</header>
+		<header vcard="TITLE" display_name="职务" />
+		<header vcard="ADR" display_name="商务地址" parameter="WORK" split_length="7" auto_increment="true" multi="true">
+			<value index="6" display_name="商务地址 国家/地区"/>
+			<value index="3" display_name="商务地址 市/县"/>
+			<value index="4" display_name="商务地址 省/市/自治区"/>
+			<value index="2" display_name="商务地址 街道"/>
+			<value index="5" display_name="商务地址 邮政编码"/>
+		</header>
+		<header vcard="ADR" display_name="住宅地址" parameter="HOME" multi="true" auto_increment="true" count="3" split_length="7">
+			<value index="6" display_name="住宅地址 国家/地区"/>
+			<value index="3" display_name="住宅地址 市/县"/>
+			<value index="4" display_name="住宅地址 省/市/自治区"/>
+			<value index="2" display_name="住宅地址 街道"/>
+			<value index="5" display_name="住宅地址 邮政编码"/>
+		</header>
+		<header vcard="ADR" display_name="其他地址" split_length="7" multi="true" auto_increment="true" count="3" >
+			<value index="6" display_name="其他地址 国家/地区"/>
+			<value index="3" display_name="其他地址 市/县"/>
+			<value index="4" display_name="其他地址 省/市/自治区"/>
+			<value index="2" display_name="其他地址 街道"/>
+			<value index="5" display_name="其他地址 邮政编码"/>
+		</header>
+		<header vcard="TEL" display_name="商务传真" parameter="WORK;FAX" multi="true" auto_increment="true"/>
+		<header vcard="TEL" display_name="商务电话" parameter="WORK" multi="true" auto_increment="true" count="2"/>
+		<header vcard="TEL" display_name="住宅传真" parameter="HOME;FAX" multi="true" auto_increment="true"/>
+		<header vcard="TEL" display_name="住宅电话" parameter="HOME" multi="true" auto_increment="true" count="2"/>
+		<header vcard="TEL" display_name="移动电话" parameter="CELL" multi="true" auto_increment="true"/>
+		<header vcard="TEL" display_name="其他传真 " parameter="FAX" multi="true" auto_increment="true"/>
+		<header vcard="TEL" display_name="其他电话 " multi="true" auto_increment="true"/>
+		<header vcard="EMAIL" display_name="电子邮件地址"  multi="true" auto_increment="true" count="3" escape_parameter="true" >
+			<value value="" pre_value="" comcur="true"></value>
+		</header>
+		<header vcard="NOTE" display_name="附注 " />
+		<header vcard="BDAY" display_name="生日" multi="true" auto_increment="true"/>
+		<header vcard="URL" display_name="网页" multi="true" auto_increment="true"/>
+	</report>
 </configs>
