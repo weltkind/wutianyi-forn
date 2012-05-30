@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<report id="1" name="同步助手报表">
-		<header vcard="N" display_name="姓名" delimiter=";" split_length="5">
+		<header vcard="N" display_name="姓名" delimiter=";" split_length="5" show="true">
 			<value index="0" display_name="姓" />
 			<value index="1" display_name="名"/>
 			<value index="2" display_name="" escape="true" />
@@ -39,7 +39,7 @@
 			<value index="5" display_name="地址 邮政编码"/>
 		</header>
 		<header vcard="NOTE" display_name="备注" />
-		<header vcard="EMAIL" display_name="电子邮件" multi="true" auto_increment="true" count="3" />
+		<header vcard="EMAIL" display_name="电子邮件" multi="true" auto_increment="true" count="3" escape_parameter="true" />
 		<header vcard="TEL" display_name="电话" multi="true" auto_increment="true" count="3"/>
 		<header vcard="TEL" display_name="移动电话" parameter="CELL" multi="true" auto_increment="true" count="3"/>
 		<header vcard="URL" display_name="网址" multi="true" auto_increment="true" count="4"/>
@@ -47,5 +47,6 @@
 		<header vcard="ORG" display_name="单位/部门" split_length="2">
 			<value index="1" display_name="部门"/>
 		</header>
+		<header vcard="X-MPS-PHOTO" display_name="同步助手 图片" />
 	</report>
 </configs>

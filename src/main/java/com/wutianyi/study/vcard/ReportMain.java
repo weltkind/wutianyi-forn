@@ -49,6 +49,6 @@ public class ReportMain {
 			j++;
 		}
 
-		System.out.println(builder.toString());
+		System.out.print(builder.toString());
 	}
 }

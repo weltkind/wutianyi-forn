@@ -35,10 +35,13 @@ public class Header implements Cloneable
 
     int splitlength;
 
-    boolean show = true;
+    boolean show;
+
+    boolean escapeParameter;
 
     public Header(String vKey, String dKey, String[] parameters, String delimiter, boolean multi,
-            boolean autoIncrement, int count, Value[] values, boolean isExtend, int splitlength)
+            boolean autoIncrement, int count, Value[] values, boolean isExtend, int splitlength, boolean show,
+            boolean escapeParameter)
     {
         this.vKey = vKey;
         this.dKey = dKey;
@@ -50,6 +53,8 @@ public class Header implements Cloneable
         this.values = values;
         this.isExtend = isExtend;
         this.splitlength = splitlength;
+        this.show = show;
+        this.escapeParameter = escapeParameter;
     }
 
     public String getvKey()
@@ -156,11 +161,16 @@ public class Header implements Cloneable
     {
         try
         {
+            if (show)
+            {
+                return this;
+            }
+
             Header header = (Header) super.clone();
-//            header.setAutoIncrement(false);
+            // header.setAutoIncrement(false);
             header.setCount(0);
-//            header.setMulti(false);
-            header.setShow(false);
+            // header.setMulti(false);
+            // header.setShow(false);
             return header;
         }
         catch (CloneNotSupportedException e)
@@ -179,6 +189,16 @@ public class Header implements Cloneable
     public void setShow(boolean show)
     {
         this.show = show;
+    }
+
+    public boolean isEscapeParameter()
+    {
+        return escapeParameter;
+    }
+
+    public void setEscapeParameter(boolean escapeParameter)
+    {
+        this.escapeParameter = escapeParameter;
     }
 
     public String toString()

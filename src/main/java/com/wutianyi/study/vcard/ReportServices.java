@@ -113,6 +113,8 @@ public class ReportServices
         String parameterStr = getProperty(attrs, ReportConstants.header_parameter);
         int count = getPropertyInt(attrs, ReportConstants.header_count, 0);
         int splitlength = getPropertyInt(attrs, ReportConstants.header_split_length, 0);
+        boolean show = getPropertyBoolean(attrs, ReportConstants.header_show);
+        boolean escapeParameter = getPropertyBoolean(attrs, ReportConstants.header_escape_parameter);
         if (StringUtils.isBlank(vKey) || StringUtils.isBlank(dKey))
         {
             return null;
@@ -134,7 +136,7 @@ public class ReportServices
         String[] parameters = StringUtils.isNotBlank(parameterStr) ? parameterStr.split(";") : null;
 
         return new Header(vKey, dKey, parameters, delimiter, multi, autoIncrement, count, values.toArray(new Value[]
-        {}), extend, splitlength);
+        {}), extend, splitlength, show, escapeParameter);
     }
 
     private static Value createValue(Node item)
