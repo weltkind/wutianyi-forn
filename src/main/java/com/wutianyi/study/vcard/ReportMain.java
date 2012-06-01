@@ -41,7 +41,7 @@ public class ReportMain {
 				}
 			}
 			if (j != count - 1) {
-				builder.append('\n');
+				builder.append("\r\n");
 			}
 			else {
 				builder.append('\r');

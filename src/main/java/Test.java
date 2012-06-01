@@ -245,17 +245,24 @@ public class Test
         System.out.println(DigestUtils.md5Hex("123").length());
         
         String mobile = "+8615013152239";
-        if(StringUtils.isNotBlank(mobile))
-        {
-            mobile = mobile.replaceFirst("+", "");
-            if(mobile.startsWith("86"))
-            {
-                mobile = mobile.substring(2);
-            }
-        }
+//        if(StringUtils.isNotBlank(mobile))
+//        {
+//            mobile = mobile.replaceFirst("+", "");
+//            if(mobile.startsWith("86"))
+//            {
+//                mobile = mobile.substring(2);
+//            }
+//        }
         System.out.println(mobile);
         SimpleDateFormat f = new SimpleDateFormat("dd/MMM/yyyy:hh:mm:ss Z");
         System.out.println(f.format(new Date()));
+        
+        String t3="test;af";
+        String[] ts3 = t3.split(";", 1);
+        for(String ts4 : ts3)
+        {
+            System.out.println(ts4);
+        }
     }
 
 }
