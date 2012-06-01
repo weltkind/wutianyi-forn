@@ -284,6 +284,12 @@
 			<artifactId>jt-all</artifactId>
 			<version>1.2.0</version>
 		</dependency>
+		<!-- 对字符集的识别 -->
+		<dependency>
+			<groupId>com.googlecode.juniversalchardet</groupId>
+			<artifactId>juniversalchardet</artifactId>
+			<version>1.0.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
