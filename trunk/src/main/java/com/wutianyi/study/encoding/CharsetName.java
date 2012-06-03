@@ -13,7 +13,7 @@ public class CharsetName
         Map<String, Charset>charset = Charset.availableCharsets();
         for(Entry<String, Charset> entry : charset.entrySet())
         {
-            System.out.println(entry.getValue());
+//            System.out.println(entry.getValue() + entry.getValue().newDecoder());
         }
     }
 }
