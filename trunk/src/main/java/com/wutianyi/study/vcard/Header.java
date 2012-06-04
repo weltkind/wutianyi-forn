@@ -1,5 +1,8 @@
 package com.wutianyi.study.vcard;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.commons.lang.StringUtils;
 
 public class Header implements Cloneable
@@ -39,6 +42,8 @@ public class Header implements Cloneable
 
     boolean escapeParameter;
 
+    Map<String, Value> valueIndexes;
+
     public Header(String vKey, String dKey, String[] parameters, String delimiter, boolean multi,
             boolean autoIncrement, int count, Value[] values, boolean isExtend, int splitlength, boolean show,
             boolean escapeParameter)
@@ -55,6 +60,23 @@ public class Header implements Cloneable
         this.splitlength = splitlength;
         this.show = show;
         this.escapeParameter = escapeParameter;
+        if (null != values && 0 != values.length)
+        {
+            valueIndexes = new HashMap<String, Value>();
+            for (Value value : values)
+            {
+                valueIndexes.put(value.getDisplayName(), value);
+            }
+        }
+    }
+
+    public Value getValueByDisplayName(String displayName)
+    {
+        if (null != valueIndexes)
+        {
+            return valueIndexes.get(displayName);
+        }
+        return null;
     }
 
     public String getvKey()

@@ -2,8 +2,10 @@ package com.wutianyi.study.vcard;
 
 import info.ineighborhood.cardme.vcard.VCardImpl;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,6 +14,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -197,21 +200,148 @@ public class ReportServices
         return reports.get(id);
     }
 
-    public static void main(String[] args) throws IOException
+    public static String createVcardFiles(byte[] datas, int reportId)
     {
-        TestParser testParser = new TestParser();
-        List<VCardImpl> vcards = testParser.importVCards();
-
-        List<VcardWrapper> vs = new ArrayList<VcardWrapper>();
-        for (VCardImpl v : vcards)
+        ReportDO report = reports.get(reportId);
+        if (null == report)
         {
-            vs.add(new VcardWrapper(v));
+            return "";
+        }
+        String[] lines = new String(datas).split(VcardUtils.CRLF);
+        if (lines.length < 2)
+        {
+            return "";
         }
 
-        ReportDO report = getReport(1);
-        ReportDO newReport = Utils.createReportDO(vs, report);
+        VcardHeader[] vcardHeaders = initVcardHeader(lines[0], report);
+        StringBuilder builder = new StringBuilder();
 
-        System.out.println(newReport.getReportHeader());
-        System.out.println(report.getReportHeader());
+        for (int i = 1; i < lines.length; i++)
+        {
+            builder.append("BEGIN:VCARD");
+            builder.append(VcardUtils.CRLF);
+            String[] values = splitStr(lines[i]);
+            for (VcardHeader vcardHeader : vcardHeaders)
+            {
+                vcardHeader.getVcardHeader(values, builder);
+            }
+            builder.append("END:VCARD");
+            builder.append(VcardUtils.CRLF);
+        }
+
+        return builder.toString();
+
+    }
+
+    private static VcardHeader[] initVcardHeader(String headerStr, ReportDO report)
+    {
+
+        if (StringUtils.isBlank(headerStr))
+        {
+            return null;
+        }
+        Map<String, VcardHeader> maps = new HashMap<String, VcardHeader>();
+        String[] headers = splitStr(headerStr);
+        int i = 0;
+        for (String header : headers)
+        {
+            int index = -1;
+            int countIndex = header.lastIndexOf(VcardUtils.SP);
+            if (countIndex != -1)
+            {
+                index = MyStringUtils.convertInt(header.substring(countIndex + 1, header.length()), -1);
+            }
+            String displayName = header;
+
+            if (index != -1)
+            {
+                displayName = header.substring(0, countIndex);
+            }
+
+            Header h = report.getHeaderByDisplayName(displayName);
+            if (null != h)
+            {
+                String key = h.getdKey();
+                if (index != -1)
+                {
+                    key += VcardUtils.SP + index;
+                }
+                VcardHeader vcardHeader = maps.get(key);
+                if (null == vcardHeader)
+                {
+                    vcardHeader = new VcardHeader(h.getvKey(), StringUtils.join(h.getParameters(), ';'));
+                    vcardHeader.setLength(h.getSplitlength());
+                    vcardHeader.setIndex(i);
+                    maps.put(key, vcardHeader);
+                }
+                Value value = h.getValueByDisplayName(displayName);
+                if (null != value)
+                {
+                    vcardHeader.addIndex(value.getIndex(), i);
+                }
+            }
+            ++i;
+        }
+        return maps.values().toArray(new VcardHeader[0]);
+    }
+
+    private static String[] splitStr(String str)
+    {
+        boolean inline = false;
+        List<String> strs = new ArrayList<String>();
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++)
+        {
+            char c = str.charAt(i);
+            switch (c)
+            {
+            case '"':
+            {
+                inline = !inline;
+                break;
+            }
+            case ',':
+            {
+                if (!inline)
+                {
+                    strs.add(builder.toString());
+                    builder.delete(0, builder.length());
+                }
+                else
+                {
+                    builder.append(c);
+                }
+                break;
+            }
+            default:
+                builder.append(c);
+            }
+        }
+        if (builder.length() > 0)
+        {
+            strs.add(builder.toString());
+        }
+        return strs.toArray(new String[0]);
+    }
+
+    public static void main(String[] args) throws IOException
+    {
+        // TestParser testParser = new TestParser();
+        // List<VCardImpl> vcards = testParser.importVCards();
+        //
+        // List<VcardWrapper> vs = new ArrayList<VcardWrapper>();
+        // for (VCardImpl v : vcards)
+        // {
+        // vs.add(new VcardWrapper(v));
+        // }
+        //
+        // ReportDO report = getReport(1);
+        // ReportDO newReport = Utils.createReportDO(vs, report);
+        //
+        // System.out.println(newReport.getReportHeader());
+        // System.out.println(report.getReportHeader());
+        byte[] datas = FileUtils.readFileToByteArray(new File(ReportServices.class.getResource(
+                "/com/wutianyi/study/vcard/resource.csv").getFile()));
+        System.out.println(createVcardFiles(datas, 1));
     }
 }

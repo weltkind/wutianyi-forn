@@ -14,6 +14,11 @@ public class ReportDO implements Cloneable
     String reportHeader;
     Map<VCardType, Header> indexes;
 
+    /**
+     * 报表头部的映射
+     */
+    Map<String, Header> headerIndexes;
+
     public ReportDO()
     {
 
@@ -30,8 +35,22 @@ public class ReportDO implements Cloneable
     private void initIndexex()
     {
         indexes = new HashMap<VCardType, Header>();
+        headerIndexes = new HashMap<String, Header>();
         for (Header header : headers)
         {
+            Value[] values = header.getValues();
+            if (null != values && 0 != values.length)
+            {
+                for (Value value : values)
+                {
+                    headerIndexes.put(value.getDisplayName(), header);
+                }
+            }
+            else
+            {
+                headerIndexes.put(header.getdKey(), header);
+            }
+
             try
             {
                 indexes.put(VCardType.valueOf(header.getvKey()), header);
@@ -41,6 +60,15 @@ public class ReportDO implements Cloneable
 
             }
         }
+    }
+
+    public Header getHeaderByDisplayName(String name)
+    {
+        if (null != headerIndexes)
+        {
+            return headerIndexes.get(name);
+        }
+        return null;
     }
 
     private void initReportHeader()
