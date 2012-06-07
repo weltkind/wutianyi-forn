@@ -42,6 +42,15 @@ public class CharsetServices {
 
 	}
 
+	public static String getEncoding(byte[] data)
+	{
+	    UniversalDetector detector = new UniversalDetector(null);
+	    detector.handleData(data, 0, data.length);
+	    detector.dataEnd();
+	    return detector.getDetectedCharset();
+	    
+	}
+	
 	public static byte[] tranEncoding(byte[] data, String destEncoding)
 			throws IOException {
 		// 对参数的判断
