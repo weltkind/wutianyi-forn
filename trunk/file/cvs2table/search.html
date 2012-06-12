@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script src="js/jquery.csv2table-0.02-b-1.7.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	#view tr {
+		display: none;
+	}
+</style>
+</head>
+<body>
+<input id="stext" type="text" value=""/>
+<input id="search" type="button" class="btn1" value="搜索"/>
+
+<div id="view"></div>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('#search').click(function(){
+			$("#view").csv2table('Book15.csv',{
+				onload:function(id,op,data,ary){
+					var text = $('#stext').val();
+					$('tr:first-child','#' + id).show();
+					if('' == text) {
+						$('tr', '#' + id).show();	
+						return;
+					}
+					$('tr', '#' + id).each(function(i){
+						if(i != 0) {
+							var value = $('td:nth-child(1)',this).text();
+							if(value.indexOf(text) != -1 ){
+								$(this).show();
+							}
+						}
+					});
+				}
+			});
+		});
+	});
+</script>
+</body>
+</html>
