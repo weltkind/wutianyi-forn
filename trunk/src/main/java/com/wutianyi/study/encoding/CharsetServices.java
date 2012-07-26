@@ -25,7 +25,7 @@ public class CharsetServices {
 	public static void main(String[] args) throws IOException {
 		byte[] data = FileUtils
 				.readFileToByteArray(new File(Main.class.getResource(
-						"/com/wutianyi/study/encoding/gbk.txt").getFile()));
+						"/com/wutianyi/study/encoding/2012-06-08-10-39-45-contact-29.vcf").getFile()));
 		tranEncoding(data, "utf-8");
 		// String s = "abc中国";
 		// byte[] utf8Bytes = s.getBytes(Charset.forName("utf-8"));
@@ -73,11 +73,12 @@ public class CharsetServices {
 		detector.dataEnd();
 
 		String srcEncoding = detector.getDetectedCharset();
-		if (StringUtils.isBlank(srcEncoding)) {
-			return data;
-		}
+		System.out.println(srcEncoding);
+//		if (StringUtils.isBlank(srcEncoding)) {
+//			return data;
+//		}
 
-		Charset srcCharset = Charset.forName(srcEncoding);
+		Charset srcCharset = Charset.forName("GB18030");
 		if (null == srcCharset) {
 			return data;
 		}

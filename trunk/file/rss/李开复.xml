@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- generator="FEEDCREATOR_VERSION" -->
+<rss version="2.0" xmlns:sns="http://blog.sina.com.cn/sns">
+    <channel>
+        <title>李开复的博客</title>
+        <description></description>
+        <link>http://blog.sina.com.cn/kaifulee</link>
+        <lastBuildDate>Wed, 30 Nov 2011 14:03:08 +0800</lastBuildDate>
+        <generator>FEEDCREATOR_VERSION</generator>
+        <language>zh-cn</language>
+        <copyright>Copyright 1996 - 2009 SINA Inc. All Rights Reserved.</copyright>
+        <pubDate>Mon, 20 Feb 2012 17:56:39 +0800</pubDate>
+        <item>
+            <title>CMU的证明和聘书</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560102dvxh.html</link>
+            <description><![CDATA[<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s15.sinaimg.cn/orignal/475b3d56gb2ed7e84e56e" TARGET="_blank"><img SRC="http://s15.sinaimg.cn/middle/475b3d56gb2ed7e84e56e&amp;690" WIDTH="476" HEIGHT="690" NAME="image_operate_85301322633066162" /></A><br />
+<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s4.sinaimg.cn/orignal/475b3d56gb2ed805b2113" TARGET="_blank"><img SRC="http://s4.sinaimg.cn/middle/475b3d56gb2ed805b2113&amp;690" WIDTH="476" HEIGHT="690" /></A><br />
+<br />
+<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s2.sinaimg.cn/orignal/475b3d56gb2ed808a9f31" TARGET="_blank"><img SRC="http://s2.sinaimg.cn/middle/475b3d56gb2ed808a9f31&amp;690" WIDTH="476" HEIGHT="690" /></A><br />
+<br />
+<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s4.sinaimg.cn/orignal/475b3d56g784af3504703" TARGET="_blank"><img SRC="http://s4.sinaimg.cn/middle/475b3d56g784af3504703&amp;690" WIDTH="476" HEIGHT="690" /></A><br />
+<br />
+<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s4.sinaimg.cn/orignal/475b3d56gb2ed81770c23" TARGET="_blank"><img SRC="http://s4.sinaimg.cn/middle/475b3d56gb2ed81770c23&amp;690" WIDTH="476" HEIGHT="690" NAME="image_operate_59921322633077937" /></A><br />
+<br />]]></description>
+            <author>李开复</author>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560102dvxh.html#comment</comments>
+            <pubDate>Wed, 30 Nov 2011 14:03:08 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560102dvxh.html</guid>
+        </item>
+        <item>
+            <title>给未来的你  — 李开复在2011级大学新生学习规划讲座上的演讲</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560102dt81.html</link>
+            <description><![CDATA[<h1><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+给未来的你</SPAN></H1>
+<h2><span STYLE="font-family:宋体;mso-ascii-font-family:Cambria;mso-ascii-theme-font: major-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:major-fareast; mso-hansi-font-family:Cambria;mso-hansi-theme-font:major-latin">
+——李开复在</SPAN><span LANG="EN-US" XML:LANG="EN-US">2011</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Cambria; mso-ascii-theme-font:major-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: major-fareast;mso-hansi-font-family:Cambria;mso-hansi-theme-font:major-latin">级大学新生学习规划讲座上的演讲</SPAN></H2>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+李开复</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+很高兴与这么多刚刚入学的大学新生交流，今天的演讲，希望和大家讨论一下，经过大学四年的学习生活，未来的你可能成为什么样子。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+有人也许会问，我未来成为什么样的人，开复怎么会知道呢？其实，我并不确切地知道未来你们每个人会怎样。但请相信我，通过过去十几年和大学生的交流，在创新工场、谷歌和微软，我了解我们雇用的每一个毕业生，我也了解来创新工场申请项目、希望得到投资的每一位年轻的创业者，还有在微博上留言、与我讨论互动的每一位年轻网友，在他们身上，我看到了未来的你。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我很喜欢英国小说家狄更斯的作品。他写过一部短篇小说叫《圣诞欢歌》，故事讲的是一位本性善良，但因为受环境影响，变得非常小器、吝啬、刻薄的商人。他在平安夜被三个精灵分别带到了自己过去、现在和未来的生活场景，看到了未来的自己，并因此彻底醒悟，领会到生活的意义，决心改过自新，做个好人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这个故事告诉我们，假如能看到未来的你可能变成什么样，许多人也许就不会按照现在的方式去生活。四年后，你们中的一些人可能会出现这样那样的困惑，可能陷入迷茫，也可能发现，你们距离自己的目标还存在许多不足。未雨绸缪，如果想避免四年后的困惑和迷茫，就必须从现在开始，认真规划自己的大学生活，努力提高自己。</SPAN></P>
+<h3><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+一、寻找兴趣和天赋，避免成为迷茫、困惑的人</SPAN></H3>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+去年，创新工场做校园招聘时，我们去了</SPAN><span LANG="EN-US" XML:LANG="EN-US">15</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">所高校，给面试筛选出的顶尖计算机系毕业生发出了大约</SPAN><span LANG="EN-US" XML:LANG="EN-US">200</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">份录取通知。然后，我一一打电话，看每个人是否愿意加入创新工场学习创业。在说服他们加入创新工场前，我不想误导任何学生。所以，我的第一个问题总是：“你有没有想过，在你人生的未来，创业是否是你真正想做的一件事。”</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+既然是顶尖大学的顶尖学生，对这个问题就应该胸有成竹。如果你并非真正想创业，可能你就不适合加入创新工场，也许，你会在大企业或政府机构里得到更好的发展。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+出乎我的意料，超过</SPAN><span LANG="EN-US" XML:LANG="EN-US">80%</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">的顶尖毕业生给我的答案是：“不知道，没想过。”</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这，就是一种迷茫。</SPAN><span LANG="EN-US" XML:LANG="EN-US">80%</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">来创新工场申请工作并成功得到录取通知的人都没有认真想过这个问题，不知道创业是不是自己未来的道路。这个比例还是在顶尖学生中统计得到的。我在网上看到更多即将毕业的同学在发问，他们不知道专业不对口该怎么办，不知道自己想做什么，也不知道自己爱做什么……每个疑问都透露出毕业生在毕业时对未来的迷茫和困惑。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+大学四年，必须要认清你自己，弄清楚自己想要成为一个什么样的人，特别要知道，自己的兴趣在哪里，天赋在哪里。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+你必须摈弃过去一些错误的理解：自己想要成为什么样的人，这件事跟别人认为你是谁，或别人想要你成为谁，丝毫没有关系。无论是同学、老师、家长，他们都不能决定你想成为什么样的人；或者，他们想要你成为的人，很可能根本不是你自己真正想要成为的人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+为什么认清自己的天赋如此重要？试想，如果我们非要把比尔·盖茨变成一个音乐家，他能取得多大的音乐成就？如果非要把贝多芬变成一名程序员，他有可能成为比尔·盖茨吗？肯定不行。天生我材必有用，每个人都有自己的天赋。只有找到天赋所在，才能把自己的潜力发挥到极致。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+此外，找到自己的兴趣也同样重要，甚至更为重要。如果做的事情是自己最喜欢的事，那么你会在吃饭、睡觉甚至洗澡时都在想着这件事，想不成功都很难。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+大学生该怎样寻找兴趣和天赋呢？我的建议非常简单：多尝试！多尝试自己可能有兴趣的东西：无论是选修课程还是实习工作，无论是参加社团还是去网上求知，花足够的时间去尝试、体验，努力寻找天赋和兴趣所在。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+当然，求知不能太功利。千万不要因为你的某个职业规划，就只去学那些“用得上、有帮助”的技能，而放弃那些你可能有兴趣或有天赋的领域。否则，你可能会错失心中真正喜爱的事情。乔布斯曾经说：“我们的人生面临各种选择，应该追随我们的心。”乔布斯还说：“你在憧憬未来时不可能将以前积累的点点滴滴串连起来，你只能在回顾过去时将它们串连起来。所以你必须相信，当前积累的点点滴滴，会在你未来的某一天串连起来。你必须相信某些东西——你的勇气、目的、生命、因缘等等——相信它们会串联起你的生命，这会让你更加自信地追随你的心，甚至，这会指引你不走寻常路，使你的生命与众不同。”</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+拿我自己来说，我上大学时选修的课程可以分为三类：</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第一类是选课前觉得可能有兴趣，上课后却发现非常枯燥，听得昏昏欲睡的课程，包括经济学、美国政治、美国政策、欧洲文学、欧美文学、艺术经典、音乐经典等等。但我一点都不后悔花时间选这些课，因为这样的尝试会让人生的选择更少些。通过尝试，多划掉些可能的选项，这有利于我们认清自己的真正方向。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第二类课程是上了几堂课、做了几次作业就爱不释手的课程。爱上一门课程的感觉特别好，这不可能第一次就撞上，我也是选了那么多自己不喜欢的课之后，才发现自己最喜欢的是计算机相关的课程。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第三类课程学的时候很感兴趣，但不知道以后有什么用。这没关系，就像乔布斯所说的，这都是人生中积累的点点滴滴，也许未来有一天，你会把这些点点滴滴串联起来。比如，当时我发现自己对哲学很有兴趣，但自己并不想做哲学家。虽然没有直接的用途，哲学类的课程还是教会了我如何思考，如何认识人生的价值，也成了我一生的指南针。我还学了中国文学和英语写作，这对我的专业也没有直接用途。但我这几年出了五本书，其中至少有两本非常畅销。如果没有学过中国文学、写作和哲学，很可能也不会有成为业余作家的李开复。另外，我学的中国近代史和国际关系等课程，也对我决定首次到中国工作产生了重要的影响。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我当时那些选课的决定，并不是刻意做出的。当时就是想试一试。对于第一种课程，发现自己不喜欢，就直接丢掉；对于第二种课程，发现自己爱上了它，就马上去追随；对于第三种喜欢但没用的课程，那就先留着，以后总归会把它串联起来。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+也许有同学会说，在美国换专业、选课当然轻松，可在中国却有很多限制。这里，我想跟大家分享一名优秀的创新工场工友的故事。这位工友名叫向若辉，毕业于一所非常普通，几乎没人听过的大学。当时，父母建议他学会计，因为毕业后好找工作。但他进了大学才发现，自己对会计根本没兴趣，没法学好，甚至出现了挂科。与此同时，他在网上发现，自己对用户体验设计的专业方向特别感兴趣。通过互联网，他自学了各种相关课程，交了很多设计师朋友，在论坛里与国内外的用户体验设计师交流。他不但有兴趣，也有这方面的天赋。他在读书期间兼职打工，做用户体验方面的工作，很快就赚了四万元。他的设计作品让人赞不绝口。但就在这时，他发现自己的专业课程越学越差，一个学期挂了四科。他不得不和父母商量。他的意见是，自己将全力学习专业课程，达到可毕业的标准，但毕业后不会去做会计，而是要追寻自己的兴趣。父母被他的真诚打动了，同意了他的意见。于是，他一边努力读书提高专业成绩，一边在新浪找到了用户体验设计方面的兼职工作，之后又在创新工场实习。一毕业，他就被创新工场投资的知乎团队聘为整个团队的用户体验负责人。这个例子告诉我们，当你发现自己所爱的时候，会像变魔术一样充分发掘出自己的最大潜能。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+乔布斯在</SPAN><span LANG="EN-US" XML:LANG="EN-US">2005</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">年斯坦福毕业典礼的演讲中说：“你们的时间有限，不要将时间浪费在重复他人的生活上。不要被教条束缚，那意味着你活在其他人思考的结果中。不要被他人的喧嚣遮蔽了你自己内心的声音、思想和直觉，它们在某种程度上知道你真正想成为什么样子，所有其他的事情都是次要的。”</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+如果你对未来迷茫，希望你能把握时间，找到自己的天赋和兴趣，这样，你在大学毕业的时候，才会真正拥有一片充满自信的天空。</SPAN></P>
+<h3><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+二、学会学习和思考，避免成为应试机器</SPAN></H3>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+在创新工场，每年都会收到几万份简历。很多时候，每打开一份简历我都不得不摇头叹息。大多数大学毕业生的简历千篇一律，比如，某人，男，出生年月，政治面貌，英语四六级，平均成绩</SPAN><span LANG="EN-US" XML:LANG="EN-US">80</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">分，刻苦努力，三好学生，等等。几乎每份简历都是在用应试体系里枯燥的成绩数字来描述、评价一个人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这样的描述没有任何吸引力。难道一个人在大学四年之后，只能展示这些数字吗？你是否变成了应试教育培训出来的一台机器？你自己的特点在什么地方？除了分数之外，你学懂了什么？你在所学的领域有没有好的创意？在实际工作中，你学到的知识能否派上用场？</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+不要被应试教育训练成机器。在座的每一位都是应试教育的受害者，你们经过了十几年的应试教育，今天进入了大学，应该划上一个句号。希望你们能挣脱一切束缚，开始真正的学习和思考。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+如何真正学会学习和思考呢？在大学期间，必须学会三种学习和思考的能力，这三种能力可以帮助你们从应试教育的束缚中摆脱出来。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第一种也是最重要的一种能力，是自学的能力。读中学时，老师会一次次重复课本内容，但进了大学后，老师只能充当引路人，学生必须积极主动地探索、学习和实践。在大学四年，要学会从一个被填充知识的人，变为自学知识的人。不能只会背诵，还必须要有理解的能力——这包括举一反三的能力，知其然也知其所以然的能力，无师自通的能力，等等。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+该怎样培养自学能力？很简单，你必须学会问“为什么”。在应试教育体系中，只要学会“什么”就可以及格了，但在大学里，一定要学“为什么”。当你真正理解一件事为什么如此时，你才能举一反三，无师自通。问“为什么”，要有打破砂锅问到底的决心，随时发问，上课问、上网问、问同学、问朋友……只有这样，你才真正学懂了，学到了。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第二种能力是从理论到实践的能力。不要只知道公式是什么，理论是什么，而且要知道在实际工作中如何运用。很多人进入社会才知道，以前学的会计、统计、哲学、文学之类，可能都不是你的老板要求你掌握的知识。有人说，其实在大学里学到的真正有用的知识，只是一生中要用到的</SPAN><span LANG="EN-US" XML:LANG="EN-US">5%</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">而已。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+所以，更重要的是要知道如何学以致用。例如，老师教了你怎么写英文，你要知道，怎么把英文技能应用到写一个真正的公关稿上；再比如，老师教了你怎么编程，你要知道，编程如何转换成商业价值，成为一个真正的产品。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这需要在学习时多问一个问题——“有什么用”。我记得，我女儿小时候非常不喜欢学数学，她觉得像指数之类的东西没有实际用处。直到有一天，我问她：“如果有</SPAN><span LANG="EN-US" XML:LANG="EN-US">100</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">元钱，存在银行，每年</SPAN><span LANG="EN-US" XML:LANG="EN-US">10%</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">的利息，</SPAN><span LANG="EN-US" XML:LANG="EN-US">10</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">年以后你会有多少钱？”当她知道这个问题的答案居然不是</SPAN><span LANG="EN-US" XML:LANG="EN-US">200</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">元，而是</SPAN><span LANG="EN-US" XML:LANG="EN-US">259</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">元的时候，她突然对数学有兴趣了，她想知道为什么。我当时就告诉她，指数，还有其他很多数学知识，都是非常有用的，关键在于融会贯通，知道如何将理论付诸实践。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第三种能力是</SPAN><span LANG="EN-US" XML:LANG="EN-US">critical
+thinking</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">，也就是批判式思维的能力。每一件事情，都有多方看法，不是只有一个非黑即白的答案。不同的人有不同的意见，每个意见都值得了解和珍惜。不要被教条束缚，要学会用不同的观点来看问题。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+创新工场的工友王俊煜是北大元培班的高材生，毕业后进入了谷歌。谷歌是一家很了不起的公司，但是这家公司有非常强烈的工程师文化，每做一个产品，都想着技术如何酷，如何难，如何难以被竞争对手效仿。但谷歌工程师较少去想，用户要这个东西有什么用。王俊煜是个特别重视用户体验的人，十分在乎用户的感觉。他深深地了解，一个产品不论技术有多难，如果用户不喜欢用，还是无法取得成功的。他在谷歌的时候就多次和人发生争执，因为公司里的工程师文化，他的声音经常被淹没。那时，大部分用户体验设计师都会“识相”地做些强势、资深的工程师希望做的东西，但王俊煜执着地提出自己的想法，在三四款产品上做出了重要的贡献，并从这个过程中学到了很多东西，也得到了工程师的尊敬。批判式思维给了他信心，于是他决定加入创新工场，成为豌豆荚的共同创始人。今天，豌豆荚可能是创新工场投资的所有产品里，用户评价最高的一个。王俊煜的故事说明，我们不能只从一个角度来看问题，一定要尊重不同的观点。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+怎么样培养批判式思维能力呢？建议你们每碰到一个知识点的时候，不但要学会问“为什么”，还要学会问“为什么不”。为什么一定是这样，为什么不可能是那样？这会让你更深入地了解问题的本质。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我女儿以前参加辩论社时，她问爸爸：“我辩论一个问题的时候，应该怎么选择我所支持的观点？”我给她的建议是：“你永远要选择那个你不认可的观点。”她觉得很奇怪，明明不认可这个观点，为什么要去辩论它呢？按照我的话做了几次之后，她慢慢了解了，当你去辩论你所不认可的观点时，会有很多好处。首先，对方的辩论方向你已经了如指掌，知己知彼，更容易取胜；通过变换视角，你一定会很惊讶：你原先不认可的观点其实也有一定的道理；最重要的是，你会真心理解并相信多视角看问题的好处。这种练习可以让你更容易平衡不同的观点，成为一个有批判式思维的思想家。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+如果你不希望在四年大学后成为应试机器，就应该多问“为什么”，“有什么用”，以及“为什么不”。这几个问题能帮助你学到自学的能力、实践的能力和批判式思维的能力。</SPAN></P>
+<h3><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+三、培养情商，避免成为孤独、被动的人</SPAN></H3>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+不少大学毕业生都对我说：“李老师，我感觉很孤独，很被动。”有一位同学说：“我的人际能力不强，人际圈子小，又没有什么特长引起别人的注意，即便在社团，也不知道怎么跟别人建立关系。”</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这种现象很自然。在应试教育的氛围中长大，你们可能很少有时间，在学习之外培养人际关系。我建议你们利用大学四年，努力提高自己的情商。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+所谓情商，就是和别人交流的能力、将心比心的能力以及得到别人信任的能力。以后进入业界你就会发现，这些能力都是非常重要的事，特别是得到别人信任的能力，因为信任需要很多时间来培养，但犯一次错就可能将其毁于一旦。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+培养情商的第一步是培养友情。读大学时一定要交几个要好的朋友。大学的友情不容易变质，往往可以受益终生。希望你们能将心比心，像好朋友对待你一样对待好朋友，成为你的好朋友的好朋友，与朋友分享你的喜怒哀乐。分享能让痛苦减半，分享能让快乐加倍。希望你们在大学四年交到一批真正的好朋友。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第二，要培养自己的表达能力，也就是口才。不要认为自己很聪明、能够思考就足够了。希腊哲人说过，一个善于思考的人如果不善于表达，其实就等于一个不善于思考的人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+美国一位著名的创业家，</SPAN><span LANG="EN-US" XML:LANG="EN-US">Pandora</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">公司的创始人蒂姆·韦斯特格伦（</SPAN><span LANG="EN-US" XML:LANG="EN-US">Tim Westergren</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">）说：“如果我作为一个创业家，可以从上帝那里要求一样礼物，那我会挑选‘口才’。”</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+创业者想要成功，他必须影响他周围的人，如投资者、顾客、用户等等。一个有口才的创业者，可以更好地领导员工，可以让员工理解自己的愿景，可以激发员工的斗志和潜力。虽然只有口才是不够的，但我见到的每一个成功的创业者都有出色的表达能力。口才不是学校里哪一门课程可以学到的，必须自己努力锻炼。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第三，在校期间要多争取实习、实践的机会。大学四年，如果想成为一个受人喜欢、有魅力的人，就要多学习团队合作。进入社会后，团队合作代表了一切，但在课堂里面，通常是不那么鼓励团队合作的——考试时的团队合作不就等于作弊了么？所以，在读书时一定要充分利用实习、实践的机会学习、培养团队合作能力。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+“我听到的会忘掉，我看到的能记住，我做过的才真正明白。”这句话告诉我们，必须去实践，才能明白一个团队是怎么工作、怎么设定目标、怎么达到目标的。只有学习如何跟人协作，才能增加你的情商，提高与人沟通的能力。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我在谷歌工作四年，在创新工场工作两年，在这</SPAN><span LANG="EN-US" XML:LANG="EN-US">6</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">年的时间里，我没有雇用过一个没有实习经历的毕业生。所以，当明年暑假到来的时候，你们不要回家去玩一个暑假，而要去找实习的机会，因为暑假是少数难得的可以自己支配所有时间的机会。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+没有一个从未实习过的学生能够进入谷歌或创新工场。学校的老师、学校的课程并不真的了解企业需要什么。唯一掌握实际工作经验的方法就是去企业实习。如果找不到创新工场、谷歌、百度等好的公司去实习，你们可以去任何一家公司。能去一个对口的公司最好，不能也没问题。找不到技术公司，就找服务业，哪怕是到餐馆里端盘子都有价值。虽然你不会想端一辈子盘子，但端盘子的时候，你有机会跟周围的人接触，这会让你成为一个情商更高的人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+除了实习，学生社团也是学习处理人际关系的好地方。社团其实是一个微观的社会，参加社团是进入社会的一种非常好的学习方式。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+总之，提高情商的三个好办法是：培养友情，锻炼口才，争取实习机会。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+如果在社团活动中犯错了怎么办？在争取工作机会时碰壁了怎么办？万一去百度应聘被拒绝了怎么办？万一他们嘲笑我怎么办？万一发现自己能力不强，周围的人都比我优秀怎么办？出现这些困惑都很正常。这时一定要积极主动，不要畏惧失败。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+从大学第一天开始，你就必须从被动转向主动。要成为自己的主人，积极管理自己的学业甚至未来的计划。只有你能管理自己的未来，没有人比你更在乎你未来想成为什么样的人。在今天的社会里，只有一个积极主动、不怕失败的人，才能在瞬息万变的竞争环境中赢得成功。只有善于展示自己的人，才能在工作里得到最多的机会。遇到挫折时，绝不能消极甚至放弃，你的被动其实就是弃权。你不去解决问题，也是一种解决；你不去做决定，也是在做决定</SPAN><span LANG="EN-US" XML:LANG="EN-US">——</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">这只会让你成为一个被动的、消极的、不成功的人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+谈到犯错，我们这个社会往往是不鼓励犯错的。但仔细想想，我们每个人都失败了很多次。你可能不记得，你第一次尝试走路的时候肯定跌倒过，你第一次张嘴说话的时候肯定说错过，你第一次游泳的时候也许差点儿被淹死，你第一次投篮肯定没有投进……但现在这些事情你都会做了，因为你没有被失败打倒，从失败中学到更多。在我个人的职业生涯里，我学到的最大的教训、最好的经验都是来自于失败，而不是来自于成功。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+乔布斯有一句话让我特别感动：“‘记住你即将死去’是我一生中遇到的最重要箴言。它帮我指明了生命中重要的选择。因为几乎所有的事情，包括所有的荣誉、所有的骄傲、所有对难堪和失败的恐惧，这些在死亡面前都会消失。我看到的是留下的真正重要的东西。有时候人们会担心自己将会失去某些东西。记住你将要死去，这是我所知道的避免这个念头的最好办法。你已经了无牵挂，没有理由不去追随你的心。”</SPAN></P>
+<h3><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+四、脚踏实地，避免成为浮躁、贪婪的人</SPAN></H3>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+浮躁和贪婪，这两种负面的人生态度，我在年轻人身上一次又一次看到。这更多是由环境因素造成的。在你们所处的环境中，有太多的不公平，有一些不诚信的人迅速致富，他们很不幸成为了部分年轻人效仿的偶像。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+年轻人应当奋斗，但不要将侥幸致富作为你的动力。在今天的社会里，创业也好，就业也好，一定要脚踏实地，通过努力学习达到目标。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+有一本名叫《异类》的书里告诉我们：每个了不起的大师都是经过差不多一万个小时的练习才最终成功的。莫扎特大约练习了一万个小时才成为杰出的音乐家，比尔·盖茨大约练习了一万个小时编程才取得成功。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+千万不要浮躁，不要认为可以侥幸得到成功。那种侥幸的成功即便得到了，可能也是短暂的；就算不是短暂的，也是不值得的。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+在创新工场，我们投资了一个团队，团队的负责人叫小冯（化名），美国名校毕业，才华横溢，对技术、产品都很有感觉，口才也非常好，被团队一致推为领导者。但他非常浮躁，认为自己什么都懂，可以驾驭整个团队，可以独立做商业计划。另外，他在业界小有名气，得到不少外界天使的认可和同龄人的追捧。但很不幸的是，他浮躁地希望能快速成功，快速出名。结果，他把更多的时间花在怎么出风头上，而不是脚踏实地把产品做好。最后，团队的产品做得非常不成功。团队成员一个接一个离开，最后他自己也不得不离职。很不幸，一个完全有机会成功的人才，因为浮躁而功亏一篑。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这件事给我的触动很深，创新工场之后面对创业者时，就常常会询问和考核这些创业者，确保他们做了必须的功课，把足够的时间花在了产品方向上。而且，在相关领域里，创业者一定要懂得比我们这些投资者多。如果你没有花苦功夫，懂得还没有我们多，那我们就不会投资你。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+另一件浮躁的事情发生在某大学。一群学生发了一篇假新闻稿，说创新工场投资了他们的电影。他们希望利用这个新闻吸引眼球，并洋洋得意地等着创新工场出来辟谣。一旦辟谣，他们就可以把事情越搞越大。最后，即便大家知道了真相，他们也已经出名了。这是他们的如意算盘。但这种浮躁的人总会聪明反被聪明误。看到这种不诚信的做法，我认为，做这种事情的人需要得到一个教训，于是，他们接到了我们律师的电话。律师通过电话警告他们，如果不停止侵权，就起诉他们。随即，他们也收到了校领导的通知，禁止他们再继续胡闹。这个事情也是对那些浮躁的人的一个警醒。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+创新工场曾经考虑投资一位名叫小高（化名）的创业者，他几乎拥有创业者需要的所有才华，不但懂技术、懂产品，而且有创业经验，有在大公司任职的经历，口才很好，非常自信，</SPAN><span LANG="EN-US" XML:LANG="EN-US">30</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">出头。在我们眼里，或者在任何风险投资者眼里，他都是一个需要追捧的创业者。小高跟我们讲了他的创业计划，很让人激动，我们当时恨不得就掏出支票来投资了。但我又问了几个问题。我问他：“这个计划多久能做出来？”他说：“四个月。”我是搞技术的，我知道这个产品没有一两年的时间绝对做不出来。我又问他：“这个想法为什么和你在现公司做的业务非常相似？”他惊慌地回答：“不会不会的，我们有很多新的想法，做出来一定是不一样的。”听了这两句话，我心里大概知道了，他可能打算从现公司偷窃一些源代码，另起炉灶打造自己的产品。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+当时，创新工场有一位投资经理说：“开复啊，别这么较真，这些事情，不要问这么清楚。你问清楚了，大家都不好。他没说他是偷窃，我们也没问，大家都不说，不就行了么？”听了这些话，我非常失望，我没有教育好创新工场的员工。于是，我在周末给创新工场的员工发了一封邮件：</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+我们今天有缘聚在创新工场，有一个共同点就是：我们不仅仅是为了一份工作和金钱，也希望做有意义的事情。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+我们不仅仅希望能成为顶尖早期风投，也希望能正面影响中国创业生态环境。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+我们不仅仅希望能够孵化顶尖企业，也希望能帮助它们成为值得尊敬的品牌。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+我们不仅仅希望能扶持最能干的创业者，也希望培养德才兼备的创业者典范。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+所以，当我们看一个创业者时，我们不能只关注他是否能成功和赚钱，是否聪明努力，也要深度认识这个人，看看他是否有潜力成为值得尊重的好领导。如果一个创业者有诚信的问题，例如盗窃别人的代码，或践踏性骚扰他人。这样的一个人是绝对不能投的，无论他的公司能多成功，能赚多少钱。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+作为创新工场，我们的一举一动都代表了工场，无论是对平台员工，投资的公司，还是大众。如果我们支持犯罪，我们就是在犯罪。如果我们投资邪恶，我们就是邪恶。如果我们容忍卑鄙，我们就是卑鄙。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+最后，分享杰克·韦尔奇的一句话：</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:21.0pt; margin-bottom:6.0pt;margin-left:21.0pt;mso-para-margin-top:.5gd;mso-para-margin-right: 2.0gd;mso-para-margin-bottom:.5gd;mso-para-margin-left:2.0gd;text-indent:0cm; mso-char-indent-count:0">
+<span LANG="EN-US" XML:LANG="EN-US">Integrity is just a ticket to
+the game. If you don't have it in your bones, you shouldn't be
+allowed on the field.（</SPAN><span STYLE="font-family: 宋体;">诚信是基本要求，如果你没有发自内心的诚信，我们不允许你参与。）</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+想创业的同学，一定不要太浮躁。一毕业就创业，失败的概率太大了。就算你有实习经验，你也不会深入了解财务、法务、运作、市场、技术、产品、用户……你不可能这么快成为全才。给自己至少几年时间，再去创业。最好的培训学习方法是加入一家创业公司，逐步累计自己的实力、人脉。当你觉得自己积累够了的时候，再开始创业。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+在豌豆荚团队有一位北大的才女，名叫崔瑾。她的经历最让人最感叹的一点是，她作为北大国际关系专业的毕业生，非常想学习创业。她先是去申请百度的职位，当时百度才刚起步，没有合适的职位，就跟她说，要来的话只能做前台。作为一个北大毕业生，她答应了。今天，崔瑾经过在百度、奥美、谷歌的积累，学到了很多做事、做人的方法。她今天能够成为豌豆荚的首席运营官，很大程度来自于毕业那一天的决定。她没有因为北大人可能会有的自豪感而拒绝接受一个前台的工作。她愿意从基层做起，虚心地学习。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我们投资的另一位创业者叫许朝军，他从清华大学毕业，先从</SPAN><span LANG="EN-US" XML:LANG="EN-US">ChinaRen</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">干起，然后被收购进搜狐，又到了陈一舟的千橡，启动校园社交领域，最后负责整个人人网的运行。后来人人网成功上市，首日达到</SPAN><span LANG="EN-US" XML:LANG="EN-US">74</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">亿美元的市值。许朝军在人人上市前离职，到了盛大，成为边锋的总裁。他是个非常能干的人，今年才</SPAN><span LANG="EN-US" XML:LANG="EN-US">30</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">岁。今天他很成功，拿到了千万美元的投资，在创新工场支持下，做了点点网，崛起非常快。但我想讲的不是他有多成功，而是他有一个多么谦卑的第一天。在</SPAN><span LANG="EN-US" XML:LANG="EN-US">12</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">年前，他从乡下来到北京，发现周围的人懂得都比他多。他傻傻地进了计算机系，却从来没摸过计算机。他周围的人在城里长大，基本都会编程。他告诉自己，一定要学习、赶上这些人。他先学习打字，但买不起键盘，就在纸做的键盘上练习打字。他没有电脑可用时，就在纸上编程。通过这些艰苦的训练，他成为了计算机高手，在很多著名企业里做得非常好。他从搜狐出来的时候，曾经有风险投资家对他说：“你很厉害，在中国最早的社区</SPAN><span LANG="EN-US" XML:LANG="EN-US">ChinaRen</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">做得这么好，搜狐收购后，</SPAN><span LANG="EN-US" XML:LANG="EN-US">23</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">岁就成了技术总监，这简直前途无量。我们想投一百万美金，让你做任何你想做的事情。”没想到，他说：“对不起，我还没有学习到足够的知识。我现在懂技术了，但我在运营、市场、用户方面还要继续学习。”然后，他就一次次参加不同的企业，学会了他所需要的一切，最后才在创新工场支持下，创业做了点点网。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+在脚踏实地的话题上，我想再分享一句乔布斯的座右铭：求知若饥，虚心若愚（</SPAN><span LANG="EN-US" XML:LANG="EN-US">stay hungry</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">，</SPAN><span LANG="EN-US" XML:LANG="EN-US">stay foolish</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">）。这句话不是乔布斯说的，是一个叫凯文·凯利（</SPAN><span LANG="EN-US" XML:LANG="EN-US">Kevin Kelly</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">）的人写的，凯文·凯利是美国著名的科技预言家和科技作家，也是我非常尊敬的朋友。我去年问他：“乔布斯从你那里学到了人生的座右铭，</SPAN><span LANG="EN-US" XML:LANG="EN-US">stay hungry</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">，</SPAN><span LANG="EN-US" XML:LANG="EN-US">stay foolish</SPAN><span STYLE="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">，这句话你是如何理解的？你可不可以用最简单、最容易懂的语言，阐述、诠释这四个英文字？”他是这么说的：“我们必须了解自己的渺小，如果我们不学习，科技的发展速度会让我们所有的一切在五年后被清空。所以，我们必须用初学者谦虚的自觉，饥饿者渴望的求知态度来拥抱未来的知识。”希望大家都能记得这句话。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+谦虚、渴望、脚踏实地、一步步地学习，这样就可以避免成为浮躁、贪婪的你。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+&nbsp;</P>
+<h3><span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+<span STYLE="font-family: 宋体;">寄予大学新生</SPAN></SPAN></H3>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+各位同学，人生在世，我们拥有两个最大的财富，我们的才华和我们的时间。才华越来越多，时间越来越少。我们的这一生可以说是在用我们的时间来换取才华。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+大学这四年，可能是一生中拥有最多可以自己掌控的时间的阶段。希望你们务必把握这四年的时间，培养自己的才华。昨天，刚踏入校门的时候，你可能还是一个青涩的、被动的、为了应试而读书的、被家庭呵护的学生。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+今天，希望你们了解如何避免迷茫困惑、应试机器、孤独被动、浮躁贪婪这些可能对你们的未来造成负面影响的因素。在四年后，希望你们能够追随你们的心，学习思考、脚踏实地，成为高智商、高情商、有潜力、有思想、有价值、有前途并且讲诚信的中国未来的主人翁。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+同学们，祝福你们度过精彩的四年，成为一个精彩的人。</SPAN></P>
+<p STYLE="margin-top:6.0pt;margin-right:0cm;margin-bottom: 6.0pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm; mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm">
+<span STYLE="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+<br /></SPAN></P>]]></description>
+            <author>李开复</author>
+            <category>开复问答－学习篇</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560102dt81.html#comment</comments>
+            <pubDate>Sun, 18 Sep 2011 16:00:20 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560102dt81.html</guid>
+        </item>
+        <item>
+            <title>写好“微博”的五大妙招</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d5601017dm9.html</link>
+            <description><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;很多年轻朋友都在学着使用微博，但如何能够用好微博呢？很多人刚开始用微博时，都会有或多或少的困惑。例如：看别人在微博上说得热闹，可是不知道自己该说些什么好；写了很多，就是无法吸引别人的关注；上微博好长时间了，粉丝数量还是个位数……<br />
+
+&nbsp;&nbsp;&nbsp;
+其实，用好微博并不难，我想，这得从了解微博这个平台本身的特色开始，才能玩儿好、利用好微博。<br />
+在这里，我总结了用好微博的几大方法，希望能对年轻的朋友们有用。<br />
+&nbsp;&nbsp;
+（2月27日下午14:00，新书将在中关村图书大厦五层进行签售。据说现场主办方组织了一个温馨的活动——寻找你的微博“互粉”缘分，感兴趣的人来看看吧！）<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s9.sinaimg.cn/orignal/475b3d56t9d1726149f38" TARGET="_blank"><img SRC="http://static9.photo.sina.com.cn/middle/475b3d56t9d1726149f38&amp;690" WIDTH="555" HEIGHT="690" NAME="image_operate_85081298622684556" /></A><br />
+<br />
+<br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp; 1.
+微博写自己才能有人看<br />
+&nbsp;&nbsp;&nbsp;
+正如前面所说，微博是个全新的社会化媒体。一方面，微博简便易用，随时随地都可以上手，但另一方面，用微博时也需要转换一下思维方式，别总是抱着发文章、发博客的旧思路不放。说白了，微博就是个以我为主，自由创建有特色内容，尽力吸引粉丝关注并广交朋友的一个大舞台。微博上那些最有人气，发布的微博质量也最高的人，通常具有下面几个特点：<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;（1）有个性，有表现欲，会表达和展示自我<br />
+
+&nbsp;&nbsp;&nbsp;
+（2）有社交魅力，有办法吸引大家的注意<br />
+&nbsp;&nbsp;&nbsp;
+（3）有趣，不枯燥，不无聊，不人云亦云<br />
+&nbsp;&nbsp;&nbsp;
+（4）提供最有价值甚至独家的信息<br />
+&nbsp;&nbsp;&nbsp;&nbsp;（5）每天都更新微博，但又不是唠叨的“话痨”<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;（6）经常和粉丝或其他网友互动<br />
+
+&nbsp;&nbsp;&nbsp;
+（7）微博的内容类型比较多样，内容比例也比较均衡<br />
+&nbsp;&nbsp;&nbsp;
+（8）在乎并理解粉丝想看什么内容，而不是一味地写自己想让大家看的<br />
+&nbsp;&nbsp;&nbsp;
+（9）懂得如何巧妙推广自己的微博，但又不是自我吹嘘和卖弄<br />
+&nbsp;&nbsp;&nbsp;
+微博给每个人的机会都是均等的，只要真心投入，每个人都可以成为人气博主。其实，对微博新手来说，无论是创建高质量内容，还是吸引粉丝的技巧，都可以通过学习、实践来不断提高。<br />
+
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp; 2.
+你的微博有定位么？<br />
+&nbsp;&nbsp;&nbsp;
+对微博新手来说，刚开设微博账号后，不要急着发微博。磨刀不误砍柴工，只有做好充分准备，你的微博之路才能更顺畅。<br />
+&nbsp;&nbsp;&nbsp;
+首先，要想好自己微博的定位，看自己能不能回答下面这两个问题？<br />
+&nbsp;&nbsp;
+（1）为谁写微博？是为亲友写，为自己写，还是为某个特定人群（如旅游爱好者、投资界朋友、科技界朋友）写？<br />
+&nbsp;&nbsp;
+（2）写微博主要为了什么？是为了记录自己的生活，为了社交交友，为了学习知识、技术，为了分享思想、经验，为了影响别人，为了展示自己，还是为了休闲、娱乐？<br />
+
+&nbsp;&nbsp;&nbsp;
+回答了这些问题，你就会知道自己该写什么样的微博。比如说，如果是写给旅游爱好者，就多发布一些以前旅游的有趣照片，或者有用的旅游信息等；如果只是为亲友写，就可以随意些；如果想吸引粉丝、广交朋友、影响别人，就一定要学习写作和吸引粉丝的技巧。<br />
+
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp; 3.
+把自己介绍好也是门学问<br />
+&nbsp;&nbsp;&nbsp;
+每个微博主在微博上都有自己的个人首页，首页上有微博主的自我介绍，供访问微博主首页的网友认识微博主、了解微博主。不同微博服务商提供的自我介绍信息不完全相同，但通常都包括头像、昵称、简短的自我介绍、标签等几个部分。<br />
+
+&nbsp;&nbsp;&nbsp;
+选头像时，要选一张比较有个性的照片，照片形状最好是正方形。<br />
+&nbsp;&nbsp;&nbsp;
+用简短的话写好自我介绍并不容易。但这一句自我介绍是别的网友了解你时，最先读到的有关你的信息内容，写得好可以在第一时间吸引别人的眼球，就像好的气质和外表是一见钟情的必要条件一样。所以，自我介绍一定要简洁、明确，突出最主要的信息，清楚地告诉来访者，你是谁，有什么特征。同时，如果自我介绍能幽默一些，或者有诗意一些，那就再完美不过了。需要时，自我介绍里还可以给出网址链接。<br />
+
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.
+在微博上，大家爱写真话<br />
+&nbsp;&nbsp;&nbsp;
+写好微博，最重要的是要真诚。相比于其他的发布方式，微博上的你往往更真实，更像生活中的你自己。所以，不要刻意掩饰，也不要刻意追求自己不习惯的语言风格。你说的话，只代表你自己。对待别人、对待自己都要坦诚。不要人云亦云，要坚持自己的想法和意见，在思想观点和立场上，切忌摇摆不定。<br />
+
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp; 5.
+每天都写微博，到底应该写点啥？<br />
+&nbsp;&nbsp;&nbsp;
+很多微博新手一上来不知道该写些什么。那，不妨先了解一下，大家平常都在微博写些什么。如果一定要试着给常见的微博内容做个简单的分类，我发现，大家经常在微博上发布的内容类型包括：<br />
+
+&nbsp;&nbsp;&nbsp;
+（1）记录自己每天做了什么，到过哪里<br />
+&nbsp;&nbsp;&nbsp;
+（2）记录自己每天想了什么，心情怎么样<br />
+&nbsp;&nbsp;&nbsp;
+（3）写身边发生的有趣事、新鲜事<br />
+&nbsp;&nbsp;&nbsp;
+（4）和朋友聊天，互动<br />
+&nbsp;&nbsp;&nbsp;
+（5）参与某个热门话题的讨论<br />
+&nbsp;&nbsp;&nbsp;
+（6）转发并评论别人的有趣微博，或网上看到的有趣图文<br />
+&nbsp;&nbsp;&nbsp;
+（7）发布消息，直播突发事件<br />
+&nbsp;&nbsp;&nbsp;
+（8）传播思想，教育和影响他人<br />
+&nbsp;&nbsp;&nbsp;
+（9）发表文章或其他作品<br />
+&nbsp;&nbsp;&nbsp;
+（10）推销品牌或产品<br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;
+微博140个字的空间虽小，容量可不小。从个人到社会，从新闻到心情，天南地北海阔天空无所不包。从这个意义上说，微博作为一种媒体，其内容的立体和多样程度，是微博之所以吸引人的根本原因之一。对于微博主来说，可写的内容当然也就很多很多了。<br />
+
+&nbsp;&nbsp;&nbsp;
+微博不是一个信息孤岛，而是和整个互联网连接的。所以，你可以尽情去其他网站找好的内容，可以到新闻网站、笑话网站、视频网站、图片搜索等地方寻找合适的、可以转发或改编的内容，写在你自己的微博里。<br />
+
+前面提到过，关于自己的内容，可以简单地分成我在做什么（what I am doing）和我在想什么（what I am
+thinking）两类，当然，就像上面罗列的那样，独家的新闻消息、影评、书评、游戏评论、餐馆美食评论、节日活动、家庭趣事、温馨故事、，时事和产业分析、经验谈分享之类，大家只要想写，就都可以写。简单地说，只要利于展示自己，或者和网友交流的内容，而且是自己想写的，就都可以写在微博里。<br />
+
+&nbsp;<br />
+（以上内容，摘自新书《微博：改变一切》）]]></description>
+            <author>李开复</author>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d5601017dm9.html#comment</comments>
+            <pubDate>Fri, 25 Feb 2011 16:22:32 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d5601017dm9.html</guid>
+        </item>
+        <item>
+            <title>先参与创业，再主导创业：给想创业的毕业生的一封信</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100lgwt.html</link>
+            <description><![CDATA[<p STYLE="margin:0cm;margin-bottom:.0001pt">&nbsp;</P>
+<p STYLE="margin-top: 0cm; margin-right: 0cm; margin-left: 0cm; margin-bottom: 0.0001pt; display: inline !important;">
+&nbsp;</P>
+<p STYLE="margin-top: 0cm; margin-right: 0cm; margin-left: 0cm; margin-bottom: 0.0001pt; display: inline !important;">
+<span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;二十年后，中国最伟大的企业，和成功走向世界舞台的企业很可能就是在下五年所创立的。因此，很多大学生现在的跃跃欲试地想毕业后创业。另外，创业板的推出，许多创业公司的成功，还有很多成功创业家都鼓舞着中国的大学生，让他们也希望跟随马云、马化腾、李彦宏的步伐，走向创业之路。一方面，我赞赏大学生拥有创业理想，但是另一方面，我建议大学生：先参与创业，再主导创业。<br />
+</SPAN></P>
+&nbsp;
+<p>&nbsp;</P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;许多大学生都错误地认为：只要有个好的点子，能拿到投资，再加上执着、激情、运气，就能成为下一个马化腾。于是，他们都想着：毕业后就要开始他们的创业之路。但是，他们过度乐观了。创业成功的真正关键更在于：团队、经验、执行力。大部分的创业的失败不是因为点子不好，而是因为欠缺经验，没有团队，缺乏执行力——归根到底，积淀比点子更重要。</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;经过创新工场一年，我和数百名80后创业者接触并深谈，并已投资于其中的一些。在这过程中，我深深地感到中国的未来是属于他们的，但是同时我也感觉到最好的创业者是需要深厚积淀才能成功的。在学校的技术培训只是单方面的，而创业者不能只是专才，必须要有多方面的经验，不但需要懂技术、产品，也要懂管理、运营、市场。有位非常有才华而且充满创意的年轻创业者，在初期扩张太快，最后公司无法负荷，倒闭了。另外，创业团队非常重要。乔布斯说过创业的成功在于团队，尤其是创业者是否能找到5-10位聪明勤奋、三头六臂、彼此互补的团队。而一个没有经验的创业者往往无法吸引这样的一个团队。有一位年轻创业者，有着很好的点子，但是无法吸引一个团队，陷入招聘的泥沼中。后来一个比他有经验的人很快地找到团队，做出产品，抢到先机，最后他只有面临倒闭的命运。最后，在创业期间，执行力比点子更重要，而执行力只能经过参与来学习，因此再聪明的毕业生也不可能一毕业就一步登天。</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;当然，会有人问：为什么微软的盖茨、Facebook的扎克伯格都是大学毕业或甚至肄业就创业成功呢？其实，他们在创业的时候就已经有团队，有经验，有执行力了。盖茨不但是编程天才，发明了世界最快的排序算法，而且也是商业天才，在高中时就创立了盈利的Traf-O-Data公司。而且，他不是一个人创业，而是和保罗艾伦一块儿创业。而扎克伯格从11岁开始研究如何用C++编程，在中学时已经开发出让微软和美国在线愿意以几百万美元收购的音乐播放器，在大学期间更是创建过多款社交相关的网络产品，这些积淀对其日后打造Facebook至关重要。他的创业团队是四位优秀的哈佛学生。所以，盖茨和扎克伯格的成功是破例的，是不可复制的。除非你有和盖茨或扎克伯格这样的团队、执行力、经验，最好不要一毕业就去创业。</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;当然，绝大多数的人都不能和盖茨相比，那么大学毕业想创业的学生应该怎么办呢？有人说：先就业，再创业。这个说法是值得参考的。如果你加入一个“未来你想要创立”的公司，从中学习它是如何运营的，如何成功的，它的企业制度和文化是如何建立的，几年确实可以进步很多。如果这个公司能提供很好的培训计划，那就可以学到更多。不过，我也看到很多大公司里做了3-5年的优秀员工，进入的时候是抱着充电后创业的计划，但是慢慢地，拿到了优厚的待遇和提升，但也习惯了朝九晚五的安稳生活；学到了细分岗位的知识才能，但也成为了一个庞大机器里的螺丝钉；优化了在大公司生存和升迁的能力，但是失去了创业的激情和动力。所以，如果你真的很确定你要创业，但是也很理解你需要最合适的、最及时、最适当培训，也许你应该找一个更好的培训场所。</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;这样的一个培训场所就是一个创业公司，我的建议就是：先参与创业，再主导创业。你可以去咨询哪些公司有生气勃勃的创业环境和企业文化，有经验又值得做你的楷模的领导者、业内被认可的产品和方向、优质的投资者。在创业公司，步伐特别的快，学习有有针对性，而且每个人都需要参与公司的各个环节，所以学习也特别快。短短的一年，你可能学到在大公司要好几年才能学到的东西。为了确保你能学到初期创业的氛围，尽量参加较小的公司（小于100人），这样也不会成为一个螺丝钉。在创新工场，为了提供这样的“参与创业”机会，我们也开启了目标150人的校园招聘计划，我们要找的就是想先参与创业，先做工程师，学习创业，以后再主导创业。</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;“以后”是多久呢？在一个好的创业公司里，你的成长可能会让你自己都惊讶。在一个大公司，爬到CEO可能是几十年的路程。但是，在一个小公司学习，两三年后，你就有可能在经验、团队、执行力都培养足够，可以自己出来创业了。比如说，宓金华是今年三月从浙江大学毕业的研究生。她进入创新工场投资的“魔图精灵”团队时，是一个青涩但是充满激情的助理产品经理。但是六个月之后，她学到了学校里学不到的知识，发挥了潜力，成功地把这个产品推向全球四个国家的十多万用户。她不但在产品设计上学到了很多，而且学会了海外推广、用户体验，也成功地做了好几个商业谈判。今天，她已经成为这个项目的负责人了。叶哲韡是去年底加入更大的点心团队的，成为团队的创始工程师之一。短短八个月，在来自百度的移动负责人张磊和来自腾讯的产品总监游敏丽的培养之下，他已经成为负责点心操作系统里面的应用软件的负责人，现在领导者一个小组，肩负着公司核心的应用软件。相信在几年后，金华和哲韡，都可能成为主导创业的创业者。我们的另一名创业者曾经感叹：“好的工程师不愁找不到机会去大公司，他们真的该发愁的是怎么去有巨大潜力的创业公司。”</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;在《做最好的自己》里面，我建议所有的毕业生：“未来比今天更重要； 积极比安稳更重要；
+学习比金钱更重要。”这点，对想创业的学生更有针对性，因为短视和安稳都是创业最大的敌人。毕业时，多考虑看你在什么人身边工作，你是否能够学习成长？毕业后，参与一个优秀的创业公司，这是走上创业之路的最好的第一步。</SPAN></P>
+<p STYLE="margin:0cm;margin-bottom:.0001pt"><span STYLE="font-weight: normal; line-height: 21px;">&nbsp;</SPAN></P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>]]></description>
+            <author>李开复</author>
+            <category>写给中国学生的信</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100lgwt.html#comment</comments>
+            <pubDate>Tue, 21 Sep 2010 09:51:18 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100lgwt.html</guid>
+        </item>
+        <item>
+            <title>本科留学生的职业规划和交友困惑</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100ht15.html</link>
+            <description><![CDATA[<div>&nbsp;&nbsp;
+&nbsp;<b>Q:</B>开复老师和我学网的朋友们，</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;你们好，我是在美国读本科的一名大四的学生
+（高中毕业后出来留学）。美国文化和教育中的自由，独立，创新的理念让我逐渐学会了自学和自立，但是在这个过程中我遇到很多困惑和不解，这些困难和新文化的挑战是息息相关的，所以我希望我学网有过留学经历或者经历过我现在困惑的人能够提供一些建议。我知道把所有细节的问题一一表达出来不太现实，所以总结了以下的几个大的方面：</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;-
+职业规划：留学让我变成了文化夹层产物，所以在职业规划上不符合多数给国内大学生的建议，与此同时也不能完全按照美国本科生的职业路线（因为面临h1b
+visa的限制，美国的公司多说只招收 international students who are specialized in a
+certain area or have advanced
+degree，国际学生本科生在招聘会上常常找不到自己的定位点），难道为此我就一定要去读博吗？我不是不喜欢读博，但是通常博士学位都是要做教授和从事科研事业作准备的。我该如何规划读博和以后的就业具体关联在一起呢？如果回国发展，我又该从哪里开始去寻找自己的理想工作呢？
+所以我想请教各位老师，80后本科留学该如何去做职业规划？</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;-
+时间管理：和很多美国的本科生一样，我选择住在学校周围的公寓里，但是我发现住在公寓里需要对自己有很强的自制能力。我坚持白天在学校学习效率比较高一些，但是每次回去后学习的效率都很低，常常不能按时完成给自己规定的任务，常常浪费在上网上。我的美国室友比较散漫，多少会给我一些不良影响，我很想听听大家关于管理时间的建议。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;-
+如何排解孤独和自闭：学业的压力和生活的困窘有的时候让我感到压抑，有的时候会碰壁，但是一直都是通过独处的一些方式发泄，这样就让我远离了人群，慢慢的影响到我的社交能力。我该如何去重建自信去交朋友呢？</DIV>
+<div><br /></DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;<b>edwardgtxy
+：</B>1.楼主自己是想去业界还是学术界呢？如果能想清楚这个问题的话，我相信你就不会有犹豫了。</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;2.人人都有这个问题，我也有这个问题，不过我觉得自制力是锻炼出来的，不要忘记自己的目标就行了。</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;3.这个对我也是个挺大的问题，不过我一般也就在同一节课内的同学之间或者同一节lab的同学交交朋友吧，我个人觉得上课的时候不懂问问同学，或者别人不懂教教他的话，很快就能混到不少朋友了。我个人的情况来说，我的社交能力和自信都是通过和同学相互帮助来建立的，很多时候特别是有难度的课，1+1绝对大于2，在和同学互动的时候，不仅可以提高自己的成绩，同时也能建立自信和锻炼社交能力。</DIV>
+<div><br /></DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;<b>wangowen：</B>好像很多学生都遇到孤独和自闭的问题，但我觉得美国是最适合解决这问题的地方。美国人更懂得去消遣放松，更喜欢交朋友。想重建自信交朋友的话可以先从学生社团活动入手，毕竟绝大多数活动都是欢迎所有人参加的，你并不需要立刻加入哪个社团，你可以多参加几个活动，看看哪边的人更合得来，再决定加入哪个社团。学校里一般都会有不少针对国际生、国际文化之类的社团组织，可以先尝试下这些活动，这里面的人一般都是对国际生最友善的。</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;另外我也同意楼上那个交课堂上朋友的方法，尤其是在完成那些group
+work的时候，一来可以练习你的交流能力，二来还能让人家真正认识你的能力，特别是你能解决别人不懂的问题的时候，人家更能打心底佩服你。</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;如果lz是在那些大U读书的话，还可以去看一下学校主场的NCAA比赛，尤其是美式足球比赛，虽然不一定能高效的交到朋友，但是可以感受整个学校的荣誉感，穿着学校颜色的衣服和上万名来自同一学校的同学一起加油怒吼还是很有归属感的。而且这样子放开嗓子大吼也应该有助于你慢慢走出自闭。</DIV>
+<div><br /></DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;<b>开复</B>：<b>A 有关职业规划</B></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;许多人都把人生简单地分成两个阶段，读书时做学习规划，毕业后再做职业规划。而学习规划往往被简单地概括为“考研”、“成绩”、“出国”等目标。但是，这种做法混淆了读书的真实目的——学好本领，完善自我，找到最适合自己的职业和工作。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;在今天这样竞争激烈的环境里，“阶段性规划”等传统做法僵化了学生对学习和工作的思维方式，妨碍了他们去主动了解和认识时代趋势，寻找自己的真正目标。一个既对自己缺乏了解，也对社会需要知之甚少的学生，到了临毕业时，面对未来之路产生种种困惑、忧虑甚至失望就不足为奇了（参见我回答过的问题“对专业没兴趣怎么办”、“兴趣在别处”、“面对自己的专业，以后该往何处去”等等）。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我给大学生的建议是：“职业规划，从入学开始”。也就是说，同学们要从进入大学的第一天起，尽早开始自己的职业规划，用理性的思维和主动的态度，在深度认知，广泛体验的基础上，为毕业时的选择打下良好的基础。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;通常，我把职业规划分成以下三个步骤：</DIV>
+<div>&nbsp;&nbsp; &nbsp;1.
+认识自我：即，寻找自己的理想、兴趣、天赋并积极调整自己。在大学四年里，我们应逐步找到自己的理想是什么，兴趣是什么，自己在哪方面可以做得更好。如果暂时还不知道兴趣在哪里，就要保持一种好奇的心态，多尝试，多挑战自己，让自己每天都在进步。许多同学对专业没有兴趣，其实大家也可以在寻找兴趣的同时培养兴趣。在一个专业中有很多不同的发展方向，你也许对其中某个方向感兴趣。而且，你所学的专业可能和你最感兴趣的专业有跨领域合成的机会，这也是培养兴趣的好方法。</DIV>
+<div>&nbsp;&nbsp; &nbsp;2.
+了解工作机会：在这里，我们必须知道，专业方向并不等同于今后的工作内容。美国前教育部长 Richard
+Riley曾经说过，2010年最迫切需要的十种工作在2004年根本就不存在。这表明，学生必须不断更新自己对业界的认识，不断研究产业发展趋势、工作前景、国际竞争等等。我建议同学们多花些时间，深入了解一些优秀的企业，看一看在这些企业中的真实工作情况。一定要积极主动地收集相关信息，咨询有经验的人，争取参观企业和到企业实习的机会，多听企业宣讲或报告会。要真正了解外面有哪些工作机会，千万不能拍脑袋决定自己的就业方向，也不能道听途说，而是要多咨询，多实践，让自己的规划更加契合实际。最后，在选择工作时一定要务实。你的第一个工作最好从基层做起。你也一定要清楚，基于自己的能力，自己向往的工作机会是有可能争取到的。</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;3.拟定职业规划：当你知道自己的兴趣和相关工作机会后，多去尝试，尽量把自己的兴趣、天赋和理想匹配到自己可以发挥潜力的工作机会上，排除那些不相关或不能发挥自己潜力的选择。之后，你应该静下心来拟定一个职业规划。职业规划应基于你的理想和兴趣，与工作方向做一个务实的结合。一方面，要计划在校期间如何最大化自己进入理想公司的机会；另一方面，对职业生涯的计划也不要期望一步登天，而要循序渐进，就像攀岩那样一步一步往上攀登。同学们应该有一个远大的理想，但我建议在做实际的职业规划时，对那些不容易一步到位的目标，最好用“两步计划”法：先为自己三到五年后制定一个明确的目标，咨询并确定该如何达到这个目标，然后分两步实现目标（例如，先去读一个相关领域的硕士，先去另外一个部门，或先加入另外一家公司等等，以便最大化你在三到五年后实现该目标的机会）。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;<b>B
+有关时间管理</B></DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;人的一生两个最大的财富是：你的才华和你的时间。才华越来越多，但是时间越来越少，我们的一生可以说是用时间来换取才华。如果一天天过去了，我们的时间少了，而才华没有增加，那就是虚度了时光。所以，我们必须节省时间，有效率地使用时间。如何有效率地利用时间呢？我有下面几个建议：</DIV>
+<div>&nbsp;&nbsp; &nbsp;1.
+知道你的时间是如何花掉的。挑一个星期，每天记录下每30分钟做的事情，然后做一个分类（例如：读书、准备GRE、和朋友聊天、社团活动等）和统计，看看自己什么方面花了太多的时间。凡事想要进步，必须先理解现状。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;2.
+学会使用时间碎片和“死时间”。如果你做了上面的时间统计，你一定发现每天有很多时间流失掉了，例如等车、排队、走路、搭车等，可以用来背单字、打电话、温习功课等。大家喜欢用MP3播放器听音乐，但是为什么不把一些学习的内容（英语会话、生字和录下来的广播新闻等）放入你的MP3播放器呢？在国外，现在流行podcast，就是把一些可以用听来了解的信息，录入MP3播放器，在开车回家时听。我前一阵和同事一起出差，他们都很惊讶为什么我和他们整天在一起，但是我的电子邮件都可以及时回答？后来，他们发现，当他们在飞机上和汽车上聊天、读杂志和发呆的时候，我就把电子邮件全回了。重点是，无论自己忙还是不忙，你要把那些可以利用时间碎片做的事先准备好，到你有空闲的时候有计划地拿出来做。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;3.
+每天一大早把一天该做的事排好优先次序，按照这个次序来做，并要求自己这天把最重要的三件事做完。我感到在工作和生活中每天都有干不完的事，唯一能够做的就是分清轻重缓急。有的年轻人会说自己“没有时间学习”，其实，换个说法就是“学习没有被排上优先级次序”。曾经有一个教学生做时间管理的老师，他上课时带来两个大玻璃缸和一堆大小不一的石头。他做了一个实验，在其中一个玻璃缸中先把小石、砂倒进去，最后大石头就放不下了。而另一个玻璃缸中先放大石头，其它小石和砂却可以慢慢渗入。他以此为比喻说：“时间管理就是要找到自己的优先级，若颠倒顺序，一堆琐事占满了时间，重要的事情就没有空位了。”</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;4.
+运用80％—20％原则。人如果利用最高效的时间，只要20％的投入就能产生80％的效率。相对来说，如果使用最低效的时间，80％的时间投入只能产生20%效率。一天头脑最清楚的时候，应该放在最需要专心的工作上。与朋友、家人在一起的时间，相对来说，不需要头脑那么清楚。所以，我们要把握一天中20％的最高效时间（有些人是早晨，也有些人是下午和晚上；除了时间之外，还要看你的心态，血糖的高低，休息是否足够等综合考量），专门用于最困难的科目和最需要思考的学习上。许多同学喜欢熬夜，但是晚睡会伤身，所以还是尽量早睡早起。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;5.
+时间管理与目标管理是不可分的。每个小目标的完成，会让你清楚地知道你与大目标的远近，你每日的行动承诺是你的压力和激励，而且行动承诺都必须结合你的长远目标。所以，要想有计划地工作和生活，需要你管理好自己的时间
+。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;6.
+如果你在自己寝室实在无法专心，那就到图书馆去读书，那里既没有影响你的室友，也没有诱惑你的计算机和网络。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;C
+<b>有关交友</B>：其他同学已经给了你很多点子。&nbsp;</DIV>
+<div><br /></DIV>
+<div><font COLOR="#709AD1">&nbsp;&nbsp;
+&nbsp;</FONT><b><font COLOR="#709AD1">更多精彩文章请点击</FONT></B><a HREF="http://www.5xue.com" TARGET="_blank"><b><font COLOR="#709AD1">这里</FONT></B></A><b><font COLOR="#709AD1">。<br />
+&nbsp;&nbsp;
+&nbsp;向我提问请点击</FONT></B><a HREF="http://www.5xue.com/modules/bbs/" TARGET="_blank"><b><font COLOR="#709AD1">这里</FONT></B></A><b><font COLOR="#709AD1">。</FONT></B></DIV>
+<div><b><font COLOR="#709AD1">&nbsp;&nbsp;
+&nbsp;继续参与讨论请点击<a HREF="http://www.5xue.com/modules/bbs/viewthread.php?tid=177861&amp;pid=1132829" TARGET="_blank">这里</A>。</FONT></B></DIV>]]></description>
+            <author>李开复</author>
+            <category>开复问答－学习篇</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100ht15.html#comment</comments>
+            <pubDate>Mon, 12 Apr 2010 14:24:06 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100ht15.html</guid>
+        </item>
+        <item>
+            <title>小女儿的演讲</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100hfk3.html</link>
+            <description><![CDATA[<p>&nbsp;&nbsp;&nbsp;
+<em>这是我小女儿的一篇在国际学校的演讲。她今年13岁，学了4年中文。虽然她的中文还有待进步，但是我觉得写得很可爱，所以在这里发布。</EM></P>
+<p>&nbsp;</P>
+<p ALIGN="center">我的姐姐</P>
+<p ALIGN="center">作者：李德亭</P>
+<p ALIGN="center">&nbsp;</P>
+<p><br />
+亲爱的老师，同学们：<br /></P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+大家好！我的名字是李德亭。今天我要演讲的题目是《我的姐姐》。<br /></P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+我给大家介绍我的姐姐是因为她对我很好。比如：她会带我出去逛街，教我怎么画画，怎么写好作文，还会给我买东西等等。我很爱她。</P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+姐姐叫李德宁，跟我的名字只差一个字，比我大五岁。她有一头咖啡色的披肩长发，眼睛大大的，像洋娃娃，很可爱。她的性格内向，很乖，特别听爸爸妈妈的话，跟我完全相反。</P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+她对自己的要求很高，一定要拿到最高的成绩或者分数。她要是得到B，就会很烦恼，下定决心，下一次一定要拿到A或A+。去年，她在国际学校毕业，考上了哥伦比亚大学。</P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+像很多姐妹一样，我们也会打架。例如：当姐姐在MSN上和朋友聊天时，我会蹑手蹑脚走到她后面，偷偷地看他们在讲什么，甚至用望远镜偷看。姐姐假装我不在后面，其实，她已经在电脑屏幕上看到了我，她会突然伸出手去抓我。我一跑，她就追，吓得我躲到厕所里，不敢出来。</P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+去年姐姐上大学时，我并没有哭，因为我们以前没有长时间分开过，我不知道想念的滋味是什么。可是两个月后，我在家里会感到孤独。我常常对妈妈说我宁愿让姐姐打我，骂我，也不愿意让姐姐走。</P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+我有这样的好姐姐，让我感到骄傲，感到幸福。我爱我的姐姐。<br /></P>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+谢谢大家！</P>
+<p>&nbsp;</P>
+<p>&nbsp;&nbsp;</P>
+<p ALIGN="center"><a href="http://blog.photo.sina.com.cn/showpic.html#url=http://static16.photo.sina.com.cn/orignal/475b3d56g8249b6c6a21f" TARGET="_blank"><img SRC="http://static16.photo.sina.com.cn/middle/475b3d56g8249b6c6a21f&amp;690" NAME="" /></A></P>
+<p><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+两姐妹<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P>]]></description>
+            <author>李开复</author>
+            <category>其它文章</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100hfk3.html#comment</comments>
+            <pubDate>Sun, 21 Mar 2010 14:28:43 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100hfk3.html</guid>
+        </item>
+        <item>
+            <title>世界因你不同-新书选载</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100hcur.html</link>
+            <description><![CDATA[<div>&nbsp;&nbsp;
+&nbsp;我很喜欢一部叫做《春风化雨》（也称《死亡诗社》）的电影。每一次我看完这部电影，都有一股强烈的震颤在心中回荡，让我久久不能释怀。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;电影的开篇有这样一句台词：“你的一生可曾因为什么人而改变过？我没有。但我知道美国威尔顿贵族学校里那群学生的道路被一个老师改变了。”</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;电影中描绘了一名思想新锐的教师向禁锢思想的教育方式发起挑战的经过，过程叫人心旌荡漾，结果却令人扼腕叹息。在单调而束缚思想的贵族学校里，这名叫做基廷的教师，向僵化的教育模式发出了挑战。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;他鼓励学生站在课桌上，用一个崭新的视角去观察周围的世界；他向学生介绍了许多有思想的诗歌；他所提倡的自由发散式的思维哲学在学生中引起了巨大的反响。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;他不惜一切机会，教导学生们珍惜自己的青春年华，要“抓住每一天”去汲取生命的精华。他用一句拉丁文carpe
+diem（只争朝夕）激励这些学生。他激发每个学生的灵感，让他们摆脱习惯与性格的束缚和羁绊，唤醒每个人心中创作的激情和成就的欲望。他告诉他的学生：不要盲目地跟随他人，不要被信条所惑，只有你的内心知道你真正想成为什么样的人，只有你能找到自己的价值。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;每次看这部电影，我都心潮澎湃。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;在关心和帮助中国大学生长达10年的时间里，我一直不遗余力地传播着“做最好的自己”的价值观，我希望通过写作、演讲、网络等方式来分享和分担这个时代年轻人的生存感受，并且尽可能地提供一些我的经验让他们选择参考。我希望自己能够像基廷老师一样，让中国的青年懂得如何在现实中放飞自己的理想，进而明白生命的意义。让他们知道，“世界可以因你不同”。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;从一份责任感出发，我在帮助大学生的过程中感受到了前所未有的充实和满足，也有一种莫大的幸福感将我围绕。这种幸福感，来源于学生们给予我的莫大信任，也来源于他们不断成长所带给未来中国人的希望，更来源于我深深感到我生命的价值。投入这份工作的每一天都带给我无比的振奋，每一刻都让我留下了深沉的回忆。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;随着时间的推移，在和中国青年交流的过程中，我感到的不只是责任、机会和潜力，我在这份工作中的收获也让我对人生有了更深层次的思考。我时常会问自己：“我怎么能把我的更多知识传授给中国青年？”我有时也会想到，虽然我很愿意为大学生作人生规划，找寻心中的声音，但是毕竟我是个科技人，是个职业经理人。我拥有更多的是在科技领域的知识，更了解企业成功的秘笈。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;在过去的20年里，我有幸在乔布斯、盖茨、施密特等世界级企业家身边学习成长，我有幸在PC时代经历苹果和微软，有幸在互联网时代经历谷歌，有幸看到这三家世界一流的公司的成长和成功，我有幸在美国硅谷和中国的中关村崛起时，在这两个地方做过最有创意的工作。这些职业经验才是我最有价值的资产，我非常希望能够把这些资产传授给中国青年。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我相信，中国青年需要这些资产。尤其是当我看到一些青年人渴望用自己的知识创业时，往往由于他们经验不足而撞得头破血流，一种指导他们的愿望渐渐占据了我的内心。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;曾经，有一位身患严重疾病的学生决定创业，坚决要得到我的支持，他来到北京，一定要见我，说如果不见他，他就不治疗。当我终于见到他，听他阐述了自己的理念时，我感觉到他完全不懂创业，必然要走向失败。我的感触是：他，需要创业导师，帮助他从基础学习，逐步步入创业的旅途。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;曾经，一个千辛万苦找到我的前微软员工，请求我帮他的初创公司出主意，做他的创业教练，我答应了。他很有潜力，经过我的简单指导就在天使投资大会上脱颖而出，得到了第一名和一笔创业资金。但是，尽管他的技术极具创新性，可是他并没有想清楚用户的需求。我苦口婆心劝他放弃，他没有听，最后我只能目睹他的公司走入困境。我的感触是：他，需要创业导师，帮助他选择项目，做有用的创新。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;曾经，有一个美国名牌大学的留学生千方百计找到我寻求帮助。他是一个纯真的技术天才，创立的公司也相当出色。于是，谷歌成为他的生意伙伴。但是两年后，在一个律师的教唆之下，他找到一个法律漏洞，试着从一次生意中向谷歌收两次钱。我的感触是：他，需要创业导师，教导他任何基业长青的公司都要有诚信的价值观。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我想，这三位如果有好的创业导师，都可能成为中国的下一位马云或丁磊，但是现在他们在互联网江湖里独自打拼，最终脱颖而出的机会相当渺茫。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我想，如果他们的身边有好的创业导师帮助，他们的成功概率或许会增加数倍。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我想，帮助更多的中国青年实现创业梦想应该是有意义、有影响力的一件事，而且是我一直以来帮助中国大学生的延续。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;斗转星移，随着谷歌中国运营的渐渐平稳，这个辞职创业的梦想也越来越清晰。由我牵头，创立一个青年“创新工场”的愿望逐渐萌生，在这个“创新工场”里，我希望专门带领这些有创意的青年人，在一个有老师的环境中，让他们受到指导，挖掘潜能，做出有创意的企业，进而对社会产生有意义的影响。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;2009年8月，我终于作出了又一个“追随我心”的决定，从固有的职业经理人的模式中脱离出来，真正实现自己“帮助他人完成梦想”的人生目标。曾经，我用“世界因我不同”激励自己追寻梦想，今天，我用“世界因你不同”激励他人发掘潜能。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;如果我们极端幸运，也许我们能培养一个走向世界的国际品牌。如果我们非常幸运，也许“创新工场”可以创造一个新一代的领跑中国的高科技公司。但是就算我没有那么幸运，只要我们能创造一些有价值的公司，做出对用户有一定意义的产品，培养一批有创业能力的青年，这些都会让我感觉到人生的意义。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;一想起新的工作，我就心旌荡漾。如同站在课桌上的基廷老师，我眼中的世界有了不同的风景。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;未来，中国将成为世界第一大经济体，而且这一天的到来比我们想象的更快。因此，中国的公司要快速学会走向国际舞台。20年后当中国成为世界之最时，中国最成功的公司很可能就是在下一个5年里创立的，也很可能就是在“创新工场”关注的电子商务、移动互联网和云计算领域中产生的。当我想到这些的时候，基廷老师的名言就会出现在我的脑海：carpe
+diem（只争朝夕），要“抓住每一天”。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;因此，在这关键的时刻，我必须抓住今天，去探索一段全新的人生旅程。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我深深地记得《春风化雨》里的一个场景，基廷老师带领学生们寻找生命的意义时所朗诵的梭罗的诗——《瓦尔登湖》中的那句名言：</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp; &nbsp;“I went
+to the woods because I wished to live deliberately，to front only
+the essential facts of life，and see if I could not learn what it
+had to teach，and not，when I came to die，discover that I had not
+lived …”</DIV>
+<div>&nbsp;&nbsp;
+&nbsp;“我步入丛林，因为我希望生活得有意义，我希望活得深刻，并汲取生命中所有的精华。然后从中学习，以免让我在生命终结时，却发现自己从来没有活过。”<br />
+
+<br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;抓住一切去探寻生命的意义，总有一天，世界将因你不同。</DIV>
+<div><br /></DIV>
+<div><br /></DIV>
+<div>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+<span STYLE="font-family: simsun; color: rgb(50, 62, 50);"><span STYLE="word-wrap: normal; word-break: normal; line-height: 25px; font-family: 宋体; color: rgb(42, 42, 42);">
+<span STYLE="word-wrap: normal; word-break: normal; line-height: normal; font-size: 12px; color: rgb(51, 51, 51); font-family: Verdana, 宋体, sans-serif;">
+<span STYLE="word-wrap: normal; word-break: normal; line-height: 25px; color: rgb(42, 42, 42); font-family: 宋体;">
+<font FACE="楷体_GB2312" SIZE="2" STYLE="word-wrap: normal; word-break: normal; line-height: 21px;">&nbsp;&nbsp;
+&nbsp;注：本文摘录自我的新书《世界因你不同》，未来一段时间，我会摘录其中的小故事来跟大家分享。</FONT></SPAN></SPAN></SPAN></SPAN></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+-----------------------------------------------------------------------------------------<img SRC="http://static3.photo.sina.com.cn/bmiddle/475b3d56t75e04af59d42&amp;690" ALIGN="left" ALT="向比尔汇报－新书选载" TITLE="向比尔汇报－新书选载" STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial;" />---<br />
+
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr />这是李开复唯一的一本自传，字里行间，是岁月流逝中沉淀下来的宝贵的人生智慧和职场经验。捣蛋的“小皇帝”，11岁的“留学生”，奥巴马的大学同学，26岁的副教授，33岁的苹果副总裁，谷歌中国的创始人，他有着太多传奇的经历，为了他，两家最大的IT公司对簿公堂。而他的每一次人生选择，都是一次成功的自我超越。<br />
+
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />透过这本自传，李开复真诚讲述了他鲜为人知的成长史、风雨兼程的成功史和烛照人生的心灵史，也首次全面披露了他亲历的苹果、微软、谷歌等IT巨头风云变幻的内幕。意真情切，字字珠玑。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr />抓住一切去探寻生命的意义，总有一天，世界将因你不同。</FONT></P>
+</DIV>]]></description>
+            <author>李开复</author>
+            <category>世界因你不同</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100hcur.html#comment</comments>
+            <pubDate>Tue, 16 Mar 2010 15:57:25 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100hcur.html</guid>
+        </item>
+        <item>
+            <title>我与中国大学生的不了缘－新书选载</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100h7lm.html</link>
+            <description><![CDATA[<div>&nbsp;&nbsp;
+&nbsp;2009年4月18日，我像以往那样收拾好自己的行囊，伴我一起出行的还是那个“新秀丽”的蓝色超大旅行箱。这个旅行箱伴随我游走了大半个中国，行程达数十万公里。我总像打仗般地穿梭在中国的各大高校，和莘莘学子进行演讲交流。每一次的日程都超乎想象的紧张，我经常披星戴月地辗转奔波于多个城市。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;一直帮我组织高校演讲的《大学生》杂志社的编辑王肇辉总把这种奔波笑称为挑战身体极限的活动，而我也因此得到一个外号——“铁人”。这种活动我已经坚持了10年，在我担任谷歌中国区全球副总裁和中国区的总裁期间，我幸运地拥有“20%的时间”去做自己喜欢的事业，而我将这些时间全部用在我所钟情的大学生工作上。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;仅在2009年4月18日到4月26日这8天的时间内，我就和同伴辗转于成都、厦门和南宁三个城市，我分别在成都的四川师范大学、雅安的四川农业大学、厦门市的厦门大学和集美大学、南宁市的广西大学和广西民族大学作了6场励志演讲。演讲的内容全部为公益性质，题目分别是《我学，我成长》以及《成长的十个启发》。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;每到一处，我都能看到风华正茂的大学生洋溢着热情与渴望的眼神。我知道，他们是千千万万家长们心中的希望，更是中国未来的希望。他们正在经历着自己一生中最重要的阶段，但社会中的种种浮躁往往与他们内心的理想发生严重冲撞，他们难免总是会感到迷茫和失望。因此，在每一次演讲中，我都会把大学生成长中的常见问题以故事和案例的形式讲出来，并把我自己所经历的成功和失败一一告知，并和他们分享我的种种感悟。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我希望他们能够通过我的演讲而有所启发，然后找到自身问题的答案。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;为什么我和中国的大学生感情如此之深？为什么我能将这项工作坚持10年，并希望将其作为终生的事业？</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;与其说是机缘巧合，还不如说这是命中注定。2000年,我在微软中国研究院工作，当时的第一项工作就是要招聘大量学生到微软工作，这算是我与中国学生的第一次“亲密接触”！当时有很多学生都希望能到微软研究院做暑期工，正由于如此，我才有机会了解到他们内心深处的很多想法。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我至今还忘不了和一个暑期工的谈话。这个学生来自中国数一数二的名校，他一直想就未来的规划和我进行一次深入的交流，于是我们坐在微软中国研究院的一间小会议室里交谈起来。他说：“开复，我希望自己能像您一样成功。而根据我的理解，成功就是管人，管人这件事很过瘾。那么，我该怎么做才能走上管理者的岗位呢？”</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我没有想到，一个名牌大学的高材生对成功的认识竟是如此片面和肤浅。他的想法折射出的是中国社会由来已久的通病，那就是希望每个人都按照同一个模式发展，在衡量个人成功时采用的也是一元化的标准：在学校看成绩，进入社会看名利。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;渐渐的，我发现，持上述观点的学生不在少数。许多同学都会自觉不自觉地把成功与财富、地位和权力画上等号。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;归根结底，这种现象反映出的是中国学生在价值取向上的迷茫。而他们在多元社会里各种价值观的冲击下逐渐丧失了独立的判断力，并逐渐背离了正确的价值观。他们期望通过简单地复制别人的成功之路而快速致富，盲目地追随某种社会风潮，并被名利的诱惑蒙蔽了自己的内心。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;看到这样的情形，我内心非常焦虑。中国的大学生是非常优秀的，但我却越来越多地感受到他们内心的困惑。望子成龙的父母、应试教育体制束缚下的学校和老师、急功近利的社会心态，这些都让他们很多人在成长之路上陷于迷失。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;那段时间，我的内心在反复思考着这样一件事：“近百年来，中国青年终于能够接受先进完整的教育，能够有条件专心读书并成为时代的骄子，他们理应成为融会中西的精英。但可惜的是，他们虽然有幸出生在自由选择的时代，但时代并没有赋予他们选择的智慧！”</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;从那段时间开始，我就开始反复叩问自己的内心：是否应该马上开始竭尽所能地帮助他们找到自己的理想？当一些好心人听到我有这样的想法时，都竭力劝阻我，因为他们担心我会被别人指责为“多管闲事”和“好为人师”。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;但最终我摒弃了这些顾虑，因为我想起了父亲一直以来的梦想。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;尽管父亲李天民的后半生在台湾度过，但他从来没有忘记祖国大陆。在他人生的最后一段时光里，我经常在医院里陪伴他。那时，他每天都对我说:如果能回大陆去看一看该多好！看到父亲日渐憔悴的脸庞，我知道，这个简单的愿望已经无法实现了，我痛不可抑。有一天早上，他醒来就告诉我，他做了一个梦，梦里的他在水面捡到了一张纸，上面写着四个字——“中华之恋”。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我知道父亲忧国忧民之心终生不渝，这个梦就是他故土情长的感情宣泄。我知道父亲有一个愿望还未达成，那就是写一本书，名字叫做《中国人未来的希望》。在病床前，我曾告诉父亲：“我会完成您的愿望，早日将那本书出版，您放心吧！”但那时的父亲只能用深邃的目光凝视着我。后来姐姐告诉我，父亲一直希望我能够帮助他做完未竟的事业。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;在看到中国大学生的迷茫后，我想起了父亲多年未了的愿望，我内心的那种使命感也油然而生。寻找中国人未来的希望，帮助中国年轻人的成长，这不就是背负父命的我应该作出的决定？中国大学生未来的希望，不也正决定着中国人未来的希望？</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;在那一刻，我充分感受到了内心最真实愿望的激荡。作为一个有机会融汇中西文化的华人学者，作为一个充分体验西方文化的炎黄子孙，我应该尽我所能，在帮助中国青年远离困惑、步入卓越的过程中有所行动；我也应该根据自己在指导青年学生的过程中积累的经验，为其他致力于发展中国教育事业的人提供有益的借鉴和帮助。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;所以，自2000年开始，我就遵循内心的选择，撰写了《给中国学生的第一封信——从诚信谈起》。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;从这封信开始，我与中国大学生的不了情缘就此结成。在这个过程中，我深切感受到他们对这种价值观指导的迫切需要，这也让我欣慰自己当时没有轻易放弃。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;我后来坚持每年都到全国的各个高校作巡回演讲，报告超过300场，内容涉及纯学术的计算机研究，也涵盖科学、教育和人文的关系，然而更多的则是集中在有关中国大学生如何做人和做事方面。我从此更投入地写了第二封信、第三封信，一直到第七封信，也正是从这封信开始，我有了创办私立大学，试图改变教育的念头，之后我又建立了“我学网”，出版了三本针对大学生的书籍，希望通过这些形式来给学生以及教育界一些启示。</DIV>
+<div><br /></DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;网络的便捷让我与大学生的沟通也变得更加直接。在繁忙的工作之余，在家人还在甜梦中酣睡未醒的清晨，在人群川流不息的候机厅里，我就像一个超级“网虫”，习惯性地抓住能够进入互联网的任何时机，打开页面，阅读一个又一个的提问，并耐心仔细地提出我的观点和建议。我知道，那些或单纯或尖锐，或轻松或沉重的问题中，都包含着青年学生对我的期待和信任；我也知道，我无法为所有问题都提供一个完美且一劳永逸的终极解决方案。然而，这一代青年的勃勃生机总是带给我深深的感动和喜悦，我也始终相信，只要能够分担他们的困惑和焦虑，我的付出就是有价值和有意义的。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;直到今天，当我面对一代又一代的大学生时，我能从内心感觉到他们正在逐渐成长。我已远离教职多年，但现在却成为众多青年学生口中的“开复老师”。我得到信任的原因并非由于我个人在某方面的小小成功，而是源于我年复一年不倦的付出。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;在行走中国的路途中，我深深地感到，大学生内心的困惑依然存在，他们中的很多人依然还迷失在“一元化”成功法则中，面对这个浮躁喧哗的世界经常找不到自己的方向。我也知道，自己就算坚持不懈地努力，也不过是杯水车薪，很难从源头解除他们的困惑。尽管这样，我依然希望自己用一种愚公移山的精神坚持下去，我一直秉持着我的初衷，那就是100个人中哪怕只有一个人从我的观点中受益，那我的付出也就比任何工作都有价值。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;因为正是他们，代表着中国人未来的希望。</DIV>
+<div><br /></DIV>
+<div>
+<div><span STYLE="font-family: simsun; color: rgb(50, 62, 50);">&nbsp;<span STYLE="color: rgb(42, 42, 42); font-family: 楷体_GB2312; font-size: small;">注：本文摘录自我的新书《世界因你不同》，未来一段时间，我会摘录其中的小故事来跟大家分享。</SPAN></SPAN></DIV>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+<span STYLE="font-family: simsun; color: rgb(50, 62, 50);">-----------------------------------------------------------------------------------------<img SRC="http://static3.photo.sina.com.cn/bmiddle/475b3d56t75e04af59d42&amp;690" ALIGN="left" ALT="向比尔汇报－新书选载" TITLE="向比尔汇报－新书选载" STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial;" />---<br />
+
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr />这是李开复唯一的一本自传，字里行间，是岁月流逝中沉淀下来的宝贵的人生智慧和职场经验。捣蛋的“小皇帝”，11岁的“留学生”，奥巴马的大学同学，26岁的副教授，33岁的苹果副总裁，谷歌中国的创始人，他有着太多传奇的经历，为了他，两家最大的IT公司对簿公堂。而他的每一次人生选择，都是一次成功的自我超越。<br />
+
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />透过这本自传，李开复真诚讲述了他鲜为人知的成长史、风雨兼程的成功史和烛照人生的心灵史，也首次全面披露了他亲历的苹果、微软、谷歌等IT巨头风云变幻的内幕。意真情切，字字珠玑。</FONT></SPAN></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr />抓住一切去探寻生命的意义，总有一天，世界将因你不同。</FONT></P>
+<div STYLE="font-family: 宋体; word-wrap: normal; word-break: normal; line-height: 25px; font-size: 14px; padding-top: 22px; overflow-x: hidden; overflow-y: hidden; width: 690px; color: rgb(42, 42, 42);">
+<div STYLE="word-wrap: normal; word-break: normal;"></DIV>
+</DIV>
+</DIV>]]></description>
+            <author>李开复</author>
+            <category>世界因你不同</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100h7lm.html#comment</comments>
+            <pubDate>Mon, 08 Mar 2010 15:19:45 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100h7lm.html</guid>
+        </item>
+        <item>
+            <title>亲历Windows Vista的研发－新书选载</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100h4il.html</link>
+            <description><![CDATA[<div>
+　　微软公司的视窗产品确实是改变人类历史的一项伟大产品。尤其是1995年8月24日，Windows95的发布轰动了整个世界。Windows95的出现带给使用者一个完整的图形化操作与使用概念，使人在电脑前的工作过程不那么枯燥乏味，使用电脑的经历也开始变得有趣。它的出现被认为是人类科技史上具有里程碑意义的事件。随后，微软在视窗的研发投入上力度越来越大。到后来又研发出Windows98、Windows2000、WindowsXP，以及后来的Windows
+Vista。</DIV>
+<div><br /></DIV>
+<div>　　我有幸参与了微软Windows
+Vista的研发工作。在这个过程中深深地感受到了，我们现在已经使用的微软产品方便、快捷而又智能，但是在科技研发过程中却充满了曲折和困难。尤其是微软的Windows
+Vista系统，从开始酝酿到最后的发布，用了整整5年的时间，其间甚至经历过一次完全的推翻重写，这个过程，让微软视窗团队的每一个工程师都曾经充满沮丧和煎熬。也许，无论是历史还是科技，这种曲折都是前进的一个组成部分。</DIV>
+<div><br /></DIV>
+<div>　　2002年初，我加入了Windows
+Vista的团队，组建了一个新部门，叫做自然互动服务部。盖茨总是对语音、语言、智能型助手式用户界面情有独钟，于是，他要求全公司在这方面的团队都加入我的队伍。</DIV>
+<div><br /></DIV>
+<div>　　这些团队结合起来后，我们针对盖茨的Windows Vista目标，作了详细的策划。盖茨定位的Windows
+Vista的三大目标是：（1）支持新语言C#，所有操作系统软件都改用C#来写。因为C#语言的运行较慢，但是开发速度很快，这样微软不会落后于多人参与的开源Linux操作系统的发展。（2）开发WinFS
+(Windows File
+System)，它是新一代档案系统，可以将每一个文件存成数据库。如果WinFS能够成功，慢慢的，全世界的数据就都存到微软的数据库，不但可以击败Oracle、IBM的数据库，也可以防止别的网络公司（例如Google）掌控这些数据。（3）开发
+Avalon——新一代显示系统，让用户在浏览器里看到的网站或服务和传统的应用软件感觉一样。如果某网站的服务和用户端软件看起来一样，用户也更难理解网站服务的优点在什么地方。</DIV>
+<div><br /></DIV>
+<div>
+　　这三大目标从战略上来说都非常高明，如果实现了，微软就可以用最强大的武器Windows来攻击Linux、IBM、Oracl、Google，甚至所有的网站。</DIV>
+<div><br /></DIV>
+<div>
+　　但是，这三大目标都是前所未有的技术，从来没有大规模得到商业认证，更没有在这么重要的产品中成为关键。不过最严重的是：这三大目标都是极难的技术问题，很可能多几倍的时间也做不出来。因为技术的瓶颈已经到了极限，很多总监看到这个设想就倒吸了几口凉气：“技术难度太高了！C#这么慢，怎么能做操作系统啊？数据库不够快啊？怎么可能当做档案系统？”还有些研究芯片的专家常常看着Intel的芯片计划就开始担忧：“一定是微软习惯Intel芯片加速的速度，才这么乐观。但是每18个月芯片速度就快上一倍的日子已经过去了，别说2004年推出了的这些芯片，照这样，2007年Intel的芯片都不够快啊。”他们没想到的是，Windows
+Vista真的迟了几乎三年，直到2007年才推出。</DIV>
+<div><br /></DIV>
+<div>　　这三个团队发愁的时候，几乎所有其他的团队都开始挑战极限！大部分的团队，就像我的团队一样，说服自己做了leap of
+faith
+(信仰的飞跃)，相信在盖茨的督促之下，这三大目标都可以完成。我们开始用尚未建好的基础着手搭建我们的产品。虽然可以预想到会有重重的困难，但是谁知道伟大的产品是不是就产生在不断挑战极限当中呢？</DIV>
+<div><br /></DIV>
+<div>
+　　我和我的团队定了自己的目标：我们要在盖茨规划的基础上，做用户需要的功能。这样我们既能够帮助公司达到战略目标，又可以帮助我们的CEO满足用户第一的价值观，还能帮助公司做出又炫又有用的产品，而且真的能够解决用户问题。我们当时拟定了几个Windows
+Vista的新功能。</DIV>
+<div><br /></DIV>
+<div>
+　　“视窗智能助手”：它在你随时需要帮助的时候，一点就出来，甚至会聪明地自己出来。它会根据别的用户碰到的问题和犯的错误来推测你可能碰到的问题和犯的错误，然后它会一步步地帮你解决问题。</DIV>
+<div><br /></DIV>
+<div>
+　　“执行助理”：事先编译好的各种指令，只要用户要求就可以执行。例如：“在离我最近的打印机上打印”，“转发给北京分公司的员工”。</DIV>
+<div><br /></DIV>
+<div>
+　　“机器学习”：有些新的指令或工作没有被人工录入，我们增加了机器的学习功能，能够学到这些新的词汇、描述等，让我们的机器助手拥有可以自我学习、补充知识的功能。</DIV>
+<div><br /></DIV>
+<div>
+　　“新档案处理”（就是打开任何文件夹看到的）：除了现在静态的档案排序外，我们的软件可以聪明地找到任何你的档案，即根据每个文件的数据库内容，聪明地搜索。例如：“王力宏2000年以后所有的MP3音乐”，“老板今年寄给我的邮件”。这些指令发出之后都会被转换成为WinFS的数据库指令，而形成真正的智能数据库。</DIV>
+<div><br /></DIV>
+<div>　　这些工作都还是非常振奋人心的，我的团队从2001年年中到2004年年底，都非常努力地工作。作为Windows
+Vista开发过程的亲历者，我体验了其中的无比艰辛。大到一点点成果的突破，小到一个团队的组成建立。</DIV>
+<div><br /></DIV>
+<div>&nbsp;&nbsp;
+&nbsp;经过了三年的奋力拼搏，微软视窗团队的工程师们都已经疲惫不堪。但是，Windows
+Vista的成功却似乎遥遥无期。其实灾难早就在酝酿，因为大家在一开始就知道，这个伟大的计划实现起来，其执行难度实在是太大了!</DIV>
+<div><br /></DIV>
+<div>
+　　WinFS团队虽然承诺了盖茨提出的三大目标，但是在实际的工作中感到了迷茫。WinFS团队认为他们的任务是“不可能的任务”，但是也不敢告诉盖茨。任何一个接触过Vista团队的人都知道，每次把测试版的Vista搭建出来以后，都发现庞大的系统根本无法运行。</DIV>
+<div><br /></DIV>
+<div>
+　　作为一个亲历者，我只能诚实地回忆，当核心团队看到任务无法完成时，他们不再努力工作，只想着如何推卸责任。当时，几乎每一个团队都沉浸在这样的氛围里。Windows95与WindowsXP全球震撼登场的场景似乎已经飘然而去，而成功的渴望已经变成了对失败的恐惧和对项目的怀疑。我的团队也多次怀疑Vista
+能否照预期的时间表推出，另外，还有种种我们团队的工作需要依靠别人的项目的实现才能完成（这称做dependency）。这个时候，团队里的懈怠氛围就更加浓重了。这个时候，我总是告诉团队专注自己的工作，不要去乱猜别人的schedule（时间表）。慢慢的，整个公司都弥漫着一片“皇帝的新衣”的气氛，士气非常低落。</DIV>
+<div><br /></DIV>
+<div>　　&nbsp;<span STYLE="font-family: 楷体_GB2312; font-size: small; color: rgb(42, 42, 42);">注：本文摘录自我的新书《世界因你不同》，未来一段时间，我会摘录其中的小故事来跟大家分享。</SPAN></DIV>
+<div STYLE="font-family: 宋体; word-wrap: normal; word-break: normal; line-height: 25px; font-size: 14px; padding-top: 22px; overflow-x: hidden; overflow-y: hidden; width: 690px; color: rgb(42, 42, 42);">
+<div STYLE="word-wrap: normal; word-break: normal;">
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+<span STYLE="font-family: Verdana, 宋体, sans-serif; line-height: normal; font-size: 12px; color: rgb(51, 51, 51);">
+-----------------------------------------------------------------------------------------<img SRC="http://static3.photo.sina.com.cn/bmiddle/475b3d56t75e04af59d42&amp;690" ALIGN="left" STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial;" />---<br />
+
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr />这是李开复唯一的一本自传，字里行间，是岁月流逝中沉淀下来的宝贵的人生智慧和职场经验。捣蛋的“小皇帝”，11岁的“留学生”，奥巴马的大学同学，26岁的副教授，33岁的苹果副总裁，谷歌中国的创始人，他有着太多传奇的经历，为了他，两家最大的IT公司对簿公堂。而他的每一次人生选择，都是一次成功的自我超越。<br />
+
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />透过这本自传，李开复真诚讲述了他鲜为人知的成长史、风雨兼程的成功史和烛照人生的心灵史，也首次全面披露了他亲历的苹果、微软、谷歌等IT巨头风云变幻的内幕。意真情切，字字珠玑。</FONT></SPAN></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em; border-style: initial; border-color: initial;">
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr />抓住一切去探寻生命的意义，总有一天，世界将因你不同。</FONT></P>
+</DIV>
+</DIV>
+<div STYLE="clear: both; height: 15px; overflow-x: hidden; overflow-y: hidden; padding-top: 10px;">
+</DIV>]]></description>
+            <author>李开复</author>
+            <category>世界因你不同</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100h4il.html#comment</comments>
+            <pubDate>Tue, 02 Mar 2010 13:14:33 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100h4il.html</guid>
+        </item>
+        <item>
+            <title>向比尔汇报－新书选载</title>
+            <link>http://blog.sina.com.cn/s/blog_475b3d560100gzwd.html</link>
+            <description><![CDATA[<div>　　在微软研究院成立之初，我就有一个愿望——有朝一日，我要走进比尔·盖茨的办公室，向他展示微软中国研究院的成果。</DIV>
+<div><br /></DIV>
+<div>
+　　这种汇报，是展示中国智慧最好的机会，也是让比尔信任“中国智慧”的最好契机。我希望中国研究院因此获得更多的经费和更有力的支持。</DIV>
+<div><br /></DIV>
+<div>
+　　从进入研究院开始，我就把这个愿景分享给我的同事和朋友们。因此，向比尔汇报，成了我们共同的梦想。在美国出版的一些有关微软和比尔·盖茨的书籍中，“向比尔汇报”是一个最引人入胜的章节，它们像武侠小说那样跌宕起伏、玄机重重。一方面，它给你无与伦比的愉悦；另一方面，盖茨有可能在最短的时间里挑出你报告里的问题，然后步步紧逼，让你无法招架，最后，你非但得不到半点成就感，还会被潮水般的质疑和批评淹没。</DIV>
+<div><br /></DIV>
+<div>　　因此，如果没有百分之百的把握，是不能到比尔那里去汇报的。</DIV>
+<div><br /></DIV>
+<div>　　盖茨时间宝贵，所以每个产品团队每年最多向他汇报一次，但他特别重视研究院，所以公司每个季度都会安排汇报。</DIV>
+<div><br /></DIV>
+<div>
+　　1999年6月，里克·雷斯特来北京参加“21世纪的计算”大会，看到研究院做出的一些初步成果。他找到我，说：“开复，我本来想安排你明年2月给盖茨作汇报，但是现在看来，你们已经达到了见他的水平，要不然你今年10月就去见他吧！我来安排。”</DIV>
+<div><br /></DIV>
+<div>
+　　我又惊又喜。一回到希格玛，就把这个好消息告诉了大家，他们和我的感觉一样，既兴奋又紧张。我也趁势鼓舞大家，“我们手里的研究项目可要加快节奏了！大家要加把劲了！”&nbsp;</DIV>
+<div><br /></DIV>
+<div>　　从那一天起，整个研究院进入了一种“备战”状态。</DIV>
+<div><br /></DIV>
+<div>　　那是整整一个月的不眠夜！</DIV>
+<div><br /></DIV>
+<div>
+　　音字技术组，我们的语音识别系统已经装入5万个中文单词，但是四声的识别总是出问题。另外，我们从《人民日报》社买了大量的语料，邸烁负责用这些语料来训练我们的“语言模型”，做软件开发的孙燕峰，则负责把“模型”融入一个更大的系统，他马不停蹄地奔走于北京和雷德蒙之间，不分昼夜。</DIV>
+<div><br /></DIV>
+<div>　　多通道用户界面组，王坚和陈正一直在完善他们的无模式用户界面，直到我带去美国的前一分钟，他们还在调试。</DIV>
+<div><br /></DIV>
+<div>
+　　网络多媒体组，亚勤交出了他的多媒体压缩成果。而且，在MPEG&#57361;4的标准里，组员李世鹏得到了一个国际标准，这不但是微软贡献的标准，也是中国贡献的标准。</DIV>
+<div><br /></DIV>
+<div>
+形象计算组，沈向洋正在完善他的三维模拟环境，让你用一台普通的电脑，就能进入一个逼真的三维环境，并漫步其间。他的技术，是基于数十万张图片的粘贴，与前面提过的苹果QuickTime
+VR很像，但更庞大、更逼真。</DIV>
+<div><br /></DIV>
+<div>
+　　多媒体计算组，张宏江做出了聪明的图片检索。你只要圈出一个人的脸，他的系统就能在图库里找出更多这个人的脸，这个系统还能做视频分类，把足球、篮球、田径都精确地自动标出。</DIV>
+<div><br /></DIV>
+<div>　　1999年10月18日，微软雷德蒙总部一如往常，中国研究院的第一次“向比尔汇报”静悄悄地开始了。</DIV>
+<div><br /></DIV>
+<div>　　中国研究院的六位同事，第一次穿了同一款衣服——全黑色纯棉夹克，作为汇报人，我穿了件纯黑色的Polo上衣。</DIV>
+<div><br /></DIV>
+<div>
+　　盖茨的办公室设在8号楼，这是一幢星型的两层建筑，白色的外立面，墨绿色的窗。我们走进了二层的一间会议室，这里既不宽敞，也不豪华，透过落地窗，可以看见走廊对面盖茨的办公室。</DIV>
+<div><br /></DIV>
+<div>
+　　上午10点多，盖茨走了进来，他穿着咖啡色的衬衫，没有系领带，也没有寒暄，目光平静而严肃。在他点头示意之后，我开始从容不迫地演示我们的研究成果。</DIV>
+<div><br /></DIV>
+<div>
+　　比尔听得非常专注。当我说到中国研究院大规模招聘一流大学的博士生时，比尔问，“当地的学校会不会认为微软在抢人才？”他还说，“跟大学保持良好的关系，这跟科研一样重要。”</DIV>
+<div><br /></DIV>
+<div>
+　　有时候，他的问题带着美式幽默。比如我提到，有一年，邓小平到少年宫视察，摸着李劲的头说，“计算机要从娃娃抓起！”这时，我笑着指了指坐在下面的李劲，说，“这个娃娃就在这里。”比尔笑道，“我希望你们找他来的原因，不仅仅是因为邓小平摸过他的头。”</DIV>
+<div><br /></DIV>
+<div>
+　　比尔对我们的人才策略很感兴趣。我告诉他，我们招收的员工绝大多数都很年轻，很有潜质，他们能够从事基础研究，是大多数人都愿意看到的。我向他表明，我们从不主动到中国的高等学府或科研单位去挖资深人员，但如果有人主动来求职，我们一定会认真考虑每一份申请。</DIV>
+<div><br /></DIV>
+<div>
+　　比尔还详细询问了人员招聘可能面临的其他问题，比如户口，比尔对中国的了解，让我惊讶。我告诉他，中国在过去的几年发生了天翻地覆的变化，十几年前，人们的工作是分配的，想换工作几乎是不可能的，但现在，人们把个人的发展需求放在首位。</DIV>
+<div><br /></DIV>
+<div>
+　　我谈到了微软中国研究院的独特之处——技术原型，并阐述了它在基础研究中的重要性。我认为，我们绝不仅仅要写论文、申请专利，一定要把发明做成使用的技术原型。</DIV>
+<div><br /></DIV>
+<div>
+　　比尔对这套方法很感兴趣，他把那张幻灯片抽了出来，还做了笔记。他也认为，我们应该让每一位研究员做他们最擅长的事。一些公司，包括一些在中国开设研究中心的企业，雇用基础研究人员做产品开发，我认为这是非常不合适的。</DIV>
+<div><br /></DIV>
+<div>
+　　此外，我着重介绍了中文输入方面的研究，演示了语音识别和我们的快速输入法。我发现，比尔早已明白中文输入的困难所在，以及拼音和五笔等输入方法的利弊。我指出，如果中文输入的速度提高一倍，在每两个小时的工作时间里，我们就可以帮助中国的计算机用户节省10亿个小时。比尔幽默地说：“这比我们能节省的计算机启动时间还多。”</DIV>
+<div><br /></DIV>
+<div>
+　　最后，我谈到了微软中国研究院的研究方向——新一代多媒体、用户界面和信息处理技术。在介绍多媒体的研究方向时，比尔说：“微软研究院已在音频技术方面取得了成功，以后在图像技术和其他多媒体技术方面，可要靠你们了。”</DIV>
+<div><br /></DIV>
+<div>
+　　我立即对他说：“比尔，我们有三个组做出了多媒体技术，我们已经做出了很多成果！”然后，我顺势介绍了我们做出的技术。盖茨非常满意，他甚至一一问了每个专家的专长，并且非常开心地做了笔记。后来，他在很多场合说过一句话：“我打赌你们都不知道，我们有一批世界最厉害的多媒体科学家，他们都在微软中国研究院。”</DIV>
+<div><br /></DIV>
+<div>
+　　这期间，雷斯特曾向比尔询问我们是否应该在一小时内结束会议，比尔说：“不，我还想听听，我还有45分钟。”汇报结束时，比尔情不自禁地说：“太出色了！完美无瑕！”走出会议室时，他拍拍我的肩膀，说，“整天和绝顶聪明的人一起工作，你一定很愉快吧？”</DIV>
+<div><br /></DIV>
+<div>　　尽管在研究院工作的两年以及在总部工作的5年里，我向比尔汇报的次数无法计算，但我相信，那一次是最难忘的。</DIV>
+<div><br /></DIV>
+<div>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em;">
+<span STYLE="font-family: 宋体; line-height: 25px; color: rgb(42, 42, 42);"><span STYLE="word-wrap: normal; word-break: normal; line-height: normal; font-size: 12px; color: rgb(51, 51, 51); font-family: Verdana, 宋体, sans-serif;">
+<span STYLE="word-wrap: normal; word-break: normal; line-height: 25px; color: rgb(42, 42, 42); font-family: 宋体;">
+<font FACE="楷体_GB2312" SIZE="2" STYLE="word-wrap: normal; word-break: normal; line-height: 21px;">注：本文摘录自我的新书《世界因你不同》，未来一段时间，我会摘录其中的小故事来跟大家分享。</FONT></SPAN></SPAN></SPAN></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em;">
+-----------------------------------------------------------------------------------------<img SRC="http://static3.photo.sina.com.cn/bmiddle/475b3d56t75e04af59d42&amp;690" ALIGN="left" STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial;" />---<br />
+
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr />这是李开复唯一的一本自传，字里行间，是岁月流逝中沉淀下来的宝贵的人生智慧和职场经验。捣蛋的“小皇帝”，11岁的“留学生”，奥巴马的大学同学，26岁的副教授，33岁的苹果副总裁，谷歌中国的创始人，他有着太多传奇的经历，为了他，两家最大的IT公司对簿公堂。而他的每一次人生选择，都是一次成功的自我超越。<br />
+
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />透过这本自传，李开复真诚讲述了他鲜为人知的成长史、风雨兼程的成功史和烛照人生的心灵史，也首次全面披露了他亲历的苹果、微软、谷歌等IT巨头风云变幻的内幕。意真情切，字字珠玑。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; word-wrap: normal; word-break: normal; line-height: 1.5em;">
+<font STYLE="word-wrap: normal; word-break: normal; line-height: 21px; font-family: 宋体;">
+&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr /><wbr />&nbsp;<wbr /><wbr /><wbr />抓住一切去探寻生命的意义，总有一天，世界将因你不同。</FONT></P>
+</DIV>]]></description>
+            <author>李开复</author>
+            <category>世界因你不同</category>
+            <comments>http://blog.sina.com.cn/s/blog_475b3d560100gzwd.html#comment</comments>
+            <pubDate>Sun, 21 Feb 2010 14:44:28 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_475b3d560100gzwd.html</guid>
+        </item>
+    </channel>
+</rss>

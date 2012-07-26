@@ -1,4 +1,7 @@
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -32,6 +35,7 @@ import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
+import org.mortbay.util.UrlEncoded;
 
 public class Test
 {
@@ -266,6 +270,27 @@ public class Test
         }
         
         System.out.println(NumberUtils.isDigits("012"));
+        System.out.println(URLEncoder.encode("测试","utf8"));
+        System.out.println(URLEncoder.encode(URLEncoder.encode("测试","utf8"), "utf-8"));
+        System.out.println(URLDecoder.decode("%E6%B7%B1%E5%9C%B3%E5%BA%93%E5%AD%98.csv","utf8"));
+        
+//        FileInputStream input = new FileInputStream(new File("2012-06-14-14-37-31-contact-67.csv"));
+//        byte[] buf = new byte[1024];
+//        int len = input.read(buf);
+//        ByteArrayOutputStream out = new ByteArrayOutputStream();
+//        out.write(buf,0 ,len);
+//        String[] lines = new String(out.toByteArray(), "gbk").split("\r\n");
+//        for(String l : lines)
+//        {
+//            System.out.println(l);
+//        }
+        
+        System.out.println(new String(Base64.encodeBase64("你好".getBytes("utf-8"))));;
+        String adr = "asdfansofas\\;asfdasdf;nocafd";
+        String adr_1 = adr.replaceAll("\\;", "[:]");
+        System.out.println(adr_1);
+        System.out.println(adr.replaceAll("\\\\;", "[:]").replaceAll(";", "").replaceAll("\\[:\\]", ";"));
+        
     }
 
 }
