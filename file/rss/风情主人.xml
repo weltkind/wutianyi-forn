@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- generator="FEEDCREATOR_VERSION" -->
+<rss version="2.0" xmlns:sns="http://blog.sina.com.cn/sns">
+    <channel>
+        <title>风情主人的BLOG</title>
+        <description></description>
+        <link>http://blog.sina.com.cn/jcore</link>
+        <lastBuildDate>Thu, 02 Feb 2012 09:23:46 +0800</lastBuildDate>
+        <generator>FEEDCREATOR_VERSION</generator>
+        <language>zh-cn</language>
+        <copyright>Copyright 1996 - 2009 SINA Inc. All Rights Reserved.</copyright>
+        <pubDate>Wed, 22 Feb 2012 15:11:56 +0800</pubDate>
+        <item>
+            <title>Javac,jar &amp; java参数详解</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zy6y.html</link>
+            <description><![CDATA[<h3 STYLE="font-size: 1.2em; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">
+javac</H3>
+<p STYLE="margin-top: 5px; margin-right: auto; margin-left: auto; margin-bottom: 5px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 19px; background-color: rgb(255, 255, 255);">
+&nbsp;</P>
+<p STYLE="margin-top: 5px; margin-right: auto; margin-left: auto; margin-bottom: 5px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 19px; background-color: rgb(255, 255, 255);">
+用法：javac &lt;选项&gt;
+&lt;源文件&gt;<br />
+其中，可能的选项包括：<br />
+&nbsp;
+-g&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+生成所有调试信息<br />
+&nbsp;
+-g:none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+不生成任何调试信息<br />
+&nbsp;
+-g:{lines,vars,source}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+只生成某些调试信息<br />
+&nbsp;
+-nowarn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+不生成任何警告<br />
+&nbsp;
+-verbose&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+输出有关编译器正在执行的操作的消息<br />
+&nbsp;
+-deprecation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+输出使用已过时的 API 的源位置<br />
+&nbsp; -classpath
+&lt;路径&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+指定查找用户类文件的位置<br />
+&nbsp; -cp
+&lt;路径&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+指定查找用户类文件的位置<br />
+&nbsp; -sourcepath
+&lt;路径&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+指定查找输入源文件的位置<br />
+&nbsp; -bootclasspath
+&lt;路径&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+覆盖引导类文件的位置<br />
+&nbsp; -extdirs
+&lt;目录&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+覆盖安装的扩展目录的位置<br />
+&nbsp; -endorseddirs
+&lt;目录&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+覆盖签名的标准路径的位置<br />
+&nbsp; -d
+&lt;目录&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+指定存放生成的类文件的位置<br />
+&nbsp; -encoding
+&lt;编码&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+指定源文件使用的字符编码<br />
+&nbsp; -source
+&lt;版本&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+提供与指定版本的源兼容性<br />
+&nbsp; -target
+&lt;版本&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+生成特定 VM 版本的类文件<br />
+&nbsp;
+-version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+版本信息<br />
+&nbsp;
+-help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+输出标准选项的提要<br />
+&nbsp;
+-X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+输出非标准选项的提要<br />
+&nbsp;
+-J&lt;标志&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+直接将 &lt;标志&gt; 传递给运行时系统<br /></P>
+<h3 STYLE="font-size: 1.2em; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">
+jar</H3>
+<p STYLE="margin-top: 5px; margin-right: auto; margin-left: auto; margin-bottom: 5px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 19px; background-color: rgb(255, 255, 255);">
+<br />
+用法：jar {ctxu}[vfm0Mi] [jar-文件] [manifest-文件] [-C 目录] 文件名 ...<br />
+选项：<br />
+&nbsp;&nbsp;&nbsp;
+-c&nbsp; 创建新的存档<br />
+&nbsp;&nbsp;&nbsp;
+-t&nbsp; 列出存档内容的列表<br />
+&nbsp;&nbsp;&nbsp;
+-x&nbsp; 展开存档中的命名的（或所有的〕文件<br />
+&nbsp;&nbsp;&nbsp;
+-u&nbsp; 更新已存在的存档<br />
+&nbsp;&nbsp;&nbsp;
+-v&nbsp; 生成详细输出到标准输出上<br />
+&nbsp;&nbsp;&nbsp;
+-f&nbsp; 指定存档文件名<br />
+&nbsp;&nbsp;&nbsp;
+-m&nbsp; 包含来自标明文件的标明信息<br />
+&nbsp;&nbsp;&nbsp;
+-0&nbsp; 只存储方式；未用ZIP压缩格式<br />
+&nbsp;&nbsp;&nbsp;
+-M&nbsp; 不产生所有项的清单（manifest〕文件<br />
+&nbsp;&nbsp;&nbsp;
+-i&nbsp; 为指定的jar文件产生索引信息<br />
+&nbsp;&nbsp;&nbsp;
+-C&nbsp; 改变到指定的目录，并且包含下列文件：<br />
+如果一个文件名是一个目录，它将被递归处理。<br />
+清单（manifest〕文件名和存档文件名都需要被指定，按'm' 和 'f'标志指定的相同顺序。<br />
+示例1：将两个class文件存档到一个名为 'classes.jar' 的存档文件中：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+jar cvf classes.jar Foo.class Bar.class<br />
+示例2：用一个存在的清单（manifest）文件 'mymanifest' 将 foo/ 目录下的所有<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+文件存档到一个名为 'classes.jar' 的存档文件中：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+jar cvfm classes.jar mymanifest -C foo/ .<br /></P>
+<h3 STYLE="font-size: 1.2em; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">
+java</H3>
+<p STYLE="margin-top: 5px; margin-right: auto; margin-left: auto; margin-bottom: 5px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 19px; background-color: rgb(255, 255, 255);">
+<br />
+<br />
+用法: java [-选项] 类 [参数...]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(执行一个类)<br />
+&nbsp;&nbsp; 或者 java [-选项] -jar jar文件
+[参数...]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(执行一个jar文件)<br />
+其中，可能的选项包括：<br />
+&nbsp;&nbsp;&nbsp;
+-client&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+选择 "client" VM(ginger547:应该是指Virtual Machine)<br />
+&nbsp;&nbsp;&nbsp;
+-server&nbsp;&nbsp;&nbsp;&nbsp;
+选择 "server" VM<br />
+&nbsp;&nbsp;&nbsp;
+-hotspot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+与 "client" VM同义&nbsp; [不赞成]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+默认情况的VM是client.<br />
+&nbsp;&nbsp;&nbsp; -cp
+&lt;一个文件夹和zip/jar文件组成的类搜索路径&gt;<br />
+&nbsp;&nbsp;&nbsp; -classpath
+&lt;一个文件夹和zip/jar文件组成的类搜索路径&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+一个由文件夹，JAR压缩文件，或者ZIP压缩文件组成的用来搜索类的列表<br />
+&nbsp;&nbsp;&nbsp;
+-D&lt;名字&gt;=&lt;值&gt;<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+设置一个系统属性<br />
+&nbsp;&nbsp;&nbsp;
+-verbose[:class|gc|jni]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+使详细输出变的可用<br />
+&nbsp;&nbsp;&nbsp;
+-version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+打印产品版本然后退出<br />
+&nbsp;&nbsp;&nbsp;
+-version:&lt;值&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+只运行指定版本<br />
+&nbsp;&nbsp;&nbsp;
+-showversion&nbsp; 打印产品版本后继续<br />
+&nbsp;&nbsp;&nbsp;
+-jre-restrict-search | -jre-no-restrict-search<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+在版本搜索的时候，包含/排除用户私人的JRE<br />
+&nbsp;&nbsp;&nbsp; -?
+-help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+打印帮助信息<br />
+&nbsp;&nbsp;&nbsp;
+-X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+打印非标准选项帮助<br />
+&nbsp;&nbsp;&nbsp;
+-ea[:&lt;包名&gt;...|:&lt;类名&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;
+-enableassertions[:&lt;包名&gt;...|:&lt;类名&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+使断言可用<br />
+&nbsp;&nbsp;&nbsp;
+-da[:&lt;包名&gt;...|:&lt;类名&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;
+-disableassertions[:&lt;包名&gt;...|:&lt;类名&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+是断言不可用<br />
+&nbsp;&nbsp;&nbsp; -esa |
+-enablesystemassertions<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+使系统级断言可用<br />
+&nbsp;&nbsp;&nbsp; -dsa |
+-disablesystemassertions<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+使系统级断言不可用<br />
+&nbsp;&nbsp;&nbsp;
+-agentlib:&lt;库名&gt;[=&lt;选项&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+加载本地代理库&lt;库名&gt;,例如. -agentlib:hprof<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+同时可查看, -agentlib:jdwp=help和 -agentlib:hprof=help<br />
+&nbsp;&nbsp;&nbsp;
+-agentpath:&lt;路径名&gt;[=&lt;选项&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+通过全路径名来加载本地代理库<br />
+&nbsp;&nbsp;&nbsp;
+-javaagent:&lt;jar路径&gt;[=&lt;选项&gt;]<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+加载Java编程语言代理，可查看 java.lang.instrument</P>]]></description>
+            <author>风情主人</author>
+            <category>计算机软件</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zy6y.html#comment</comments>
+            <pubDate>Thu, 02 Feb 2012 09:23:46 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zy6y.html</guid>
+        </item>
+        <item>
+            <title>中国企业不要只想抄近道</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zy0h.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+一、【中国企业不要只想着抄近道，走捷径】我们做企业，一定要求真务实，尤其是<font COLOR="#FF0000">在市场环境不景气的今天，不能只想着抄近道，走捷径，否则容易走进死胡同，陷入绝境。绕道前行，尽管多耗费了时间与精力，尽管一路荆棘一路坎坷，但这是成长的规律与必然。苦练内功，不因禁不起“捷径”的诱惑而“一命呜呼”</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+二、我看到有两种人，一种是很想骑虎，却又害怕骑虎难下。另一种是很想骑马，却苦于找不到一匹好马。所以他们一直在畏惧、恐慌、苦恼、抱怨中度过。<font COLOR="#FF0000">如果你不敢骑虎，也没有好马，我的建议是，倒不如选择“骑猪”，这是一种方法，也是一种心态</FONT>。虽然没有虎强，也不如马快，但至少，你的人生不再恐慌、抱怨。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+三、毫无疑问，今年的市场环境肯定不如去年，如果我们要想在这个市场当中，争取到更大的份额，一定要<font COLOR="#FF0000">好好善待自己的客户</FONT>，你要有新招，你在这样的弯道超过别人，小道跑快别人，一定能够有更好的未来。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+四、【<font COLOR="#FF0000">坚持倾听自己内心的声音</FONT>】当一个人无论做什么事情都习惯依赖，其原本应有的毅力和独立意识就会被吞噬殆尽，到头来很容易被击败。最强大的声音来源于我们自己的内心，虽然它并不依赖任何外在的音响和扩音设备，但却能够让一个人奏响生命的最强音。坚持倾听自己内心的声音，内心的强大才是真正的强大。</P>
+<span STYLE="font-family: simsun; line-height: 21px; text-align: left; background-color: rgb(245, 248, 253);">五、<font COLOR="#FF0000">感情和事业是每个人梦寐以求的两件珍宝</FONT>。首先，千万不要把爱情和婚姻当成享受和向上攀登的阶梯，跟着感觉走就好，有些东西可以通过努力争取到，而浪费了缘分就再也得不到。第二，不要轻易放弃梦想，即使外界阻力大到你难以承受。换言之，左右你做出决定的未必是社会风气，也不是不打一处来的压力，而是你不够坚定。</SPAN><br STYLE="font-family: simsun; line-height: 21px; text-align: left;" />
+
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+六、有句话是这么说的“<font COLOR="#FF0000">世界上每个人都是被上帝咬过的苹果，有的人缺陷比较大，那是因为上帝偏爱她的芬芳</FONT>。”面对缺陷，懦弱的人会选择悻悻地活在它的阴影中，久久不能自拔甚至丧失斗志。而强者则懂得将其转化成鞭策自己成长的动力。像霍金，像海伦凯勒，身残志坚使他们获益无穷，成为受人崇敬的佼佼者。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+七、我们很多人可能一直这么以为，远大理想总是空洞的、难以企及的，眼前的平常小事更容易做到，其实未必。人的一生会遇到过很多大考验，多数人都能挺过去，输赢的关键在于小事。捧住一个秘密匣子、替别人保守秘密，对某些人而言似乎比登上火星还困难。而这样的小事，事实上对一个人的发展也是至关重要的。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+八、1、有些问题看起来很小，但是不可小觑；有些问题看起来很大，其实问题不大。2、<font COLOR="#FF0000">将问题搞复杂很简单，将问题搞简单很复杂</FONT>。3、<font COLOR="#FF0000">找不出问题导致的原因所在，就是最大的问题</FONT>。4、承认问题，并不等于解决了问题。正如承认错误，但屡屡不改，依然成问题。5、<font COLOR="#FF0000">没有解决不了的问题，只有解决不了问题的人</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+九、听人说，<font COLOR="#FF0000">每个人生下来，都是天使，但现实却是魔鬼</FONT>。我说，天使都很可爱，但是魔鬼也并不可怕。每个人生下来其实都是带着某种使命来的，那就是在天使与魔鬼之间找到一个能够支撑自己走下去并实现自我价值的平衡点，不管泥泞与荆棘、不管刮风或下雨，不管艰辛和痛苦，他都一往直前。平衡点，你找到了吗？</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+十、商业竞争的残酷，一点都不不亚于战争。无论如何，我们都要在遵循法律法规和道德底线的前提下去竞争。诸如狭隘、自私、贪婪、背信等病态的泛滥，势必会加快我们商业文化中不健康的细胞的扩散，严厉拷问、腐蚀着我们的商业生态环境。呼吁良好的商业风气和道德约束，它们保证商业社会更加有序、良性发展！</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+十一、【<font COLOR="#FF0000">如何摆脱“穷忙”与“瞎忙”</FONT>】<font COLOR="#FF0000">1、要有自己的兴趣爱好和目标追求。2、明确自己努力的方向是否正确，少走弯路。3、养成良好习惯，合理规划时间。4、坚持充电、积极思考，寻求问题解决之道。5、善于借力，改进方法，提高效率。6、不要闭门造车，多接触外面的世界。7、别让情绪影响工作</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+十二、【<font COLOR="#FF0000">“庖丁解牛”的五点启示</FONT>】庖丁解牛，出神入化，见者目瞪口呆。五点启示：<font COLOR="#FF0000">第一，重复、重复、再重复，熟能生巧，巧即创新</FONT>；第二，<font COLOR="#FF0000">按客观规律办事，事半功倍</FONT>；第三、<font COLOR="#FF0000">避实而击虚，避其锋芒，另辟蹊径</FONT>；第四，<font COLOR="#FF0000">顺势而为，因时而变，四两拔千斤</FONT>；第五，<font COLOR="#FF0000">即便“胸有成竹”，也要如履薄冰</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<br /></P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<a HREF="http://www.ebusinessreview.cn/articledetail-113534.html">http://www.ebusinessreview.cn/articledetail-113534.html</A></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zy0h.html#comment</comments>
+            <pubDate>Wed, 01 Feb 2012 20:52:02 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zy0h.html</guid>
+        </item>
+        <item>
+            <title>伟大的公司如何思考</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zxzr.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+传统上，经济学家和金融家认为企业的唯一目的就是赚钱。这种根植于美国资本主义制度的狭隘观念，导致许多企业片面追求短期利润的最大化以及为股东创造收益，仅仅从财务逻辑来考虑自己的经营决策。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+相比之下，伟大公司则遵循不同的<font COLOR="#FF0000">经营逻辑</FONT>——作者称之为“<font COLOR="#FF0000">体制逻辑</FONT>”（institutional
+logic），或者说“<font COLOR="#FF0000">社会逻辑</FONT>”。它们相信企业是社会内在的一部分，和家庭、政府以及宗教一样，几百年来一直是社会的一大支柱。伟大的公司也要赚钱，但在选择赚钱之道时，它们考虑的是如何建立经久不衰的体制。因此，它们会努力理解人与社会的需求，为未来而投资。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+本文作者对四大洲20多个国家中备受尊崇且经济上大获成功的企业进行了长期的实地调研，在这些研究的基础上，总结出了企业中体制逻辑所起的作用。体制逻辑共包括六个方面。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+1.<font COLOR="#FF0000">共同使命</FONT>
+在不确定的世界中，使命和价值观能够给公司一以贯之的身份，缓解不确定性和变化带来的冲击，并引导人们去发现能够满足社会需求的新产品。例如，印度马恒达集团的业务范围覆盖了汽车、金融、IT等几十个行业，但这些业务都围绕着一个共同的使命——“<font COLOR="#FF0000">提升人们生活品质</FONT>”。无论公司如何并购重组，哪怕公司名称发生变化，其身份和使命都将延续下去。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+2.<font COLOR="#FF0000">长期视角</FONT>
+当短期财务机遇与体制价值观出现背离时，伟大的公司愿意放弃前者。体制价值观指导着与公司身份和声誉密切相关的重要事项，如产品质量、目标顾客群的性质和制造过程中产生的副产品。例如，雷亚尔银行建立了一套筛选流程，评估潜在客户的财务状况和社会责任感。银行不会向那些没有通过其环境和社会责任测试的客户提供贷款。<font COLOR="#FF0000">这种短期的利益牺牲实际上是为了长期利益而做出的审慎的风险管理</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+3.<font COLOR="#FF0000">情感投入</FONT> <font COLOR="#FF0000"><b>强大的体制价值观能够激发正面情感，调动员工的积极性，促使员工自我监管和同事之间相互监管</B></FONT>。<font COLOR="#1F06FB">伟大公司的CEO会投入相当多的资源和个人时间为价值观宣言不断注入新的生命，使其历久弥新，并敦促各个层次的经理把传达这些价值观作为一项重要任务</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+4.<font COLOR="#FF0000">与公共领域合作</FONT>
+要想跨国和跨行业寻找新的商业机会，就必须关注超越公司业务范围的种种公众问题，建立与公共领域的合作关系。在这种关系中，公司高管不仅要考虑商业利益，还必须同时考虑社会利益。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+5.<font COLOR="#FF0000">创新</FONT>
+树立一个比赚钱更远大的目标，能够引导公司的战略和行为，为创新打开新思路，帮助人们在日常工作中展现公司和个人价值观。墨西哥西麦斯公司积极关注未满足的社会需求，由此产生出很多创新，比如适用于医院和农场的抗菌混凝土，以及在洪水多发区非常有用的防水混凝土。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+6.<font COLOR="#FF0000">自发组织</FONT> 伟大公司的管理者很清楚，<font COLOR="#FF0000">正式的结构不是太过宽泛就是太过僵化，无法为资源和创意的多向流动提供通道</FONT>。<font COLOR="#FF0000"><b>僵化会压制创新</B></FONT>。<font COLOR="#4D6DF3">非正式、自发组织、形式多变的临时网络则更富有弹性，能够在人与人之间建立联系，或者能够更快地把各种资源组织到一起</FONT>。2006年7月，IBM举行了“创新大讨论”。在这场持续数日的网络聊天活动中，超过14万名员工贡献了自己的点子，而虚拟化和绿色计算正是在此次活动后被列为IBM的重点战略事项的。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+上述六条原则互相关联，并且有很多共通之处。<font COLOR="#FF0000">伟大公司的领导者利用体制逻辑来弥补财务逻辑的不足，并以此指引和壮大他们的企业</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<br /></P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<a HREF="http://www.ebusinessreview.cn/articledetail-109068.html">http://www.ebusinessreview.cn/articledetail-109068.html</A></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zxzr.html#comment</comments>
+            <pubDate>Wed, 01 Feb 2012 20:26:01 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zxzr.html</guid>
+        </item>
+        <item>
+            <title>让团队消除你的职业倦怠</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zxof.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+面对自己取得的成就，你却怎么也高兴不起来，这就是职业倦怠的症状之一，它可能会毁掉你的职业生涯。但由于你对自己的工作很擅长，你又很难把它委托给别人去做。</P>
+<div STYLE="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: left; height: 250px; width: 300px; font-family: simsun; line-height: 21px; text-align: left;">
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+<ins STYLE="width: 300px; height: 250px; display: inline-table; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial;">
+<ins STYLE="width: 300px; height: 250px; display: block; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial;">
+<ins STYLE="width: 300px; height: 250px; display: inline-table; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial;">
+</INS></INS></INS></DIV>
+</DIV>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+&nbsp;</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+对于那些一心以成功为重的高管来说，他们<font COLOR="#FF0000">那种精益求精的完美主义情结也许是无可救药了</FONT>。不过，如果高管愿意花点时间反思一下，想想自己可以采取哪些不同的做法，那么他们还是有药可救的：<font COLOR="#FF0000">将关注的焦点从自身成功转向团队的成功</FONT>。方法如下：</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<span STYLE="color: rgb(128, 0, 0);"><strong>要领导，不要管理。</STRONG></SPAN>管理是一门学科，每个成功的组织都要靠它来支撑<font COLOR="#FF0000">；必须安排好人员、资源、日程和预算，才能完成工作</FONT>。与此同时，这些<font COLOR="#FF0000">琐碎的大事小情一把手绝不能事必躬亲</FONT>。他必须<font COLOR="#FF0000">负起领导责任，然后授权他人去管理</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<span STYLE="color: rgb(128, 0, 0);"><strong>把工作交给别人。</STRONG></SPAN>成功人士对自己的工作都很擅长；因此，他们总是不情愿找人代劳。A型管理者从不松懈；他们以微观管理为乐事。不幸的是，他们这样做只能把优秀人才赶走——结果，他们只好自己去承担越来越多的工作。不过，<font COLOR="#FF0000">精明的领导人</FONT>要懂得打破这个怪圈，后退一步，<font COLOR="#FF0000">让别人去管理那些细枝末节的琐事，同时也管理决策</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<span STYLE="color: rgb(128, 0, 0);"><strong>为别人的成功而欣喜。</STRONG></SPAN>个人成功是雄心壮志的核心。但对于领导人来说，除非整个团队取得了胜利，否则就谈不上真正的个人成功。当你的团队实现了一个重要目标后，庆祝一下！看着你亲自招入麾下、悉心培养的人取得成功，你的自我满足感也会油然而生。这种个人满足感很重要，它能让团队成员感到自己备受赏识，同时也丰富了你自己的生活。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+渴望进一步授权的领导人还有一件必须要做到的事：<span STYLE="color: rgb(128, 0, 0);"><strong>别再认定自己无所不能。</STRONG></SPAN>这可是件难事。当你做许多事都能得心应手时，你就会很容易认为，天底下没有什么事是自己办不到的。不骗你，我认识的许多成功人士都坚信自己是万能人才。要普通人承认自己的局限性也许很轻松，但要那些一手创办了公司，或是坐上大型组织头把交椅的高管们做到这一点可不容易。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+成功人士也许在<font COLOR="#FF0000">理智上明白变革的必要性</FONT>，但在情感上仍然万般抵触。有些人只有在发生了重大变故时，比如他们的健康、婚姻、家庭或事业出现了危机，才会痛下变革决心。许多高管几乎到了为实现目标而不惜一切代价的地步，但他们终于从危险的边缘撤回了脚步，明白领导艺术并不是唱独角戏。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+所谓领导人，就是那些具备自我约束力，能够了解自身局限性的人。但那些超级成功人士很难认同这种识别标准。只有认识到通过别人的帮助而不是自己单枪匹马的奋斗你能取得多大成就时，你才会幡然醒悟。想通了这一点，你就能减轻自己的压力，避免患上职业倦怠症，甚至还能改善与家人和朋友的关系。而且奇怪的是，当你将责任和权力下放给别人，让整个团队获胜时，你自己也将取得更大的成功。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+&nbsp;</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<a HREF="http://www.ebusinessreview.cn/articledetail-29299.html">http://www.ebusinessreview.cn/articledetail-29299.html</A></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zxof.html#comment</comments>
+            <pubDate>Wed, 01 Feb 2012 13:46:09 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zxof.html</guid>
+        </item>
+        <item>
+            <title>一位上司写给下属的信</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zxo4.html</link>
+            <description><![CDATA[<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+就在刚才，在洗手间里，我听出了在隔间里伤心哭泣的人是你。回到我的办公室，面对电脑上瞬间涌入的十多封邮件，我突然发现即使最好的现磨蓝山咖啡也无法让自己平静下来，于是我开始给你写这封信。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+我知道在你的眼中，我忙碌的要发疯，无情的像个bitch，又无趣的要死，所以我写这封信你一定吃惊之极，但是我写了，因为我并不真的那么忙，也不是bitch，更不无趣。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+我想今天对你来说，一定是很艰难的一天。早上，你红着眼睛来上班，我知道你一定又和男朋友吵架了。上午你接了一个电话，脸色立刻黯淡了，是房东要涨房租。度过了这样的半天，也就难怪在下午的会议上，你做幻灯演示的时候语无伦次，以尴尬的沉默告终。接着，在我要上周就交给你做的报表，而你说你还没做好的时候，我板着脸告诉你，如果你不搞明白什么事情是不能拖的，后果将十分严重。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+然后我就去忙自己的了。你也许没注意到，我也有自己的上司，如何让他满意是我每一天最头疼的问题。直到我在洗手间里听见你的哭泣，我才又想起你来。你哭泣的声音还那么的稚嫩，于是我一下子想起了，你今年才二十三岁。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+二十三岁时候的我自己是什么样子？碰巧，在我记忆中最清晰的也是一次哭泣。那天我现在的老公，当时的男朋友和我在电话里分手，我独自去火锅店吃了一大锅毛血旺，接着发现我的皮包被偷了，所有的生活费和银行卡都在里面。刚从警察局立案出来，我接到了大学同学的电话，邀请我去喝她的喜酒。然后，说是因为心疼红包有点丢脸，但是在当时那确实是骆驼身上的最后一根稻草——我就那样在冬日的街头上，不顾过往行人诧异的目光，放声大哭。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+也许生活要让每一个女孩都从一场痛哭开始，了解它玫瑰面纱背后的真面目。而每一个女孩，在生命中的某个时刻，都会被这样的严酷恐吓的失去斗志。但是亲爱的小姑娘，我向你保证，人这一辈子的幸福与苦难，绝对都在你的承受范围以内。生活比你还要了解你自己，它可狡猾了，它给你的苦涩，永远让你失望而又不至绝望。而给你的甜蜜，永远让你浅尝即止而充满想头。总而言之，It&nbsp;sucks，&nbsp;but&nbsp;you&nbsp;will&nbsp;love&nbsp;it.</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+人在二十多岁的时候，总是愿意相信一句话：生活在别处。你们很轻易的放弃一份工作，很轻易的放弃一段爱情，很轻易的放弃一个朋友，莫不是因为这种相信。可惜人要到很久之后才能明白，这世上并不存在传说中的“别处”。你所拥有的，也不过是你手上的这些。而你兜兜转转最终得到的，也不过是你在第一个站台错过的。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+所以小姑娘，我要对你说出今天的第一句忠告：好好工作。工作是一切并非天生公主的女孩成为女王唯一的方式。工作是一切自由幻觉中最接近现实的一种。更重要的是，工作帮助一个女人学会怎样爱自己，然后你才能好好的爱这个世界，爱别人，以及被爱。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+我知道，在你的眼里，三十多岁的女人已经老的如同隔夜菜了。四十岁的女人就可以去死了。没关系，我不介意，因为我自己二十出头的时候也是这样想的。让我再告诉你一句话：比老去更可怕的是老了老了，还没在社会上找到自己的位置。所以亲爱的小姑娘啊，你得加紧了，否则你一回首已<span STYLE="font-family: Arial; line-height: 25px;">多</SPAN><span STYLE="font-family: Arial; line-height: 25px;">是三十身。</SPAN></DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+现在的你，距离一个成熟、专业的职业女性，还差的很远。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+你看，当你穿着泡泡纱公主裙来上班，或者在我和你谈话的时候顺手抓起一个文件夹支着下巴，作为一个女人及一个妈妈来说我觉得你十分可爱，可是下一次我考虑下属升职的时候，可能我无法选择你。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+我不需要你下班后加班，小姑娘，我也不需要你在我走近的一刹那赶紧把QQ页面关掉。我们这儿是外企，一切都是结果导向，苦劳不计入分数。但我还是劝你，不妨用功一点。一个人的时间用在哪里是看的出来的。别跟着那些老男人小男人抱怨社会，你改变不了社会，也不可能重新选一个爸爸，对不对？你能改变的只有你自己。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+但你也不是真的干的那么坏。怎么，你有这种感觉吗？哦Sorry，那可能是我有意为之的。事实上当你在会议上颤抖着声音阐述你的新模型的时候，会议室里的那一片死寂代表的并不是不屑，而是震惊。因为长江后浪推前浪，我们这些前浪害怕死在沙滩上。所以我们当然不能让你发现我们被推到了。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+现在，让我们聊一聊爱情。鉴于我们都是异性恋，我们姑且把这一点简称为：男人。我二十三岁的那年错爱了一个不值得的男人，导致了我和现在的老公，当时的男朋友的分手。还好后来我又有一个机会回头。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+而你，亲爱的小姑娘，我不得不说，你分明也在一场错爱之中。这一点我从你红着眼睛来上班的次数就可以知道。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+不过没关系，每一个女孩的二十三岁如果不浪费在错爱之中，简直就是一种浪费。过一段时间，你一定会像当年的我那样明白过来：爱情，归根结底是为了快乐。虽然现在有一个流行的词叫做“虐恋”，但生活不是电视连续剧，和Mr.Wrong一味纠缠下去也拿不到片酬。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+其实大多数男人都不懂得，虽然自古有“男人不坏，女人不爱”之类的废话，但是泡妞还就得靠诚意。女人的心灵结构是这样的：最外面的一层属于没有希望的追求者带给我们的小心动；中间的一层属于会伤我们心的坏男人；但是最深刻、最珍贵的心灵角落，永远只属于那个能让你真真切切的感受到爱的男人。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+我说的对吗？仔细的感受一下你的现任男友，他伤过你的心很多次，但你在流泪的同时又隐隐觉得，其实他并未触碰到你心深处，那最细腻敏感的地方。别怀疑，你值得更好的。如果将你比喻成《阿凡达》中的伊克拉，他根本从未完成过“连接”。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+最后是金钱。恭喜你，你开始意识到钱的重要性了！请你非常清楚的明白这一点：在你大学毕业之前，生活不是不严酷，只是当时是你的父母在为你付账单。而现在，你进入社会了，你自觉的将许多欲望视为自己的责任了。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+你毕业于不错的大学不错的专业，口齿伶俐，相貌清秀，谢天谢地你还有个大胸！我觉得你真的可以算是非常幸运的女孩了，你觉得呢？其实我也觉得自己十分幸运能够以这样的薪水雇到这样的你，当然我不会告诉你的。等到你自己发现的那一天，我再适当的给你加一点薪水。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+你是这样的幸运，你却羡慕我的房子，我的车，我的钻石耳钉。我都不知道你在羡慕些什么。我有的岁月都会带给你，而你有的我再也不会回去。你真的没有必要因为你的衣服不如别人，包包不是名牌，或者存款还不到五位数而觉得不安。因为我们每一个人都是这样过来的，再也没有比二十三岁的贫穷更理直气壮的事情了。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+而相反，你不知道当你的年轻肌肤上带一点汗水，在我们这些老家伙的眼中是怎样千金难换的美好。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+我不是说我羡慕你，因为我自己的二十岁过的足够耀眼。其实我喜欢现在的自己。我喜欢每一个阶段的自己。电视里常常有女明星受访的时候这样说，别怀疑，是真的。在我像你一样二十多岁的时候，我就像一个没戴眼睛的近视眼，这个世界在我的眼前是混沌的，唯一清晰的只有我青春美丽的身体。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+但现在，这个世界对我来说，很清楚。我眼前的路，我眼前的人，当然也包括你。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+写到这里，我突然发现，如果我有机会回到十年前，我不会改变任何一件事情，因为我舍不得每一个选择带给我的回忆，即使并不完全是美好的。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+所以，亲爱的小姑娘，虽然，生活在今天对于你来说，天是暗的，风是冷的，也许喝口凉水都会塞牙。但是，我多希望能让你了解，一切最终都会化为一个会心的微笑。请好好享受你的二十三岁，努力而不费力的，等待岁月为你揭晓的答案。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+&nbsp;</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+你看，生活总是令我们出其不意。你在洗手间里的一次哭泣，却让你的上司老女人理解了二十三岁时的她自己。为此，我要谢谢你。也同时决定了，我只会将这封信存在我的电脑硬盘上。因为你，亲爱的孩子，有权用你自己的方式成长。</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+<br /></DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+你的上司老女人</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+2011年05月</DIV>
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(104, 104, 104); text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; line-height: 25px;">
+<a HREF="http://club.ebusinessreview.cn/blogArticle-113045.html">http://club.ebusinessreview.cn/blogArticle-113045.html</A></DIV>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zxo4.html#comment</comments>
+            <pubDate>Wed, 01 Feb 2012 13:35:41 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zxo4.html</guid>
+        </item>
+        <item>
+            <title>小成就 大动力</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zwxw.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+对于管理者来说，还有比提高团队生产力更重要的吗？但是对于什么才能激励员工，尤其是知识型员工做出最佳工作业绩，多数管理者都有误解。本文作者历经十几年努力，深入研究了上万条创意性项目团队成员的工作日志，在此基础上揭示了其中的奥秘：<font COLOR="#FF0000">每天能在工作中取得进展的成就感是激励员工的关键</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+提到“进展”，我们通常想到的是实现一个长期目标或者一项重大突破时所体验到的愉悦感。取得这些重大成就当然很了不起，但相对而言也少有机会实现。幸好，即使是很小的进展也可以极大地提振员工的工作心理。当然，另一方面，不起眼的损失和挫折同样也会给工作心理带来极大的负面冲击。因此对于管理者来说，尽量减少日常工作中的负面事件非常重要。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+管理者<font COLOR="#FF0000">如何才能确保员工积聚动力，甘愿投入，并享受乐趣</FONT>？如何为员工的日常工作进展提供支持？事实上，最有效的做法，就是提供催化剂和营养剂，以推动项目取得进展，同时消除工作中可能导致挫折的抑制剂和毒化剂。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+所谓<font COLOR="#FF0000">催化剂，就是能为工作提供支持的行为，包括设立清晰的目标、容许自主性、提供充分的资源和时间、为工作提供协助、以开放心态从工作成败中学习，以及允许员工自由地交流想法等</FONT>。催化剂的对立面是抑制剂，包括不为员工提供支持，故意干扰工作进程。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+营养剂指人与人之间相互支持的行为，例如对他人表示<font COLOR="#FF0000">尊重、认可，给予鼓励或精神安慰，建立归属感</FONT>等。与其对立的毒化剂则相反，它指的是缺少尊敬、打击士气、漠视他人情感、制造人际冲突等。营养剂和毒化剂一正一反地对工作心理产生直接的影响。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+构成催化剂和营养剂的管理行为其实并不神秘，即使不算是常识，也只能算是管理学入门内容。但是作者对工作日志的研究显示，这些道理常常被管理者抛诸脑后。他们所研究的公司中，即使是那些对员工关心较多的管理者，也未能持续地提供催化剂和营养剂。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+“进展原理”最重要的意义在于：通过支持员工，并推动他们在有意义的工作中日益取得进展，管理者不但能够改善员工的工作心理，而且能够提高组织的长期业绩，而这又将进一步提振员工的工作心理。当然这种循环也有不利的一面，也就是可能产生消极的反馈循环。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+“进展原理”的另一个意义在于：要保持员工的内驱力和幸福感，管理者没必要费尽心机地揣测员工的心理，或者操控各种复杂的激励手段。只要他们能够向员工表现出基本的尊重和体谅，就可以将注意力放在对工作本身的支持上。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+要成为有效的管理者，你必须学会启动这种积极的反馈循环。这可能需要你做出很大的转变。商学院的课程、管理书籍以及管理者自己，通常将注意力集中于管理组织或员工上，但是如果你能将管理重点放在工作进展上，员工管理，甚至整个组织的管理，都会变得更加容易。你不用想方设法去琢磨员工的工作心理，只要你能推动他们在有意义的工作中取得不断进展，让他们清楚地看到进展，并且善待他们，他们自然就会产生创造卓越业绩所必需的情感、驱动力和感知。他们的优秀表现会促成组织的成功。这当中还有一个妙处：他们会热爱自己的工作。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<a HREF="http://www.ebusinessreview.cn/articledetail-67810.html">http://www.ebusinessreview.cn/articledetail-67810.html</A></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zwxw.html#comment</comments>
+            <pubDate>Tue, 31 Jan 2012 14:08:33 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zwxw.html</guid>
+        </item>
+        <item>
+            <title>如何激发员工参与热情</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zwxl.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+每个人都知道授权可以提高团队的绩效，但是怎样才能在领导和下属之间<font COLOR="#FF0000">建立一种同舟共济的感觉</FONT>？本文提供了来自实践经验的<font COLOR="#FF0000">六条法则</FONT>，帮助你的团队<font COLOR="#FF0000">建立共识，提高生产率</FONT>。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+1. 谦虚</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+尽管谦虚是一种美德，却往往与基本的恐惧相冲突。许多新经理人急于证明自己，导致下属无法畅所欲言，也就无法从下属的经验中获益。如果你发现自己在卖弄过去，请立刻停止喋喋不休，并向大家道歉。你只是在展现自己缺乏安全感。讲述自己的经验要简明扼要，并且只在和解决下属的问题相关时才谈。你要向下属证明的，不是你过去解决了多少问题，而是你现在的想法和建议如何能够帮到他们。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+2. 认真倾听并表现出来</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+总的来说，经理人现在变得越来越善于倾听员工意见。但是，他们所带领的团队并不一定都看到了这一点。沟通是多方面的。人们会注意你的身体语言，观察你在看什么，你的手在做什么。开会时，你可能很难记起这一点，但管理这类信号其实非常重要。（别人发言时，不管你在做什么，都不要去看手表或手机上的时间）</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+3. 鼓励不同意见</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+尽管许多企业都在消除层级制度，让组织扁平化，但是强大的文化和公司规范仍然排斥不同意见。你必须努力从员工那里收集直接反馈，特别是唱反调的意见。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+在较为开放的文化中，老板们会认为这个问题并不常见。但要考虑到你团队中的所有成员，尤其是那些来自不同年代、文化或职业背景的员工，他们的声音可能淹没在其他同事的畅所欲言中。私下单独交谈的方式，会让你得到更多。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+4. 突出重点</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+通往地狱之路是由良好的愿望铺成的。我常常看到经理人愿意听取不同的意见，但是却以散漫的方式来听取这些不同意见，尤其是在“把所有想法都摆在台面上”的会议中。问题是，除非会议的时间可以拉得很长，否则议程安排越多，每个人发言的时间就越少。如果你设定了时间限制，最终只能将议程的各个部分草草过一遍，这会让员工感到不安。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+5. 承认力有不逮</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+解决问题是所有经理人自我意识的核心，找不到解决方案时，他们就会感到缺乏信心，无法胜任工作。所以，每当遇到困难时，有些经理人就会试图当场找到答案。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+要获得成功，经理人必须更多地将自身视为解决问题的催化剂，而不是问题的解决者。我已经学会了怀疑那些貌似拥有所有问题答案的经理人。如果愿意承认“<font COLOR="#FF0000">我不太确定答案是什么，找大家来集思广益吧</FONT>”，这就意味着更好的管理技能。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+6. 不坚持必须做决策</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<font COLOR="#FF0000">传统的管理智慧认为，有缺陷的决策好过没有决策</FONT>。毕竟，你随时可以改变方向，并且至少还可以从错误中学习。<font COLOR="#FF0000">实际上，如果决策得不到下属的赞同，那就不要急着强行做决定</FONT>。不妨考虑这样一个决策流程：虽然决策过程也许较慢，但是产生的决策即便不能取得一致同意，也能为每个人所接受。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+正如以上六点心得显示的，作为经理人，你的行为能够强化你和员工之间同舟共济的感觉，同时也能够摧毁这种感觉。如果你不再控制下属，而是让他们参与，向他们授权，并激励他们为达成共识贡献知识和经验，你就能获得巨大的回报。员工、你，还有公司都将受益于更明智、执行效果更佳的决策。</P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<br /></P>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left;">
+<a HREF="http://www.ebusinessreview.cn/articledetail-109075.html">http://www.ebusinessreview.cn/articledetail-109075.html</A></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zwxl.html#comment</comments>
+            <pubDate>Tue, 31 Jan 2012 14:02:17 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zwxl.html</guid>
+        </item>
+        <item>
+            <title>创新创业就是正确时做正确事</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zrll.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+两年前，刚刚成立的创新工场宣布投资移动互联网。李开复笑说，当时很多人质疑，智能手机真能起来？移动互联网真能做大？</P>
+<div STYLE="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: left; height: 250px; width: 300px; font-family: simsun; line-height: 21px; text-align: left; background-color: rgb(245, 248, 253);">
+<div STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+<ins STYLE="width: 300px; height: 250px; display: inline-table; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial;">
+<ins STYLE="width: 300px; height: 250px; display: block; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial;">
+<ins STYLE="width: 300px; height: 250px; display: inline-table; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial;">
+</INS></INS></INS></DIV>
+</DIV>
+<p STYLE="margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 23px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253);">
+&nbsp;</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+两年后，创新工场43个初创项目，已经有10余个获得外部风险投资的支持，而且在创新工场两周年之际迈出北京，开到了上海杨浦区。众多城市争相邀请，各路风投争抢移动互联网的蛋糕，李开复的创新模式得到追捧，背后的逻辑是“<font COLOR="#FF0000">无论创新还是创业，一定要看准趋势</FONT>”。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+李开复的“趋势说”，眼下正因移动互联网的快速发展得到印证。在南方都市报主办的2011年3C创新传媒大奖评选中，李开复被评委一致推选为“年度创新人物”候选人。在接受南都记者专访时，李开复强调，创新成败的关键是能不能提供可持续的用户价值，而“当你处于在一个爆发式成长机会的口子上，你做得不错，你就会被吹到天上去了，相反如果是逆风逆流，那你划了半天都没有结果。”</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+<strong>创新的成败关键</STRONG></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+南都：你在互联网行业工作多年，见证过许多企业的技术产品和商业模式创新。您认为企业创新怎样才能对接市场，获得消费者认可？</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+李开复：创新，我们首先是要看他是不是有创造用户价值，因为一个产品，一个创业公司，他的成败最关键的是看他能不能提供可持续的用户价值。基于这个出发点，你可以有各种方法来提供用户价值，包括商业模式的创新；产品的创新，把别人做过的产品和科技趋势融合起来，然后本地化；或者有一个很好的技术创新，做别人未曾做过的东西。在创新工场的投资方向上，这三种情况我们都不会排除。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+其次，要找准趋势。举个例子，你如果是在一个爆发式成长机会的口子上，你做得不错，你就会被吹到天上去了；但如果你是在一个平稳的不动的无风无浪的水上，那你就要靠自己去划，很辛苦；更糟的是逆风逆流，那你划了半天都没有结果。创新就是关注未来的成长趋势，要找对趋势，所以现在做移动互联网趋势对了，你如果去做WE
+B，门户网站，这个时间就错了。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+南都：目前你最看好哪些趋势？</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+李开复：创新创业，就是在正确的时间做正确的事。就像谷歌、百度把握在信息爆炸的时候开拓搜索产业，早一点做不行，晚一点做来不及。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+今年，我们会重点关注O 2O (O nlinetoO ffline)线上订购，线下消费模式。O
+2O要解决的问题帮助线下众多的商家针对性地获取用户，推广他们的产品和服务，然后让这些客户成为回头客；帮助用户找到他们想要的服务，然后利用移动、地理位置、社交建立一个中间的平台，让offline的商家用online的手段获取和理解用户。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+&nbsp;</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+再来，为什么现在做非常关键，因为现在移动平台起来了，用户习惯存在了，而5年前这种习惯和频率还不存在，GPS还不普及，所以5年前想做也做不了，现在到达了爆发式增长的时机。从另一个经济的观点来看，电子商务只解决了30%的问题，我们学会了网上购物，但是理发、美容、酒店住房这些是电子商务无法解决的，O
+2O就能够针对性地把这个比电子商务还要大2倍多的市场解锁释放出来。今年创新工场已经宣布投资了酒店达人和布丁两个O 2O项目。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+<strong>创新工场的创新模式</STRONG></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+南都：评委认为创新工场本身就是一个创新模式，创新工场的创新点在哪里？它为中国的创业者和投资者带来什么改变？</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+李开复：创新工场本身的运营模式是之前中国和外国都没有的。和一般的孵化器相比，创新工场有一个非常有经验的运营的团队，无微不至地提供各种有价值的服务，帮助创业者的产品周期减少一半，成功概率加大一倍；从一个投资机构来说，过去并没有一个投资机构能够加上早期孵化辅助的功能。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+另外，创业者在一起办公产生的气场和文化，是有很多孵化器和投资者尚未体会或者理解的，我们的培训，一对一的指导，创业者平等互助的氛围，不可以教导出来，所以整个创新工场本身就是一个创新。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+南都：创新工场掌上应用汇入选“移动互联技术创新奖”，您怎么评价掌上应用汇以及其他创新工场的项目？</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+李开复：掌上应用汇是是一个第三方A
+ndroid应用商店，他们刚刚发布的产品———球球搜，是一个非常新的概念。App越来越多，球球搜作为移动应用发现引擎，一方面通过搜索，让用户只要搜索关键词，不用名字也能找到合适的应用；另一方面，可以根据个人习惯、地理位置、时间等因素进行个性化的推荐，同时满足和平衡了用户和开发者之间的需要。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; line-height: 1.8em; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(245, 248, 253); word-break: break-all;">
+本文来源：南方都市报</P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zrll.html#comment</comments>
+            <pubDate>Wed, 18 Jan 2012 17:04:59 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zrll.html</guid>
+        </item>
+        <item>
+            <title>多次跳槽，有时候也会得到优待</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zrlj.html</link>
+            <description><![CDATA[<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+对于很多公司和求职者来说，频繁跳槽是职业生涯规划的</SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">大忌。尤其是在就业压力比较大的情况下，盲目的频繁跳槽，会对你的职业生涯发展</SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">造成很大的负面影响。但如果方法得当，跳槽也有可能成为你事业腾飞的另外一种砝码。因为那些世界上最优秀的公司，是不会在乎你跳槽多少次的，相反，如果你具备其他方面的综合素质，你仍然可以成为这些优秀公司中的一员，从而让你的职业生涯得到意想不到的发展机会。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+世界银行：基本条件是跳过3次槽</STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+应聘世界银行，起码要跳过3次槽。因为世界银行认为，对于经常需要考查、验资的银行人员来说，知己知彼非常重要，所以，应聘世界银行的基本条件是至少要有3种以上不同行业的工作经历。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+微软：</STRONG><strong STYLE="font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);"><font COLOR="#FF0000">寻找“聪明”人，不限于计算机专业</FONT></STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+“微软一直在寻找自己需要的聪明人，而聪明人的含义又很特别。”微软有自己的一套办法考查人的“聪明”程度。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+比如，微软的招聘人员会给你“3388”四个数字：看你能不能在最短时间内通过加减乘除得出24.还有一些问题，更是“刁钻古怪”，比如考官会问你“美国有多少加油站”等。而这些问题当然不是考你的记忆力和常识，事实上也没有什么标准答案，关键是</SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); font-family: Arial;"><font COLOR="#FF0000">考查你分析问题的能力</FONT></SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">，如何找到一个切入点。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); font-family: Arial;">
+<font COLOR="#FF0000">青睐“失意者”和具有冒险精神的人</FONT></SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+“微软之王”比尔·盖茨认为：当一个人为生计发愁时，他就会发挥自己的潜能，进行创造性思维。因此，盖茨一旦发现本行业中比较出色、但又因所在公司经营败落而失业的人才，就会在适宜的时候聘他来微软工作。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+微软还</SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); font-family: Arial;"><font COLOR="#FF0000">青睐具有冒险精神的人</FONT></SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">。要想成为微软的一员绝非易事，你</SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); font-family: Arial;"><font COLOR="#FF0000">要对软件有浓厚的兴趣，还要有丰富的想像力和敢于冒险的精神，微软宁愿冒失败的危险选用曾经失败过的人，也不愿意录用一个处处谨慎却毫无建树的人</FONT></SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+联想：选人标准是</STRONG><strong STYLE="font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);"><font COLOR="#FF0000">有上进心、悟性强</FONT></STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+联想集团董事局主席柳传志选人有两条标准：第一是看有没有上进心。“年轻人能不能被培养，上进心强不强非常重要。企业真正要做好，总得有一批这样的人，真的是为国家、为民族富强，把职业变成事业的人。纯粹求职的人，在联想没有大的发展。”</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+第二是看悟性强不强。“什么能妨碍悟性的发展呢？是自己对自己的评价过高。悟性无非是善于总结的意思，但过高地看自己，容易忽视别人的经验，不能领悟别人的精彩之处，这种人挺多。有很多人有一定的能力，聪明而已，达不到智慧的程度。有的人个性很强，强到外力砸不破的时候，这个人也没有培养前途。”</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+德国SAP：</STRONG><strong STYLE="font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);"><font COLOR="#FF0000">注重发展潜力，不在乎学历学位</FONT></STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+德国SAP公司成立于1972年，发展迅猛，很快成为全球第四大独立软件供应商，也是软件解决方案供应商。1998年1月1日，SAP北京开发中心成立，在上海、广州等地设有分公司。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+SAP看重于一个人的素质潜力，因为在SAP看来，技术和知识都是可以经过实践来获得的，而人员的素质、品德是与生俱来的，与学历的高低并没有必然的联系。影响一个人的工作表现的并不仅仅是学历和技术，工作的态度和敬业精神以及对企业的忠诚等，对员工个人的工作表现，对整个企业的影响，往往更重要。所以，SAP在招聘员工时并不在乎对方现有的学位和文凭，而更在乎他还能吸收多少新知识，还能提高多少，只要有这个空间，进入SAP之后，经过培训、学习以及具体企业文化的熏陶，成长就有可能。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+UPS：第一要求是清廉</STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+UPS（United Package
+Service，美国联合包裹速递服务公司），创办于1907年，现在已经成为全球速递行业的“四大巨头”之一。清廉是UPS对员工素质的第一要求。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+为了保证员工具有较高的清廉素质，UPS着重采取了三条措施。首先是在招聘过程中，通过“目测”和“心测”的方法来选人。其次是通过试用期选人。其三是采用一套行为科学的测试机制，给员工打分。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+宝洁：放</STRONG><strong STYLE="font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);"><font COLOR="#FF0000">在第一位的是诚实正直，热心社会活动者优先</FONT></STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+尽管时代一天天在变化，但那些具有传统的“侠义之风”的应聘者是宝洁最期待的。这些素质可以概括为：诚实正直、勇于承担风险、积极创新、发现问题和解决问题的能力、不断进取。这几方面是密不可分、相互联系的。其中，诚实正直是放在第一位的。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+此外，如果你去宝洁公司的“飘柔”应聘，常常会被问到是否经常参加学校的活动或组织过哪些活动，而热心社会活动的学生，宝洁会优先考虑聘用的。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+英特尔：聘人的首要条件是</STRONG><strong STYLE="font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);"><font COLOR="#FF0000">企业文化认同</FONT></STRONG><strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">，青睐“得3分的人”，对经理人才的要求更高</STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); font-family: Arial;">
+<font COLOR="#FF0000">客户第一、自律、质量、创新、工作开心、看重结果——这是英特尔的企业文化和企业精神</FONT></SPAN><span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+英特尔聘人的首要条件就是认同这个精神这个文化。因为这是英特尔的凝聚力所在。在英特尔看来，得3分（成绩中等偏上）的人也许更可取。英特尔在人们的印象中是一个不断推陈出新、升级换代的品牌，其创新精神在招聘过程中也有充分的体现。英特尔在各高校招聘应届毕业生时，愿意招各种虽是3分却富有创新意识的学生，最好是在校期间就完成过颇有创意性的项目。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+英特尔公司对人才有更高的要求。首先要有专长，比如计算机、公关等，这是最基本的素质。此外是与人相处的能力，因为经理得与大家一起，靠大家来开展工作。英特尔对经理的评价也是看他领导组织的业绩，而不是看他本人。所以，作为经理人才，英特尔看重的是既有个人专长又有领导才能的人才。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+雅虎：</STRONG><strong STYLE="font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);"><font COLOR="#FF0000">合适的人才是热爱生活、有影响力、有人际技能、能收能放的人</FONT></STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+美国雅虎公司是一个新兴的创新企业，对于什么是合适人才自有一套标准。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+热爱生活：应聘者要对生活充满热爱，只有热爱生活的人，才能替公司干大事，而且在生活中成就大事。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+影响力：雅虎所聘用的人必须结识一批英才，因为雅虎常常利用企业内部员工的关系网网罗人才。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+人际技能：雅虎聘用的任何员工短期内都要负责管理他人的工作，因此，雅虎的员工必须具备良好的建立人际关系的能力。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+能收又能放：应聘者不仅能干实事，而且能看到全局。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+美的集团：更欢迎具有电子科技专业知识和经济管理、市场营销专业知识的人才</STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+美的集团是一家电子科技企业，所以美的集团需求量最大的是两类人才：一类是从事技术工作的电子科技方面的科研人员，一类是从事经济工作的企业经营管理和市场营销人员。相应的，这两类专业及与之相关专业的人员是“美的”最主要的招聘对象，而纯文科的人才需求较小。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<strong STYLE="color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+斯伦贝谢公司：更看重团队精神</STRONG><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+法国斯伦贝谢公司是一家从事石油勘探以及原油的开采、加工设备销售等方面业务的大型跨国公司，它更看重应聘者的团队精神。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;">
+对此，斯伦贝谢中国分公司人力资源部的刘华女士解释说，在当今社会里，企业分工越来越细，任何人都不可能独立完成所有的工作，他所能实现的仅仅是企业整体目标的一个小部分，因此，团队精神日益成为一个重要的企业文化因素，它要求企业分工合理，将每个员工放在正确的位置上，使他能够最大限度地发挥自己的才能，同时又辅以相应的机制，使所有员工形成一个有机的整体，为实现企业的目标而奋斗。</SPAN><br STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: Arial;" />
+
+<span STYLE="line-height: 21px; text-align: left; background-color: rgb(255, 255, 255); font-family: Arial; color: rgb(51, 51, 51);">
+<span STYLE="line-height: 21px;">对员工而言，它要求员工在具备扎实的专业知识、敏锐的创新意识和较强的工作技能之外，还要善于与人沟通，尊重别人，懂得以恰当的方式同他人合作，学会领导别人与被别人领导。<br />
+</SPAN></SPAN>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<strong><br /></STRONG></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<strong STYLE="color: rgb(104, 104, 104);">万科：德才兼备，以德为先<br /></STRONG><span STYLE="color: rgb(51, 51, 51); font-family: Arial; line-height: 21px;">万科企业股份有限公司是一家中国大陆实力雄厚、声誉卓越的专业房地产公司，万科对人才素质要求的首要原则是“</SPAN><span STYLE="font-family: Arial; line-height: 21px;"><font COLOR="#FF0000">德才兼备，以德为先</FONT></SPAN><span STYLE="color: rgb(51, 51, 51); font-family: Arial; line-height: 21px;">”。</SPAN><span STYLE="color: rgb(51, 51, 51); font-family: Arial; line-height: 21px;">“德才兼备”当然是最理想的，这样的人才万科最需要，但在现实中不可能对所有人都提出这种苛刻的要求，在这种情况下，万科更强调“以德为先”。这里的</SPAN><span STYLE="font-family: Arial; line-height: 21px;"><font COLOR="#FF0000">“德”主要是指职业道德、职业心态，有良好职业道德和良好职业心态的人</FONT></SPAN><span STYLE="color: rgb(51, 51, 51); font-family: Arial; line-height: 21px;">，才是万科所欢迎的。</SPAN></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zrlj.html#comment</comments>
+            <pubDate>Wed, 18 Jan 2012 16:58:43 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zrlj.html</guid>
+        </item>
+        <item>
+            <title>我是这样给领导做PPT的</title>
+            <link>http://blog.sina.com.cn/s/blog_4ec307ff0100zrle.html</link>
+            <description><![CDATA[<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+&nbsp;般若黑洞写了一篇好文字《如何给领导做PPT》http://www.70man.com/?p=7848，其中介绍的大部分观点我赞同，不过我在职场给领导做PPT的经验可能更丰富一些，所以我想补充一些实在的职场经验。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+首先这里说的领导，是有特定含义的，我指的是类似政府，事业单位，某些国企，大专院校这种特别在意行政级别的圈子，并非全集，请勿随便对号入座，你懂的...</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+1、先想清楚领导找你做PPT可能的后果。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+一般而言，领导都有专门的人帮他写材料的。找你做PPT，在管理上讲，是其身边的人不得力，或者说调动不灵，在其位者不谋其政，或者不能谋其政，不得已求助外力来解决问题。如果是抓壮丁类型的话，你就必须考虑一个风险，假如你的PPT做得好，那么下次，你是想继续帮领导做PPT还是推掉？这很难的，因为在单位，领导可能不能提拔你，但</SPAN><font COLOR="#FF0000">一定对你可以行使合法伤害权，俗称穿小鞋</FONT><font COLOR="#686868">。当然我们不能以小人之心揣度领导，但是</FONT><font COLOR="#FF0000">你不帮领导做事情，基本上领导不会把你看成自己人，这点肯定无疑的，在中国大部分职场，一切都围绕着位置权力转，<b>保持个性是要付出代价的</B>...</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+假如真这样，你要拒绝领导很难。在中国很多职场，别给领导谈什么一个人特别忙必然是某些人特别闲的管理常识，更别建议领导请负责岗位做事，也别提什么配置不合理，把</SPAN><font COLOR="#FF0000">因岗定人</FONT><font COLOR="#686868">的流程变成了</FONT><font COLOR="#FF0000">因人设岗</FONT><font COLOR="#686868">，</FONT><font COLOR="#FF0000">因事设岗</FONT><font COLOR="#686868">之类的事情，是领导的权利，做领导不就是有不按公认理论乱来的权力么？</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+所以我理解你无论做或者不做，难处都在那里。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+我当然不希望领导什么PPT都找我做，领导一旦用顺手了，只怕次次找你，事实上，我已经是这样了。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+明白这一点，就可以看出我们这些固定工（比如老师）和临时工（比如学生）的心态差异，固定工希望下不为例，临时工希望借机转正或者得到一些额外的回报，那么给领导做PPT的投入程度就完全不同。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+2、给领导做PPT要顺着节奏，不要冒进。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+我喜欢领导给我急活，今天给我明天要，咬咬牙一晚上，甭管做得是好还是坏，反正就必须结束了。<br />
+就怕领导的PPT不是任务特别紧急的话，那就麻烦了。那就意味着那份文稿还在某些领导的会议中不断修改，调整，变形，你的PPT也就要跟着修改，调整，变形。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+而且找你做PPT的领导可能还是请你为更大的领导做PPT，比方说专家吧，这个时候，情况就更复杂了。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+比方说第一份PPT不妨文字多一点，便于领导对稿念，否则他会批评你什么都不写，专家看什么？<br />
+等第二次看PPT，领导对材料熟悉了，大家也对内容取舍有初步方向了，你得做一份文字略微精简的，否则领导会批评，什么都写，专家看什么？</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+等第三次看PPT，你就得对美化方面下力气，否则领导会批评你，内容这么单调，专家看什么？<br />
+假如一开始你就下力气美化，在内容没有定案前，其实都是无用功。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+给领导做PPT，如果时间充足，就得做好长期被折腾的心理准备，不要闹情绪闹眼子，对自己没好处，对领导也没好处，</SPAN><font COLOR="#FF0000">不如仔细借这个机会揣摩领导遣词用句的规律和用心，慢慢积累一些写八股文字的经验，也是一种实用技能</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+3、给领导做PPT要考虑平衡，不要过于突出。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+这个平衡是个很微妙的词，首先是PPT的内容要和领导的个性和身份平衡，位子越高，模板越要稳一点，排版要厚重一点，年龄轻的，做人事的，可以活一点。这需要平衡。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+领导的业绩也需要平衡，业绩好，排版大胆一点，业绩不突出，排版收敛一点，没有功劳有一堆苦劳，提炼文案找亮点，三个代表式排比什么的最有爱。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+记住：</SPAN><font COLOR="#FF0000">亮点是提炼出来的，不是做出来的</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+领导的工作和时代的发展也要平衡，上面流行什么语言，最近流行什么政策，未来可能发生什么动态，一个字一个词都要体现在PPT中，没有高度的政治敏感性，这种玩意你还真写不来。</SPAN><font COLOR="#FF0000">很多人觉得党的八股文很无聊，但这些无聊里还偏偏大有学问，那些提法是对的，那些是错的，那些人和事必须放在前面，那个奖必须SHOW出来</FONT><font COLOR="#686868">，基本上几个PPT做完，你就完成了一轮免费国家和单位最新时事学习。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+多个部门汇报时也要</SPAN><font COLOR="#FF0000">平衡</FONT><font COLOR="#686868">，</FONT><font COLOR="#FF0000">中国工作特点是大家都参与，人人都有份</FONT><font COLOR="#686868">，</FONT><font COLOR="#FF0000">你可以出色一点，但不要太出色</FONT><font COLOR="#686868">，</FONT><font COLOR="#FF0000">给其它部门领导留点面子</FONT><font COLOR="#686868">。哪些工作是主持，哪些是支持，哪些是承办，哪些是参与，哪些是应邀，哪些是被上级点名，名份细节不注意，就抢了功劳结了梁子。有些领导审核PPT很粗，没有发现错误，但是演示时候被别人挑刺的时候，你就成了出气包。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+假如是多次汇报也要注意平衡，你知道，很多项目不是一次汇报就可以结束，你还得</SPAN><font COLOR="#FF0000">考虑为下一次汇报留点力</FONT><font COLOR="#686868">，</FONT><font COLOR="#FF0000">别弹药全出，没有后力</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+进步无止境，领导永远不会停留在原处，你也无法永远停留在当下。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+我给领导做PPT，永远不会使出全力，当然，我全力打造的风格，领导也不一定喜欢。所以还要注意平衡你的口味和领导的口味，甚至领导的领导的口味。别抱怨领导没美感，</SPAN><font COLOR="#FF0000">我们要迁就别人，而不是证明自己</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+<font COLOR="#FF0000">永远不要在权力面前证明自己的品位</FONT><span STYLE="color: rgb(104, 104, 104);">。俗称对牛弹琴，其实他们不是牛，他们有他们的话语体系和表达形式惯例而已，有的领导品位其实比你还高，只是大家都要装装逼而已。</SPAN></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+给领导做PPT，还要注意在逻辑和工作量之间的平衡，很多PPT根本不用那么长，</SPAN><font COLOR="#FF0000">但是领导的领导评价一个人，往往看厚度，而不是看质量</FONT><font COLOR="#686868">，换句话说，评价一份PPT背后的工作质量标准是PPT的页数，而不是内容，所以，为了工作量，你</FONT><font COLOR="#FF0000">必须学会把每一件小事都总结得意味深长或者表现得丰富多彩的本事</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+这才是秋叶做PPT的立身之本，工作中的PPT，你信《演说之禅》Garr那些大师，不比信忽悠好多少，我懂国情，他们不懂。再说我给领导做汇报，不是给粉丝做演讲，老罗那一套，工作中，羡慕下就好。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+另外要特别注意领导演讲稿念稿速度和翻页数量，还有自动设置的动画节奏的平衡，考虑到我们领导水准，我一般不给他们做动画，一动就动成他汇报，你还得老实坐在下面按节拍翻页，痛苦不堪。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+最后一点要注意质量和成本的平衡，一个好PPT，制作是需要付出大量时间精力成本的，领导看不见你在加班熬夜，也不会因此给你加班费，顶多几句感谢。</SPAN><font COLOR="#FF0000">没有人认为一个人会做PPT有什么出息，虽然事到临头又总是找你</FONT><font COLOR="#686868">。所以做PPT一开始就得评估做到怎样的质量可以过关，又不会太辛苦自己。一些好的创意不要用在这些场合，这个时候，找一些领导没有见过的模板动画就成了很多人的救命丹，有用，但是其实是个笨办法。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<br />
+真正的高手，是可以根据需要做出任意风格的PPT，我要做2B的，一样可以2B到底，我要玩文艺的，肯定不输文艺青年。反正网上下模板式的做PPT，总体来讲恰恰导致质量难以过关，因为很显然一点，所有的人都看得出来是用模板套的东西，基本上等于没用心，很难得高分。</P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+其实我不是教PPT的，我是玩职场兵法的。看重技巧的人永远不理解做好一个PPT，</SPAN><font COLOR="#FF0000">做PPT拼的是内功，拼的是对听众的理解</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+领导，往往就是最大的听众。做PPT时，</SPAN><font COLOR="#FF0000">对领导的审美要服从，不要争论</FONT><font COLOR="#686868">。</FONT><font COLOR="#FF0000">美这个东西固然有品位高下，但是权力大的人总是能赢</FONT><font COLOR="#686868">。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<span STYLE="color: rgb(104, 104, 104);"><br />
+给领导做PPT的三从四德——</SPAN><font COLOR="#FF0000">领导的安排要服“从”，领导的想法要跟“从”，领导的审美要盲“从” 。领导的材料要等“得” ，领导的亮点要记“得”
+，领导的反复要忍“得” ，领导的包装要舍“得”</FONT><font COLOR="#686868">。</FONT><br />
+<font COLOR="#686868">今天信笔写到这里，还有什么好想法，欢迎你们补充留言。</FONT></P>
+<p STYLE="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: 25px; text-indent: 2em; color: rgb(104, 104, 104); font-family: simsun; text-align: left; background-color: rgb(255, 255, 255);">
+<a HREF="http://club.ebusinessreview.cn/blogArticle-112323.html">http://club.ebusinessreview.cn/blogArticle-112323.html</A></P>]]></description>
+            <author>风情主人</author>
+            <category>管理学</category>
+            <comments>http://blog.sina.com.cn/s/blog_4ec307ff0100zrle.html#comment</comments>
+            <pubDate>Wed, 18 Jan 2012 16:44:59 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_4ec307ff0100zrle.html</guid>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- generator="FEEDCREATOR_VERSION" -->
+<rss version="2.0" xmlns:sns="http://blog.sina.com.cn/sns">
+    <channel>
+        <title>刘兴亮的BLOG</title>
+        <description></description>
+        <link>http://blog.sina.com.cn/liuxingliang</link>
+        <lastBuildDate>Tue, 21 Feb 2012 21:50:59 +0800</lastBuildDate>
+        <generator>FEEDCREATOR_VERSION</generator>
+        <language>zh-cn</language>
+        <copyright>Copyright 1996 - 2009 SINA Inc. All Rights Reserved.</copyright>
+        <pubDate>Wed, 22 Feb 2012 08:27:23 +0800</pubDate>
+        <item>
+            <title>Android Pad的蛋糕怎么切</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102dv74.html</link>
+            <description><![CDATA[<div><font STYLE="FonT-siZe: 16px">曾经在网络疯狂流传过这样一个题目：“如果有五个小朋友吃一个蛋糕，只能切三刀，请问您怎么才能平分？”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">如果没有互联网，这个题充其量也就是个高难度的智力题，仅此而已。在互联网时代，全民娱乐的时代，这道题之所以疯狂流传，一切原因起始于百度知道里某网友的一个暴强答案：“一刀砍死一个小朋友！剩下两刀把蛋糕十字切4块。”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">这篇行业性较强的文章，估计小朋友们应该是不会看到的，蛋糕也应该是看不到的。所以我心平气和的拿这个例子来说说Pad市场，您也姑且心平气和的往下走着。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">在Pad市场，目前有三个小朋友，分别叫做iOS、Android和Windows
+Phone。题目来了：如果这三个小朋友吃一个叫做Pad的蛋糕，只能切两刀，请怎么才能平分？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">太难平分了，现有的市场来看，几乎不可能平分了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">于是，那两个叫做Android Pad和Windows
+Phone
+Pad的小朋友都在想，是不是可以有这样一个答案：一刀砍死那个叫iPad的小朋友，然后再把蛋糕从中间砍一刀，小哥俩一人一半？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">是啊，那个叫做iPad的小朋友太强大了，强大的令别的小朋友们喘不过气来。在我主持的最近一期IT龙门阵上，当米粉们问到雷军，小米是否会出米Pad时，他表示了深深的三点担忧。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">首先，iPad把毛利率压得很低。iPad的造价比iPhone要高，但售价却比iPhone要低得多，接近一半。iPhone有40%的毛利率，而iPad只有20%的毛利率，没有给别人留下任何的价格空间，如果做到iPad同样品质，成本要比它的售价还高。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">其次，iPad利用领先优势，建立了建立了App
+Store生态链，iPad很多用户付费购买应用和游戏，因此很多大游戏公司精力放都在iPad上。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">第三，Android
+Pad的屏幕尺寸非常多，开发的工作量比iPad要高，使得Android Pad缺少足够的应用资源支持。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">Windows Phone
+Pad姑且先不说，这个小朋友还有很长的路要走。目前看来，这个叫做Android Pad的小朋友确实太难了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">当下，Android Pad表现好的不多，只有Kindle
+fire等寥寥几款，但kindle fire只专注电子书阅读器。而且是背靠亚马逊这棵大树，在初期，每一台都亏本10美元。Kindle
+Fire只售199美元，但通过卖书，从书中赚钱。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">做Android
+Pad到底有没有戏，就这个话题我发到微博里之后，目前已有接近2000多条转发和评论。一个网友的评论应该代表了目前大多数Pad用户的需求，他的评论是“目前用iPad，玩游戏，玩游戏，玩游戏……非常偶尔的看看书，刷刷微博。”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">现在的家庭聚会，如果有小朋友，不管有多少个小朋友，只要丢给几个iPad，达人们就可以随便喝酒打牌了。从这个角度说，Android的生态链由于免费等因素，被具有完善收费渠道的iPad就一举击溃了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">但是Pad毕竟是趋势，未来的个人电脑市场，恐怕台式机和笔记本的份额会越来越小。Android
+Pad做的好的企业不多除了因为iPad的因素外，自身产品没有新的突破也是很大因素。当惠普推出TOUCH
+PAD后，引起的疯狂抢购，意味着在全球低价市场，是有很大空间的，或者就是建立一个商务便捷的概念，以区别iPad的时尚风，满足商务市场的需要。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">看来以商务应用为主的市场，是目前Android
+Pad的一个很好的细分。当然这个市场也不一定都是低端，也可以往高端靠，打造商务人士便于携带、远远轻于传统笔记本的概念，出差收发邮件，编辑ppt和offie其他软件，就能吸引一些人群。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">看看一人一本的较成功案例吧，加上手写笔，再打造一个方便会议记录的概念，于是，乡镇干部们就开始热衷拿它送礼了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">再看看这两个网友的的细分建议吧：</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">A：我推荐做车载智能系统市场。我现在很希望能有一款车载平板：安装在反光镜位置、7寸、高频大内存、后置摄像头兼做行车记录仪、带GPS、蓝牙4.0可与汽车电脑数据互动并接收可视倒车影像数据以及电话免提、FM模块可发射音频到车载收音机。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">B、再给PAD一个连接线，VGA或者是HDMI的，链接到TV和投影上，既可以满足娱乐和办公演示的需要；工作人员采集现场情况的工具。</FONT></DIV>
+<div><br /></DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>IT业&amp;#9679;挨踢挨踢</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102dv74.html#comment</comments>
+            <pubDate>Tue, 21 Feb 2012 21:50:59 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102dv74.html</guid>
+        </item>
+        <item>
+            <title>三个大嘴巴的故事</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102dv2e.html</link>
+            <description><![CDATA[<div><font STYLE="FonT-siZe: 16px">为了庆祝闪聚Android版本的上线，以及iOS版本的新版更新，特倾情制作原创搞笑视频《三个大嘴巴的故事》，祝朋友们心想事成！</FONT><br />
+</DIV>
+<div><embed AllowScriptAccess="samedomain"  HEIGHT="370" NAME="ssss" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" WIDTH="480" SRC="http://you.video.sina.com.cn/api/sinawebApi/outplay.php/bkmyS3M8DDbK+l1lHz2stssP5aINt8viiGu9uFCsIREZDFjhY5uRfZlOoHy5AtAEqDgiQ5k+fP0k3xkyC/MGj09zN1J8g0uCHNgTY6nc38/XXlBBpysrygHKFP9/tf4Y+w5rKB/OnbdRo03LrjrcMC2vqBt7SoObTUJ+gw1vsZVYqAyV0fRe7QnP2b3EG8cvpXRdbznMsL4v.swf" ALLOWFULLSCREEN="true" WMODE="transparent"></EMBED><embed AllowScriptAccess="samedomain" ></EMBED></DIV>
+<div>&nbsp;</DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong><font STYLE="FonT-siZe: 20px">上闪聚，不孤单！</FONT></STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">iOS用户（苹果手机用户）请到App
+Store下载，<a HREF="http://itunes.apple.com/cn/app//id483861718?mt=8" TARGET="_blank">下载地址</A></FONT></DIV>
+<div><font SIZE="3">Android手机用户请登录应用汇下载，<a HREF="http://www.appchina.com/soft_detail_217025_0_10.html" TARGET="_blank">下载地址</A></FONT></DIV>
+<div><font SIZE="3">闪聚官网地址<a HREF="http://www.shanju.com/">http://www.shanju.com/</A></FONT></DIV>
+<div>&nbsp;</DIV>
+<div><a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s10.sinaimg.cn/orignal/56c35a55tb8e5cf9c5739" TARGET="_blank"><img SRC="http://s10.sinaimg.cn/middle/56c35a55tb8e5cf9c5739&amp;690" WIDTH="243" HEIGHT="345" /></A>&nbsp; <a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s2.sinaimg.cn/orignal/56c35a55tb8e5cff7f641" TARGET="_blank"><img SRC="http://s2.sinaimg.cn/middle/56c35a55tb8e5cff7f641&amp;690" WIDTH="243" HEIGHT="345" /></A><br />
+<br />
+<a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s1.sinaimg.cn/orignal/56c35a55tb8e5d0501320" TARGET="_blank"><img SRC="http://s1.sinaimg.cn/middle/56c35a55tb8e5d0501320&amp;690" WIDTH="243" HEIGHT="345" /></A>&nbsp; <a href="http://blog.photo.sina.com.cn/showpic.html#url=http://s8.sinaimg.cn/orignal/56c35a55tb8e5d0a310d7" TARGET="_blank"><img SRC="http://s8.sinaimg.cn/middle/56c35a55tb8e5d0a310d7&amp;690" WIDTH="243" HEIGHT="345" /></A><br />
+<br /></DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>照片&amp;#9679;瞧丫小样</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102dv2e.html#comment</comments>
+            <pubDate>Tue, 14 Feb 2012 13:18:55 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102dv2e.html</guid>
+        </item>
+        <item>
+            <title>微博絮语</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102duyw.html</link>
+            <description><![CDATA[<div>
+<p>对于时间来说，一切都微不足道；对于个人来说，给人生留下值得咀嚼的回忆才最重要。</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-02-09</P>
+</DIV>
+<br />
+<div>
+<p>天道酬勤； 商道酬信！</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-02-08</P>
+</DIV>
+<br />
+<div>
+<p>怎样才是伟大的企业？ 它不只是大，应该大而开放； 它不只是强，应该强而谦卑；
+它不只是成长迅速，应该愿意和合作伙伴分享成长的价值；
+它不只是专业技术卓越，应该确保所有的技术并不是智力攀比的结果，而是满足用户需求的产物！</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-02-07</P>
+</DIV>
+<br />
+<div>
+<p>我们最先衰老的从来不是容貌，而是那份不顾一切的闯劲。</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-02-05</P>
+</DIV>
+<br />
+<div>
+<p>【问】微博打嘴仗，最大的受益者是谁？【答】长微博工具开发者。长微博工具把微博变成博客了</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-31</P>
+</DIV>
+<br />
+<div>
+<p>
+我有时闲着闷了，会临时中午去公交站，随便赶上哪路就上哪路公交车，比如坐到天安门，独自蹲在广场上看一下午各种各样腿，不发一语，当晚再坐回家里，当没事发生过，突然觉得这TM才叫生活</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-31</P>
+</DIV>
+<br />
+<div>
+<p>与其教一只鸡上树，不如雇只猴子！</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y31G8tcTb"><img SRC="http://ww1.sinaimg.cn/bmiddle/56c35a55jw1dpje9wg84pj.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-29</P>
+</DIV>
+<br />
+<div>
+<p>产品要搅起善意的祥云，避免坠入垃圾的漩涡！（善意可以理解为对用户体验的尊重）</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y31CgbG4p"><img SRC="http://ww3.sinaimg.cn/bmiddle/56c35a55jw1dpje00x1q2j.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-29</P>
+</DIV>
+<br />
+<div>
+<p>
+一男，四十有余，多次创业，皆无大成。无奈去算命。算命师：＂你前半生注定创业难大成。＂此男眼睛一亮：＂后半生呢？＂算命师说：＂后半生你就习惯了。。。＂</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-18</P>
+</DIV>
+<br />
+<div>
+<p>少做负面假设，慎下负面结论！不只是要求别人，更是用来审视自己的！ 如果另一面镜子是你自己，你真的做到了吗？</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-17</P>
+</DIV>
+<br />
+<div>
+<p>古今多少事，都付堵车中。。。</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-13</P>
+</DIV>
+<br />
+<div>
+<p>善于学习、努力进步、心胸开阔的人最可怕，因为人类无法阻挡他的进步</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-08</P>
+</DIV>
+<br />
+<div>
+<p>领导力提升的关键点：HOLD住个人成就欲，多一些影响欲和亲和欲，这样才能更好的成就团队和企业的成就欲！</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-05</P>
+</DIV>
+<br />]]></description>
+            <author>刘兴亮</author>
+            <category>随笔&amp;#9679;随便几笔</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102duyw.html#comment</comments>
+            <pubDate>Thu, 09 Feb 2012 19:00:53 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102duyw.html</guid>
+        </item>
+        <item>
+            <title>Facebook上市，开启一个新时代</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102dus3.html</link>
+            <description><![CDATA[<div><font STYLE="FonT-siZe: 16px">Facebook已向美国证券交易委员会(SEC)正式提交IPO申请，计划融资50亿美元，股票代码FB，上市交易所暂未确定。Facebook上市将是美国历史上最大规模的科技公司IPO交易，Facebook估值可能会达到750亿-1000亿美元。</FONT></DIV>
+<div STYLE="text-align: center;"><font STYLE="FonT-siZe: 16px"><a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s5.sinaimg.cn/orignal/56c35a55tb7f49c75bd64" TARGET="_blank"><img SRC="http://s5.sinaimg.cn/bmiddle/56c35a55tb7f49c75bd64&amp;690" NAME="image_operate_24241328161148641" /></A><br />
+<br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">1、开启一个新时代</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">对于个体来说，对于一家企业来说，上市这码子事意义当然深远。Facebook上市的影响自然不能仅停留在这个层面，否则本文也就没有写出来的必要了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">作为一家引导集体意识的企业，Facebook的IPO受到的关注度远高于其他公司。关注者中除了参与此次IPO交易的人，更大的一个群体是Facebook接近10亿的用户群。因为对于这10亿人来说，社交网络已构成了他们日常生活的一部分，而且是必不可少的一部分，好比水电气。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">更大的原因还在于，也许再过几年，我们会发现，Facebook的这次IPO将具有划时代的意义。我们来寻找几个参照物：</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">（1）1980年，苹果公司的IPO打开了一个叫做“PC”的潘多拉盒子。苹果凭借这首次公开招股开启了PC时代。苹果这个男主角，在这部题为PC的大戏中，虽然少年时代演技较烂，常常会演砸，但到了中年时代，却显示出了唱功；</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">（2）1995，另一个盒子被不经意间打开。这个盒子叫“互联网”，打开盒子的人叫做“网景”。在网景之前，互联网只是学术机构和计算机痴迷者的工具。在网景上市之后，“.com”短语才开始在电视商业广告中出现，“.com“纪元无疑就是网景纪元。虽然微软后来让网景成为炮灰，但并不能抹杀网景的时代意义。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">（3）“互联网”的盒子被打开后，有两个IPO也极具时代意义。分别是1996年的雅虎和2004的谷歌。这哥们分别是门户网站和搜索的代表，也普遍被认为开启了全球互联网行业的第一次和第二次浪潮。他俩，也被封为全球互联网行业的第一代和第二代霸主。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">以Facebook为代表的社交网络，继门户网站和搜索之后，将成为全球互联网商业模式的第三次浪潮。不出意外，Facebook也将加冕全球互联网行业的第三代霸主桂冠。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">Facebook基于真实的人际关系网络，影响着消费者的行为，在此之前没有任何互联网产品完整的做到了这一点。Facebook开创了一个新的生态系统，并对全球互联网的发展产生了深远影响。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">再说的通俗一点。大家的核心都是为了信息整合。雅虎所代表的门户时代靠编辑整合为主；谷歌所代表的搜索时代靠技术来整合为主。当信息杂乱无章时，雅虎们靠编辑整理好，让网民们不再无所适从。当信息越来越多时，编辑已经应付不过来，所以谷歌们靠搜索技术来实现整合。但是当信息越来越多、越来越多时，搜索技术也就不能满足网民们的需要了，这个时候就呼换一种更加美妙的整合方法，这就是Facebook们的责任。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">Facebook开启的这个潘多拉盒子，我们姑且命名为“社交网络”；Facebook开启的这个时代，就称为“社交网络”时代吧！</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">2、“我们赶上了”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">2008年春晚赵本山在小品《火炬手》中撕心裂肺般大喊：“伟大的2008，百年的奥运，我们俩80了！赶上了！”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">Facebook
+IPO是美国历史上规模最大的公开发行之一，为了成为此次IPO的主承销商，华尔街各大投行进行了激烈竞争。最后摩根士丹利出任Facebook上市交易的主承销商，而摩根大通、高盛、美银美林、巴克莱资本以及Allen&amp;co。略微有些惊讶的是，佣金比例仅仅为1%。这一佣金比例这将远低于通常标准。对于较小规模的IPO来说，佣金比例通常为7％；而对于较大规模的IPO，佣金比例通常为2%或3％。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">由此从一个侧面可见，Facebook此次IPO的影响力有多大。在这次华丽的演出中，即使只能充当个路人甲、宋兵乙，也是乐呵呵的。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">大家和赵本山的想法是一样的，Facebook
+IPO，“我们赶上了！”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">大摩小摩赶上了，Peter
+Thiel也赶上了。他是Facebook的天使投资人。当时Facebook成立才数月，估值500万美元，Peter
+Thiel投入了50万美元，占10%股份。Facebook此后还经过了多轮融资，经过稀释，八年后的今天，这些股权还能占约7.9%。假定Facebook市值1000亿美元，这些股份值79亿美元，也即八年后，Peter
+Thiel的投资回报惊人地高达1.5万倍。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">作为一个打酱油的，作为一名Facebook的用户，这场大戏，我们，也赶上了！</FONT></DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>IT业&amp;#9679;挨踢挨踢</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102dus3.html#comment</comments>
+            <pubDate>Fri, 03 Feb 2012 09:45:36 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102dus3.html</guid>
+        </item>
+        <item>
+            <title>春节逛庙会</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102duos.html</link>
+            <description><![CDATA[<div>
+<div>
+<p>
+1、甭管你是地道的北京土著，还是初来乍到的外地客人，在京城过年不去庙会挤挤逛逛，就如同在年三十夜里熬稀粥——不像个过年的样子。龙年逛庙会，自然是去龙潭庙会。</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zfXuwY5"><img SRC="http://ww2.sinaimg.cn/bmiddle/56c35a55tw1dpfwsveb4jj.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+<div>
+<p>2、庙会的主要任务就是吃吃喝喝</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zhCj1dE"><img SRC="http://ww2.sinaimg.cn/bmiddle/56c35a55tw1dpfwx4yq4tj.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+<div>
+<p>3、老北京传统特色文化，分别是面人、剪纸、风筝、火绘葫芦。。。</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2ztqfoaj"><img SRC="http://ww3.sinaimg.cn/bmiddle/56c35a55tw1dpfxrdfhtij.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+<div>
+<p>4、老人与花</P>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zAqlJQo"><img SRC="http://ww2.sinaimg.cn/bmiddle/56c35a55tw1dpfy81m7x6j.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+5、玩游戏的战利品（这张照片貌似有点萌哦）
+<div>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zlKerXb"><img SRC="http://ww2.sinaimg.cn/bmiddle/56c35a55tw1dpfx6jq1yij.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+6、庙会的最大特点——人山人海</DIV>
+<div>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zDBrnDo"><img SRC="http://ww4.sinaimg.cn/bmiddle/56c35a55tw1dpfyguaawjj.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+7、冰雪嘉年华
+<div>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zGt1yAe"><img SRC="http://ww4.sinaimg.cn/bmiddle/56c35a55tw1dpfyogpwpij.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+8、各种各样的精彩表演。台上主持人问：我们的表演比如央视的春晚如何？台下异口同声：好！
+<div>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zS6B6Ph"><img SRC="http://ww3.sinaimg.cn/bmiddle/56c35a55tw1dpfzifiexoj.jpg" TITLE="查看原图" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+9、琳琅满目的小吃啊，馋死我了
+<div>
+<blockquote STYLE="FonT-siZe: 12px"></BLOCKQUOTE>
+<p><a TARGET="_blank" HREF="http://weibo.com/1455643221/y2zyQe137"><img SRC="http://ww2.sinaimg.cn/bmiddle/56c35a55tw1dpfy4nzewsj.jpg" TITLE="查看原图" NAME="image_operate_14871327572552506" /></A></P>
+<p STYLE="CoLor: rgb(153,153,153); FonT-siZe: 12px">2012-01-26</P>
+</DIV>
+<br />
+<div><b><font COLOR="#990030">注：<span STYLE="background-color: rgb(243, 243, 233); font-family: Arial, Helvetica, sans-serif; line-height: 22px;">这是我第一篇用系列微博生成的博客。</SPAN></FONT></B></DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>旅行&amp;#9679;且走且看</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102duos.html#comment</comments>
+            <pubDate>Thu, 26 Jan 2012 17:57:58 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102duos.html</guid>
+        </item>
+        <item>
+            <title>柯达正式申请破产保护 起死回生概率不大</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102dulk.html</link>
+            <description><![CDATA[<div STYLE="TexT-ALiGn: center"><a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s11.sinaimg.cn/orignal/56c35a55tb6ed80bdffda" TARGET="_blank"><img NAME="image_operate_88661327031090344" SRC="http://s11.sinaimg.cn/middle/56c35a55tb6ed80bdffda&amp;690" /></A><br />
+
+<br /></DIV>
+<div>　<font STYLE="FonT-siZe: 16px">　
+<strong>导读</STRONG>：<strong>有着130多年历史的世界最大影像产品商--柯达公司正式申请破产保护。1月19日17点，经济之声聚焦：谋求重组，柯达公司能否置之死地而后生？作为百年老店，最后关头柯达手里还有没有底牌？如果活下来，柯达将会走一条什么样的发展道路？</STRONG></FONT></DIV>
+<div>&nbsp;</DIV>
+<div><font STYLE="FonT-siZe: 16px">　　据经济之声《央广财经评论》报道，19日上午，美国柯达公司已经正式依据美国《破产法》第十一章提出破产保护申请，这也意味着柯达此前进行的一系列自救计划以失败告终。柯达公司全称伊士曼柯达公司，创立于1880年，曾是世界最大的影像产品及相关服务生产和供应商，总部位于美国纽约州罗切斯特市。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　根据美国《破产法》，当一个公司临近山穷水尽之境地时，可以援引《破产法》第十一章来“重组”业务，争取再度赢利。而如果依据美国《破产法》第七章申请破产，公司全部业务必须立即完全停止。因此，柯达和多数上市公司一样是按照美国《破产法》第十一章申请破产保护，而不是第七章直接进行破产清算。柯达表示已从花旗集团获得了9.5亿美元破产融资信贷，柯达将运用这笔资金进行业务重组。那么，柯达能否实现复苏？还有谁能拯救柯达？最后的出路？对此，经济之声特约评论员、互联网专家刘兴亮先生作出评论：</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　主持人：柯达是按照美国《破产法》第十一章申请破产保护，而不是第七章直接进行破产清算。而且也确有一些公司通过破产保护，重组计划成功，重新开始赢利。您认为，柯达公司能否通过这样的方式来起死回生？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　刘兴亮：有这样的可能性，就是美国破产法里面第七章和第十一章是不一样的，第七章是直接破产，破产了以后你所有业务都要停止，十一章是你破产保护以后，你还可以继续照常运营，也有很多公司起死回生。但是我们还是要看到还是大多数的还是后来还是都破产了，所以柯达这次好像我个人来看我是比较悲观的，这次柯达看来是很难迈过这道槛。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　<strong>柯达起死回生概率相对来讲较小</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　主持人：您觉得柯达起死回生的概率相对来讲还是比较小，是吗？为什么您会有这样的一种不太好的预感呢？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　刘兴亮：首先说目前柯达他资产已经资不抵债，他可能亏空有个十几二十亿美元，这是一个表面现象，根本的原因是柯达这些年的转型做得非常差，相比他同类型的企业，比方说像日本富士，柯达还是在留恋于一些过去的辉煌，在一些新业务的开拓上，这几年走得并不顺利。2011年，柯达的股份也蒸发非常多，包括市场，在各方面渠道看来，现在在短期内很难能再回到店面的辉煌。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　主持人：这种转型不利会制约他接下来的发展。还有知情人士透露说，柯达公司打算任命一位首席重组官，以便在公司进入破产程序的时候，来帮助公司获得足够的资金，保持正常的运作，这个人对于柯达活下去能够起到多大的作用呢？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　刘兴亮：这也是一些企业在实行破产保护以后惯用的一个做法，找的团队来专门运作这样的事，这样的人能够做得锦上添花，但并不能够就是说有了这样的团队，一定能力挽狂澜。更多的还在于看在这个公司的业务，战略层面，我觉得柯达更多的还是在战略一直不清晰，可能有很多方面没有考虑清楚。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　<strong>柯达重组失败彻底清算可能性较大</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　主持人：在您看来其实柯达一直是纠结于在战略不清晰上。但是我们也注意到比如说柯达表示已从花旗集团获得了9.5亿美元破产融资信贷，柯达将运用这笔资金进行业务重组。此外，柯达还有一千多项专利，其实这一些是不是意味着其实柯达的手里还是有一些其它的底牌可以打呢？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　刘兴亮：这些牌都远水不解近渴，比方说专利，如果能出售还好一点，如果靠这些专利去诉讼等等，这是一个很漫长的路。目前他必须要用资金，这次要有这个9点几亿，但这个钱我觉得还是不够，要转型的话投入还是比较多。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　其次，毕竟这么多年的这样的一个资深的公司，所以他的负担也比较重，光他退休员工包括这些福利等等对他来说都是一笔沉重的负担。所以说目前看来他虽然有现在目前他还是有一些资产，但这些资产我觉得反正我看来我觉得还是比较悲观的。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　主持人：那在您看来是不是如今已经到了破产地步的柯达，重组失败彻底清算的可能性还是比较大呢？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　刘兴亮：我觉得还是比较大。</FONT></DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>采访&amp;#9679;一腔废话</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102dulk.html#comment</comments>
+            <pubDate>Fri, 20 Jan 2012 11:45:39 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102dulk.html</guid>
+        </item>
+        <item>
+            <title>2011中国互联网哈哈榜之7：十大案件</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102dugr.html</link>
+            <description><![CDATA[<div ALIGN="center"><strong><font STYLE="FonT-siZe: 22px">2011中国互联网哈哈榜之7：十大案件</FONT></STRONG></DIV>
+<div ALIGN="right">策划\跑腿\执笔 <wbr />刘兴亮</DIV>
+<div><br /></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>1、“3Q大战”</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年4月、2011年9月，3Q大战有两次判决，判决书很长，看的很烦，此处省略一万字。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：十五的月亮，十六圆。这首歌其实是唱给中国的司法体系的。因为，十五的月亮，你就压根别想十五圆，总要拖个一年两年的。嘿，你以为这是弊端，还真有人认为这是个好机制。有个词叫钻法律空子，你知道不？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>2、作家维权联盟诉百度文库网络侵权案</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年9月，作家维权联盟针对百度的侵权行为向法院提起诉讼。该案起源于2011年3月15日，包括贾平凹、刘心武、韩寒、郭敬明、李承鹏等在内的近50位中国作家联合发表《三一五中国作家讨百度书》，指责百度已经彻底堕落成一个窃贼公司，百度文库已经变成了一个贼赃市场。对于这起官司，现在还在走流程的过程中，法院还没有开庭审理。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　　　</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：这个案件，谁最尴尬？不是百度，也不是作家，而是法院，因为这个案子不好判啊，弄不好要惹一身臊。这么多年来，刘兴亮还是第一次要同情同情法院。尽管舆论上都在谴责百度，但原告可能很难胜诉，因为目前，我国法律法规没有规定网络中介服务商有事先审查、事先监管的义务。这个案件不论结果如何，都意义重大，将影响互联网的立法。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>3、新浪微博被黑案</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：6月28日20点20分左右，新浪微博上突然大量出现恶意链接内容，传播速度很快，许多不明真相的用户点击了包含病毒的链接，用户中毒后会在短时间内自动发布“郭美美事件的一些未注意到的细节”、“3D肉蒲团高清普通话版种子”等大量带链接内容引诱更多用户点击，同时向粉丝发送带病毒链接的私信，而中毒者会自动向粉丝发送相应带毒链接。短时间内，中毒人数达到上万人。在中毒案件发生后，新浪当晚做出紧急处理。新浪在被黑客攻击事件发生后第二天，根据相关证据，已经向公安机关报案。报案后，警方根据新浪提供的线索迅速地将嫌疑人抓获。目前此案正在进一步调查当中。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：这个事本来不大，但因为这里是微博，所以这事可就大了。再大的事，过了半年，你还能记得住吗？但有人记得住，那就是警方，因为人家还在极其认真地进一步调查当中。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>4、苹果公司诉唯冠公司iPad商标权案</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年12月，备受业界关注的iPad商标权一案一审判决，深圳中院认为，原告美国苹果公司及IP申请发展有限公司（IP
+Application Development
+Limited，以下简称“IP公司”）主张的iPad商标权归其所有不能成立。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">此次iPad商标争议的起因可追溯到10年之前，2001年6月和12月，唯冠国际控股有限公司（以下简称“唯冠控股”）旗下子公司唯冠科技（深圳）有限公司（以下简称“深圳唯冠”）分别在中国商标国际分类号第9类（即电子产品）上获得了iPad文字商标和文字图形结合商标的商标专用权。深圳唯冠将该商标使用在其自主研发的液晶显示器等电子产品上。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">2001年至2004年，唯冠控股旗下另一子公司唯冠电子股份有限公司（以下简称“台湾唯冠”）分别在欧盟、韩国、墨西哥、新加坡、印度尼西亚、泰国、越南等国家和地区共计获得8个“iPad”相关注册商标专用权。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">而在2006年苹果公司策划iPad进入欧洲市场之时，得知IPAD商标归台湾唯冠所有，曾以撤销闲置不用商标等理由希望获得iPad商标，但在英国败诉。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">2008年9月，IP公司开始与台湾唯冠接触，要求台湾唯冠向其转让全球所有的iPad商标（除了其自己注册的8个商标以外，还包括深圳唯冠的两个商标）。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">2009年12月23日，IP公司从当时正处困境的台湾唯冠处以35000英镑购得iPad商标。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">2010年1月27日，苹果公司在新闻发布会上向市场介绍了其标有IPAD商标的平板电脑产品。4月3日，苹果公司开始在美国市场销售其标有iPad商标的平板电脑产品。4月7日，苹果公司与IP公司签订转让协议，以10英镑的对价受让包括涉案商标在内的10个商标。9月17日，苹果公司开始在中国大陆市场销售其标有“iPad”商标的平板电脑产品。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">法院审理后认为，原告方要商业获取他人的商标，应当负有更高的注意义务，应当按照我国的法律规定，与商标权利人订立商标转让合同，并办理必要的商标转让手续。而本案商标转让合同系原告之一的IP公司与台湾唯冠签订，且与深圳唯冠之间的表见代理亦不成立。（注：表见代理是指虽无代理权但表面上有足以使人信为有代理权而须由本人负授权之责的代理。）</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：这下麻烦大了，以后，iPad将不能在中国大陆销售了？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>5、360公司诉金山不正当竞争案</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年11月22日，360公司起诉金山不正当竞争,金山软件产品阻止安装和破坏360产品，以及金山安全发布文章诋毁360商誉案得到了法院判决，360的全部诉讼请求没有事实和法律依遭到了法院驳回。该案的焦点在于金山网盾和360安全卫士的同类产品竞争行为。关于此纠纷，最早要追溯到2010年5月下旬，360安全卫士悍然对金山网盾实施强行卸载、恶意不兼容等不正当竞争手段，使得当时拥有8000万用户的金山网盾迅速跌落，最终被拥有3亿用户的360安全卫士扼杀。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">点评：虽然360败诉，但那点败诉赔付成本九牛一毛啊。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>6、支付宝单飞让雅虎遭遇股东集体诉讼</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年6月，美国证券公司KendallLawGroup（以下简称Kendal）代表股东，在加利福尼亚南区法院对雅虎发起集体诉讼。这项集体诉讼指控称，雅虎早在2009年就已获知，中国监管部门对海外所有权的规定可能会发生变化，这一变化将会导致雅虎或阿里巴巴集团剥离支付宝，但直到2011年5月13日，雅虎才声称公司在2011年3月31日获知支付宝所有权发生转移，这一转移使雅虎对阿里巴巴集团的投资价值下降了数十亿美元。在这项诉讼中，雅虎必须要回答支付宝是在遵守中国法律的前提下安全合法地获得牌照，还是通过协议控制的形式绕开中国监管制度这一问题。可以佐证的是，早在2009年支付宝已经完成70%内资的股份变更，但雅虎和软银当时都未发出反对声音。对于雅虎来说，需要解释的问题是2009年的内资股份变更，雅虎是否知情？如果知情为什么没有对外披露？&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：这个事件的最大结果就是，把“VIE”这个东东向中国的有关部门普及，向大众普及了。向后者普及也就是乐一乐，增加点吹牛的知识点。向前者普及这码子事，就一点也不好玩了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>7、华为起诉中兴通讯侵权案</STRONG>&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年4月，华为在德国、法国和匈牙利对中兴通讯提起法律诉讼，指控其侵犯华为的专利权和商标权。起诉内容包括中兴通讯侵犯了华为有关数据卡和LTE技术的一系列专利，且未经华为许可，在数据卡产品上非法使用了华为的注册商标。华为方面表示，曾多次邀请中兴通讯进行专利交叉许可谈判，但没有成功；另外，华为在发现中兴通讯数据卡产品非法使用华为注册商标后，已发送了停止侵权承诺函，但中兴通讯并未终止侵权行为，为保护自身合法权益，华为不得不采取法律手段，请求法院禁止中兴继续侵犯华为的专利权及商标权。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：此次中兴和华为的专利大战，被网友形象的戏称为“中华大战”。以前习惯于华为和中兴和国外巨头的专利诉讼，还真不太习惯通信设备领域的这两个中国符号之间的专利诉讼。“中华”相煎何太急？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>8、“去哪儿网”诉“去哪网”恶意模仿不正当竞争案</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件：</STRONG>2011年10月22日，去哪儿网
+(www.qunar.com )状告去哪网(www.quna.com
+)不正当竞争一案在广州市中院一审开庭。“去哪儿网”诉称，被告“去哪网”使用与原告几乎相同的网站名称、网络域名、商标以及网页设计，属于恶意模仿。并且被告在原告“去哪儿网”享有极高知名度的情况下，将其企业旗号变更为“去哪”，并受让quna.com的域名，明显是为了山寨模仿原告的网站。“去哪儿网”要求，“去哪网”停止使用去哪、去哪网、quna.com这些与原告相同或相近的名称、网页设计；注销www.quna.com以及其他三个类似域名；停止使用“去哪”作为企业名称；公开道歉并赔偿300万元等。“去哪网”的代理律师指出，“去哪网”早在2003年就注册，比原告早了两年。虽然被告在2009年受让域名www.quna.com，表面上是被告使用在后，但是该域名事实上是先于原告域名而存在。此外，双方的网站功能、服务对象、盈利模式均有明显不相同。去哪网直接向消费者提供机票预订、改签等终端服务，连接的网站是被告的全资子公司、分公司；而原告“去哪儿网”仅仅提供旅游信息的搜索平台服务，靠网民的点击率赚取代理公司的广告费作为盈利模式。同时，“去哪”是被告人的企业名称，依法在工商行政管理部门登记，具有旅游局颁发的旅游经营资质、民航局颁发的航空客运代理机票资质。原告“去哪儿网”的域名诉讼请求已经构成“反向域名侵夺”，将保留追究其法律责任的权利，要求法院驳回原告的全部诉讼请求。该案将择期宣判。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评：山寨是山寨者的通行证，山寨也是山寨者的墓志铭。</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>9、盗版网站经营者侵犯著作权罪获刑案</STRONG></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：“小说520”
+、“万松中文网”、
+“吾爱文学网”等盗版网站未经著作权人起点中文网授权肆无忌惮地从起点中文网上大量复制原创作品，致使起点中文网遭受重大经济损失。起点中文网遂向公安机关报案，控告盗版网站在互联网上大肆复制、登载、传播起点中文网拥有独家信息网络传播权的作品，获取大量非法利润。根据最高人民法院相关司法解释明确规定以营利为目的，未经著作权人许可，复制发行其文字、电影等作品，数量在500部以上的，属于刑法第二百一十七条规定的“有其他严重情节”，2011年，相应法院已对这些触犯刑法的盗版网站责任人的行为作出判决，以侵犯著作权罪定罪，根据不同情节分别处以不同刑期的有期徒刑，并处罚金，没收违法所得。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：盗版这点事，越来越不好干了。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>10、爱国者诉东芝侵犯技术专利案</STRONG>&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>案件</STRONG>：2011年10月，备受各界瞩目的被媒体称为“中国知识产权维权第一案”的爱国者状告国际巨头东芝侵犯技术专利一案被陕西省西安市中级人民法院认定，东芝公司侵权成立，判决其停止销售使用了爱国者USB接口技术的两款电脑产品，并赔偿爱国者经济损失20万元。这是知识产权领域，中国标准第一次胜诉国际品牌。爱国者电子科技公司研制的USB
+PLUS是一种具有世界领先水平的高速传输接口技术，获得数项国际专利。公司在2006年为这一技术在国内申请了专利，并在2008年推出产品。据爱国者方面统计，目前，包括惠普、东芝在内，全球有超过1亿台品牌电脑未经允许都在使用爱国者的专利产品。2010年4月，爱国者电子科技公司将东芝（中国）有限公司及侵权产品的经销商告上法庭，要求其立即停止侵权行为，并赔偿相关经济损失。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：以往，通常是外国公司向中国竞争对手提起知识产权侵权诉讼，此次爱国者起诉东芝侵权胜诉，反映出中国企业保护知识产权意识的觉醒和成熟，祝贺！
+&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">　　</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div>
+<div>
+<div>
+<div><font STYLE="FonT-siZe: 16px"><span STYLE="WiDoWs: 2; TexT-TrAnsForM: none; TexT-inDenT: 0px; LeTTer-spACinG: normal; BorDer-CoLLApse: separate; FonT: medium simsun; WHiTe-spACe: normal; orpHAns: 2; CoLor: rgb(0,0,0); WorD-spACinG: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none">
+<span STYLE="WiDoWs: 2; TexT-TrAnsForM: none; TexT-inDenT: 0px; LeTTer-spACinG: normal; BorDer-CoLLApse: separate; FonT: medium simsun; WorD-WrAp: normal; WHiTe-spACe: normal; orpHAns: 2; CoLor: rgb(0,0,0); WorD-BreAK: normal; WorD-spACinG: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none">
+<font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal" COLOR="#990030" SIZE="3"><strong STYLE="FonT-WeiGHT: bold">更多榜单：</STRONG></FONT></SPAN></SPAN></FONT></DIV>
+</DIV>
+<div><a HREF="http://blog.sina.com.cn/s/blog_56c35a5501017h1d.html" TARGET="_blank"></A>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank"></A></SPAN></FONT>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">2011中国互联网哈哈</SPAN></FONT></SPAN></FONT></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank">榜目录</A></SPAN></FONT></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtqn.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之1：十大网络红人</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtu4.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之2：十大网络流行语</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dty9.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之3：十大网络流行体</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102du72.html" TARGET="_blank">哈哈榜之4：十大事件</A></SPAN></FONT></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102du8i.html" TARGET="_blank">哈哈榜之5：十大年度表情</A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102ducw.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之6：十大搞笑段子</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dugr.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之7：十大案件</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">更多榜单不断推出中……</SPAN></FONT></DIV>
+<div><wbr /></DIV>
+<div><wbr /></DIV>
+<div><wbr /></DIV>
+<div>
+<div ALIGN="left">
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><span STYLE="WiDoWs: 2; TexT-TrAnsForM: none; TexT-inDenT: 0px; LeTTer-spACinG: normal; BorDer-CoLLApse: separate; FonT: medium simsun; WHiTe-spACe: normal; orpHAns: 2; CoLor: rgb(0,0,0); WorD-spACinG: 0px; webkit-border-horizontal-spacing: 0px; webkit-border-vertical-spacing: 0px; webkit-text-decorations-in-effect: none; webkit-text-size-adjust: auto; webkit-text-stroke-width: 0px">
+<font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+<b><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; WorD-BreAK: normal" COLOR="#990030">点击回顾：</FONT></B></FONT></SPAN></SPAN></FONT></DIV>
+<div><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+<font STYLE="FonT-siZe: 16px">[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a5501017h1d.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; WorD-BreAK: normal"><font STYLE="FonT-siZe: 16px"><font COLOR="#2971BB">2010中国互联</FONT><font COLOR="#2971BB">网哈哈榜</FONT></FONT></FONT></FONT></A></FONT><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px" SIZE="3">[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100gpu2.html" TARGET="_blank"></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100gpu2.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="FonT-siZe: 16px" COLOR="#2971BB">2009中国互联</FONT></FONT></FONT></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100gpu2.html" TARGET="_blank"><font STYLE="FonT-siZe: 16px" COLOR="#2971BB">网哈哈榜</FONT></A><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></DIV>
+<div>
+<div><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100bnw0.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">2008中国互联网哈哈榜</FONT></A><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></DIV>
+</DIV>
+<div><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a55010080c8.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">2007中国互联网哈哈榜</FONT></A><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank"></A></DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+<br /></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><br /></DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>幽默&amp;#9679;轻松写作</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102dugr.html#comment</comments>
+            <pubDate>Thu, 12 Jan 2012 00:06:25 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102dugr.html</guid>
+        </item>
+        <item>
+            <title>SoLoMo小企“撼大树”</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102dufn.html</link>
+            <description><![CDATA[<p ALIGN="center"><strong><font STYLE="FonT-siZe: 24px"><font STYLE="FonT-siZe: 32px"><span LANG="EN-US" XML:LANG="EN-US">SoLoMo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">小企“撼大树”</SPAN></FONT></FONT></STRONG></P>
+<p ALIGN="center"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+《IT经理世界》 匡冬芳</SPAN><span LANG="EN-US" XML:LANG="EN-US">/</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">文</SPAN></SPAN></P>
+<p>&nbsp;</P>
+<p><font STYLE="FonT-siZe: 16px"><font STYLE="FonT-FAMiLY: 楷体_GB2312,楷体"><font STYLE="FonT-FAMiLY: 楷体_GB2312,楷体"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-FAMiLY: 楷体_GB2312,楷体"><span STYLE="FonT-FAMiLY: 宋体; FonT-siZe: 10.5pt; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: 'Times new roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: en-Us; mso-fareast-language: ZH-Cn; mso-bidi-language: Ar-sA">
+【</SPAN>狂热的创业者们正把</FONT></SPAN><span LANG="EN-US" XML:LANG="EN-US">SoLoMo</SPAN></FONT><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin"><font STYLE="FonT-FAMiLY: 楷体_GB2312,楷体">概念在中国演绎成一门解决寂寞的大生意。那些大企业们该小心了</FONT><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin"><font STYLE="FonT-FAMiLY: 楷体_GB2312,楷体"><span STYLE="FonT-FAMiLY: 宋体; FonT-siZe: 10.5pt; mso-bidi-font-size: 11.0pt; mso-bidi-font-family: 'Times new roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: en-Us; mso-fareast-language: ZH-Cn; mso-bidi-language: Ar-sA">】</SPAN></FONT></SPAN></SPAN></FONT></FONT></P>
+<p>&nbsp;</P>
+<p><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+　　如果你直观感受到了这两年铺天盖地的相亲电视节目、婚恋网站的火爆，那你就能理解针对“寂寞”这个词，能衍生出多么广阔的商业前景了。不过，现在，狂热的中国创业者们正在把这门针对“寂寞”的生意，从电视上、</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上又搬到了手机上，始作俑者，原来是因为现在一种极具混搭概念的舶来概念“</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">”流行。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">，也就是</SPAN><span LANG="EN-US" XML:LANG="EN-US">social</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">（社交化）、</SPAN><span LANG="EN-US" XML:LANG="EN-US">local</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">（本地化）、</SPAN><span LANG="EN-US" XML:LANG="EN-US">mobile</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">（移动化）混搭在一起的产物，从字面上来理解，我们看出，它符合人际交往的最佳条件：基于同一个时空概念下，人和人之间的即时的互动。仿佛是一夜之间，潮男潮女们开始在坐地铁、泡酒吧、餐馆、商务活动等一切场合里，玩起了用手机和周边人搭讪的游戏。他们所用的搭讪工具，很多甚至让人很难记住名字，因为无论是在功能、界面上，都太相似，似乎并没有太多的差异化，无一例外的都被印上了</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">的标签：移动</SPAN><span LANG="EN-US" XML:LANG="EN-US">IM+LBS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">混搭在一起，支持即时短信、语音聊天，能够发送图片等等，基于地理位置，能够查找到周边使用同一工具的人。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+国内已经涌现出一大批</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">概念的移动交友产品：陌陌、泛泛、幸会、闪聚、在这儿……这些公司目前实力都很弱小，团队人数不过是十几二十个人。然而，每一个创业者，都暗暗期望自己的公司能成为继</SPAN><span LANG="EN-US" XML:LANG="EN-US">Google</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">、</SPAN><span LANG="EN-US" XML:LANG="EN-US">Facebook</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">之后的下一个主角。的确，将</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">拆分来看，每一个元素，都代表了当前最富憧憬性的互联网潮流，光是</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">当中的一个“</SPAN><span LANG="EN-US" XML:LANG="EN-US">Social</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">”，就已经足够吸引人，从</SPAN><span LANG="EN-US" XML:LANG="EN-US">Facebook</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">到</SPAN><span LANG="EN-US" XML:LANG="EN-US">Twitter</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">的火爆，已经验证了这一点，何况再加上“</SPAN><span LANG="EN-US" XML:LANG="EN-US">local</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">”和“</SPAN><span LANG="EN-US" XML:LANG="EN-US">mobile</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">”？</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21.1pt; mso-char-indent-count: 2.0">
+<b><span LANG="EN-US" XML:LANG="EN-US"><font STYLE="FonT-siZe: 16px">&nbsp;</FONT></SPAN></B></P>
+<p STYLE="TexT-inDenT: 21.1pt; mso-char-indent-count: 2.0">
+<b><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">后进者的陌生人社交</FONT></SPAN></B></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+这个领域早已不乏巨头的身影：腾讯的微信、中国移动所推出的飞聊、中国电信的翼聊，中国联通的沃友，小米公司的米聊，盛大所推出的</SPAN><span LANG="EN-US" XML:LANG="EN-US">KiKi</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">等等。而越来越多的</SPAN><span LANG="EN-US" XML:LANG="EN-US">SNS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">网站，比如人人网、开心网、世纪佳缘，也将势力从</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">端延伸到手机上，纷纷推出基于</SPAN><span LANG="EN-US" XML:LANG="EN-US">LBS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">功能的移动交友客户端。当这些在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上实力强劲的公司进入之后，缘何依然有众多新进者？</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+“我们跟微信、飞聊、米聊不一样。”几乎每一个接受采访的创业者都努力向记者解释。这种差异性主要体现在：无论是腾讯、盛大，人人网，还是运营商的产品，基本上都是通过导入手机通讯录、</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上的好友，在手机上延续已有的熟人社交关系，而像陌陌、闪聚、在这儿这批后起之秀则有意避免了与大公司的直面竞争，主打陌生人社交。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+“大公司都聚焦在熟人社交领域，在陌生人社交领域大家势力都很小，处于混战阶段，市场很大，未来两三年容纳五六家公司没问题。”</SPAN>
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+闪聚</SPAN><span LANG="EN-US" XML:LANG="EN-US">CEO</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">刘兴亮看好针对陌生人的移动社交的市场潜力。“闪聚”是一款以“以共同事件”为纽带让陌生人成为朋友的手机</SPAN><span LANG="EN-US" XML:LANG="EN-US">IM</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">应。用。在创立“闪聚”之前，刘兴亮已经对中国人的社交心理做了很长时间的研究，不过一年前，他还在以顾问、评论家的角色，观望着街旁、切客网为代表的第一代</SPAN><span LANG="EN-US" XML:LANG="EN-US">LBS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">社交应用在中国的兴起。</SPAN>
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+“切客就是我最早翻译出来的。”他说。</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">模式的出现让他激动不已，“</SPAN><span LANG="EN-US" XML:LANG="EN-US">Google</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">之后，是</SPAN><span LANG="EN-US" XML:LANG="EN-US">Facebook</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">。</SPAN><span LANG="EN-US" XML:LANG="EN-US">Facebook</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">之后呢？应该是和</SPAN><span LANG="EN-US" XML:LANG="EN-US">SoLoMo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">相关的某个神秘物种了。”他说。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+那时候的刘兴亮正忙着通过羽毛球运动来减肥。但让他郁闷的是：他经常找不到合适的球友。找熟人朋友来打球？大家彼此住得远，约在一起不容易，好不容易聚在一起，不知不觉就从打球转移到聊天，而他只是想打球而已。“能不能有一个工具，找到周围和我一样有同样需求的陌生朋友，相约一起去打羽毛球呢？”刘兴亮相信，生活中应该有很多和他一样的人，想做某件事，却约不到合适的人。这是这个偶然性的事件，直接启发了他，找到了自己投身于</SPAN><span LANG="EN-US" XML:LANG="EN-US">SoLoMo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">创业大潮的切入点。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left" ALIGN="left">&nbsp;</P>
+<p STYLE="TexT-inDenT: 21.1pt; mso-char-indent-count: 2.0">
+<b><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">细分再细分</FONT></SPAN></B></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+不过，即使是在陌生人社交领域，目前也出现了无数的角逐者。对于创业型公司而言，唯有在产品形态、用户定位的差异化上做文章。刘兴亮将目前国内针对陌生人交友的移动社交应用分为三种形式：一是以地理位置签到为核心的弱交友关系，如街旁、切客，用户只关心人和地理位置的关系，为了满足消费需求，社区化形态很弱；第二种是“先人后事”的交友模式，如国外的</SPAN><span LANG="EN-US" XML:LANG="EN-US">Skout</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">、</SPAN><span LANG="EN-US" XML:LANG="EN-US">WhosHere</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">，在中国也不乏一大群追随者。但是刘兴亮认为，亚洲人普遍具有社交障碍，很难通过主动搭讪直接变成朋友，因此，这一类模式存在较大的交友壁垒；而闪聚采取的是第三种交友模式——“先事后人”，也就是在产品形态设计上，让大家基于同样的事情、兴趣爱好而走到一起。因此，打开闪聚的首页，最先推送的不是一大堆人的介绍，而是同一类活动。“比如你想听音乐会，我也想听音乐会，我知道你在我附近，我给你发短信，即使你对我不在意，但是也可以找到一个切入点聊起来。”</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+而像“幸会”、“在这儿”这样的应用则瞄准了陌生人交友当中的某一垂直人群：商务人群。它们宣称可以通过</SPAN><span LANG="EN-US" XML:LANG="EN-US">LBS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">服务帮助人们在论坛、展会等一些特定商务活动中，用手机方便、快捷的找到人脉资源的应用。“在这儿”创始人熊尚文毕业于斯坦福大学，他认为斯坦福大学教会他最重要的认识之一，就是人脉资源的重要性。而在创办“在这儿”之前，他已经有过两次在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">互联网上做商务社交的创业经历，均已失败而告终，移动互联网的</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">特性让熊尚文找到了突破点。在推广渠道上，“在这儿”主要选择与活动主办方合作，在活动现场向手机上安装了“在这儿”软件的用户推动嘉宾信息，用户可以选择与自己感兴趣的人交换电子名片，并进行短信、语音聊天等——当然，这一切都是在获得对方允许的前提下进行。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+但微信、飞聊、米聊并不将自身局限于熟人社交领域，比如你通过微信也能结识周边的陌生人，但目前来看，腾讯依然是把这个功能放在它所有的大功能下面，这意味着微信依然是主打熟人社交。而闪聚公司</SPAN><span LANG="EN-US" XML:LANG="EN-US">COO</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">吕昭认为，即使当大公司也进入陌生人社交领域之后，也并不可怕。“当它们围绕着</SPAN><span LANG="EN-US" XML:LANG="EN-US">SNS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">做移动端的延伸之时，经营陌生人关系会和现有的模式产生一些冲突，因为它们在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上已经有着很厚重的关系。”</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+陌陌科技联合创始人雷晓亮持有相似的观点。在今年</SPAN><span LANG="EN-US" XML:LANG="EN-US">8</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">月份，这家公司刚刚发布了一款名叫“陌陌”的移动交友应用。“陌陌”主打异性交友市场——而这也是这类产品目前最主流的市场，因此，他们不得不面对像世纪佳缘、百合网这样的竞争对手。</SPAN>
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+“现在世纪佳缘、百合也在朝着移动方面发力，但一方面，我认为它们在这方面的投入有限，二是如果他们做基于移动的定位交友模式，这意味着要放弃以前的</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上的商业模式。”他对记者说。的确，用世纪佳缘的移动客户端结识一个周围的异性朋友，成本几乎为零，而在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上，用户要在世纪佳缘上认识新的朋友，却必须付费。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+因此，这些从其他领域转战过来的巨头们，确实具备很大的优势，但相比它们在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">互联网上的优势，移动端的优势也不是那么明显。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+另一个问题是，针对陌生人交友的</SPAN><span LANG="EN-US" XML:LANG="EN-US">IM</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">软件真的有市场吗？至少，它的生命力在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">互联网时代是值得质疑的。十年前，</SPAN><span LANG="EN-US" XML:LANG="EN-US">QQ</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">刚开始在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">上兴起的时候，全中国人同样沉浸乐此不疲的与陌生人的搭讪中。不过，随着时间的推移，当人们的新鲜感褪去，那些当年不断敲开你家窗户的大部分陌生朋友都已经在你的通讯录上消失，沉淀下来的，依然是那些原本在线下就相互熟悉的朋友。这是因为，在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">互联网时代，用户隐私的问题得不到解决，很多最初设想的针对陌生人交友的模式并没有真正做起来，无论是腾讯</SPAN><span LANG="EN-US" XML:LANG="EN-US">QQ</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">，各种网上聊天室的没落，还是人人、开心，最后都演变成熟人朋友之间的交流产品。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+但在移动互联网时代，</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">让这一切有了可能。“在移动互联网时代，有个现象就是朋友都变成了网友，网友都变成了朋友。”刘兴亮在一篇解释自己为什么要创业的文章中这样说道。都市生活节奏的繁忙、居住地点的疏远，常常导致以前的熟人朋友难得有见面的机会，维系感情经常要通过微博、</SPAN><span LANG="EN-US" XML:LANG="EN-US">SNS</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">这样的工具来完成；而另一方面，移动互联网时代，手机的</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">属性让身份的可识别性相比</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">社交时代，进化了很多，另一方面，大量无聊的碎片化时间需要打发，也使得人们有了与周边陌生人搭讪的需求，从而让周围的那些陌生人有可能变成网友，并进一步演化成朋友——而这正是</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">模式能够得以爆发式增长的生存逻辑。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<span LANG="EN-US" XML:LANG="EN-US"><font STYLE="FonT-siZe: 16px">&nbsp;</FONT></SPAN></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21.1pt; mso-char-indent-count: 2.0" ALIGN="left"><b><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">商业设想</FONT></SPAN></B></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+从用户需求的角度来看，似乎这门解决“寂寞”的生意，自有其在手机上生存的道理。但从商业的角度来看，是否真如它们所描绘的那么美好？究竟是</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">在中国催生出的泡沫，抑或凭借</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">概念，真能突破以往在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">互联网上陌生人交友的局限性，从而诞生出下一个巨头？至少在目前看来，所有的这些公司，还没有一家有勇气说得清自己未来的商业模式在哪里，而目前积累下来的用户数量也微不足道，在实践上不具备赚钱的可能性。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+“在你的周围究竟是熟人多还是陌生人多？”</SPAN> <span LANG="EN-US" XML:LANG="EN-US">12</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">月初的一天，在中关村南路的某个创业孵化园的办公室里，面对记者如上质疑，吕昭这样反问记者。</SPAN></FONT></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">“当然是陌生人多。”</FONT></SPAN></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">“没错，所以只要结识陌生朋友的需求和功能够得到展现，我们的产品就有市场。”吕昭用自信的口吻说。</FONT></SPAN></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+或许</SPAN><span LANG="EN-US" XML:LANG="EN-US">Skout</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">和</SPAN><span LANG="EN-US" XML:LANG="EN-US">WhosHere</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">在国外的异常火爆，已经为</SPAN><span LANG="EN-US" XML:LANG="EN-US">Solomo</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">的中国式演绎能否成功，提供了注脚。中国的创业者们并不太担心这个问题，因为上述两者的用户数目前都已经达到了数以百万计。“最终如果达到了一定量的用户之后，就不缺商业模式。”吕昭说，在</SPAN><span LANG="EN-US" XML:LANG="EN-US">PC</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">互联网上探索了数十年而得出的新商业逻辑，似乎在这里也一样行得通。为此，他打了一个比方：一个小区如果只有一个单元，不可能有超市，如果只有三栋楼，不可能有幼儿园，但如果有一百栋楼，以上条件肯定都具备。而由于闪聚的产品是以“事情”为导向，对于周边的商家而言，营造特定的“消费需求”是明确而具体的。比如，一个用户想约人去</SPAN><span LANG="EN-US" XML:LANG="EN-US">KTV</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">唱歌，周边所有的</SPAN><span LANG="EN-US" XML:LANG="EN-US">KTV</SPAN> <span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+都有可能为这个约会而买单的。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">针对商务人群的社交应用，熊尚文则设想了一种商业上的可能性：当“在这儿”掌握了大量高端商务人士的信息之后，就可以做到有针对性的向他们推送广告。当然，除此之外，也可以通过提供个性化名片增值服务来收费，或者探索针对某些商务活动做定制的社交客户端软件。因此，熊尚文希望未来两三年，将“在这儿”打造成商务人士的专用通讯录，因为他们大多数商务朋友都是通过这款应用而发现的，因此人们已经离不开这里。“我们确实没办法和腾讯竞争，但作为一个商务人脉发现的入口，所有人的联系方式都在我们的平台上，我们就会变成了离不开的应用。”熊尚文这样描绘到。</FONT></SPAN></P>
+<p STYLE="TexT-inDenT: 21pt; mso-char-indent-count: 2.0">
+<font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+显然，携“用户关系”以令“诸商家”，成为这一类产品敲开盈利之门的普遍思路，在这方面，</SPAN><span LANG="EN-US" XML:LANG="EN-US">Facebook</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">毕竟已经提供了非常好的范本。但前提是：一款针对陌生人交友而设计的软件，是否具备如此大的用户良性互动关系？</SPAN>
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+这是否意味着，它们要走当年</SPAN><span LANG="EN-US" XML:LANG="EN-US">QQ</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">走过的老路，将原本的弱关系，逐渐经营成强关系，从而不得不与腾讯、移动、盛大直面竞争？</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+的确，粘性不足，已经成为这一类产品普遍性的问题。街旁、切客等第一代标榜</SPAN><span LANG="EN-US" XML:LANG="EN-US">SOLOMO</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">属性的应用，目前都面临着增长后劲不足的问题，原因就在于社区化不够，最终演变成一个用户用来“炫耀足迹”或者“获得优惠折扣”的产品。“我们每天在做这个产品的时候，都在问自己同样的问题，当用户给予共同的爱好产生闪聚行为之后，彼此之间究竟有没有社区化？”</SPAN>
+<span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+吕昭说。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><font STYLE="FonT-siZe: 16px"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+而如何形成社区化，吕昭认为未来的移动交友产品应当像一个“即封闭又开放的玻璃客厅”。一个是封闭概念，让用户感觉到是自己的家，自己创造内容，自己装修；另一个是开放性，要把它当成是玻璃客厅，让所有的人都能看见，参与分享。”因此，应当实现与其他平台之间的互通互融，比如开放</SPAN><span LANG="EN-US" XML:LANG="EN-US">API</SPAN><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">，调取微博、博客、人人网账号等信息，让用户全方位的展示自己，也是为了消除陌生人交友的壁垒；此外，吕昭认为应当建立一个“类淘宝”的评价体系，让之前与这位用户有过“闪聚”行为的人们来评价对此人的印象。</SPAN></FONT></P>
+<p STYLE="TexT-ALiGn: left; TexT-inDenT: 21pt; mso-char-indent-count: 2.0" ALIGN="left"><span STYLE="FonT-FAMiLY: 宋体; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin">
+<font STYLE="FonT-siZe: 16px">不过，也有不同的看法，雷晓亮就对此表示，自己并不是太关心用户粘性的问题。在应用非常多元化的移动互联网时代，用户切换应用的成本非常低，所以粘性本身就很低，大多数应用都是为了让用户打发碎片化的时间，除去像微博、电子商务这种刚粘性的产品。所以，他认为，未来在手机上的针对陌生人的移动社交产品，很难有谁会独自垄断用户。“我们期望的也不是获得用户的大量时间，手机上应用是多样化的，各种各样的需求都存在。”他说。即使如此，他认为这个市场依然足够大，足以支撑起很多家同样类型的公司活得很好。</FONT></SPAN></P>
+<p STYLE="Line-HeiGHT: 14.4pt"><span STYLE="BACKGroUnD-CoLor: rgb(245,245,245); FonT-siZe: 8.5pt; background-origin: initial; background-clip: initial" LANG="EN-US" XML:LANG="EN-US"><font STYLE="FonT-siZe: 16px">&nbsp;</FONT></SPAN></P>
+<p STYLE="Line-HeiGHT: 14.4pt"><span STYLE="BACKGroUnD-CoLor: rgb(245,245,245); FonT-siZe: 8.5pt; background-origin: initial; background-clip: initial" LANG="EN-US" XML:LANG="EN-US"><font SIZE="3">附：杂志的图片（《IT经理世界》2011年12月20日 总第330期 P44-46）</FONT></SPAN></P>
+<p STYLE="Line-HeiGHT: 14.4pt"><span STYLE="BACKGroUnD-CoLor: rgb(245,245,245); FonT-siZe: 8.5pt; background-origin: initial; background-clip: initial" LANG="EN-US" XML:LANG="EN-US"><a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s8.sinaimg.cn/orignal/56c35a55tb6156a6a8267" TARGET="_blank"><img SRC="http://s8.sinaimg.cn/middle/56c35a55tb6156a6a8267&amp;690" NAME="image_operate_82601326103057054" /></A><br />
+<br />
+<a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s3.sinaimg.cn/orignal/56c35a55tb6156b5ebf72" TARGET="_blank"><img SRC="http://s3.sinaimg.cn/middle/56c35a55tb6156b5ebf72&amp;690" NAME="image_operate_69541326103138480" /></A><br />
+<br />
+<a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s6.sinaimg.cn/orignal/56c35a55t789bbe0cbbe5" TARGET="_blank"><img SRC="http://s6.sinaimg.cn/middle/56c35a55t789bbe0cbbe5&amp;690" NAME="image_operate_36291326103134691" /></A><br />
+<br /></SPAN></P>]]></description>
+            <author>刘兴亮</author>
+            <category>采访&amp;#9679;一腔废话</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102dufn.html#comment</comments>
+            <pubDate>Wed, 11 Jan 2012 00:36:09 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102dufn.html</guid>
+        </item>
+        <item>
+            <title>《数字营销》杂志：创业者刘兴亮</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102du7m.html</link>
+            <description><![CDATA[<p><font STYLE="FonT-FAMiLY: 楷体_GB2312,楷体; FonT-siZe: 16px" SIZE="3">　　在<font STYLE="FonT-siZe: 16px">采访的过程中，记者有注意到刘兴亮的办公桌上放着一本厚厚的《乔布斯传》，带有明显的翻过的痕迹。虽然创业之初，事务繁杂压力不言而喻，但“我已经读了一半了。”刘兴亮毫不掩饰他对乔布斯的崇拜之情。“我们都应该感谢乔布斯，因为以前的移动互联网仅仅是传统互联网的延伸，乔布斯2007年发布iPhone才是移动互联网行业真正的开端，将人类带入一个新世界。不管是创业还是产品，乔布斯都值得我们去琢磨、去研究。”</FONT></FONT></P>
+<p><br /></P>
+<p ALIGN="center"><font STYLE="FonT-FAMiLY: 黑体; FonT-siZe: 56px"><strong>创业者刘兴亮</STRONG></FONT></P>
+<p ALIGN="center"><font STYLE="FonT-siZe: 16px">文 |
+本刊记者　吴清华　杨慧婧</FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　浸淫互联网十多年的刘兴亮，有了一个最新的头衔——创业者。按照他自己的说法，每个中国男人内心深处都潜伏着一个武侠梦，横刀立马仗剑天涯，成就一番事业，“创业是最接近这种梦想的做法”。微博上，刘兴亮的创业宣言这样说到，“我拿起一块名叫‘闪聚’的板砖，狠狠地敲开了移动互联网的大门”。好一个彪悍的亮相。那个曾经指点IT江山的非著名评论员刘兴亮，以一个创业者的身份正式出场，再战江湖。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">&nbsp;
+<strong><font STYLE="FonT-siZe: 20px">给创业一个理由？约人打球算不算？</FONT></STRONG></FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　“闪聚”正式上线的第二天，记者来到刘兴亮的办公室。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　房间不大，看得出这是个创业者的办公室，摆满了各种书，略显局促。但空间的狭小里面，到处可见他本人夸张的肖像漫画，点亮了这间小小的办公室。他是一个幽默的人，也是一个爱玩的人，他在微博上贴出的那段自导自演自唱的招人视频，着实惊艳。至于这一次的创业，也完全是他那颗不可抑制“玩心”被压制而引发的。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　去年，体重升到180斤的刘兴亮略感焦虑，减肥成了一项亟需提上日程的工作。他想打羽毛球运动量比较大，减肥效果可能会好，可在约球友时却出现了问题。约熟人倒是好约，可熟人见面分外亲热，球没怎么打大部分时间都花在聊天上了；通过羽毛球QQ群找同好者，多半约的场地都离自己比较远。怎么办？刘兴亮在想，有没有可能随时随地约自己身边的人一起运动娱乐？</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　他发现国外已经有了类似Badoo,Skout这些寻找陌生人的应用，不过跟他“由事情出发寻人”的想法还不太一样。索性，“别人不做，我自己来做好了”。就这样，创业这件事，真真实实地摆在了刘兴亮面前。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　在圈里摸爬滚打了这么多年，刘兴亮断然不会一拍脑袋就去做没有前景没有未来的事情。去年他曾在博客中做过预测：移动互联网很快就会取代传统互联网。到今天手机和平板电脑已经可以满足我们娱乐、工作等各种各样的上网需求。在地铁上十个人里有八个都在拿着手机看书、看电影、上网，甚至撰写工作周报，连习惯随身背着电脑的IT精英们，也把更多的时间分配给了苹果或是安卓。刘兴亮严谨地补充一句：“从PC到手机的转变一定不是简单的平移，手机有PC实现不了的功能”。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　互联网各个领域完成演变的速度是不尽相同的，社交网络算是排头兵，人们像需要空气需要水一样需要与人交流，社交一定是最先实现移动端超过PC端的。其他不管是电子商务还是游戏，由于移动端和PC端的用户体验还是有很大不同，他们都可能还有一段很长的路要走。另外，智能手机和移动互联网将网民群体向两边扩展。传统互联网的网民是中间地带。更高端的商务人士每天很少有时间面对电脑，收发邮件、购物等上网需求需要通过手机解决；更低端的劳务人员或学生，他们的工作性质或经济条件不允许他们随时使用电脑，普及化的手机也成为了这类群体使用网络的载体。移动互联网可上可下，无限扩张用户的广度，培养深度用户。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　刘兴亮自己约人打球遇到的尴尬，在现今的社会具有一定的普遍性和代表性，那么一种既满足用户“随时”约人的需求，又要切入地理位置实现“随地”的产品，或许正是大踏步走来的移动互联网时代所需要的。创业，箭在弦上，一触即发。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">&nbsp;<strong><font STYLE="FonT-siZe: 20px">“我能请你去听音乐会吗？”</FONT></STRONG></FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　刘兴亮把社交的结构进行了梳理，社交分为熟人交友和生人交友。熟人交友是包括微博、QQ、人人在内的增强熟人联系的网络应用。陌生人交友是生人聊天、交朋友的软件。陌生人交友也可以分为“先人后事”和“先事后人”两类。“先人后事”是指类似米聊、微信这类，先在附近人列表中选取感兴趣的人搭讪、再见面约会的交友方式。但刘兴亮认为陌生人搭讪这种在欧美很火的沟通形式可能并不适合含蓄的中国人，“先事后人”可能会更适应国情，更容易促成交流、认识。这也就有了闪聚不同的产品设计。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　“先事后人”是闪聚的鲜明特点之一。主要的使用方式是用户登录闪聚客户端，在购物、电影、餐饮等几大分类中选择自己想做的事情，与有同样兴趣目标的用户交流并相约行动。爱调侃的刘兴亮总是不忘拿搭讪美女作为例子。“我看你的标签是‘想听音乐会’，我也想看，于是我给你发出个邀请，告诉你今晚有音乐会，我能请你去听吗？即使你对我这个人不在意，但你对一直关注的音乐会的信息一定在意，同样的兴趣点让继续讨论下去成为可能。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　据了解，闪聚目前计划推出苹果和安卓两个版本。率先推出的苹果测试版是为了锻炼产品团队和设计团队，也希望通过苹果良好的用户体验，带给用户最好的第一印象。安卓系统会推迟一些发布，针对不同安卓机型的匹配工作还在进行。目前向App
+Store提交产品，正常需要两周能审批通过，于是他们把测试版先发布在国内的91助手上，根据用户反馈意见再适当修改，尽量做到最完美再提交给苹果。刘兴亮谈及此事爽朗大笑，“不能在老美面前给咱们中国人丢脸”。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　在互联网创业中，每条通向罗马的大路上都会有腾讯这只“拦路虎”。去年冬天雷军推出米聊的时候，不到一个月时间就遭到了来自腾讯的巨大压力。刘兴亮难道没研究过腾讯的问题吗？</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　刘兴亮笑得很自信，“你担心是没有问题的，但是我不担心。”说罢他调整了坐姿，阐述自己对同业竞争的看法，“陌生人交友是新兴市场，需要很多同路人共同开拓，如果将教育用户的成本摊到某一个团队的头上，那是很亏本的事情。众人拾柴火焰高，大家齐头并进会更快地把市场做好。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">&nbsp;<strong><font STYLE="FonT-siZe: 20px">盈利模式，边走边看</FONT></STRONG></FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　创业除了想法，还需要资金。一向广交各路豪杰的这位山西大汉在找钱这件事上，并没有遇到什么困难。据了解，从他开始准备找钱，到资金到位，也就花了一个星期的功夫。目前的资本来自一位老友，足够维持接下来一年的场地成本、开发成本等各种运营开支。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　“闪聚”已经成功上线了，不过对于盈利模式，刘兴亮坦言还没想好。历数圈内其他的创业团队，包括近期上市的优酷、土豆等，亏损依然在持续；更早一些的三大门户，也是上市两年后才实现收支平衡。“既然想不好，那就依照行业惯例先不想，重要的是先把用户体验做好、积累用户，盈利的事情可以稍微往后缓一缓。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　刘兴亮也在琢磨国外社交软件的成功案例。目前国外主要的盈利模式是向用户收费，可中国消费者并不会欢迎这样的商业策略。“未来闪聚可以尝试的模式很多种，比如与商家合作、投放广告，比如用户想相约看电影，搜索页面上会呈现电影院广告；电影院可以主动营销，到闪聚上给想看电影的人发促销信息等等。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　根据多年的行业经验和敏锐的思维，刘兴亮常常会对闪聚的商业模式有一些想法和设计，但很快这些念头又被他自己打消。“因为移动互联网的发展速度实在太快。简单地拿用户规模来说，产品的用户达到百万、千万甚至上亿的量级，各种计划随时都得重新调整以便应对。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　虽然是这么想，刘兴亮还是为闪聚制定了两个阶段性成功的指标，第一个目标是在比较短的时间内，闪聚能够拥有一百万的用户量；第二个目标相对长远一些，IPO或者更大笔的融资。刘兴亮笑称这两个标准虽然很常见，但这是IT创业圈中惯常的成功标志，他也不能免俗。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 20px"><strong>&nbsp;创业男人帮</STRONG></FONT></P>
+<p><font STYLE="FonT-siZe: 16px"><br /></FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　刘兴亮愿意跟朋友们泡一起，他是一个离不开朋友的人，创业也一样。&nbsp;</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　“在这一刻我不是一个人在战斗，我不是一个人！”刘兴亮引用了黄健翔的经典解说词来描述自己的创业状态，“单打独斗的时代一去不复返了，这年头的创业，团队是最重要的，幸运的是，闪聚正好拥有一个彪悍的创始团队，我们是一个铁三角。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　闪聚的“铁三角”创始团队中，除了刘兴亮之外，其“一角”是负责市场运营的吕昭，另“一角”是负责产品技术的魏琦。这“两角”也都是响当当的狠角色，在各自领域都深耕了10年以上。魏琦的职业生涯一直从事技术和产品相关工作，曾经在腾讯公司供职多年，作为产品经理和产品总负责人先后从无到有完成了手机QQ音乐和手机QQ阅读两款产品的所有产品相关工作，在移动互联网的实战经验常人难望其项背。吕昭曾经担任过中关村高新技术企业协会专职秘书长，并先后两次创业，在互联网广告、新媒体整合营销、BD拓展等领域有着丰富的经验和独到的见解。拥有这样一支彪悍的团队，闪聚一亮相就得到了各方面的强烈关注，“比如，风投的电话、邮件、私信不断。”</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　和三位创始人的聊天过程中，从始至终可以感受得出，这是一支乐观、幽默的团队，正在用专业的视野干着一件风景无限美好的事业，且信心满满。</FONT></P>
+<p><font STYLE="FonT-siZe: 16px">　　采访结束的当晚，刘兴亮发微博说，在和同事一起K歌庆祝闪聚迈出坚实的第一步，他的主打歌是《向天再借五百年》。都说创业是条不归路，山高路远道阻且长，但有此乐观洒脱的心态，相信刘兴亮和他们的朋友们会走得轻快一些。&nbsp;</FONT></P>
+<p STYLE="Line-HeiGHT: 24px; FonT-FAMiLY: 宋体"><br /></P>
+<p STYLE="Line-HeiGHT: 24px; FonT-FAMiLY: 宋体">附：版面图片</P>
+<p STYLE="Line-HeiGHT: 24px; FonT-FAMiLY: 宋体">第1页：</P>
+<p STYLE="Line-HeiGHT: 24px; FonT-FAMiLY: 宋体"><a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s11.sinaimg.cn/orignal/56c35a55tb5c28e2ad1ca" TARGET="_blank"><img SRC="http://s11.sinaimg.cn/middle/56c35a55tb5c28e2ad1ca&amp;690" WIDTH="508" HEIGHT="690" NAME="image_operate_49281325747235028" /></A></P>
+<p><font FACE="宋体"><span STYLE="line-height: 24px;"><br /></SPAN></FONT>第2页<br />
+<a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s8.sinaimg.cn/orignal/56c35a55tb5c28ee21607" TARGET="_blank"><img SRC="http://s8.sinaimg.cn/middle/56c35a55tb5c28ee21607&amp;690" WIDTH="508" HEIGHT="690" NAME="image_operate_20831325747416907" /></A><br />
+<br />
+第3页<br />
+<a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s11.sinaimg.cn/orignal/56c35a55tb5c28ff61a9a" TARGET="_blank"><img SRC="http://s11.sinaimg.cn/middle/56c35a55tb5c28ff61a9a&amp;690" WIDTH="508" HEIGHT="690" NAME="image_operate_60271325747416932" /></A></P>
+<p><span STYLE="line-height: 21px;">第4页</SPAN></P>
+<p><br />
+<a HREF="http://blog.photo.sina.com.cn/showpic.html#url=http://s16.sinaimg.cn/orignal/56c35a55tb5c2917408bf" TARGET="_blank"><img SRC="http://s16.sinaimg.cn/middle/56c35a55tb5c2917408bf&amp;690" WIDTH="508" HEIGHT="690" NAME="image_operate_86831325747381011" /></A><br />
+<br /></P>]]></description>
+            <author>刘兴亮</author>
+            <category>采访&amp;#9679;一腔废话</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102du7m.html#comment</comments>
+            <pubDate>Sun, 08 Jan 2012 22:08:31 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102du7m.html</guid>
+        </item>
+        <item>
+            <title>2011中国互联网哈哈榜之6：十大搞笑段子</title>
+            <link>http://blog.sina.com.cn/s/blog_56c35a550102ducw.html</link>
+            <description><![CDATA[<div ALIGN="center"><font STYLE="FonT-siZe: 20px"><strong>2011中国互联网哈哈榜之6：十大搞笑段子</STRONG></FONT></DIV>
+<div ALIGN="right"><font STYLE="FonT-siZe: 16px">策划\跑腿\执笔
+&nbsp;刘兴亮</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子1】他散尽万贯家财，终于获得了一次穿越的机会，他回到了1998年，找到了那个犹豫不决，手握50万现金的青年，告诉他：“买房子吧，10年后，房价会翻好几个跟头的。”那个人说：“真的的太谢谢你了！请问你贵姓？你认识我吗？”他诡异的一笑：“我当然认识你，化腾。我叫周鸿祎。”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：接着《宫》、《步步惊心》等穿越剧的火爆，3Q大战的续集从穿越开始了。于是，一个男人正在忽悠另外一个男人……当你以为说的是买房这码子事的时候，其实说的还真就是买房的事。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子2】话说，使用iPhone
+4S的男人都是好男人，因为他们每天晚上都要回家，都要回家充电！</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：忽如一夜梨花开，漫山遍野好男人。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子3】某互联网公司编辑李XX遇车祸成植物人，医生说活下来希望只有万分之一，唤醒更为渺茫。他的领导和亲人没有放弃，他们根据李XX视工作如命的作风,每天都在他身边念：“XX，首页又出错别字啦”。奇迹终于发生，李XX醒过来了，第一句话：“总编室发现了吗？”&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：谨以此段子，献给苦逼的互联网编辑们……就为了这个段子，加薪的有木有！！！</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子4】一朋友去看中医，大夫嘱托他每晚十一点必须睡。隔一周，诸症未除，复诊。中医号脉，正色道：还是晚睡，以后十一点前不睡就不要来看了。友大惊，感叹祖国医学真是博大精深。大夫又道：你昨晚12:14分以后才睡觉。朋友弱弱的问：能号的这么准呀？大夫：我加了你的关注……</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：嗯，微博火了之后……中医也就神奇了……一切都神奇了……</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子5】</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">上联:云计算、云存储、云杀毒、云邮件、云播放器——云里雾里；</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">下联:谷歌云、微软云、苹果云、脸谱云、亚马逊云——不知所云；</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">横批:神马都是浮云！</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：一副对联道出云计算的现状（不多说了，免得也被人说“不知所云”）。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子6】问：老板，你做淘宝最放心的是什么啊？答：我最放心的是，从来没有收到过假钱！耶！&nbsp;</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：最放心的？还是唯一放心的？</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子7】</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">iPhone用户三大爱好：游戏、拍照、发微博。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">安卓用户三大爱好：刷机、重启、换电池。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">塞班用户三大爱好：摔手机、摔手机、摔手机。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">山寨用户三大爱好：凤凰传奇、凤凰传奇、凤凰传奇。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：特点太明显鸟。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子8】谷歌的CEO拉里·佩奇坐在办公椅上边吃巧克力豆，边和下属视频会议。他说道：“公司缺少手机，买个摩托罗拉吧。”15分钟后，有人在视频那头传话过来：“摩托罗拉已经买下了。”拉里问道：“什么型号的？”下属：“啊？型号？型号？”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：本来是想买款手机的，结果却买了个公司。好吧，买就买了吧。生活就是由一个接一个的意外组成的。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子9】男人就像蓝牙，你在身边，他就处于连接状态。但你一走开，他就搜寻其他外围设备了！！女人像wi-fi，她们可以看到所有可连接的设备，但会选择最好的一个！！</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：诺基亚的经典广告词说的好，科技以人为本。所以，科技是要体现人的特性的。手机上同时具备了这两个功能，说明科技也要男女搭配，才会完美。</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px">【段子10】一个看起来并不起眼的中国青年走进美国苹果公司总部，用很不流利的英语对负责人说：“我想应聘为你们的技术顾问，我知道你们在研发中文
+Siri
+的过程中遇到了前所未有的麻烦，但我能帮你们列举出所有汉语里关于语意模糊，双关等情况。”负责人不屑的说：“年轻人，我凭什么相信你？我甚至还不知道你的名字。”中国青年扶了扶眼镜说：“我叫小明。”</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><br /></FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px"><strong>点评</STRONG>：据“刘通社”考证，Siri服务之所以不支持中文，就是惧怕中文的博大精深。有了小明，啥也不用怕了。建议苹果的中文Siri服务命名为“小明”。</FONT></DIV>
+<div>&nbsp;</DIV>
+<div>&nbsp;</DIV>
+<div>
+<div>
+<div>
+<div><span STYLE="WiDoWs: 2; TexT-TrAnsForM: none; TexT-inDenT: 0px; LeTTer-spACinG: normal; BorDer-CoLLApse: separate; FonT: medium simsun; WHiTe-spACe: normal; orpHAns: 2; CoLor: rgb(0,0,0); WorD-spACinG: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none">
+<span STYLE="WiDoWs: 2; TexT-TrAnsForM: none; TexT-inDenT: 0px; LeTTer-spACinG: normal; BorDer-CoLLApse: separate; FonT: medium simsun; WorD-WrAp: normal; WHiTe-spACe: normal; orpHAns: 2; CoLor: rgb(0,0,0); WorD-BreAK: normal; WorD-spACinG: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none">
+<font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal" COLOR="#990030" SIZE="3"><strong STYLE="FonT-WeiGHT: bold">更多榜单：</STRONG></FONT></SPAN></SPAN></DIV>
+</DIV>
+<div><a HREF="http://blog.sina.com.cn/s/blog_56c35a5501017h1d.html" TARGET="_blank"></A>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank"></A></SPAN></FONT>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">2011中国互联网哈哈</SPAN></FONT></SPAN></FONT></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank">榜目录</A></SPAN></FONT></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtqn.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之1：十大网络红人</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtu4.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之2：十大网络流行语</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dty9.html" TARGET="_blank"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">哈哈榜之3：十大网络流行体</SPAN></FONT></A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102du72.html" TARGET="_blank">哈哈榜之4：十大事件</A></SPAN></FONT></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102du8i.html" TARGET="_blank">哈哈榜之5：十大年度表情</A></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102ducw.html" TARGET="_blank"></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102ducw.html" TARGET="_blank">哈哈榜之6：十大搞笑段子</A></SPAN></FONT></SPAN></FONT></SPAN></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dugr.html" TARGET="_blank"></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dugr.html" TARGET="_blank">哈哈榜之7：十大案件</A></SPAN></FONT></SPAN></FONT></SPAN></SPAN></FONT></SPAN></FONT></SPAN></SPAN></FONT></DIV>
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px">更多榜单不断推出中……</SPAN></FONT></DIV>
+<div><wbr /></DIV>
+<div><wbr /></DIV>
+<div><wbr /></DIV>
+<div>
+<div ALIGN="left">
+<div><font COLOR="#2971BB" SIZE="3"><span STYLE="Line-HeiGHT: 24px"><span STYLE="WiDoWs: 2; TexT-TrAnsForM: none; TexT-inDenT: 0px; LeTTer-spACinG: normal; BorDer-CoLLApse: separate; FonT: medium simsun; WHiTe-spACe: normal; orpHAns: 2; CoLor: rgb(0,0,0); WorD-spACinG: 0px; webkit-border-horizontal-spacing: 0px; webkit-border-vertical-spacing: 0px; webkit-text-decorations-in-effect: none; webkit-text-size-adjust: auto; webkit-text-stroke-width: 0px">
+<font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+<b><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; WorD-BreAK: normal" COLOR="#990030">点击回顾：</FONT></B></FONT></SPAN></SPAN></FONT></DIV>
+<div><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+<font STYLE="FonT-siZe: 16px">[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a5501017h1d.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; WorD-BreAK: normal"><font STYLE="FonT-siZe: 16px"><font COLOR="#2971BB">2010中国互联</FONT><font COLOR="#2971BB">网哈哈榜</FONT></FONT></FONT></FONT></A></FONT><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></DIV>
+<div><font STYLE="FonT-siZe: 16px" SIZE="3">[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100gpu2.html" TARGET="_blank"></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100gpu2.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="FonT-siZe: 16px" COLOR="#2971BB">2009中国互联</FONT></FONT></FONT></A><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100gpu2.html" TARGET="_blank"><font STYLE="FonT-siZe: 16px" COLOR="#2971BB">网哈哈榜</FONT></A><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></DIV>
+<div>
+<div><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a550100bnw0.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">2008中国互联网哈哈榜</FONT></A><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></DIV>
+</DIV>
+<div><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">
+[</FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a55010080c8.html" TARGET="_blank"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">2007中国互联网哈哈榜</FONT></A><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal"><font STYLE="Line-HeiGHT: 24px; WorD-WrAp: normal; FonT-siZe: 16px; WorD-BreAK: normal">]</FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><a HREF="http://blog.sina.com.cn/s/blog_56c35a550102dtti.html" TARGET="_blank"></A></DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>]]></description>
+            <author>刘兴亮</author>
+            <category>幽默&amp;#9679;轻松写作</category>
+            <comments>http://blog.sina.com.cn/s/blog_56c35a550102ducw.html#comment</comments>
+            <pubDate>Thu, 05 Jan 2012 22:07:06 +0800</pubDate>
+            <guid>http://blog.sina.com.cn/s/blog_56c35a550102ducw.html</guid>
+        </item>
+    </channel>
+</rss>
