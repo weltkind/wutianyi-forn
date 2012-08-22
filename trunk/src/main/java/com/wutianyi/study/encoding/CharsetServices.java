@@ -74,11 +74,11 @@ public class CharsetServices {
 
 		String srcEncoding = detector.getDetectedCharset();
 		System.out.println(srcEncoding);
-//		if (StringUtils.isBlank(srcEncoding)) {
-//			return data;
-//		}
+		if (StringUtils.isBlank(srcEncoding)) {
+			return data;
+		}
 
-		Charset srcCharset = Charset.forName("GB18030");
+		Charset srcCharset = Charset.forName(srcEncoding);
 		if (null == srcCharset) {
 			return data;
 		}
@@ -123,7 +123,7 @@ public class CharsetServices {
 		byteBuffer.flip();
 		byteBuffer.get(tb, 0, byteBuffer.limit());
 		output.write(tb, 0, byteBuffer.limit());
-		System.out.println(new String(output.toByteArray(), "utf-8"));
+//		System.out.println(new String(output.toByteArray(), "utf-8"));
 		return output.toByteArray();
 	}
 
