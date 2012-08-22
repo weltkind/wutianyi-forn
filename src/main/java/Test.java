@@ -196,9 +196,9 @@ public class Test
         StringBuilder builder_1 = new StringBuilder();
         PrintWriter pw = new PrintWriter(new File("globle_1.css"));
         String v = null;
-        for(String fileContent : fileContents)
+        for (String fileContent : fileContents)
         {
-            if(fileContent.trim().startsWith("\\\\"))
+            if (fileContent.trim().startsWith("\\\\"))
             {
                 v = fileContent.trim();
             }
@@ -208,20 +208,20 @@ public class Test
         pw.close();
         System.out.println(builder_1.toString());
         String test = "\\\\eest";
-        if(test.startsWith("\\"))
+        if (test.startsWith("\\"))
         {
-            
+
         }
         System.out.println(test);
         System.out.println(v);
-        
+
         DateFormat dateFormat = new SimpleDateFormat("yyyy_MM");
         Calendar lastMonth = Calendar.getInstance();
         lastMonth.add(Calendar.MONTH, -1);
         String t = dateFormat.format(lastMonth.getTime());
         System.out.println(t);
         System.out.println(DigestUtils.md5Hex("king_roottest|test|test"));
-        
+
         List<String> dates = new ArrayList<String>();
         dates.add("2012-04-12");
         dates.add("2012-03-12");
@@ -243,54 +243,65 @@ public class Test
                 return 0;
             }
         });
-        for(String d : dates)
+        for (String d : dates)
         {
             System.out.println(d);
         }
         System.out.println(DigestUtils.md5Hex("123").length());
-        
+
         String mobile = "+8615013152239";
-//        if(StringUtils.isNotBlank(mobile))
-//        {
-//            mobile = mobile.replaceFirst("+", "");
-//            if(mobile.startsWith("86"))
-//            {
-//                mobile = mobile.substring(2);
-//            }
-//        }
+        // if(StringUtils.isNotBlank(mobile))
+        // {
+        // mobile = mobile.replaceFirst("+", "");
+        // if(mobile.startsWith("86"))
+        // {
+        // mobile = mobile.substring(2);
+        // }
+        // }
         System.out.println(mobile);
         SimpleDateFormat f = new SimpleDateFormat("dd/MMM/yyyy:hh:mm:ss Z");
         System.out.println(f.format(new Date()));
-        
-        String t3="test;af";
+
+        String t3 = "test;af";
         String[] ts3 = t3.split(";", 1);
-        for(String ts4 : ts3)
+        for (String ts4 : ts3)
         {
             System.out.println(ts4);
         }
-        
+
         System.out.println(NumberUtils.isDigits("012"));
-        System.out.println(URLEncoder.encode("测试","utf8"));
-        System.out.println(URLEncoder.encode(URLEncoder.encode("测试","utf8"), "utf-8"));
-        System.out.println(URLDecoder.decode("%E6%B7%B1%E5%9C%B3%E5%BA%93%E5%AD%98.csv","utf8"));
-        
-//        FileInputStream input = new FileInputStream(new File("2012-06-14-14-37-31-contact-67.csv"));
-//        byte[] buf = new byte[1024];
-//        int len = input.read(buf);
-//        ByteArrayOutputStream out = new ByteArrayOutputStream();
-//        out.write(buf,0 ,len);
-//        String[] lines = new String(out.toByteArray(), "gbk").split("\r\n");
-//        for(String l : lines)
-//        {
-//            System.out.println(l);
-//        }
-        
-        System.out.println(new String(Base64.encodeBase64("你好".getBytes("utf-8"))));;
+        System.out.println(URLEncoder.encode("测试", "utf8"));
+        System.out.println(URLEncoder.encode(URLEncoder.encode("测试", "utf8"), "utf-8"));
+        System.out.println(URLDecoder.decode("%E6%B7%B1%E5%9C%B3%E5%BA%93%E5%AD%98.csv", "utf8"));
+
+        // FileInputStream input = new FileInputStream(new
+        // File("2012-06-14-14-37-31-contact-67.csv"));
+        // byte[] buf = new byte[1024];
+        // int len = input.read(buf);
+        // ByteArrayOutputStream out = new ByteArrayOutputStream();
+        // out.write(buf,0 ,len);
+        // String[] lines = new String(out.toByteArray(), "gbk").split("\r\n");
+        // for(String l : lines)
+        // {
+        // System.out.println(l);
+        // }
+
+        System.out.println(new String(Base64.encodeBase64("你好".getBytes("utf-8"))));
+        ;
         String adr = "asdfansofas\\;asfdasdf;nocafd";
         String adr_1 = adr.replaceAll("\\;", "[:]");
         System.out.println(adr_1);
         System.out.println(adr.replaceAll("\\\\;", "[:]").replaceAll(";", "").replaceAll("\\[:\\]", ";"));
+
+        String sttt = "ss.";
+        if(!sttt.startsWith("css") || !sttt.startsWith("js"))
+        {
+            System.out.println(sttt);
+        }
+        System.out.println(sttt.contains(".."));
         
+        File file11 = new File(System.getProperty("user.dir"),"..\\");
+        System.out.println(file11.getAbsolutePath());
     }
 
 }
