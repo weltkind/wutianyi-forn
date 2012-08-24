@@ -1,0 +1,1245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)http://www.lylzone.info/2011/02/17/appspotbeiqiang.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title> appspot (GAE)被墙的三种解决方案 - 恋雨的风 </title>
+	
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><![endif]-->
+		<link rel="shortcut icon" href="http://www.lylzone.info/static/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" media="all" href="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/style.css">
+		<script type="text/javascript" async="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/ga.js"></script><script type="text/javascript" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/jquery.min.js"></script>
+		<!-- html5 for ie -->
+		<!--[if IE]><script type="text/javascript" src="/themes/iStudioPage/html5.js"></script><![endif]--> 
+		
+
+
+<meta name="Keywords" content="gae">
+ <meta name="Description" content="近来发现apspot很不稳定,网上大多是第二种解决方法,我在这里写下自己关于appspot被墙的三种解决方案,特别是第三种,可能很多人还不知道。适合GAE新手学习,老鸟飞过!GAE(Google App engine）是Google云计算的 一部分，是一个互联网应用服务引擎，开发人员可以使用GAE的API开发互联网应用，而带宽、主机全都不用担心，Google都提供给你了。目前免费用户 拥有500M存储空间、每月500万次PV，对于一般的应用应该足够了。你可以用GAE来托管你的开心网、校内的应用，不用再为没有主机发愁了。">
+
+
+<script type="text/javascript" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/jquery.cookie.js"></script>
+<script type="text/javascript" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/jquery.form.utf8.js"></script>
+<script type="text/javascript" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/jquery.easing.1.3.js"></script>
+
+	<meta name="generator" content="Micolog 0.74">
+	</head>
+	<body>
+	<div id="section">
+		<div id="wrapper">
+			<header>
+			<div id="header">
+				<div class="hgroup">
+					<h1><a href="http://www.lylzone.info/">恋雨的风</a></h1>
+					<div class="description">远离喧嚣，这里更安静些······</div>
+				</div>   <!--  -->
+				<div id="nav">
+					<a class="feedrss" href="http://lylmiclog.appspot.com/feed" title="RSS 订阅">RSS 订阅</a>
+					<menu id="menus">				 
+					  
+					  <li class="page_item"><a href="http://www.lylzone.info/" title="Click Back to Home">Home</a>
+					  </li><li class="page_item"><a href="http://www.lylzone.info/cppstudy" target="_blank">CPPL</a></li><li class="page_item"><a href="http://www.lylzone.info/note" target="">Note</a></li><li class="page_item"><a href="http://www.lylzone.info/photo" target="_self">Album</a></li><li class="page_item"><a href="http://www.lylzone.info/musicwidget" target="">Music</a></li><li class="page_item"><a href="http://www.lylzone.info/search" target="_self"></a></li>
+					  
+					  
+					</menu>
+				</div>
+				<ul class="popadmin"><li><a href="http://www.lylzone.info/admin">管理</a></li></ul>
+				</div>
+			</header>
+				<!-- menu END -->
+			<hr>
+			
+
+
+<div id="section">
+<div id="content">
+	 	
+	<div class="postlist">
+
+	<div id="postlist">
+
+	<div id="article">
+		<div id="post-aglseWxtaWNsb2dyDQsSBUVudHJ5GJrFEAw">
+				<br>
+
+			<div class="title">
+				<h3>2011/02/17 22:04</h3>
+				<h2>appspot (GAE)被墙的三种解决方案</h2>
+				<small>5744 次阅读,  <a href="http://www.lylzone.info/category/Myself">原创作品</a> , by lylexist .				<span class="togglebar"><a id="toggle-sidebar" href="javascript:void(0);"><strong>宽屏阅读</strong></a></span>
+				 </small>
+			</div>		<!--section  -->
+			<div class="entry">	<!-- section -->
+			<p>近来发现apspot很不稳定,网上大多是第二种解决方法,我在这里写下自己关于appspot被墙的三种解决方案,特别是第三种,可能很多人还不知道。</p>
+<p>适合GAE新手学习,老鸟飞过!</p>
+<p>GAE(Google App engine）是Google云计算的 一部分，是一个互联网应用服务引擎，开发人员可以使用GAE的API开发互联网应用，而带宽、主机全都不用担心，Google都提供给你了。目前免费用户 拥有500M存储空间、每月500万次PV，对于一般的应用应该足够了。你可以用GAE来托管你的开心网、校内的应用，不用再为没有主机发愁了。</p>
+<p style="text-align: right;">&nbsp;———<img title="吐舌头" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/smiley-tongue-out.gif" border="0" alt="吐舌头">以上摘自百度</p>
+<p>虽然GAE很是强大，但在中国大陆appspot.com(GAE web页面默认域名)的访问任然时好时坏，因此笔者在这里总结一下自己现在已经知道的所有解决appspot被墙的三中国解决方案：</p>
+<p><span style="font-size: xx-large;"><span style="color: #993300;"><strong>强烈推荐第三种方法!</strong></span></span></p>
+<h2 id="f1">No 1 ：hosts文件修改法；</h2>
+<p>这是第三种方法里面最简单一种，即通过hosts的重定向功能将appspot手动定向到现到ghs.google.com的存活ip；</p>
+<p>方法：</p>
+<ol>
+<li>在开始中输入drivers&nbsp; 然后回车，然后会弹出drivers（该文件位置为：%systemroot%\system32\drivers\）文件夹 ，点击进入里面的etc文件；</li>
+<li>然后右击里面的hosts文件，选择打开，然后选择以记事本打开该文件；</li>
+<li>这一步最重要在hosts文件里面添加&nbsp; <span style="color: #800000;">203.208.39.104 YourID.appspot.com&nbsp; </span>YourID是你ＧＡＥ应用的对应名称，比如笔者的是<a href="http://lylmiclog.appspot.com/" target="_blank">lylmiclog.appspot.com</a>你需要多少添加多少即可，注意hosts文件不支持泛域名即 *.appspot.com;</li>
+<li>关闭保存即可；</li>
+</ol>
+<p><img src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/GAE.png" alt="hosts修改方法图片" width="532" height="212"></p>
+<h3>缺点:</h3>
+<p>笔者不提倡使用第一种方法来解决自己GAE博客被墙的问题,因为这种方法只会使自己自正常访问博客,而其他的人如果没有修改的话是无法访问的.</p>
+<h3>优点:</h3>
+<p>但是如果你的GAE应用如果不是博客或者网站之类,比如有些人会用ＧＡＥ搭建Twitter api 像GTAp或者有人使用ＧＡＥ搭建代理的比较适合用这种方法,而且这样的访问速度要快很多.</p>
+<h2 id="f2">No 2 :域名反向代理</h2>
+<p>这里需要将自己的appspot绑定到自己的独立域名,具体绑定方法参见<a href="http://hi.baidu.com/foxvip/blog/item/bfa09a25adb16d6f34a80f89.html" target="_blank">ＧＡＥ域名绑定</a></p>
+<p>方法:</p>
+<p>这种方法是使用Chinasb 为 Google App Engine 应用提供的免费加速服务,网站地址:<a href="http://app.chinasb.org/" target="_blank">http://app.chinasb.org/</a></p>
+<p>进去后以google 账户登录然后在里面添加自己的独立域名,注意! &nbsp; 这里需要自己有独立域名然后使用该域名绑定GAE应用,</p>
+<p>然后继续在自己的DNS管理页面将对应的CNAME 修改为ghs.chinasb.org然后等记录生效即可</p>
+<p>&nbsp;</p>
+<p><img src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/china.png" alt="代理" width="567" height="386"></p>
+<h3>优点:</h3>
+<p>使用方法简单,速度较快.</p>
+<h3>缺点:</h3>
+<p>继续面临被抢的危险,比如以前的you8g已经被挂了!</p>
+<p>&nbsp;</p>
+<h2 id="f3">Ｎｏ３：免费ＣＤＮ推送</h2>
+<p>不知道大家听过<a href="http://www.cloudflare.com/" target="_blank">Cloudflare</a> 没有,该网站提供免费的CDN推送,对于个人博客,免费套餐已经够用!</p>
+<p>方法是先注册一个用户(注册方法很简单大家自己摸索),进去后将自己的独立域名添加到里面,最后系统会提示你将自己域名的NS(即Name Sever)修改为指定NS(这里就不详细介绍了),等待NS生效后,点击网站域名后面的DNS Setting,如下图</p>
+<p><img src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/Cloudflare.png" alt="GAE被墙" width="552" height="168"></p>
+<p>进去后即可在该网站管理自己的DNS,然后在将对应的CNAME记录修改为直接指向<strong><span style="color: #800000;">ghs.google.com</span></strong></p>
+<p><img src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/cloudCname.png" alt="GAE被墙" width="555" height="187"></p>
+<p>下面等记录生效即可!</p>
+<h3>优点:</h3>
+<p>服务稳定,被墙的可能性较小;</p>
+<h3>缺点:</h3>
+<p>速度一般,其他的倒还可以.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large;">Ps:</span>&nbsp; <span style="color: #3366ff;">因为笔者也是一菜鸟,对某些专业术语也不太会使用,如果叙述上有问题还请指正!</span></p>
+			<div class="clear"></div><!-- 2 section --> 
+			</div> <!-- section -->
+			<p align="right"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#top" class="gotop" title="Back Top">Back Top</a></p>
+			
+			<p class="postmeta">标签：
+			<a href="http://www.lylzone.info/tag/gae">gae</a>&nbsp;</p>
+			<div id="nav">
+			<div class="post-nav"> <!-- nav -->
+			
+			<span class="previous"><a href="http://www.lylzone.info/2011/02/16/shipinliaotian.html">随机视频聊天</a></span>
+				
+				
+			<span class="next"><a href="http://www.lylzone.info/2011/02/19/useragentchange.html">三种手机浏览器User Agent</a></span>
+				
+			<div class="clear"></div>
+		</div>
+		</div>
+
+	</div>
+	</div>
+
+		<!-- comments  -->
+
+<script src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/comment.js" type="text/javascript"></script>
+<script type="text/javascript" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/jquery.easing.1.3.js"></script>
+
+<div id="section">
+<div class="postcomments">
+
+	<h3 id="comments">回复自 “appspot (GAE)被墙的三种解决方案”</h3>
+
+	<div id="comments">
+		<div id="cmtswitcher"> 
+				<a id="commenttab" class="curtab" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentarea">18 条评论</a>
+			<span class="addcomment"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#respond">发表评论</a></span>
+			<div class="clear"></div>   
+		</div>   
+		<div id="commentlist"> 
+			<!-- comments START -->
+		        
+		  <ol id="thecomments">
+			  
+		  <li class="comment regularcomment" id="comment-273002">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/4b6c64023c1bec203cfb14d77c613185" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-273002" class="url" target="_blank" href="http://tech.crandom.com/">Muninn</a>
+						
+						</cite> 发表于 2011-02-18 , 10:51
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-273002">Cloudflare 早都不行了呀……
+									
+										<a title="回复 @Muninn" onclick="return backcomment(&#39;Muninn&#39;,273002);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-278001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/1c37670a0d060edcee2d87133907a57f" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-278001" class="url" target="_blank" href="http://www.lylzone.info/">admin</a>
+						
+						</cite> 发表于 2011-02-18 , 12:48
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-278001"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-273002">@Muninn</a>
+<br>额  是吗  不会吧 我这个域名就是用的cloudflare的 还可以的。。
+										
+										<a title="回复 @admin" onclick="return backcomment(&#39;admin&#39;,278001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-320001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/a1ad6d93aa2ba5afa41e84218d103e1b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>Subtle
+						</cite> 发表于 2011-04-07 , 13:46
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-320001">你好，免费ＣＤＮ推送的具体步骤能给说明一下吗？我按你的操作弄了，可是不见效果啊，是不是弄错了
+									
+										<a title="回复 @Subtle" onclick="return backcomment(&#39;Subtle&#39;,320001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-321001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/a1ad6d93aa2ba5afa41e84218d103e1b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>Subtle
+						</cite> 发表于 2011-04-07 , 14:17
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-321001">你好，我的是XXX.appspot.com的博客怎么激活 CloudFlare, 更改  name servers 为anna.ns.cloudflare.com
+									
+										<a title="回复 @Subtle" onclick="return backcomment(&#39;Subtle&#39;,321001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-320002">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/1c37670a0d060edcee2d87133907a57f" class="avatar avatar-32 photo" height="32" width="32">
+					</div>lyl
+						</cite> 发表于 2011-04-07 , 17:20
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-320002"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-321001">@Subtle</a><br>先到你的域名提供商那里把ns修改为cloudflare的，等记录生效后点域名后面的info会显示Your Site is Active on CloudFlare，这时你点击后面的dns setting即可。。
+									
+										<a title="回复 @lyl" onclick="return backcomment(&#39;lyl&#39;,320002);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-323001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/a1ad6d93aa2ba5afa41e84218d103e1b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>Subtle
+						</cite> 发表于 2011-04-07 , 23:45
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-323001">subtlesm.co.cc has already been signed up with CloudFlare<br>CloudFlare powered, this website will be accelerated and protected (info)<br>我已经按你给的截图那样设置了dns，貌似别人仍不能访问啊，microlog里有一个域名，是填subtlesm.co.cc吗？
+									
+										<a title="回复 @Subtle" onclick="return backcomment(&#39;Subtle&#39;,323001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-322002">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/a1ad6d93aa2ba5afa41e84218d103e1b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>Subtle
+						</cite> 发表于 2011-04-07 , 23:50
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-322002">http://sceneryme.appspot.com/ 这个是我的microlog 地址
+									
+										<a title="回复 @Subtle" onclick="return backcomment(&#39;Subtle&#39;,322002);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-324001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/1c37670a0d060edcee2d87133907a57f" class="avatar avatar-32 photo" height="32" width="32">
+					</div>lyl
+						</cite> 发表于 2011-04-08 , 22:03
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-324001"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-323001">@Subtle</a>
+<br>是这样的  你确定你的gae应用与自己的域名绑定了没？
+									
+										<a title="回复 @lyl" onclick="return backcomment(&#39;lyl&#39;,324001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-325001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/1c37670a0d060edcee2d87133907a57f" class="avatar avatar-32 photo" height="32" width="32">
+					</div>lyl
+						</cite> 发表于 2011-04-08 , 22:04
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-325001">&lt;&gt;<a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-322002">@Subtle</a>
+<br>可以看一下这个：<a href="http://hi.baidu.com/foxvip/blog/item/bfa09a25adb16d6f34a80f89.html" rel="no-follow">http://hi.baidu.com/foxvip/blog/item/bfa09a25adb16d6f34a80f89.html</a>
+									
+										<a title="回复 @lyl" onclick="return backcomment(&#39;lyl&#39;,325001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-324002">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/a1ad6d93aa2ba5afa41e84218d103e1b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>Subtle
+						</cite> 发表于 2011-04-09 , 00:58
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-324002">那个指向还是ghs.google.com吗/
+										
+										<a title="回复 @Subtle" onclick="return backcomment(&#39;Subtle&#39;,324002);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-321003">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/1c37670a0d060edcee2d87133907a57f" class="avatar avatar-32 photo" height="32" width="32">
+					</div>lyl
+						</cite> 发表于 2011-04-09 , 12:20
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-321003"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-324002">@Subtle</a><br>恩  是的
+									
+										<a title="回复 @lyl" onclick="return backcomment(&#39;lyl&#39;,321003);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-329001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/52b5ff084b2f2602dc15cc7ff5134573" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-329001" class="url" target="_blank" href="http://lhcy.info/">林海草原</a>
+						
+						</cite> 发表于 2011-04-13 , 18:00
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-329001">这个只能针对顶级域名。tk域名已经不能绑定到GAE了，而其他免费域名当中只有二级域名了，比如co.cc，但是cloudflare不支持二级域名，但支持tk顶级域名。
+									
+										<a title="回复 @林海草原" onclick="return backcomment(&#39;林海草原&#39;,329001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-335001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/69f9f1146e799f5d1c86317f3f8fff2b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>ci
+						</cite> 发表于 2011-04-18 , 14:34
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-335001">好东西，正需要呢
+									
+										<a title="回复 @ci" onclick="return backcomment(&#39;ci&#39;,335001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-335002">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/69f9f1146e799f5d1c86317f3f8fff2b" class="avatar avatar-32 photo" height="32" width="32">
+					</div>ci
+						</cite> 发表于 2011-04-18 , 14:39
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-335002">请教下，你现在用的是哪一种方法啊？
+									
+										<a title="回复 @ci" onclick="return backcomment(&#39;ci&#39;,335002);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-357001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/32f45c57f0a9751879500c46d8d89686" class="avatar avatar-32 photo" height="32" width="32">
+					</div>Taro
+						</cite> 发表于 2011-06-26 , 01:15
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-357001">其实，只要把appspot改成appsp0t就可以了……
+									
+										<a title="回复 @Taro" onclick="return backcomment(&#39;Taro&#39;,357001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-357002">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/1c37670a0d060edcee2d87133907a57f" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-357002" class="url" target="_blank" href="http://www.lylzone.info/">lyl</a>
+						
+						</cite> 发表于 2011-06-26 , 13:00
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-357002"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-357001">@Taro</a><br>这个是可以  但是安全性就不知道了
+										
+										<a title="回复 @lyl" onclick="return backcomment(&#39;lyl&#39;,357002);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-368001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/13457e12e0bc4934f60a032438e3a126" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-368001" class="url" target="_blank" href="http://icemaple.info/">冰丨枫</a>
+						
+						</cite> 发表于 2011-07-29 , 13:25
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-368001">第三种方法真是不错，用它替换了Godaddy的默认DNS后，惊奇的是，我博客访问速度快了很多！（在此BS下Godaddy...）<br><br>
+									
+										<a title="回复 @冰丨枫" onclick="return backcomment(&#39;冰丨枫&#39;,368001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-391001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/4fba9e32e792a90faa830a5ccad1fad4" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-391001" class="url" target="_blank" href="http://blog.xinxijishuwyq.cixx6.com/">xinxijishuwyq</a>
+						
+						</cite> 发表于 2012-02-12 , 09:35
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-391001">有没有办法弄完域名https？
+									
+										<a title="回复 @xinxijishuwyq" onclick="return backcomment(&#39;xinxijishuwyq&#39;,391001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		  <li class="comment regularcomment" id="comment-397001">  
+			  <div class="list"> 
+				<div class="content">
+						<cite>
+							<div class="gravatar">
+					<img alt="" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/homsar.jpeg" class="avatar avatar-32 photo" height="32" width="32">
+					</div>
+						<a id="comment-397001" class="url" target="_blank" href="http://vycool.com/?p=27">【转载】GAE被墙的三种解决方案</a>
+						
+						</cite> 发表于 2012-04-13 , 14:36
+					</div><table class="out" border="0" cellspacing="0" cellpadding="0">
+					<tbody><tr>
+					
+					<td class="topleft"></td>
+					<td class="top"></td>
+					<td class="topright"></td>
+					</tr>
+					<tr>
+					<td class="left">
+					</td>
+					<td class="conmts">
+						<small class="commentmetadata">
+							<div id="quote-397001"><strong>【转载】GAE被墙的三种解决方案...</strong><br>[…] 原文地址： http://www.lylzone.info/2011/02/17/appspotbeiqiang.html […]...
+										
+										<a title="回复 @【转载】GAE被墙的三种解决方案" onclick="return backcomment(&#39;【转载】GAE被墙的三种解决方案&#39;,397001);" style="cursor: pointer;" class="reply" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#commentform">回复</a>
+									
+							</div>
+						</small>
+					</td><td class="right"></td>
+					</tr><tr><td class="bottomleft"></td><td class="bottom"></td><td class="bottomright"></td></tr>
+				</tbody></table>  
+				</div>
+				<div class="clear"></div>
+			</li>
+			
+		</ol>
+			<div id="commentsnavi">
+			
+        </div>
+        
+	</div>
+<a name="commentarea"></a>
+	<div id="respond">
+		<h3 id="reply-title">发表评论</h3>
+		
+		<form action="http://www.lylzone.info/post_comment" method="post" id="commentform">
+		<p class="comment-notes">电子邮件地址不会被公开。 必填项已被标记为 <span class="required">*</span></p>
+		<p class="comment-form-author"><label for="author">名称</label> <span class="required">*</span>
+		<input id="author" name="author" type="text" class="textfield round" value="" tabindex="1" size="30"></p>
+		<p class="comment-form-email"><label for="email">电子邮件</label> <span class="required">*</span>
+		<input id="email" name="email" type="text" value="" tabindex="2" size="30"></p>
+		<p class="comment-form-url"><label for="url">网站</label>
+		<input id="url" name="url" type="text" class="textfield round" value="" tabindex="3" size="30"></p>
+		<div id="checkarea">
+		<p class="comment-form-url">
+		<label for="url">8+2 = ?,麻烦计算一下，谢谢！<span class="required">*</span></label>
+		<input type="hidden" name="checknum" id="checknum" value="8+2" tabindex="4">
+		<input type="text" name="checkret" id="checkret" class="textfield round" value="" size="30" tabindex="4">
+
+		</p>
+		</div>
+		<p class="comment-form-comment"><label for="comment">评论</label>
+		<textarea class="round-10" id="comment" name="comment" style="width:96%" rows="10" tabindex="5"></textarea></p>
+
+		<p class="form-submit">
+		</p><div id="s_msg" style="display:none;color:red">提交成功！</div>
+		<div class="submitbutton">
+		<input name="submit" type="submit" id="submit" class="comment-button" tabindex="6" value="">
+		<input name="reply_notify_mail" id="reply_notify_mail" tabindex="7" style="width: auto;" type="checkbox">
+		<label for="reply_notify_mail">通过邮件来提醒我。</label>
+		<input type="hidden" name="key" value="aglseWxtaWNsb2dyDQsSBUVudHJ5GJrFEAw">
+		<input type="hidden" name="useajax" value="1">
+		</div>
+		<p></p>
+
+		</form>
+	</div>
+
+	
+	<!-- /comments -->
+
+
+
+<div class="clear"></div>
+		</div>	
+	  </div>
+
+</div>
+</div>
+		
+		
+
+</div><!--section  -->
+		<div id="aside" class="sidebar"> 
+	﻿<form id="cse-search-box" class="search" action="http://www.lylzone.info/search" method="get">
+	<div>
+		<input type="text" class="search_text" name="q" size="31" onblur="if (this.value ==&#39;&#39;) this.value=&#39;Search...&#39;" onfocus="this.value=&#39;&#39;" onclick="if (this.value==&#39;Search...&#39;) this.value=&#39;&#39;" value="Search...">
+		<input type="hidden" name="cx" value="018209673574839987159:hxkxgybke5y">
+		<input type="submit" class="search_submit" name="sa" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="hidden" name="cof" value="FORID:10">
+	</div>
+</form>
+	<ul>
+		<li>
+			<h3>My Buzz</h3>
+				<ul>
+				<li>
+				<iframe id="sina_widget_1622347240" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/widget_blog.htm"></iframe>
+				</li>
+				</ul>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<h3>最新文章</h3>
+				
+				<ul>
+					
+					<li><a href="http://www.lylzone.info/2012/07/23/OSPF%E8%99%9A%E8%BF%9E%E6%8E%A5Virtual-Link%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8.html" title="OSPF虚连接Virtual Link简单应用">OSPF虚连接Virtual Link简单应用(83)</a></li>
+					
+					<li><a href="http://www.lylzone.info/2012/06/28/%E6%BC%82%E4%BA%AE%E7%9A%84%E6%89%8B%E5%86%99%E5%AD%97%E4%BD%93.html" title="几款漂亮的手写字体下载">几款漂亮的手写字体下载(208)</a></li>
+					
+					<li><a href="http://www.lylzone.info/2012/03/14/vc-bug-dcomusercreatfail.html" title="VC的Bug-安装过程中创建DCOM出错(Setup Was Unable to Create a DCOM User Account)">VC的Bug-安装过程中创建DCOM出错(Setup Was Unable to Create a DCOM User Account)(349)</a></li>
+					
+					<li><a href="http://www.lylzone.info/2011/10/23/win7tope.html" title="Win7下面安装xp[原创]">Win7下面安装xp[原创](660)</a></li>
+					
+					<li><a href="http://www.lylzone.info/2011/10/7/Dynamic-Views.html" title="Blogspot小清新模板小体验">Blogspot小清新模板小体验(815)</a></li>
+					
+					<li><a href="http://www.lylzone.info/?p=372001" title="终于给域名续费了">终于给域名续费了(522)</a></li>
+					
+					<li><a href="http://www.lylzone.info/?p=363013" title="GoAgent又一个基于GAE的穿越利器">GoAgent又一个基于GAE的穿越利器(1175)</a></li>
+					
+					<li><a href="http://www.lylzone.info/2011/06/11/%E5%85%B3%E4%BA%8Ehosts.html" title="蛋疼的hosts文件修改之路">蛋疼的hosts文件修改之路(1450)</a></li>
+					
+				</ul>
+				
+		</li>
+	</ul>
+
+	<ul>
+		<li>
+			<h3>热门文章</h3>
+			
+				<ul>
+				
+				<li><a href="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/appspot (GAE)被墙的三种解决方案 - 恋雨的风.htm" title="appspot (GAE)被墙的三种解决方案">appspot (GAE)被墙的三种解决方案(5744)</a></li>
+				
+				<li><a href="http://www.lylzone.info/2011/04/17/all-google-app.html" title="GOOGLE APP ENGINE应用大全">GOOGLE APP ENGINE应用大全(2136)</a></li>
+				
+				<li><a href="http://www.lylzone.info/2011/02/19/useragentchange.html" title="三种手机浏览器User Agent">三种手机浏览器User Agent(2080)</a></li>
+				
+				<li><a href="http://www.lylzone.info/2011/03/3/hp5310m.html" title="惠普商务机有线网卡无法找到">惠普商务机有线网卡无法找到(1605)</a></li>
+				
+				<li><a href="http://www.lylzone.info/?p=126001" title="VC中使用GetModuleFileName获取应用程序路径">VC中使用GetModuleFileName获取应用程序路径(1571)</a></li>
+				
+				<li><a href="http://www.lylzone.info/?p=21001" title="win7下qq无法打开的解决办法">win7下qq无法打开的解决办法(1472)</a></li>
+				
+				<li><a href="http://www.lylzone.info/2011/06/11/%E5%85%B3%E4%BA%8Ehosts.html" title="蛋疼的hosts文件修改之路">蛋疼的hosts文件修改之路(1450)</a></li>
+				
+				<li><a href="http://www.lylzone.info/?p=156001" title="王烁：云计算在中国是个笑话">王烁：云计算在中国是个笑话(1323)</a></li>
+				
+				</ul>
+				
+		</li>
+	</ul>
+
+	<ul>
+		<li>
+			<h3>文章分类</h3>
+			
+				<ul>
+				
+				<li><a href="http://www.lylzone.info/category/net_quwen" title="42 of 网络捕捉">网络捕捉(42)</a></li>
+				
+				<li><a href="http://www.lylzone.info/category/Myself" title="19 of 原创作品">原创作品(19)</a></li>
+				
+				<li><a href="http://www.lylzone.info/category/Learn_c" title="4 of C++学习">C++学习(4)</a></li>
+				
+				<li><a href="http://www.lylzone.info/category/Goodmusic" title="3 of 我爱音乐">我爱音乐(3)</a></li>
+				
+				</ul>
+			
+		</li>
+	
+	</ul>
+	<div id="YouModelName" class="widget widget_YouModelName">
+	<h3>YouModelName</h3>
+	<ul>
+	
+	</ul>
+	</div>
+
+	<ul>
+		<li>
+			<h3>存档</h3>
+				
+				<ul>
+					
+					<li><a href="http://www.lylzone.info/2012/07" title="2012 Y,07M">2012Y07M(1)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2012/06" title="2012 Y,06M">2012Y06M(1)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2012/03" title="2012 Y,03M">2012Y03M(1)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/10" title="2011 Y,10M">2011Y10M(2)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/09" title="2011 Y,09M">2011Y09M(1)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/06" title="2011 Y,06M">2011Y06M(2)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/04" title="2011 Y,04M">2011Y04M(2)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/03" title="2011 Y,03M">2011Y03M(4)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/02" title="2011 Y,02M">2011Y02M(4)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2011/01" title="2011 Y,01M">2011Y01M(20)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2010/12" title="2010 Y,12M">2010Y12M(3)Articles</a>
+					</li>
+					
+					<li><a href="http://www.lylzone.info/2010/11" title="2010 Y,11M">2010Y11M(3)Articles</a>
+					</li>
+					
+				</ul>
+				
+		</li>
+	</ul>
+
+	<ul>
+		<li class="widget widget_tag_cloud">
+		<h3>标签云</h3>
+		<div class="dline">
+			
+			
+				<a style="font-size: 12px; color: rgb(219, 82, 118); " title="3 pages of C语言" href="http://www.lylzone.info/tag/C%E8%AF%AD%E8%A8%80">C语言</a>
+			
+				<a style="font-size: 10px; color: rgb(183, 121, 217); " title="1 pages of api" href="http://www.lylzone.info/tag/api">api</a>
+			
+				<a style="font-size: 10px; color: rgb(98, 92, 195); " title="1 pages of baidu" href="http://www.lylzone.info/tag/baidu">baidu</a>
+			
+				<a style="font-size: 10px; color: rgb(93, 227, 159); " title="1 pages of cmd" href="http://www.lylzone.info/tag/cmd">cmd</a>
+			
+				<a style="font-size: 19px; color: rgb(98, 181, 53); " title="10 pages of encouragement" href="http://www.lylzone.info/tag/encouragement">encouragement</a>
+			
+				<a style="font-size: 12px; color: rgb(125, 73, 180); " title="3 pages of gae" href="http://www.lylzone.info/tag/gae">gae</a>
+			
+				<a style="font-size: 13px; color: rgb(157, 77, 71); " title="4 pages of google" href="http://www.lylzone.info/tag/google">google</a>
+			
+				<a style="font-size: 10px; color: rgb(182, 103, 18); " title="1 pages of music" href="http://www.lylzone.info/tag/music">music</a>
+			
+				<a style="font-size: 10px; color: rgb(152, 156, 154); " title="1 pages of ppt" href="http://www.lylzone.info/tag/ppt">ppt</a>
+			
+				<a style="font-size: 10px; color: rgb(54, 228, 146); " title="1 pages of qq" href="http://www.lylzone.info/tag/qq">qq</a>
+			
+				<a style="font-size: 10px; color: rgb(219, 138, 110); " title="1 pages of twitter" href="http://www.lylzone.info/tag/twitter">twitter</a>
+			
+				<a style="font-size: 11px; color: rgb(137, 102, 12); " title="2 pages of vc" href="http://www.lylzone.info/tag/vc">vc</a>
+			
+				<a style="font-size: 10px; color: rgb(21, 221, 57); " title="1 pages of wikileaks" href="http://www.lylzone.info/tag/wikileaks">wikileaks</a>
+			
+				<a style="font-size: 10px; color: rgb(82, 247, 177); " title="1 pages of win7" href="http://www.lylzone.info/tag/win7">win7</a>
+			
+				<a style="font-size: 10px; color: rgb(207, 216, 195); " title="1 pages of windows" href="http://www.lylzone.info/tag/windows">windows</a>
+			
+				<a style="font-size: 11px; color: rgb(247, 23, 41); " title="2 pages of 中国" href="http://www.lylzone.info/tag/%E4%B8%AD%E5%9B%BD">中国</a>
+			
+				<a style="font-size: 10px; color: rgb(122, 98, 44); " title="1 pages of 云计算" href="http://www.lylzone.info/tag/%E4%BA%91%E8%AE%A1%E7%AE%97">云计算</a>
+			
+				<a style="font-size: 11px; color: rgb(118, 162, 74); " title="2 pages of 免费" href="http://www.lylzone.info/tag/%E5%85%8D%E8%B4%B9">免费</a>
+			
+				<a style="font-size: 22px; color: rgb(25, 127, 106); " title="13 pages of 分享" href="http://www.lylzone.info/tag/%E5%88%86%E4%BA%AB">分享</a>
+			
+				<a style="font-size: 10px; color: rgb(187, 170, 213); " title="1 pages of 城市代码" href="http://www.lylzone.info/tag/%E5%9F%8E%E5%B8%82%E4%BB%A3%E7%A0%81">城市代码</a>
+			
+				<a style="font-size: 10px; color: rgb(176, 118, 206); " title="1 pages of 域名" href="http://www.lylzone.info/tag/%E5%9F%9F%E5%90%8D">域名</a>
+			
+				<a style="font-size: 10px; color: rgb(225, 200, 141); " title="1 pages of 小技巧" href="http://www.lylzone.info/tag/%E5%B0%8F%E6%8A%80%E5%B7%A7">小技巧</a>
+			
+				<a style="font-size: 10px; color: rgb(178, 166, 163); " title="1 pages of 帝国" href="http://www.lylzone.info/tag/%E5%B8%9D%E5%9B%BD">帝国</a>
+			
+				<a style="font-size: 11px; color: rgb(166, 154, 76); " title="2 pages of 幽默，娱乐搞笑" href="http://www.lylzone.info/tag/%E5%B9%BD%E9%BB%98%EF%BC%8C%E5%A8%B1%E4%B9%90%E6%90%9E%E7%AC%91">幽默，娱乐搞笑</a>
+			
+				<a style="font-size: 10px; color: rgb(194, 232, 43); " title="1 pages of 恢复IE，win7" href="http://www.lylzone.info/tag/%E6%81%A2%E5%A4%8DIE%EF%BC%8Cwin7">恢复IE，win7</a>
+			
+				<a style="font-size: 10px; color: rgb(231, 147, 55); " title="1 pages of 搞笑" href="http://www.lylzone.info/tag/%E6%90%9E%E7%AC%91">搞笑</a>
+			
+				<a style="font-size: 25px; color: rgb(71, 248, 23); " title="16 pages of 杂文网络" href="http://www.lylzone.info/tag/%E6%9D%82%E6%96%87%E7%BD%91%E7%BB%9C">杂文网络</a>
+			
+				<a style="font-size: 11px; color: rgb(34, 196, 130); " title="2 pages of 电子书" href="http://www.lylzone.info/tag/%E7%94%B5%E5%AD%90%E4%B9%A6">电子书</a>
+			
+				<a style="font-size: 10px; color: rgb(43, 132, 184); " title="1 pages of 移动" href="http://www.lylzone.info/tag/%E7%A7%BB%E5%8A%A8">移动</a>
+			
+				<a style="font-size: 10px; color: rgb(147, 53, 75); " title="1 pages of 答案" href="http://www.lylzone.info/tag/%E7%AD%94%E6%A1%88">答案</a>
+			
+				<a style="font-size: 11px; color: rgb(66, 163, 26); " title="2 pages of 网页" href="http://www.lylzone.info/tag/%E7%BD%91%E9%A1%B5">网页</a>
+			
+				<a style="font-size: 10px; color: rgb(129, 189, 180); " title="1 pages of 腾讯" href="http://www.lylzone.info/tag/%E8%85%BE%E8%AE%AF">腾讯</a>
+			
+				<a style="font-size: 10px; color: rgb(154, 4, 26); " title="1 pages of 解密" href="http://www.lylzone.info/tag/%E8%A7%A3%E5%AF%86">解密</a>
+			
+				<a style="font-size: 10px; color: rgb(54, 145, 93); " title="1 pages of 趣文" href="http://www.lylzone.info/tag/%E8%B6%A3%E6%96%87">趣文</a>
+			
+				<a style="font-size: 10px; color: rgb(94, 248, 109); " title="1 pages of 路由" href="http://www.lylzone.info/tag/%E8%B7%AF%E7%94%B1">路由</a>
+			
+			
+		</div></li>
+	</ul>
+	<!-- color tag -->
+	<script type="text/javascript">
+        $(".widget_tag_cloud div a").each(function (i) {
+            this.style.color = randomColor()
+        });
+        function randomColor() {
+            var arrHex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+            var strHex = "#";
+            var index;
+            for (var i = 0; i < 6; i++) {
+                index = Math.round(Math.random() * 15);
+                strHex += arrHex[index];
+            }
+            return strHex;
+        }
+    
+	</script>
+
+
+	<ul>
+		<li id="recentcomments">
+			<h3>最新评论</h3>
+			<ul>
+				
+				<li>
+				<a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-397001" title="发表于：appspot (GAE)被墙的三种解决方案">【转载】GAE被墙的三种解决方案</a>&nbsp;说：【转载】GAE被墙的三种解决方案... ...
+				</li>
+				
+				<li>
+				<a href="http://www.lylzone.info/2012/03/14/vc-bug-dcomusercreatfail.html#comment-395001" title="发表于：VC的Bug-安装过程中创建DCOM出错(Setup Was Unable to Create a DCOM User Account)">lyl</a>&nbsp;说：尊敬的校园网用户，由于您的不当操作导致客...
+				</li>
+				
+				<li>
+				<a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#comment-391001" title="发表于：appspot (GAE)被墙的三种解决方案">xinxijishuwyq</a>&nbsp;说：有没有办法弄完域名https？...
+				</li>
+				
+				<li>
+				<a href="http://www.lylzone.info/?p=363013#comment-390001" title="发表于：GoAgent又一个基于GAE的穿越利器">admin</a>&nbsp;说：@Andrew
+ 偶尔连不上...
+				</li>
+				
+				<li>
+				<a href="http://www.lylzone.info/?p=363013#comment-389001" title="发表于：GoAgent又一个基于GAE的穿越利器">Andrew</a>&nbsp;说：一直在用，不错...
+				</li>
+				
+			</ul>
+
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<h3>快捷链接</h3>
+			<ul>
+				<li>
+				<a href="http://lylmiclog.appspot.com/feed" title="Please use RSS 2.0 to synch this content">RSS <abbr title="Really Simple Syndication">订阅</abbr></a>
+				</li>
+				<li>
+					<a rel="nofollow" href="http://www.lylzone.info/sitemap">Sitemap</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<h3>友情链接</h3>
+			<ul>
+			
+				<li>
+					<a href="http://t.sina.com/" target="_blank" title="微博">我的新浪微博</a>
+				</li>
+            
+				<li>
+					<a href="http://lylexist.blogbus.com/" target="_blank" title="">博客大巴</a>
+				</li>
+            
+				<li>
+					<a href="http://note.sdo.com/u/1341640872#/c/fZZ2E~ja5PhVnM00g000D9" target="_blank" title="信息">信息存储</a>
+				</li>
+            
+				<li>
+					<a href="http://blog.xiao3.info/" target="_blank" title="xiao3.info">甜·咖啡</a>
+				</li>
+            
+				<li>
+					<a href="http://www.pcustc.cn/" target="_blank" title="绑定域名知识">pchao's blog</a>
+				</li>
+            
+				<li>
+					<a href="http://xuming.net/" target="_blank" title="">xuming</a>
+				</li>
+            
+				<li>
+					<a href="http://lxvoip8.appspot.com/" target="_blank" title="">在线代理</a>
+				</li>
+            
+				<li>
+					<a href="http://www.williamlong.info/" target="_blank" title="">月光博客</a>
+				</li>
+            
+				<li>
+					<a href="http://qhm123.appspot.com/" target="_blank" title="">鸣的博客</a>
+				</li>
+            
+				<li>
+					<a href="http://dddspace.com/" target="_blank" title="Bolg">Log4D</a>
+				</li>
+            
+				<li>
+					<a href="http://www.sigma.me/" target="_blank" title="我喜欢的博客">Sigma</a>
+				</li>
+            
+				<li>
+					<a href="http://www.google.com/transliterate/" target="_blank" title="google 云输入法">Google transliterate</a>
+				</li>
+            
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="clear"></div><!-- 2 section -->  
+</div>
+
+</div><!-- section -->
+
+			
+			<div id="footer">
+			<a id="top" href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#top" title="Back to top.">Top</a>
+				<p>©2010 <a href="http://www.lylzone.info/">恋雨的风</a>&nbsp;,&nbsp;Powered by&nbsp;<a href="http://appengine.google.com/">Google App Engine</a>&nbsp;.<br>
+				<a href="http://xuui.net/wordpress/istudio-theme-release.html">iStudioPage</a>&nbsp;Designed by&nbsp;<a href="http://xuui.net/">Xu.hel</a>&nbsp;,&nbsp;由&nbsp;<a href="http://www.q86.net/">Angel</a>&nbsp;移植到&nbsp;<a href="http://micolog.appspot.com/">Micolog&nbsp;0.74</a>&nbsp;,&nbsp;♥<a href="http://www.google.com/ncr">Don't be evil♥</a>.
+				 <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19324612-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+if ($('pre[class^=brush:]').length > 0)
+{
+	$.getScript("/syntaxhighlighter/scripts/shCore.js", function() {
+		SyntaxHighlighter.boot("/syntaxhighlighter/", {theme : "Eclipse", stripBrs : true}, {});
+	});
+}
+</script>
+<!--Powered by micolog 0.74-->
+				</p>
+				<p></p>
+			</div>
+		</div>
+	<hr>
+	<script type="text/javascript" src="./appspot (GAE)被墙的三种解决方案 - 恋雨的风_files/scrolltopcontrol.js"></script>
+	
+</div><div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer; " title="Scroll Back to Top"><a href="http://www.lylzone.info/2011/02/17/appspotbeiqiang.html#top"></a></div></body></html>
