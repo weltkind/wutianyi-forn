@@ -1,0 +1,1 @@
+external_js^=http://source1.qq.com/mqqweb/code/js/common/mqq_header_nav_product.js;http://kf.qq.com/js/class7/kf1382.js;	http://source1.qq.com/mqqweb/code/js/common/mqq_footer_normal.js;http://pingjs.qq.com/ping.js;http://imgcache.qq.com/bossweb/fan/js/kfinterface.js?cm=20&cl=txt-list&lm=8&id=1382&cla=7

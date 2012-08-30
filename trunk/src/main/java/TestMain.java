@@ -1,3 +1,4 @@
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -10,33 +11,46 @@ import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.TimeZone;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
+
+import scala.collection.mutable.StringBuilder;
 
 public class TestMain
 {
     public static void main(String[] args) throws IOException, ParseException
     {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
-        Date date = dateFormat.parse("2012-08-01");
-        Date date_2 = dateFormat.parse("2012-08-20");
-
-        if (date.compareTo(date_2) > 0)
+        String p = "wuhanjie860728";
+        String v = DigestUtils.md5Hex(p).toUpperCase();
+        System.out.println(v);
+        String v_c = "0000000024edc220";
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i < v.length(); i = i+ 2)
         {
-            System.out.println("yes");
+          char c=  (char) ((Character.digit(v.charAt(i), 16) << 4) | (Character.digit(v.charAt(i + 1), 16)));
+          builder.append(c);
         }
-
-        Calendar calendar = new GregorianCalendar(2012, 7, 1);
-        Calendar calendar_2 = new GregorianCalendar(2012, 7, 20);
-        System.out.println(Integer.parseInt("09"));
         
-        while(calendar.compareTo(calendar_2) <= 0)
+        for(int i = 0; i < v_c.length(); i = i +2)
         {
-            System.out.println(dateFormat.format(calendar.getTime()));
-            calendar.add(Calendar.DATE, 1);
+            char c=  (char) ((Character.digit(v_c.charAt(i), 16) << 4) | (Character.digit(v_c.charAt(i + 1), 16)));
+            System.out.println((int)c);
+            builder.append(c);
         }
+        
+        System.out.println(builder.toString());
+        
+        String g = builder.toString();
+        System.out.println(g.length());
+        System.out.println(g);
+        String h = DigestUtils.md5Hex(g).toUpperCase();
+        System.out.println(h);
+        System.out.println((char) ((Character.digit('A', 16) << 4) | (Character.digit('D', 16))));
+        char[] cs = new char[]{' '};
+        
+        System.out.println(DigestUtils.md5Hex("860728"));
     }
-
+    
     public static int downloadKingrootDatas(int type, String date, String fileName)
     {
         String condition = "' group by imei order by id asc";
