@@ -21,6 +21,9 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner;
+import net.sourceforge.groboutils.junit.v1.TestRunnable;
+
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
@@ -130,7 +133,7 @@ public class MyTest
         }
         // System.out.println(builder.toString());
         reader.close();
-        
+
         String str = "\"{sadfasf\\\"}\"";
         System.out.println(str);
         System.out.println(str.replaceAll("\\\\", "").replaceAll("\\\"\\{", "{").replaceFirst("\\}\\\"", "}"));
@@ -180,7 +183,7 @@ public class MyTest
     @Test
     public void randomStrs()
     {
-        for (int j = 0; j < 10; j ++)
+        for (int j = 0; j < 10; j++)
         {
             String q = "";
             int[] i =
@@ -206,5 +209,105 @@ public class MyTest
         int t = i[s];
         i[s] = i[e];
         i[e] = t;
+    }
+
+    private class CpuTest extends TestRunnable
+    {
+        private boolean isCpu;
+
+        public CpuTest(boolean isCpu)
+        {
+            this.isCpu = isCpu;
+        }
+
+        @Override
+        public void runTest() throws Throwable
+        {
+            while (true)
+            {
+                if (isCpu)
+                {
+                    for (int i = 0; i < 100000; i++)
+                    {
+                        System.out.println(i);
+                    }
+                    Thread.sleep(100);
+                }
+                else
+                {
+                    System.out.println("test");
+                    Thread.sleep(1000);
+                }
+            }
+        }
+
+    }
+
+    @Test
+    public void testCpu() throws Throwable
+    {
+        TestRunnable[] trs =
+        { new CpuTest(false), new CpuTest(false), new CpuTest(true) };
+        MultiThreadedTestRunner mttr = new MultiThreadedTestRunner(trs);
+        mttr.runTestRunnables();
+    }
+
+    static class Cpu implements Runnable
+    {
+        private boolean isCpu;
+
+        public Cpu(boolean isCpu)
+        {
+            this.isCpu = isCpu;
+        }
+
+        @Override
+        public void run()
+        {
+            while (true)
+            {
+                if (isCpu)
+                {
+                    for (int i = 0; i < 100000; i++)
+                    {
+                        System.out.println(i);
+                    }
+                    try
+                    {
+                        Thread.sleep(100);
+                    }
+                    catch (InterruptedException e)
+                    {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+                else
+                {
+                    System.out.println("test");
+                    try
+                    {
+                        Thread.sleep(1000);
+                    }
+                    catch (InterruptedException e)
+                    {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args)
+    {
+//        Thread[] threads =
+//        { new Thread(new Cpu(false)), new Thread(new Cpu(false)), new Thread(new Cpu(true)) };
+//        for(int i = 0; i < threads.length; i ++)
+//        {
+//            threads[i].start();
+//        }
+        System.out.println(Integer.toHexString(11266));
     }
 }

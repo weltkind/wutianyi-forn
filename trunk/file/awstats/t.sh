@@ -52,3 +52,58 @@ do
 done                                                                                                                                          
 /usr/local/app/resin34/work/awstats/tools/awstats_buildstaticpages.pl -config=webpim -update -lang=cn -awstatsprog=/usr/local/app/resin34/work/awstats/wwwroot/cgi-bin/awstats.pl -dir=/usr/local/app/resin34/work/data/html
 rm /usr/local/app/resin34/work/logs/*
+
+#web_txl
+for i in {0..23}
+do
+    if [ $i -lt 10 ] 
+    then
+        ./copyfrom.exp 10.137.131.31 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$t$i /data/resin2log/logs/$name$t$i
+    else
+         ./copyfrom.exp 10.137.131.31 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$i /data/resin2log/logs/$name$i
+    fi
+done
+
+/usr/local/app/resin4/work/awstats/tools/awstats_buildstaticpages.pl -config=webtxl -update -lang=cn -awstatsprog=/usr/local/app/resin4/work/awstats/wwwroot/cgi-bin/awstats.pl -dir=/usr/local/app/resin4/work/data/html
+rm /usr/local/app/resin4/work/logs/*
+
+for i in {0..23}
+do
+    if [ $i -lt 10 ] 
+    then
+        ./copyfrom.exp 10.137.131.29 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$t$i /data/resin2log/logs/$name$t$i
+    else
+         ./copyfrom.exp 10.137.131.29 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$i /data/resin2log/logs/$name$i
+    fi
+done
+
+/usr/local/app/resin4/work/awstats/tools/awstats_buildstaticpages.pl -config=webtxl -update -lang=cn -awstatsprog=/usr/local/app/resin4/work/awstats/wwwroot/cgi-bin/awstats.pl -dir=/usr/local/app/resin4/work/data/html
+rm /usr/local/app/resin4/work/logs/*
+
+
+#webappscan
+for i in {0..23}
+do
+    if [ $i -lt 10 ] 
+    then
+        ./copyfrom.exp 10.135.15.212 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$t$i /data/resin3log/logs/$name$t$i
+    else
+         ./copyfrom.exp 10.135.15.212 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$i /data/resin3log/logs/$name$i
+    fi
+done
+
+/usr/local/app/resin4/work/awstats/tools/awstats_buildstaticpages.pl -config=webappscan -update -lang=cn -awstatsprog=/usr/local/app/resin4/work/awstats/wwwroot/cgi-bin/awstats.pl -dir=/usr/local/app/resin4/work/data/html
+rm /usr/local/app/resin4/work/logs/*
+
+for i in {0..23}
+do
+    if [ $i -lt 10 ] 
+    then
+        ./copyfrom.exp 10.135.39.20 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$t$i /data/resin3log/logs/$name$t$i
+    else
+         ./copyfrom.exp 10.135.39.20 mqq mqq2005 /usr/local/app/resin4/work/logs/$name$i /data/resin3log/logs/$name$i
+    fi
+done
+
+/usr/local/app/resin4/work/awstats/tools/awstats_buildstaticpages.pl -config=webappscan -update -lang=cn -awstatsprog=/usr/local/app/resin4/work/awstats/wwwroot/cgi-bin/awstats.pl -dir=/usr/local/app/resin4/work/data/html
+rm /usr/local/app/resin4/work/logs/*

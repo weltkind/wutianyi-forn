@@ -3,3 +3,4 @@ sz 下载
 unzip -d（解压到指定的文件）
 ps -ef |
 netstat -anv
+wc -l 统计行数

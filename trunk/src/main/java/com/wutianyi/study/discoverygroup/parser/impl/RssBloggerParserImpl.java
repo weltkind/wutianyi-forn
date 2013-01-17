@@ -40,6 +40,7 @@ public class RssBloggerParserImpl implements BloggerParser {
 		try {
 			documentBuilder = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder();
+			
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

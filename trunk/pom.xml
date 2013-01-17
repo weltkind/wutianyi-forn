@@ -7,6 +7,9 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>wutianyi86728_6 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<properties>
+		<jarPath>F:\workspace\wutianyi\file\jar</jarPath>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -303,9 +306,70 @@
 			<artifactId>resin</artifactId>
 			<version>3.0.9</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>IKAnalyzer</artifactId>
+			<version>3.2.8</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\IKAnalyzer3.2.8.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>antlr</artifactId>
+			<version>3.4</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\antlr-3.4-complete.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>cardme</artifactId>
+			<version>0.2.6</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\cardme-v0.2.6.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>cardme-src</artifactId>
+			<version>0.2.6</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\cardme-src-v0.2.6.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>jmxremoting</artifactId>
+			<version>1.2</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\jmxremoting-1.2.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>jmxri</artifactId>
+			<scope>system</scope>
+			<version>1.2</version>
+			<systemPath>${jarPath}\jmxri.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>jmxtools</artifactId>
+			<version>1.2</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\jmxtools.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\persistence-api-1.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.wutianyi.temp</groupId>
+			<artifactId>GroboUtils-core</artifactId>
+			<version>5</version>
+			<scope>system</scope>
+			<systemPath>${jarPath}\GroboUtils-5-core.jar</systemPath>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<finalName>wutianyi86728_6</finalName>
 		<plugins>

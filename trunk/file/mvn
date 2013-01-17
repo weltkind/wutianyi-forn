@@ -39,7 +39,7 @@ jetty调试
  -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=8080,server=y,suspend=y
  
  
- mvn archetype:create -DgroupId=com.wutianyi -DartifactId=wutianyi-jmeter -DarchetypeArtifactId=maven-archetype-webapp
+ mvn archetype:create -DgroupId=com.wutianyi -DartifactId=wutianyi-autoconfig3 -DarchetypeArtifactId=maven-archetype-webapp
  
  mvn archetype:create   -DgroupId=com.wutianyi  -DartifactId=wutianyi-lucene  -DarchetypeArtifactId=maven-archetype-quickstart
  
